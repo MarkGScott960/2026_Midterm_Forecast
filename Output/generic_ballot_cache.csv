@@ -1,0 +1,549 @@
+Date,Pollster,Dem,Rep,SampleSize,Population,Partisan
+2024-12-11,Cygnal,44.6,48.4,1500.0,LV,False
+2024-12-16,McLaughlin & Associates,42.0,47.0,1000.0,LV,False
+2025-01-12,Cygnal,44.6,46.8,1500.0,LV,False
+2025-01-16,RMG Research,44.0,51.0,1000.0,RV,False
+2025-01-23,Quantus Insights,45.0,48.0,1000.0,RV,True
+2025-01-27,McLaughlin & Associates,40.0,48.0,1000.0,LV,False
+2025-02-06,Clarity Campaign Labs,45.0,44.0,1102.0,RV,False
+2025-02-01,"Fabrizio, Lee & Associates/Impact Research",43.0,43.0,3000.0,RV,False
+2025-02-05,Cygnal,46.2,47.2,1500.0,LV,False
+2025-02-12,Quantus Insights,44.0,48.0,1000.0,RV,True
+2025-02-13,Echelon Insights,46.0,47.0,1010.0,LV,False
+2025-02-18,YouGov,35.0,37.0,1603.0,A,False
+2025-02-18,YouGov,42.0,41.0,1451.0,RV,False
+2025-02-18,McLaughlin & Associates,41.0,48.0,1000.0,LV,False
+2025-02-17,co/efficient,44.0,46.0,2063.0,LV,True
+2025-02-21,RMG Research,46.0,48.0,1000.0,RV,False
+2025-03-03,Emerson College,44.4,41.4,1000.0,RV,False
+2025-03-09,Clarity Campaign Labs,46.0,44.0,1036.0,RV,False
+2025-03-11,Hart Research Associates/Public Opinion Strategies,48.0,47.0,1000.0,RV,False
+2025-03-05,Cygnal,47.4,45.9,1500.0,LV,False
+2025-03-13,Echelon Insights,46.0,47.0,1007.0,LV,False
+2025-03-02,Public Opinion Strategies,44.0,46.0,1000.0,RV,False
+2025-03-27,Quantus Insights,45.4,46.3,1000.0,RV,False
+2025-03-07,McLaughlin & Associates,43.7,45.7,2000.0,RV,True
+2025-04-01,"Fabrizio, Lee & Associates/Impact Research",44.0,43.0,1500.0,RV,False
+2025-04-03,Cygnal,48.0,47.0,1500.0,LV,False
+2025-04-08,YouGov,39.0,36.0,1735.0,A,False
+2025-04-08,YouGov,43.0,42.0,1558.0,RV,False
+2025-04-14,Echelon Insights,47.0,47.0,1014.0,LV,False
+2025-04-13,Hart Research Associates/Public Opinion Strategies,48.0,46.0,1000.0,A,False
+2025-04-03,Yale University Institution for Social and Policy Studies,43.3,41.7,4100.0,RV,False
+2025-04-14,Clarity Campaign Labs,44.0,45.0,1008.0,RV,False
+2025-09-03,Cygnal,47.6,45.2,1500.0,LV,False
+2025-09-08,YouGov,44.0,40.0,1487.0,RV,False
+2025-09-11,Clarity Campaign Labs,50.0,44.0,1001.0,RV,False
+2025-04-12,RealClear Opinion Research,40.0,39.0,1000.0,RV,False
+2025-04-16,RMG Research,50.0,45.0,1000.0,RV,False
+2025-04-18,Noble Predictive Insights,45.0,42.0,2527.0,RV,False
+2025-04-24,The New York Times/Siena College,47.0,44.0,913.0,RV,False
+2025-04-19,McLaughlin & Associates,44.5,44.3,2000.0,RV,True
+2025-04-19,McLaughlin & Associates,45.7,47.1,1638.0,LV,True
+2025-04-21,Beacon Research/Shaw & Co. Research,49.0,42.0,1104.0,RV,False
+2025-05-05,Big Data Poll,40.2,42.3,3128.0,RV,False
+2025-04-27,TrueDot.ai,45.0,40.0,1448.0,RV,False
+2025-05-07,Quantus Insights,45.2,44.8,1000.0,RV,True
+2025-05-12,Echelon Insights,47.0,48.0,1000.0,LV,False
+2025-05-06,Verasight,47.0,41.0,1000.0,A,False
+2025-05-09,co/efficient,45.0,42.0,1462.0,LV,True
+2025-05-08,Cygnal,47.1,46.6,1500.0,LV,False
+2025-05-27,AtlasIntel,50.9,41.7,3469.0,RV,False
+2025-05-21,RMG Research,48.0,45.0,1000.0,RV,False
+2025-05-26,McLaughlin & Associates,43.0,47.0,1000.0,RV,False
+2025-05-19,Fabrizio Ward,42.0,42.0,800.0,RV,False
+2025-06-02,YouGov,39.0,36.0,1610.0,A,False
+2025-06-02,YouGov,44.0,42.0,1436.0,RV,False
+2025-06-04,Quantus Insights,46.0,45.0,1000.0,RV,True
+2025-06-04,Cygnal,47.2,46.9,1500.0,LV,False
+2025-06-06,J.L. Partners,42.0,35.0,1006.0,RV,False
+2025-06-09,RMG Research,35.0,35.0,1000.0,RV,False
+2025-06-11,Quantus Insights,43.0,43.0,1000.0,RV,True
+2025-06-12,Verasight,45.0,37.0,1500.0,A,False
+2025-06-17,Echelon Insights,47.0,48.0,982.0,LV,False
+2025-06-11,McLaughlin & Associates,44.0,46.0,1000.0,LV,True
+2025-06-14,Clarity Campaign Labs,50.0,45.0,1000.0,RV,False
+2025-06-16,co/efficient,46.0,46.0,1035.0,LV,True
+2025-06-15,McLaughlin & Associates,42.0,47.0,1000.0,LV,False
+2025-06-18,Echelon Insights,47.0,48.0,1002.0,LV,False
+2025-06-21,Cygnal,48.4,46.0,800.0,LV,False
+2025-06-19,RMG Research,44.0,52.0,1000.0,RV,False
+2025-06-25,American Pulse Research & Polling,46.6,42.4,633.0,RV,False
+2025-06-25,Emerson College,42.5,39.8,1000.0,RV,False
+2025-06-25,Quantus Insights,43.0,42.0,1000.0,RV,False
+2025-07-02,Cygnal,47.1,45.7,1500.0,LV,False
+2025-07-10,A2 Insights,47.7,44.4,862.0,RV,False
+2025-07-18,AtlasIntel,51.3,42.7,1435.0,A,False
+2025-07-14,McLaughlin & Associates,42.0,47.0,1000.0,LV,False
+2025-07-14,Big Data Poll,42.3,41.1,3022.0,RV,False
+2025-07-16,Quantus Insights,44.0,42.0,1000.0,RV,False
+2025-07-16,Verasight,47.0,43.0,1500.0,A,False
+2025-07-16,RMG Research,45.0,49.0,2000.0,RV,False
+2025-07-22,Emerson College,44.0,41.5,1400.0,RV,False
+2025-07-20,"Fabrizio, Lee & Associates/Impact Research",46.0,43.0,1500.0,RV,False
+2025-07-24,McLaughlin & Associates,45.5,42.8,2000.0,RV,True
+2025-07-24,McLaughlin & Associates,48.0,43.9,1633.0,LV,True
+2025-07-14,Echelon Insights,48.0,47.0,1084.0,LV,False
+2025-08-04,YouGov,43.7,38.4,1528.0,RV,False
+2025-07-28,YouGov,43.0,41.0,1610.0,RV,False
+2025-07-31,Clarity Campaign Labs,51.0,43.0,1018.0,RV,False
+2025-08-03,Hart Research Associates/Public Opinion Strategies,49.0,44.0,1000.0,A,False
+2025-07-28,YouGov,46.0,39.0,1167.0,RV,False
+2025-08-11,YouGov,42.0,40.0,1474.0,RV,False
+2025-08-11,YouGov,38.0,35.0,1635.0,A,False
+2025-08-09,Cygnal,47.4,46.4,1500.0,LV,False
+2025-08-13,Quantus Insights,45.0,42.0,1000.0,RV,False
+2025-08-18,Echelon Insights,47.0,46.0,1057.0,LV,False
+2025-08-21,RMG Research,47.0,47.0,2000.0,RV,False
+2025-08-25,YouGov,41.0,36.0,1523.0,A,False
+2025-08-25,YouGov,43.0,41.0,1377.0,RV,False
+2025-08-17,The Argument/Verasight,50.7,49.3,1562.0,RV,False
+2025-08-26,Emerson College,43.3,43.0,1000.0,RV,False
+2025-08-21,Verasight,49.0,41.0,1500.0,A,False
+2025-08-19,SoCal Strategies,42.0,37.0,700.0,A,True
+2025-08-26,McLaughlin & Associates,45.0,47.0,1000.0,LV,False
+2025-09-02,YouGov,38.0,34.0,1691.0,A,False
+2025-09-02,YouGov,43.0,39.0,1549.0,RV,False
+2025-08-31,Morning Consult,45.0,41.0,2202.0,RV,False
+2025-09-08,YouGov,39.0,36.0,1644.0,A,False
+2025-09-15,YouGov,37.0,33.0,1567.0,A,False
+2025-09-15,YouGov,43.0,41.0,1420.0,RV,False
+2025-09-16,AtlasIntel,51.8,43.5,1066.0,A,False
+2025-09-22,Echelon Insights,47.0,46.0,1071.0,LV,False
+2025-09-19,Verasight,47.0,42.0,1500.0,A,False
+2025-09-22,YouGov,39.0,35.0,1551.0,A,False
+2025-09-22,YouGov,45.0,42.0,1392.0,RV,False
+2025-09-01,CNN/SSRS,52.0,48.0,1768.0,RV,False
+2025-09-01,CNN/SSRS,52.0,47.0,2077.0,A,False
+2025-09-18,The Argument/Verasight,53.0,47.0,1541.0,RV,False
+2025-09-29,YouGov,41.0,35.0,1656.0,A,False
+2025-09-29,YouGov,44.0,41.0,1518.0,RV,False
+2025-09-27,The New York Times/Siena College,47.0,45.0,1313.0,RV,False
+2025-09-24,RMG Research,45.0,46.0,2000.0,RV,False
+2025-09-29,YouGov,44.0,40.0,1126.0,RV,False
+2025-09-22,McLaughlin & Associates,41.0,47.0,1000.0,LV,False
+2026-01-24,Big Data Poll,48.2,44.2,2909.0,LV,False
+2025-10-05,Morning Consult,46.0,43.0,2200.0,RV,False
+2025-10-06,YouGov,39.0,33.0,1648.0,A,False
+2025-10-06,YouGov,44.0,39.0,1490.0,RV,False
+2025-10-07,Quantus Insights,42.0,43.0,1000.0,LV,False
+2026-06-02,Quantus Insights,47.0,42.0,1050.0,LV,False
+2025-10-13,YouGov,39.0,34.0,1622.0,A,False
+2025-10-13,YouGov,43.0,40.0,1467.0,RV,False
+2025-10-08,Cygnal,48.0,45.0,1500.0,LV,False
+2025-10-06,Noble Predictive Insights,45.0,43.0,2565.0,RV,False
+2025-10-14,Emerson College,43.9,42.5,1000.0,RV,False
+2025-10-12,Hart Research Associates/Public Opinion Strategies,48.0,47.0,1000.0,A,False
+2026-01-26,YouGov,43.0,38.0,1520.0,RV,False
+2025-10-20,YouGov,40.0,35.0,1621.0,A,False
+2025-10-20,YouGov,45.0,40.0,1448.0,RV,False
+2025-10-19,Morning Consult,46.0,43.0,2200.0,RV,False
+2025-10-20,Echelon Insights,48.0,46.0,1010.0,LV,False
+2025-10-20,Quinnipiac University,50.0,41.0,1327.0,RV,False
+2025-09-08,Public Religion Research Institute,33.0,30.0,5543.0,A,False
+2025-10-16,The Argument/Verasight,51.0,49.0,1530.0,RV,False
+2025-09-16,"Normington, Petts & Associates",51.0,49.0,800.0,LV,False
+2025-10-27,YouGov,39.0,34.0,1623.0,A,False
+2025-10-27,YouGov,43.0,40.0,1476.0,RV,False
+2025-10-23,Clarity Campaign Labs,47.0,46.0,1047.0,RV,False
+2025-10-27,McLaughlin & Associates,44.0,46.0,1000.0,LV,False
+2025-10-20,University of Massachusetts Department of Political Science/YouGov,38.0,35.0,1000.0,A,False
+2025-10-27,YouGov,45.0,40.0,1197.0,RV,False
+2025-10-29,Verasight,49.0,41.0,1567.0,A,False
+2025-10-28,Washington Post/ABC News/Ipsos,46.0,44.0,2203.0,RV,False
+2025-10-28,Hart Research Associates/Public Opinion Strategies,50.0,42.0,1000.0,RV,False
+2025-10-29,NewsNation/Decision Desk HQ,47.0,47.0,1158.0,LV,False
+2025-10-29,NewsNation/Decision Desk HQ,45.0,44.0,1609.0,RV,False
+2025-10-30,CNN/SSRS,47.0,42.0,954.0,RV,False
+2025-11-03,RMG Research,44.0,46.0,2000.0,RV,False
+2025-11-03,YouGov,38.0,35.0,1656.0,A,False
+2025-11-03,YouGov,44.0,41.0,1475.0,RV,False
+2025-10-15,J.L. Partners,43.0,37.0,1004.0,RV,False
+2025-11-04,Emerson College,43.5,40.1,1000.0,RV,False
+2025-11-10,YouGov Blue,48.0,45.0,517.0,RV,False
+2025-11-09,Morning Consult,48.0,43.0,2201.0,RV,False
+2025-11-10,YouGov,40.0,34.0,1663.0,A,False
+2025-11-10,YouGov,46.0,39.0,1500.0,RV,False
+2025-11-12,Ipsos,41.0,40.0,938.0,RV,False
+2025-11-12,Quantus Insights,43.7,39.3,1000.0,RV,False
+2025-11-06,Cygnal,49.7,43.6,1500.0,LV,False
+2025-11-17,Echelon Insights,49.0,45.0,1051.0,LV,False
+2025-11-14,Verasight,47.0,42.0,1004.0,A,False
+2025-11-14,Verasight,49.0,44.0,896.0,RV,False
+2025-11-17,YouGov,38.0,35.0,1549.0,A,False
+2025-11-17,YouGov,43.0,40.0,1382.0,RV,False
+2025-11-12,Marquette University Law School,46.0,41.0,1052.0,A,False
+2025-11-12,Marquette University Law School,49.0,44.0,903.0,RV,False
+2025-11-12,Marquette University Law School,53.0,44.0,602.0,LV,False
+2025-11-13,Marist College,55.0,41.0,1291.0,RV,False
+2025-11-17,The Argument/Verasight,53.0,47.0,1508.0,RV,False
+2025-11-17,The Argument/Verasight,53.8,46.2,,LV,False
+2025-11-14,High Point University Survey Research Center,46.0,36.0,1004.0,A,False
+2025-11-23,Morning Consult,45.0,43.0,2200.0,RV,False
+2025-11-24,YouGov,39.0,32.0,1677.0,A,False
+2025-11-24,YouGov,44.0,39.0,1511.0,RV,False
+2025-11-24,McLaughlin & Associates,45.0,44.0,1000.0,LV,False
+2025-11-24,YouGov,43.0,40.0,1131.0,RV,False
+2025-12-01,YouGov,45.0,39.0,1456.0,RV,False
+2025-12-01,YouGov,39.0,33.0,1628.0,A,False
+2025-11-30,Morning Consult,44.0,42.0,21658.0,RV,False
+2025-11-23,Morning Consult,44.0,42.0,19675.0,RV,False
+2025-11-16,Morning Consult,44.0,43.0,19675.0,RV,False
+2025-11-09,Morning Consult,44.0,42.0,19675.0,RV,False
+2025-11-02,Morning Consult,43.0,43.0,19675.0,RV,False
+2025-10-26,Morning Consult,44.0,42.0,19675.0,RV,False
+2025-10-19,Morning Consult,44.0,42.0,19675.0,RV,False
+2025-10-12,Morning Consult,44.0,43.0,19675.0,RV,False
+2025-10-05,Morning Consult,44.0,43.0,19675.0,RV,False
+2025-10-28,Big Data Poll,43.0,41.0,2984.0,RV,False
+2025-12-01,Big Data Poll,44.0,42.0,2008.0,RV,False
+2025-12-01,Big Data Poll,46.0,43.0,1788.0,LV,False
+2025-10-26,Manhattan Institute,47.0,44.0,500.0,RV,False
+2025-11-20,J.L. Partners,50.0,46.0,797.0,LV,False
+2025-11-12,Survey 160,46.0,39.0,1513.0,RV,False
+2025-12-05,Quantus Insights,44.0,40.0,1000.0,RV,False
+2025-11-11,Yale Youth Poll,45.0,43.0,3426.0,RV,False
+2025-12-04,RMG Research,44.0,48.0,2000.0,RV,False
+2025-11-14,High Point University Survey Research Center,48.0,39.0,837.0,RV,False
+2025-12-07,Morning Consult,44.0,43.0,21658.0,RV,False
+2025-12-07,Morning Consult,46.0,43.0,2201.0,RV,False
+2025-12-08,YouGov,37.0,32.0,1530.0,A,False
+2025-12-08,YouGov,42.0,37.0,1380.0,RV,False
+2025-12-08,Ipsos,40.0,39.0,3521.0,RV,False
+2025-11-17,Ipsos,38.0,36.0,,,False
+2025-10-26,Ipsos,39.0,39.0,,,False
+2025-10-20,Ipsos,41.0,38.0,,,False
+2025-12-12,Big Data Poll,44.1,40.6,3004.0,RV,False
+2025-12-15,Echelon Insights,48.0,45.0,1011.0,LV,False
+2025-12-07,Cygnal,48.0,44.1,1500.0,LV,False
+2025-12-15,Morning Consult,45.0,44.0,2201.0,RV,False
+2025-12-14,Morning Consult,44.0,43.0,19954.0,RV,False
+2025-12-15,YouGov,37.0,33.0,1632.0,A,False
+2025-12-15,YouGov,43.0,39.0,1453.0,RV,False
+2025-12-11,The Argument/Verasight,50.6,49.4,1521.0,RV,False
+2025-12-11,The Argument/Verasight,52.4,47.6,,LV,False
+2025-12-11,Clarity Campaign Labs,49.0,44.0,1000.0,LV,False
+2025-12-15,Quinnipiac University,47.0,43.0,1035.0,RV,False
+2025-12-08,Hart Research Associates/Public Opinion Strategies,50.0,46.0,800.0,RV,False
+2026-01-22,Clarity Campaign Labs,51.0,42.0,1147.0,LV,False
+2025-12-16,Quantus Insights,43.0,41.0,1000.0,LV,False
+2025-12-19,AtlasIntel,54.4,38.4,2315.0,A,False
+2025-12-17,"Fabrizio, Lee & Associates",45.0,38.0,1000.0,RV,True
+2025-12-21,Morning Consult,45.0,42.0,20240.0,RV,False
+2025-12-22,YouGov,38.0,34.0,1592.0,A,False
+2025-12-22,YouGov,43.0,40.0,1425.0,RV,False
+2025-12-19,McLaughlin & Associates,46.0,45.0,1000.0,LV,False
+2025-11-26,GBAO Strategies,48.0,42.0,2000.0,RV,False
+2025-12-29,YouGov,36.0,31.0,1550.0,A,False
+2025-12-29,YouGov,42.0,38.0,1420.0,RV,False
+2025-12-28,Big Data Poll,47.9,44.4,3412.0,LV,False
+2026-01-03,The Bullfinch Group,40.0,30.0,1200.0,A,False
+2026-01-03,The Bullfinch Group,44.0,33.0,1000.0,RV,False
+2026-01-04,Morning Consult,44.0,42.0,22709.0,RV,False
+2026-01-04,Morning Consult,45.0,42.0,2201.0,RV,False
+2026-01-05,YouGov,39.0,32.0,1551.0,A,False
+2026-01-05,YouGov,45.0,39.0,1389.0,RV,False
+2026-01-08,RMG Research,47.0,46.0,2000.0,RV,False
+2026-01-12,Morning Consult,46.0,43.0,2201.0,RV,False
+2026-01-12,YouGov,39.0,33.0,1602.0,A,False
+2026-01-12,YouGov,44.0,40.0,1437.0,RV,False
+2026-01-11,Morning Consult,45.0,43.0,19675.0,RV,False
+2026-01-13,Ipsos,40.0,38.0,941.0,RV,False
+2026-01-13,Ipsos,35.0,32.0,1217.0,A,False
+2026-01-08,Cygnal,48.0,45.0,1500.0,LV,False
+2026-01-12,YouGov,45.0,40.0,1148.0,RV,False
+2026-01-25,Morning Consult,44.0,43.0,12505.0,RV,False
+2026-01-26,YouGov,38.0,35.0,1684.0,A,False
+2026-01-29,HarrisX/Harris Poll,52.0,48.0,2000.0,LV,False
+2026-01-14,Public Policy Polling,50.0,42.0,597.0,RV,True
+2026-02-01,Morning Consult,47.0,42.0,2201.0,RV,False
+2026-02-05,John Zogby Strategies,47.0,42.0,1000.0,LV,False
+2026-02-08,Morning Consult,45.0,42.0,29303.0,RV,False
+2026-02-09,YouGov,39.0,31.0,1730.0,A,False
+2026-02-04,Cygnal,48.0,44.0,1500.0,LV,False
+2026-01-26,Focaldata,39.0,35.0,2037.0,A,False
+2026-01-13,Impact Research/National Research,47.0,43.0,1500.0,RV,False
+2026-01-12,CNN/SSRS,46.0,41.0,968.0,RV,False
+2026-01-18,Morning Consult,44.0,42.0,12505.0,RV,False
+2026-01-19,YouGov,39.0,34.0,1722.0,A,False
+2026-01-19,YouGov,43.0,39.0,1549.0,RV,False
+2026-01-19,Emerson College,48.1,41.7,1000.0,LV,False
+2026-01-17,The New York Times/Siena College,48.0,43.0,1625.0,RV,False
+2026-01-18,Morning Consult,45.0,43.0,2201.0,RV,False
+2026-01-20,Verasight,51.0,43.0,,RV,False
+2026-01-22,Quantus Insights,47.2,40.7,1000.0,RV,False
+2026-01-08,Rasmussen Reports,47.0,41.0,2273.0,LV,False
+2026-01-15,Research Co.,42.0,36.0,1002.0,A,False
+2026-01-26,Echelon Insights,49.0,44.0,1029.0,LV,False
+2026-01-25,Ipsos,41.0,37.0,906.0,RV,False
+2026-01-25,Morning Consult,45.0,43.0,2201.0,RV,False
+2026-01-26,Beacon Research/Shaw & Co. Research,52.0,46.0,1005.0,RV,False
+2026-01-20,KFF,49.0,42.0,1141.0,RV,False
+2026-01-27,The Argument/Verasight,55.0,45.0,,LV,False
+2026-01-27,The Argument/Verasight,52.0,48.0,1515.0,RV,False
+2026-01-30,Public Policy Polling,48.0,41.0,652.0,RV,False
+2026-01-28,Cygnal,48.0,44.0,1004.0,LV,False
+2026-01-28,Marquette University Law School,45.0,39.0,1003.0,A,False
+2026-01-28,Marquette University Law School,48.0,44.0,869.0,RV,False
+2026-01-28,Marquette University Law School,52.0,45.0,577.0,LV,False
+2026-02-02,YouGov,44.0,40.0,1504.0,RV,False
+2026-02-02,YouGov,36.0,34.0,1672.0,A,False
+2026-01-27,McLaughlin & Associates,46.0,44.0,1000.0,LV,False
+2026-02-01,Morning Consult,44.0,42.0,12505.0,RV,False
+2026-02-09,YouGov,44.0,38.0,1551.0,RV,False
+2025-12-16,Echelon Insights/GBAO,47.0,43.0,2023.0,LV,False
+2026-02-10,Focaldata,51.0,44.0,,LV,False
+2026-02-10,Focaldata,46.0,42.0,,RV,False
+2026-02-10,Focaldata,42.0,38.0,1148.0,A,False
+2026-02-12,RMG Research,45.0,47.0,2000.0,RV,False
+2026-02-13,Quantus Insights,48.0,42.0,1515.0,LV,False
+2026-01-29,TIPP Insights,45.0,42.0,1126.0,RV,False
+2026-02-10,The Argument/Verasight,53.0,47.0,3003.0,RV,False
+2026-02-10,The Argument/Verasight,53.0,47.0,,LV,False
+2026-02-16,YouGov,47.0,40.0,1509.0,RV,False
+2026-02-16,YouGov,39.0,33.0,1682.0,A,False
+2026-02-09,Morning Consult,45.0,41.0,2200.0,RV,False
+2026-02-16,Ipsos,41.0,37.0,846.0,RV,False
+2026-02-16,Ipsos,36.0,32.0,1117.0,A,False
+2026-02-12,YouGov,44.0,41.0,1149.0,RV,False
+2026-02-18,Big Data Poll,50.0,41.3,1805.0,LV,False
+2026-02-18,Big Data Poll,48.2,40.0,2012.0,RV,False
+2026-02-23,Echelon Insights,50.0,46.0,1002.0,LV,False
+2026-02-20,Verasight,52.0,42.0,1401.0,RV,False
+2026-02-20,Verasight,50.0,40.0,1566.0,A,False
+2026-02-18,Bowling Green State University/YouGov,49.0,41.0,1200.0,RV,False
+2026-02-23,Ipsos,40.0,38.0,3686.0,RV,False
+2026-02-19,Talker Research,42.0,36.0,1000.0,A,False
+2026-02-17,Ipsos,47.0,45.0,2087.0,RV,False
+2026-02-22,Morning Consult,46.0,42.0,2202.0,RV,False
+2026-02-23,YouGov,45.0,41.0,1402.0,RV,False
+2026-02-22,Emerson College,50.4,42.4,1000.0,LV,False
+2026-01-12,The Winston Group,46.0,43.0,1000.0,RV,True
+2026-02-22,Morning Consult,45.0,42.0,26087.0,RV,False
+2026-05-26,Pennsylvania State University McCourtney Institute for Democracy/YouGov,41.0,37.0,862.0,RV,False
+2026-02-23,YouGov,45.0,41.0,1402.0,RV,False
+2026-02-23,YouGov,39.0,34.0,1551.0,A,False
+2026-02-15,Morning Consult,45.0,42.0,12505.0,RV,False
+2025-09-01,The Winston Group,47.0,43.0,1000.0,RV,True
+2025-10-16,The Winston Group,47.0,43.0,1000.0,RV,True
+2025-11-17,The Winston Group,47.0,42.0,1000.0,RV,True
+2026-02-28,The Public Sentiment Institute,50.0,41.0,249.0,LV,False
+2026-02-28,The Public Sentiment Institute,41.0,33.0,316.0,RV,False
+2026-03-03,Quantus Insights,48.0,42.0,1624.0,LV,False
+2026-02-23,Ipsos,40.0,38.0,3686.0,RV,False
+2026-02-23,Ipsos,35.0,32.0,4638.0,A,False
+2026-03-02,YouGov,45.0,41.0,1366.0,RV,False
+2026-03-02,YouGov,40.0,33.0,1515.0,A,False
+2026-02-27,YouGov,45.0,40.0,1523.0,RV,False
+2026-02-26,HarrisX/Harris,50.0,50.0,,LV,False
+2026-02-26,HarrisX/Harris,50.0,50.0,1999.0,RV,False
+2025-07-29,Grayhouse,47.0,44.0,2000.0,RV,True
+2025-12-08,Grayhouse,45.0,41.0,2058.0,RV,True
+2026-02-23,Grayhouse,43.0,40.0,1394.0,RV,True
+2026-03-05,RMG Research,46.0,46.0,2000.0,RV,False
+2026-02-26,Cygnal,48.0,45.0,1048.0,LV,True
+2026-03-03,Hart Research Associates/Public Opinion Strategies,50.0,44.0,1000.0,RV,False
+2026-03-04,Marist University,53.0,44.0,1392.0,RV,False
+2026-02-23,Pennsylvania State University McCourtney Institute for Democracy/YouGov,42.0,37.0,824.0,RV,False
+2026-03-09,YouGov,45.0,42.0,1405.0,RV,False
+2026-03-09,YouGov,40.0,36.0,1563.0,A,False
+2026-03-04,Cygnal,49.0,45.0,1500.0,LV,False
+2026-03-08,Morning Consult,47.0,43.0,2202.0,RV,False
+2026-03-10,Focaldata,48.0,42.0,1534.0,RV,False
+2026-03-10,Focaldata,45.0,39.0,1782.0,A,False
+2026-02-27,TIPP Insights,46.0,44.0,1264.0,RV,False
+2026-03-09,McLaughlin & Associates,47.0,43.0,1000.0,LV,False
+2026-03-05,Noble Predictive Insights,44.0,43.0,2659.0,RV,False
+2026-03-07,Clarity Campaign Labs,47.0,43.0,1004.0,LV,False
+2026-03-16,Echelon Insights,49.0,44.0,1033.0,LV,False
+2026-06-02,The Bullfinch Group,41.0,34.0,1200.0,A,False
+2026-06-04,RMG Research,49.0,45.0,2000.0,RV,False
+2026-03-16,Morning Consult,48.0,40.0,2201.0,RV,False
+2026-03-15,Morning Consult,45.0,42.0,26634.0,RV,False
+2026-03-16,YouGov,43.0,41.0,1427.0,RV,False
+2026-03-16,YouGov,39.0,35.0,1593.0,A,False
+2026-03-19,Ipsos,35.0,32.0,1545.0,A,False
+2026-03-18,Quantus Insights,47.0,42.0,1053.0,LV,False
+2026-03-17,Emerson College,49.2,41.5,1000.0,LV,False
+2026-03-19,Ipsos,40.0,37.0,1206.0,RV,False
+2026-03-19,Ipsos,35.0,32.0,1545.0,A,False
+2026-03-18,John Zogby Strategies,46.0,46.0,1000.0,LV,False
+2026-03-17,The Argument/Verasight,54.0,46.0,1519.0,RV,False
+2026-03-24,Big Data Poll,48.0,40.0,3003.0,RV,False
+2026-03-23,Quinnipiac University,51.0,40.0,1191.0,RV,False
+2026-03-26,Quantus Insights,47.0,41.3,1470.0,LV,False
+2026-03-26,HarrisX/Harris,52.0,48.0,,LV,False
+2026-03-26,HarrisX/Harris,51.0,49.0,2009.0,RV,False
+2026-03-30,YouGov,45.0,39.0,1502.0,RV,False
+2026-03-30,YouGov,39.0,33.0,1674.0,A,False
+2026-03-22,Morning Consult,47.0,42.0,15029.0,A,False
+2026-03-30,CNN/SSRS,48.0,42.0,951.0,RV,False
+2026-03-29,Morning Consult,45.0,42.0,26725.0,RV,False
+2026-04-03,Cygnal,49.0,43.0,1500.0,LV,False
+2026-04-06,Morning Consult,45.0,42.0,2200.0,RV,False
+2026-03-29,Morning Consult,45.0,42.0,26725.0,RV,False
+2026-04-06,YouGov,44.0,42.0,1558.0,RV,False
+2026-04-06,YouGov,38.0,36.0,1745.0,A,False
+2026-04-09,RMG Research,49.0,44.0,2000.0,RV,False
+2026-03-17,The Winston Group,49.0,40.0,1000.0,RV,True
+2026-03-30,University of Massachusetts Lowell Center for Public Opinion/YouGov,38.0,35.0,1000.0,A,False
+2026-04-13,YouGov,45.0,40.0,1571.0,RV,False
+2026-04-13,YouGov,38.0,35.0,1745.0,A,False
+2026-04-09,Morning Consult,46.0,42.0,2200.0,RV,False
+2026-03-23,Yale Youth Poll,46.0,44.0,3429.0,RV,False
+2026-03-20,Impact Research/BSP Research,45.0,41.0,1000.0,LV,False
+2026-03-15,Survey 160,48.0,38.0,1546.0,RV,False
+2026-04-15,McLaughlin & Associates,47.0,43.0,1000.0,LV,False
+2026-04-20,Morning Consult,45.0,42.0,2203.0,RV,False
+2026-04-05,Morning Consult,45.0,42.0,12505.0,RV,False
+2026-04-12,Morning Consult,46.0,42.0,12505.0,RV,False
+2026-04-19,Morning Consult,45.0,42.0,27869.0,RV,False
+2026-04-14,Verasight,50.0,43.0,1386.0,RV,False
+2026-04-14,Verasight,49.0,41.0,1514.0,A,False
+2026-04-09,Echelon Insights,50.0,45.0,2880.0,LV,False
+2026-04-20,YouGov,45.0,40.0,1549.0,RV,False
+2026-04-20,YouGov,39.0,33.0,1703.0,A,False
+2026-04-20,Ipsos,41.0,38.0,3577.0,RV,False
+2026-04-20,Echelon Insights,50.0,44.0,1012.0,LV,False
+2026-04-20,Ipsos,41.0,38.0,3577.0,RV,False
+2026-04-20,Ipsos,35.0,31.0,4557.0,A,False
+2026-04-16,Marquette University Law School,53.0,43.0,576.0,LV,False
+2026-04-16,Marquette University Law School,48.0,44.0,870.0,RV,False
+2026-04-16,Marquette University Law School,44.0,41.0,982.0,A,False
+2026-04-13,Survey 160,47.0,37.0,1539.0,RV,False
+2026-04-19,Hart Research Associates/Public Opinion Strategies,49.0,45.0,1000.0,RV,False
+2026-04-18,John Zogby Strategies,48.0,44.0,1001.0,LV,False
+2026-04-20,Beacon Research/Shaw & Co. Research,52.0,47.0,1001.0,RV,False
+2026-04-23,Quantus Insights,47.0,42.0,1452.0,LV,False
+2026-04-26,Morning Consult,45.0,42.0,28235.0,RV,False
+2026-04-27,Morning Consult,45.0,42.0,2201.0,RV,False
+2026-04-27,YouGov,46.0,41.0,1645.0,RV,False
+2026-04-27,YouGov,39.0,34.0,1834.0,A,False
+2026-04-27,Ipsos,41.0,37.0,1014.0,RV,False
+2026-04-27,Ipsos,36.0,31.0,1269.0,A,False
+2026-04-26,HarrisX/Harris,50.0,50.0,,LV,False
+2026-04-26,HarrisX/Harris,50.0,50.0,2745.0,RV,False
+2026-04-26,Emerson College,50.3,40.2,1000.0,LV,False
+2026-04-20,Leger,52.0,42.0,1004.0,A,False
+2026-04-23,The Argument/Verasight,53.0,47.0,1000.0,LV,False
+2026-04-19,KFF,43.0,34.0,1107.0,RV,False
+2026-04-28,Big Data Poll,50.4,39.4,2874.0,LV,False
+2026-04-28,Big Data Poll,47.7,37.1,3176.0,RV,False
+2026-04-28,Ipsos,49.0,44.0,2059.0,RV,False
+2026-03-12,Change Research,47.0,41.0,1540.0,RV,False
+2026-04-27,Public Opinion Strategies,44.0,41.0,1000.0,RV,False
+2026-02-18,Change Research,43.0,40.0,1741.0,RV,False
+2026-05-04,YouGov,44.0,41.0,1406.0,RV,False
+2026-05-04,YouGov,38.0,34.0,1570.0,A,False
+2026-05-03,Morning Consult,46.0,43.0,2200.0,RV,False
+2026-04-24,Clarity Campaign Labs,50.0,45.0,1000.0,LV,False
+2026-04-30,Marist University,52.0,42.0,1155.0,RV,False
+2026-05-05,HarrisX,48.0,46.0,1891.0,LV,False
+2026-05-05,HarrisX,46.0,45.0,2359.0,RV,False
+2026-05-05,HarrisX,46.0,45.0,2569.0,A,False
+2026-05-06,RMG Research,50.0,41.0,2000.0,RV,False
+2026-05-05,Focaldata,51.862,44.4652,3017.0,RV,False
+2026-05-05,Focaldata,46.436,38.7615,3612.0,A,False
+2026-05-11,Ipsos,41.0,35.0,993.0,RV,False
+2026-05-11,Ipsos,36.0,31.0,1254.0,A,False
+2026-04-09,Tavern Research,44.0,43.0,502.0,LV,False
+2026-05-07,AtlasIntel,54.6,40.1,2069.0,A,False
+2026-05-04,CNN/SSRS,45.0,42.0,,RV,False
+2026-05-11,YouGov,45.0,40.0,1408.0,RV,False
+2026-05-11,YouGov,37.0,34.0,1547.0,A,False
+2026-04-15,GBAO Strategies,48.0,40.0,2000.0,RV,False
+2026-05-06,Cygnal,48.5,42.4,1500.0,LV,False
+2026-04-07,Change Research,47.0,42.0,2702.0,RV,False
+2026-05-15,The New York Times/Siena University,49.5,39.1,1507.0,RV,False
+2026-05-18,Ipsos,39.0,38.0,984.0,RV,False
+2026-05-18,Ipsos,35.0,31.0,1271.0,A,False
+2026-05-18,Echelon Insights,51.0,43.0,1008.0,LV,False
+2026-05-18,YouGov,46.0,43.0,1375.0,RV,False
+2026-05-18,YouGov,40.0,35.0,1543.0,A,False
+2026-05-15,YouGov,45.0,40.0,1397.0,RV,False
+2026-05-18,Quinnipiac University,50.0,39.0,1106.0,RV,False
+2026-05-18,Data for Progress,51.0,43.0,1149.0,LV,False
+2026-05-22,John Zogby Strategies,49.0,42.0,,LV,False
+2026-05-17,Morning Consult,47.0,41.0,2203.0,RV,False
+2026-05-17,Morning Consult,46.0,42.0,28525.0,RV,False
+2026-05-20,Verasight/Morris Predictive Insights,52.0,41.0,2000.0,A,False
+2026-05-18,Impact Research/National Research,48.0,40.0,1500.0,RV,False
+2026-05-18,McLaughlin & Associates,46.0,42.0,1000.0,LV,False
+2026-05-20,Rasmussen Reports,47.0,41.0,2161.0,LV,False
+2026-05-19,Verasight,51.0,43.0,1413.0,RV,False
+2026-05-19,Verasight,51.0,41.0,1520.0,A,False
+2026-05-07,Cygnal,48.0,41.0,1500.0,LV,True
+2026-05-26,YouGov,46.0,41.0,1393.0,RV,False
+2026-05-26,YouGov,39.0,33.0,1514.0,A,False
+2026-05-25,Emerson College,49.8,41.3,1000.0,LV,False
+2026-05-27,Big Data Poll,50.3,39.4,2874.0,LV,False
+2026-05-27,Big Data Poll,48.3,38.0,3176.0,RV,False
+2026-05-24,Morning Consult,46.0,42.0,24849.0,RV,False
+2026-05-24,Morning Consult,46.0,42.0,29255.0,RV,False
+2026-05-26,Marquette University Law School,49.0,48.0,576.0,LV,False
+2026-05-26,Marquette University Law School,46.0,45.0,857.0,RV,False
+2026-05-26,Marquette University Law School,45.0,41.0,1001.0,A,False
+2026-05-31,HarrisX/Harris,51.0,49.0,1725.0,RV,False
+2026-06-01,YouGov,46.0,42.0,1452.0,RV,False
+2026-06-01,YouGov,41.0,35.0,1603.0,A,False
+2026-06-02,The Bullfinch Group,42.0,36.0,1000.0,RV,False
+2026-06-08,YouGov,45.0,41.0,1437.0,RV,False
+2026-06-08,YouGov,37.0,33.0,1567.0,A,False
+2026-06-08,Ipsos,41.0,37.0,3578.0,RV,False
+2026-06-08,Ipsos,35.0,31.0,4531.0,A,False
+2026-06-01,Focaldata,48.0,43.0,1537.0,RV,False
+2026-06-01,Focaldata,45.0,42.0,1719.0,A,False
+2026-05-31,Morning Consult,45.0,42.0,,RV,False
+2026-06-07,Morning Consult,46.0,42.0,24849.0,RV,False
+2026-06-03,The Argument/Verasight,53.0,47.0,3008.0,RV,False
+2026-06-03,Cygnal,49.0,44.0,1500.0,LV,False
+2026-06-08,Emerson College,50.3,39.5,1200.0,LV,False
+2026-06-07,HarrisX,46.0,45.0,1137.0,LV,False
+2026-06-04,Noble Predictive Insights,47.0,41.0,2585.0,RV,False
+2026-06-07,HarrisX,44.0,43.0,1392.0,RV,False
+2026-06-07,HarrisX,43.0,42.0,2010.0,A,False
+2026-06-05,Clarity Campaign Labs,48.0,45.0,1045.0,LV,False
+2026-06-07,Hart Research Associates/Public Opinion Strategies,49.0,44.0,2400.0,RV,False
+2026-05-28,TIPP Insights,46.0,41.0,1332.0,RV,False
+2026-06-13,The Public Sentiment Institute,50.0,41.0,1023.0,LV,False
+2026-06-13,The Public Sentiment Institute,43.0,34.0,1042.0,RV,False
+2026-05-10,Change Research,45.0,42.0,2244.0,RV,False
+2026-06-06,Research Co.,38.0,33.0,1001.0,A,False
+2026-06-15,Ipsos,41.0,38.0,1195.0,RV,False
+2026-06-15,Ipsos,35.0,31.0,1537.0,A,False
+2026-06-15,YouGov,46.0,44.0,1402.0,RV,False
+2026-06-15,YouGov,39.0,36.0,1547.0,A,False
+2026-06-14,Echelon Insights,50.0,44.0,1012.0,LV,False
+2026-05-18,McLaughlin & Associates,39.0,36.0,2000.0,RV,True
+2026-06-17,Quantus Insights,47.0,43.0,1000.0,LV,False
+2026-05-18,The Rainey Center,45.0,43.0,1010.0,RV,False
+2026-06-16,The Bullfinch Group,44.0,36.0,1000.0,RV,False
+2026-06-16,The Bullfinch Group,43.0,34.0,1200.0,A,False
+2026-06-22,YouGov,45.0,43.0,1517.0,RV,False
+2026-06-22,YouGov,38.0,35.0,1679.0,A,False
+2026-06-22,Ipsos,41.0,36.0,978.0,RV,False
+2026-06-22,Echelon Insights,51.0,45.0,1003.0,LV,False
+2026-06-22,Verasight,50.0,43.0,1896.0,RV,False
+2026-06-22,Morning Consult,46.0,42.0,,RV,False
+2026-06-15,Marquette University Law School,53.0,45.0,827.0,LV,False
+2026-06-14,Morning Consult,45.8,41.9,24000.0,RV,False
+2026-06-29,YouGov,45.0,42.0,1426.0,RV,False
+2026-06-28,Big Data Poll,50.2,41.0,2604.0,LV,False
+2026-05-18,Bedrock Polling,45.0,43.0,1010.0,RV,False
+2026-06-02,The Winston Group,48.0,41.0,1000.0,RV,True
+2026-06-30,Focaldata,50.0,43.0,1795.0,RV,False
+2025-12-28,Morning Consult,44.0,44.0,24000.0,RV,False
+2026-05-03,Morning Consult,46.0,43.0,24000.0,RV,False
+2026-05-10,Morning Consult,45.0,42.0,24000.0,RV,False
+2026-07-12,Morning Consult,46.0,43.0,24000.0,RV,False
+2026-08-16,Noble Predictive Insights,47.0,42.0,2533.0,RV,False
+2026-08-24,Ipsos,41.0,35.0,951.0,RV,False
+2026-08-24,Ipsos,35.0,29.0,1215.0,A,False
+2026-08-24,YouGov,46.0,40.0,1377.0,RV,False
+2026-08-24,YouGov,37.0,31.0,1534.0,A,False
+2026-09-06,Morning Consult,46.0,42.0,2203.0,RV,False
+2026-09-08,YouGov,49.0,38.0,1015.0,LV,False
+2026-09-22,The Argument/Verasight,55.0,45.0,,LV,False
+2026-09-28,HarrisX/Harris,51.0,49.0,,LV,False
+2026-10-02,YouGov - CBS News,54.0,45.0,1572.0,LV,False
+2026-10-04,Pew Research Center,44.0,36.0,3917.0,RV,False

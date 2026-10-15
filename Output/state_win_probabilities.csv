@@ -1,0 +1,36 @@
+State,Incumbent party,Seat status,Projected margin,P(Dem win),P(Rep win),Rating
+Massachusetts,D,running,D+31.6,1.0,0.0,Safe D
+Rhode Island,D,running,D+30.2,0.9999,9.999999999998899e-05,Safe D
+Delaware,D,running,D+25.5,0.9965,0.0034999999999999476,Safe D
+Oregon,D,running,D+25.5,0.9962,0.0038000000000000256,Safe D
+Illinois,D,open,D+17.3,0.9952,0.0048000000000000265,Safe D
+Colorado,D,running,D+21.5,0.9942,0.005800000000000027,Safe D
+New Mexico,D,running,D+11.5,0.9856,0.014399999999999968,Safe D
+New Jersey,D,running,D+17.5,0.9845,0.015499999999999958,Safe D
+North Carolina,R,open,D+8.9,0.9789,0.021100000000000008,Safe D
+Virginia,D,running,D+15.5,0.9779,0.02210000000000001,Safe D
+New Hampshire,D,open,D+8.6,0.974,0.026000000000000023,Safe D
+Georgia,D,running,D+8.5,0.9732,0.026800000000000046,Safe D
+Minnesota,D,open,D+6.8,0.9441,0.05589999999999995,Safe D
+Maine,R,running,D+5.5,0.9216,0.07840000000000003,Safe D
+Michigan,D,open,D+4.5,0.8798,0.12019999999999997,Safe D
+Ohio,R,appointed,D+1.5,0.6544,0.3456,Lean D
+Texas,R,open,D+0.9,0.6051,0.39490000000000003,Lean D
+Alaska,R,running,D+0.0,0.4955,0.5045,Toss-up
+Iowa,R,open,R+0.7,0.4221,0.5779000000000001,Toss-up
+Kansas,R,running,R+2.4,0.256,0.744,Likely R
+Nebraska (Ind),R,running,R+3.7,0.1848,0.8152,Likely R
+South Carolina,R,appointed,R+4.6,0.134,0.866,Safe R
+Florida,R,appointed,R+5.4,0.0887,0.9113,Safe R
+Louisiana,R,open,R+10.7,0.0217,0.9783,Safe R
+Mississippi,R,running,R+12.7,0.0108,0.9892,Safe R
+South Dakota,R,running,R+13.1,0.0097,0.9903,Safe R
+Montana,R,open,R+16.3,0.0057,0.9943,Safe R
+Arkansas,R,running,R+15.9,0.0056,0.9944,Safe R
+Kentucky,R,open,R+16.3,0.0054,0.9946,Safe R
+Oklahoma,R,open,R+26.5,0.0037,0.9963,Safe R
+Alabama,R,open,R+22.1,0.0018,0.9982,Safe R
+Wyoming,R,open,R+38.5,0.001,0.999,Safe R
+Tennessee,R,running,R+25.1,0.0008,0.9992,Safe R
+West Virginia,R,running,R+36.5,0.0007,0.9993,Safe R
+Idaho,R,running,R+28.6,0.0003,0.9997,Safe R
