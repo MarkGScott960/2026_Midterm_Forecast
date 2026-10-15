@@ -137,13 +137,26 @@
     "Adults": 0.8
   },
   "NAT_PARTISAN_WEIGHT": 0.6,
+  "NAT_NET_APPROVAL_SHIFT": {
+    "LV": 0.0,
+    "RV": 0.0,
+    "Adults": 0.0
+  },
   "NAT_USE_QUALITY": true,
   "ENV_SLOPE": 0.35,
   "APPROVAL_NEUTRAL_NET": 0.0,
   "MIDTERM_PENALTY": 0.0,
   "USE_GENERIC_BALLOT": true,
   "GENERIC_BALLOT_BLEND": 0.5,
-  "GB_LOOKBACK_DAYS": 60,
+  "GB_LOOKBACK_DAYS": 90,
+  "GB_MIN_POLLS": 10,
+  "GB_POPULATION_PREFERENCE": [
+    "LV",
+    "RV",
+    "A"
+  ],
+  "GB_MARGIN_BASIS": "two_party",
+  "GB_APPLY_RV_SHIFT": true,
   "GB_HALF_LIFE_DAYS": 21,
   "GB_SHIFT": 0.0,
   "GB_API_URL": "https://api.votehub.com/polls?poll_type=generic-ballot",
@@ -169,8 +182,8 @@
   "LEAN_SCALE": 10,
   "STATE_PAIR_CORR_OVERRIDES": {},
   "RATING_TOSSUP": 0.6,
-  "RATING_LEAN": 0.7,
-  "RATING_LIKELY": 0.85,
+  "RATING_LEAN": 0.75,
+  "RATING_LIKELY": 0.95,
   "RUN_SWEEP": true,
   "SWEEP_N_SIMS": 3000,
   "SWEEP_TRACK_STATES": [
