@@ -1,0 +1,37 @@
+section,check,status,detail
+A,source: votehub_senate_cache.csv,WARN,cache (URLError)
+A,source: votehub_generic_ballot_cache.csv,WARN,cache (URLError)
+A,source: votehub_approval_cache.csv,WARN,cache (URLError)
+A,source: kalshi_races_cache.csv,WARN,cache (URLError)
+A,source: kalshi_national_cache.csv,WARN,cache (ValueError)
+A,newest state poll,PASS,2026-10-22 (4 days old)
+A,newest generic ballot poll (VoteHub),WARN,2026-10-04 (22 days old) - Kalshi averages fill the gap
+A,newest approval poll (VoteHub),PASS,2026-10-06 (20 days old)
+A,Kalshi race prices date,PASS,fetched 2026-10-26
+A,Kalshi races found,PASS,35/35
+A,Kalshi races found by title search,PASS,all
+A,Kalshi search agrees with hand table,PASS,all 35 agree
+A,nominees agree with hand table,PASS,all 35 agree
+A,nominees from Kalshi names,PASS,34/35 from Kalshi; hand table used for ['Alaska'] (Kalshi lists party names there)
+A,polls dropped for missing nominees,PASS,0 of 89 polls in the window (old hypothetical match-ups)
+A,weight from ungraded pollsters,PASS,"49 of 89 polls, 49% of poll weight (random grades)"
+A,"national: generic ballot (D-R, two-party)",PASS,5 VoteHub polls (effective 4.1) + Kalshi counted as 5 -> +9.7
+A,national: net approval,PASS,5 VoteHub polls (effective 4.2) + Kalshi counted as 5 -> -21.8
+A,undecided share U used for Kalshi approval,PASS,U = 3.3 pts
+B,probabilities between 0 and 1,PASS,race and Kalshi probabilities
+B,source shares add to 100%,PASS,max error 1.1e-16
+B,no missing race margins,PASS,post_mean / post_sd
+B,seat counts possible,PASS,range 35-69 (possible 34-69)
+B,mean seats = sum of race probabilities,PASS,50.31 vs 50.31
+B,simulation noise on P(51+),PASS,"±1.0% (95% range) with 10,000 simulations"
+B,reliability between 0 and 1,PASS,range 0.00-0.90
+C,coverage: Alaska,WARN,"3 polls (effective 2.3), Kalshi 75%"
+C,coverage: Kansas,WARN,"1 polls (effective 1.0), Kalshi 40%"
+C,coverage: Minnesota,WARN,"3 polls (effective 2.8), Kalshi 84%"
+C,coverage: Nebraska,WARN,"2 polls (effective 1.9), Kalshi 26%"
+C,coverage: South Carolina,WARN,"1 polls (effective 1.0), Kalshi 21%"
+D,model vs Kalshi: Alaska,WARN,"model 29% vs Kalshi 75% (polls D+0.7, fundamentals R+7.5)"
+E,most influential settings,PASS,W_GENERIC_BALLOT: 24%-59%; W_STATE_2024: 26%-62%; W_FUNDAMENTALS: 36%-68%
+E,toggle combinations agree,PASS,P(51+) spread 1.5% across the 4 combinations
+E,stable across random seeds,PASS,"P(51+) range 1.0% over 5 seeds at 10,000 simulations"
+F,week-to-week stability,PASS,largest weekly move 12%

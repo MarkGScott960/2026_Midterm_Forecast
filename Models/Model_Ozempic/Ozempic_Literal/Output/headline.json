@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-10-26",
+  "variant": "Literal",
+  "p_d_51": 0.4823,
+  "exp_d_seats": 50.4866,
+  "median_d_seats": 50.0,
+  "p10": 47.0,
+  "p90": 55.0,
+  "no_kalshi": {
+    "p_d_51": 0.4727,
+    "exp_d_seats": 50.3807,
+    "median_d_seats": 50.0,
+    "p10": 46.0,
+    "p90": 55.0
+  },
+  "kalshi_p_control": 0.635,
+  "kalshi_expected_seats": 51.718,
+  "env": {
+    "gb": 9.024040180849,
+    "n_gb": 5,
+    "net_approval": -22.33578484978896,
+    "appr": 7.817524697426136,
+    "n_appr": 5
+  },
+  "fundamentals": {
+    "share_of_2024_lean_kept": 0.6153846153846154
+  },
+  "config": {
+    "AS_OF_DATE": null,
+    "W_POLLS": 10,
+    "W_FUNDAMENTALS": 5,
+    "W_KALSHI": 1,
+    "WINDOW_DAYS": 28,
+    "WINDOW_OLDEST_WEIGHT": 0.25,
+    "POPULATION_WEIGHTS": {
+      "LV": 1.0,
+      "RV": 0.9,
+      "A": 0.8
+    },
+    "PARTISAN_SHIFT": 3.0,
+    "UNRATED_POLLSTERS": "random",
+    "W_STATE_2024": 8,
+    "W_GENERIC_BALLOT": 4,
+    "W_APPROVAL": 1,
+    "INCUMBENCY_PTS": 3.0
+  }
+}

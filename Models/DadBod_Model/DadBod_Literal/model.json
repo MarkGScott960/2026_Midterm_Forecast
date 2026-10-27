@@ -1,0 +1,16 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "dadbod_literal",
+  "name": "DadBod (Literal)",
+  "family": "DadBod",
+  "variant": "Literal",
+  "order": 31,
+  "notebook": "dadbod_literal.ipynb",
+  "testing_notebooks": [
+    "Model Testing.ipynb"
+  ],
+  "description": "Same as DadBod Swing, but fundamentals = literal 8:4:1 weighted average.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

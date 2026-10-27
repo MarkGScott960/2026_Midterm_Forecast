@@ -1,0 +1,16 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "dadbod_swing",
+  "name": "DadBod (Swing)",
+  "family": "DadBod",
+  "variant": "Swing",
+  "order": 30,
+  "notebook": "dadbod_swing.ipynb",
+  "testing_notebooks": [
+    "Model Testing.ipynb"
+  ],
+  "description": "Ozempic + poll reliability, flooding penalty, house effects, correlated errors, Kalshi national averages, automatic Kalshi discovery.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

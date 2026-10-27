@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "ozempic_swing",
+  "name": "Ozempic (Swing)",
+  "family": "Ozempic",
+  "variant": "Swing",
+  "order": 20,
+  "notebook": "ozempic_swing.ipynb",
+  "testing_notebooks": [],
+  "description": "Slim model: VoteHub polls (28-day window), fixed 10:5:1 blend with Kalshi, uniform-swing fundamentals.",
+  "standard_output": "Output/standard",
+  "testing_checks": null,
+  "enabled": true
+}

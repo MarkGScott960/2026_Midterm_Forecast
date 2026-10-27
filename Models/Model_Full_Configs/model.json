@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "model1",
+  "name": "Model 1 (Full Configs)",
+  "family": "Model 1",
+  "variant": "Full Configs",
+  "order": 10,
+  "notebook": "senate_forecast_model.ipynb",
+  "testing_notebooks": [],
+  "description": "Configurable Bayesian model on the Adler spreadsheet polls; ~90 settings, built-in sensitivity sweep.",
+  "standard_output": "Output/standard",
+  "testing_checks": null,
+  "enabled": true
+}

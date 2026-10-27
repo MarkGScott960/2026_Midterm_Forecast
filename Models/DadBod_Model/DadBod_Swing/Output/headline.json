@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-10-26",
+  "run_at": "2026-10-26 18:32",
+  "variant": "Swing",
+  "p_d_51": 0.5837,
+  "exp_d_seats": 51.2088,
+  "median_d_seats": 51.0,
+  "p10": 48.0,
+  "p90": 55.0,
+  "no_kalshi": {
+    "p_d_51": 0.5737,
+    "exp_d_seats": 51.1764,
+    "median_d_seats": 51.0,
+    "p10": 48.0,
+    "p90": 55.0
+  },
+  "kalshi_p_control": 0.645,
+  "kalshi_expected_seats": 51.733000000000004,
+  "national": {
+    "generic_ballot": 9.678440923193264,
+    "net_approval": -21.8649658170669,
+    "undecided_share_U": 3.2,
+    "kalshi_approve_pct": 37.66698842320632
+  },
+  "fundamentals": {
+    "national_mood_now": 9.003206627453315,
+    "swing_since_2024": 10.483206627453312
+  },
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "config": {
+    "AS_OF_DATE": null,
+    "N_SIMS": 10000,
+    "W_POLLS": 10,
+    "W_FUNDAMENTALS": 5,
+    "W_KALSHI": 1,
+    "POLL_RELIABILITY": "auto",
+    "WINDOW_DAYS": 28,
+    "WINDOW_OLDEST_WEIGHT": 0.25,
+    "POPULATION_WEIGHTS": {
+      "LV": 1.0,
+      "RV": 0.9,
+      "A": 0.8
+    },
+    "REFERENCE_SAMPLE": 800,
+    "SAMPLE_SIZE_EXPONENT": 0.5,
+    "SAMPLE_SIZE_CAP": 2500,
+    "MISSING_SAMPLE_SIZE": 600,
+    "FLOOD_EXPONENT": 0.5,
+    "PARTISAN_SHIFT": 3.0,
+    "UNRATED_POLLSTERS": "random",
+    "HOUSE_EFFECTS": true,
+    "NAT_KALSHI_POLL_EQUIV": 5,
+    "W_GENERIC_BALLOT": 2,
+    "W_APPROVAL": 1,
+    "INCUMBENCY_PTS": 3.0,
+    "CORRELATED_ERRORS": true,
+    "SOURCE_ERROR_CORR": 0.3
+  }
+}

@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="README_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="model-2-ozempic-swing-vs-literal" class="level1">
+<h1>Model 2: Ozempic — Swing vs Literal</h1>
+<p>Ozempic is the slimmed-down version of Model 1 (<code>Models/Model_Full_Configs</code>). It keeps Model 1’s backbone (weighted polls, fundamentals, correlated simulations) but exposes only a handful of weights for the team to argue about, pulls everything live from VoteHub and Kalshi, and reports two numbers:</p>
+<ol type="1">
+<li><strong>P(Democrats hold at least 51 seats)</strong></li>
+<li><strong>Predicted number of Democratic seats</strong> (mean of 10,000 simulations, including caucusing independents)</li>
+</ol>
+<p>It comes in two variants that are <strong>identical except for how the fundamentals are calculated</strong>. Both are here so the group can compare and choose.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Ozempic_Swing</th>
+<th>Ozempic_Literal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fundamentals</td>
+<td>2024 state margin <strong>+ national swing since 2024</strong></td>
+<td><strong>Weighted average</strong> of 2024 state margin, generic ballot, approval (8 : 4 : 1)</td>
+</tr>
+<tr class="even">
+<td><strong>P(D ≥ 51)</strong></td>
+<td><strong>58.0%</strong></td>
+<td><strong>47.7%</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Predicted D seats</strong></td>
+<td><strong>51.3</strong> (median 51, 80% range 48–55)</td>
+<td><strong>50.5</strong> (median 50, 80% range 47–55)</td>
+</tr>
+<tr class="even">
+<td>Same model with Kalshi weight 0</td>
+<td>57.1%, 51.3 seats</td>
+<td>46.6%, 50.4 seats</td>
+</tr>
+<tr class="odd">
+<td>Kalshi on its own</td>
+<td>63.5% (control market), 51.7 seats (sum of race odds)</td>
+<td>same</td>
+</tr>
+</tbody>
+</table>
+<p><em>Numbers as of 2026-10-26, run from the data snapshot in <code>Data_Cache/</code> (VoteHub polls through Oct 22, Kalshi prices from Oct 26). They will change when you re-run with live data.</em></p>
+<hr>
+<section id="contents" class="level2">
+<h2 class="anchored" data-anchor-id="contents">Contents</h2>
+<ul>
+<li><a href="#model-2-ozempic--swing-vs-literal">Model 2: Ozempic — Swing vs Literal</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#1-folder-layout-and-how-to-run">1. Folder layout and how to run</a></li>
+<li><a href="#2-what-changed-from-model-1">2. What changed from Model 1</a>
+<ul>
+<li><a href="#how-each-races-number-is-built">How each race’s number is built</a></li>
+</ul></li>
+<li><a href="#3-the-two-fundamentals-formulas">3. The two fundamentals formulas</a>
+<ul>
+<li><a href="#swing-ozempic_swing">Swing (<code>Ozempic_Swing</code>)</a></li>
+<li><a href="#literal-ozempic_literal">Literal (<code>Ozempic_Literal</code>)</a></li>
+<li><a href="#worked-examples">Worked examples</a></li>
+</ul></li>
+<li><a href="#4-why-the-variants-disagree">4. Why the variants disagree</a></li>
+<li><a href="#5-arguments-for-each">5. Arguments for each</a></li>
+<li><a href="#6-race-by-race-comparison">6. Race-by-race comparison</a></li>
+<li><a href="#7-what-the-sweep-says">7. What the sweep says</a></li>
+<li><a href="#8-data-notes-and-known-limitations">8. Data notes and known limitations</a></li>
+<li><a href="#9-decisions-for-the-group">9. Decisions for the group</a></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="folder-layout-and-how-to-run" class="level2">
+<h2 class="anchored" data-anchor-id="folder-layout-and-how-to-run">1. Folder layout and how to run</h2>
+<pre><code>Models/Model_Ozempic/
+├── README.md                     &lt;- this file
+├── Data_Cache/                   &lt;- last good API pulls (shared by both variants)
+│   ├── votehub_senate_cache.csv
+│   ├── votehub_generic_ballot_cache.csv
+│   ├── votehub_approval_cache.csv
+│   └── kalshi_cache.csv
+├── Ozempic_Swing/
+│   ├── ozempic_swing.ipynb
+│   └── Output/                   &lt;- results for this variant
+└── Ozempic_Literal/
+    ├── ozempic_literal.ipynb
+    └── Output/</code></pre>
+<p>New shared inputs in <code>Data/</code>: - <code>pres_2024_results.csv</code>: Trump % and Harris % by state, plus a National row (certified results, from Wikipedia’s results-by-state table) - <code>votehub_pollster_scorecards.csv</code>: VoteHub’s grade, percent error and house effect for the 42 pollsters it scores, with an <code>Aliases</code> column mapping them to the names VoteHub’s poll API uses (for example, “Siena-NYT” ↔︎ “The New York Times/Siena University”)</p>
+<p><strong>To run:</strong> open either notebook, edit <code>CONFIG</code> if you want, and <em>Run All</em>. The notebook finds the repo root by walking up to the folder that contains <code>Data/</code>, so it works no matter where Jupyter starts. It needs <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code> and <code>scipy</code>; the API calls use Python’s built-in <code>urllib</code>.</p>
+<p>Each run writes these files to its own <code>Output/</code>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>headline.json</code></td>
+<td>The two numbers, the no-Kalshi comparison, Kalshi’s numbers, national signals, and the CONFIG used</td>
+</tr>
+<tr class="even">
+<td><code>race_table.csv</code></td>
+<td>Every race: 2024 margin, polling average, fundamentals, Kalshi’s implied margin, each source’s share, final margin, P(win), Kalshi’s P, rating</td>
+</tr>
+<tr class="odd">
+<td><code>polls_used.csv</code></td>
+<td>Every poll that made it into the window, with each weighting factor</td>
+</tr>
+<tr class="even">
+<td><code>seat_distribution.csv</code> / <code>.png</code></td>
+<td>Seat histogram</td>
+</tr>
+<tr class="odd">
+<td><code>model_vs_kalshi.png</code></td>
+<td>Model P(win) vs Kalshi P(win) per race</td>
+</tr>
+<tr class="even">
+<td><code>sensitivity_sweep.csv</code> / <code>sensitivity_tornado.png</code></td>
+<td>One-at-a-time sweep over CONFIG</td>
+</tr>
+</tbody>
+</table>
+<p>If VoteHub or Kalshi is unreachable, the notebook says so and falls back to <code>Data_Cache/</code>. Every successful pull refreshes the cache.</p>
+<hr>
+</section>
+<section id="what-changed-from-model-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-changed-from-model-1">2. What changed from Model 1</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Model 1 (Full Configs)</th>
+<th>Ozempic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>State polls</td>
+<td><code>Midterm_Polls.xlsx</code> (hand-entered)</td>
+<td><strong>VoteHub API only</strong> (<code>poll_type=us-senator</code>), per the meeting notes</td>
+</tr>
+<tr class="even">
+<td>Poll age</td>
+<td>All polls, exponential decay (21-day half-life)</td>
+<td><strong>Last 28 days only</strong>, weight falls linearly from 100% today to 25% at day 28</td>
+</tr>
+<tr class="odd">
+<td>Combining sources</td>
+<td>Bayesian: prior and polls weighted by precision</td>
+<td><strong>Fixed weights: Polls 10 : Fundamentals 5 : Kalshi 1</strong></td>
+</tr>
+<tr class="even">
+<td>Fundamentals</td>
+<td>PVI × 2 + national environment + incumbency (±2)</td>
+<td>2024 presidential margin based (two variants) + <strong>incumbency ±3</strong></td>
+</tr>
+<tr class="odd">
+<td>Kalshi</td>
+<td>Not used</td>
+<td><strong>Input at weight 1 plus a side-by-side comparison</strong></td>
+</tr>
+<tr class="even">
+<td>LV / RV / Adults</td>
+<td>1.0 / 0.85 / 0.7</td>
+<td><strong>1.0 / 0.9 / 0.8</strong> (blackboard 100:90)</td>
+</tr>
+<tr class="odd">
+<td>Partisan sponsor</td>
+<td>Weight × 0.6 and shift 3 pts</td>
+<td><strong>Shift 3 pts against the sponsor</strong>, no weight penalty</td>
+</tr>
+<tr class="even">
+<td>Pollster quality</td>
+<td>Spreadsheet rank 5–10</td>
+<td>VoteHub grade → same 5–10 scale (A+ 10, A 9, B 8, C 7, D 6, unrated 5)</td>
+</tr>
+<tr class="odd">
+<td>Accuracy</td>
+<td>Column was blank, so no effect</td>
+<td>VoteHub “percent error”: <code>(median / pollster)²</code>, clipped to 0.5–2</td>
+</tr>
+<tr class="even">
+<td>Same pollster polling a state repeatedly</td>
+<td>Flood penalty <code>1/√k</code></td>
+<td><strong>None</strong>: every poll counts on its own (the Alaska point from the meeting)</td>
+</tr>
+<tr class="odd">
+<td>Number of settings</td>
+<td>~90</td>
+<td><strong>10 in CONFIG</strong> (Swing) / 11 (Literal)</td>
+</tr>
+</tbody>
+</table>
+<p>Carried over unchanged from Model 1: the Senate map, holdover seats, incumbent status, Osborn’s 80% chance of caucusing with Democrats, the undecided-voter treatment, poll error constants, Student-t errors with a shared tail, and the region + lean correlation structure. Keeping these the same means the difference between the models comes from the changes above, not from the simulation machinery.</p>
+<section id="how-each-races-number-is-built" class="level3">
+<h3 class="anchored" data-anchor-id="how-each-races-number-is-built">How each race’s number is built</h3>
+<pre><code>polls_s   = weighted average of the state's polls in the last 28 days (after the partisan shift)
+fund_s    = Swing or Literal formula (section 3)
+kalshi_s  = Φ⁻¹(Kalshi P) × σ_s       &lt;- the margin that would give Kalshi's probability under our own uncertainty
+
+margin_s  = (10·polls_s + 5·fund_s + 1·kalshi_s) / 16       (weights renormalize if a source is missing)</code></pre>
+<p>So a race with polls gets 62.5% polls, 31.25% fundamentals and 6.25% Kalshi. A race with no polls in the window (Colorado, Delaware, Oregon, New Jersey, Virginia, Kentucky, Louisiana, Tennessee, Oklahoma, Idaho, West Virginia, Wyoming) gets 83% fundamentals and 17% Kalshi.</p>
+<p><strong>Kalshi.</strong> Kalshi has markets for all 35 races. The notebook reads each race’s Republican market and uses P(opposition) = 1 − P(R), which handles three-way races such as Nebraska (Osborn) and Montana (Bodnar). Kalshi’s tickers are <strong>not consistent</strong>: Kentucky is under <code>SENATELA-26</code>, Louisiana under <code>KXSENATELA-26NOV</code>, and Florida and Ohio under <code>SENATEFLS-26</code> and <code>SENATEOHS-26</code>. Each race’s ticker is therefore spelled out in <code>SETTINGS["KALSHI_EVENTS"]</code>, and all 35 were checked by hand on Oct 26. At weight 1 of 16, Kalshi moves P(51+) by about one point. Its main use is the comparison.</p>
+<hr>
+</section>
+</section>
+<section id="the-two-fundamentals-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="the-two-fundamentals-formulas">3. The two fundamentals formulas</h2>
+<p>Notation: <code>margin2024_s</code> = Harris − Trump in the state; <code>GB</code> = generic-ballot margin (D − R, two-party); <code>AP</code> = approval converted to a margin = <code>0.35 × −(net approval)</code>; <code>inc</code> = ±3 toward an incumbent on the ballot, 0 for open seats.</p>
+<p>Today’s national inputs are the same in both variants: <strong>GB = D+9.0</strong> and <strong>net approval −22.3 → AP = D+7.8</strong>.</p>
+<section id="swing-ozempic_swing" class="level3">
+<h3 class="anchored" data-anchor-id="swing-ozempic_swing">Swing (<code>Ozempic_Swing</code>)</h3>
+<pre><code>national_now = (2·GB + 1·AP) / 3                       = D+8.6
+swing        = national_now − (Harris−Trump nationally, 2024 = R+1.5)   = +10.1 toward D
+fund_s       = margin2024_s + swing + inc</code></pre>
+<p>This is a <strong>uniform swing</strong>: every state starts from its own 2024 result and moves by however much the country has moved since 2024. The weights (GB 2, approval 1) decide only how the two national signals average into “today’s national environment”. The 2024 state margin is the starting point, not a weighted term.</p>
+</section>
+<section id="literal-ozempic_literal" class="level3">
+<h3 class="anchored" data-anchor-id="literal-ozempic_literal">Literal (<code>Ozempic_Literal</code>)</h3>
+<pre><code>fund_s = (8·margin2024_s + 4·GB + 1·AP) / 13 + inc</code></pre>
+<p>This is the blackboard formula taken at face value: a weighted average of the three numbers.</p>
+</section>
+<section id="worked-examples" class="level3">
+<h3 class="anchored" data-anchor-id="worked-examples">Worked examples</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>State</th>
+<th>2024</th>
+<th>Swing fundamentals</th>
+<th>Literal fundamentals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Maine (Collins running, −3)</td>
+<td>D+6.9</td>
+<td>6.9 + 10.1 − 3 = <strong>D+14.0</strong></td>
+<td>(8·6.9 + 4·9.0 + 7.8)/13 − 3 = <strong>D+4.6</strong></td>
+</tr>
+<tr class="even">
+<td>Texas (open)</td>
+<td>R+13.7</td>
+<td>−13.7 + 10.1 = <strong>R+3.6</strong></td>
+<td>(8·−13.7 + 36 + 7.8)/13 = <strong>R+5.0</strong></td>
+</tr>
+<tr class="odd">
+<td>Wyoming (open)</td>
+<td>R+45.8</td>
+<td>−45.8 + 10.1 = <strong>R+35.7</strong></td>
+<td>(8·−45.8 + 43.8)/13 = <strong>R+24.8</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="why-the-variants-disagree" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-variants-disagree">4. Why the variants disagree</h2>
+<p>The two formulas treat the 2024 baseline differently.</p>
+<ul>
+<li><strong>Swing</strong> passes the full national shift (+10.1) through to every state.</li>
+<li><strong>Literal</strong> uses GB and approval as stand-ins for the state’s own margin, with 5/13 ≈ 38% of the weight. It also never subtracts 2024’s national result, so in effect it does two things at once:
+<ol type="1">
+<li>It <strong>shrinks every state’s lean by 38% toward zero</strong>. Wyoming’s R+46 becomes R+25.</li>
+<li>It <strong>adds only 38% of today’s national margin</strong>, not the full change since 2024.</li>
+</ol></li>
+</ul>
+<p>Setting the two equal shows where they cross:</p>
+<pre><code>margin2024 + 10.1  =  (8·margin2024 + 43.8) / 13      →   margin2024 = R+17.5</code></pre>
+<ul>
+<li><strong>For every state bluer than R+17.5 in 2024</strong>, Literal is more Republican than Swing. That covers every competitive race this year: Maine, Michigan, Ohio, Texas, Iowa, Alaska, North Carolina, Georgia, New Hampshire, Minnesota.</li>
+<li><strong>For states redder than R+17.5</strong>, Literal is more Democratic. Those races are all Safe R either way, so the extra Democratic margin wins nothing.</li>
+</ul>
+<p>That asymmetry explains the 10-point gap in P(51+). Literal costs Democrats ground exactly where control is decided and gives it back where it doesn’t matter.</p>
+<p>A second way to see it: under Literal, a perfectly neutral national environment (GB = 0, AP = 0) would still put Wyoming at only R+28 and Massachusetts at only D+15. The formula builds in a pull toward 50-50 for every state, whatever the national mood.</p>
+<hr>
+</section>
+<section id="arguments-for-each" class="level2">
+<h2 class="anchored" data-anchor-id="arguments-for-each">5. Arguments for each</h2>
+<p><strong>For Swing</strong> - It is the standard way fundamentals models use past results (uniform national swing). Its assumptions are easy to state: states keep their relative partisanship, and the whole map moves with the national mood. - Units are consistent. A state margin plus a change in national margin is still a state margin. Literal averages a state number with two national numbers, which are different quantities. - The weights mean what they say: GB 2 : approval 1 is “how do we measure the national mood?” - It matches the meeting priorities: 2024 state margin “heavily” (it is the full baseline), generic ballot “heavily” (2 of 3 of the national signal), sentiment “weighted less”.</p>
+<p><strong>For Literal</strong> - It is exactly what we wrote on the board, which makes it easy to explain in the presentation. - Shrinking toward the national average is a crude form of regression to the mean. 2024 was a single, candidate-specific election, and Senate races are less nationalized than presidential ones (Collins, Osborn, Peltola and Brown all run ahead of their party). Partly forgetting 2024 has some logic. - It leans less on a single national number. If the generic ballot is overstating Democrats, Literal is hurt less.</p>
+<p><strong>Caveats on both:</strong> the polls carry 62.5% of each race’s margin, so the fundamentals formula only matters where polls are thin or disagree with fundamentals. Maine, Michigan and Minnesota are where it matters most (section 6).</p>
+<p><strong>If the group likes Literal’s “don’t trust 2024 completely” idea</strong> but not its side effects, a middle ground is Swing with a lower <code>W_FUNDAMENTALS</code>. That trusts the polls more without shrinking safe states toward 50-50. The sweep shows P(51+) rising from 58% to 66% when <code>W_FUNDAMENTALS</code> goes from 5 to 2.5.</p>
+<hr>
+</section>
+<section id="race-by-race-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="race-by-race-comparison">6. Race-by-race comparison</h2>
+<p>The competitive races, sorted by how much the two variants differ:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>State</th>
+<th>2024</th>
+<th>Polls (28 d)</th>
+<th>Fund. Swing</th>
+<th>Fund. Literal</th>
+<th>P(D) Swing</th>
+<th>P(D) Literal</th>
+<th>Kalshi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Maine</td>
+<td>D+6.9</td>
+<td>D+1.7</td>
+<td>D+14.0</td>
+<td>D+4.6</td>
+<td>93%</td>
+<td>77%</td>
+<td>60%</td>
+</tr>
+<tr class="even">
+<td>Michigan</td>
+<td>R+1.4</td>
+<td>D+2.0</td>
+<td>D+8.7</td>
+<td>D+2.5</td>
+<td>87%</td>
+<td>73%</td>
+<td>66%</td>
+</tr>
+<tr class="odd">
+<td>Ohio</td>
+<td>R+11.2</td>
+<td>D+4.3</td>
+<td>R+4.1</td>
+<td>R+6.5</td>
+<td>68%</td>
+<td>59%</td>
+<td>68%</td>
+</tr>
+<tr class="even">
+<td>Minnesota</td>
+<td>D+4.2</td>
+<td>D+3.8</td>
+<td>D+14.3</td>
+<td>D+6.0</td>
+<td>96%</td>
+<td>89%</td>
+<td>84%</td>
+</tr>
+<tr class="odd">
+<td>Texas</td>
+<td>R+13.7</td>
+<td>D+1.6</td>
+<td>R+3.6</td>
+<td>R+5.0</td>
+<td>51%</td>
+<td>45%</td>
+<td>65%</td>
+</tr>
+<tr class="even">
+<td>Iowa</td>
+<td>R+13.2</td>
+<td>D+0.0</td>
+<td>R+3.1</td>
+<td>R+4.8</td>
+<td>39%</td>
+<td>33%</td>
+<td>40%</td>
+</tr>
+<tr class="odd">
+<td>Alaska</td>
+<td>R+13.1</td>
+<td>D+0.9</td>
+<td>R+6.0</td>
+<td>R+7.7</td>
+<td>38%</td>
+<td>33%</td>
+<td>75%</td>
+</tr>
+<tr class="even">
+<td>New Hampshire</td>
+<td>D+2.8</td>
+<td>D+7.5</td>
+<td>D+12.9</td>
+<td>D+5.1</td>
+<td>97%</td>
+<td>93%</td>
+<td>90%</td>
+</tr>
+<tr class="odd">
+<td>Kansas</td>
+<td>R+16.1</td>
+<td>R+1.1</td>
+<td>R+9.0</td>
+<td>R+9.5</td>
+<td>21%</td>
+<td>20%</td>
+<td>40%</td>
+</tr>
+<tr class="even">
+<td>South Carolina</td>
+<td>R+17.9</td>
+<td>R+1.0</td>
+<td>R+10.8</td>
+<td>R+10.6</td>
+<td>16%</td>
+<td>17%</td>
+<td>21%</td>
+</tr>
+<tr class="odd">
+<td>Nebraska (Osborn)</td>
+<td>R+20.5</td>
+<td>R+3.1</td>
+<td>R+13.4</td>
+<td>R+12.2</td>
+<td>8%</td>
+<td>9%</td>
+<td>27%</td>
+</tr>
+<tr class="even">
+<td>North Carolina</td>
+<td>R+3.2</td>
+<td>D+10.1</td>
+<td>D+6.9</td>
+<td>D+1.4</td>
+<td>98%</td>
+<td>97%</td>
+<td>97%</td>
+</tr>
+<tr class="odd">
+<td>Georgia</td>
+<td>R+2.2</td>
+<td>D+8.2</td>
+<td>D+10.9</td>
+<td>D+5.0</td>
+<td>98%</td>
+<td>96%</td>
+<td>94%</td>
+</tr>
+</tbody>
+</table>
+<p>What stands out: - <strong>Maine and Michigan</strong> account for most of the gap. In both, polls are close but the 2024 baseline plus a D+10 swing is a comfortable Democratic lead. Under Swing the model is far more confident than Kalshi in both (93% vs 60%, 87% vs 66%). - <strong>Alaska</strong> is the biggest model-vs-market gap in <em>both</em> variants: Kalshi has Peltola at 75%, the model at 33–38%. The polls are tied (D+0.9), but the R+13 baseline and Sullivan’s incumbency pull the fundamentals to about R+6 to R+8. This is the “candidate quality” case Kalshi was meant to catch. A 1/16 weight can’t move it much, so this is a race to discuss rather than one the weights will settle. - <strong>Texas, Kansas and Nebraska</strong> also have Kalshi more bullish on Democrats than either variant. - Near R+17.5 (South Carolina, Nebraska, Kansas) the variants agree, as section 4 predicts.</p>
+<hr>
+</section>
+<section id="what-the-sweep-says" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-sweep-says">7. What the sweep says</h2>
+<p>Each CONFIG weight is changed one at a time with 3,000 simulations. The range shown is the P(D ≥ 51) span across the values tried.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Setting (values tried)</th>
+<th>Swing</th>
+<th>Literal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>W_FUNDAMENTALS</code> (0, 2.5, 5, 10)</td>
+<td>47–68%</td>
+<td>37–68%</td>
+</tr>
+<tr class="even">
+<td><code>W_POLLS</code> (5, 10, 20)</td>
+<td>48–65%</td>
+<td>38–58%</td>
+</tr>
+<tr class="odd">
+<td><code>W_GENERIC_BALLOT</code></td>
+<td>55–59% (0–4)</td>
+<td><strong>27–61% (0–8)</strong></td>
+</tr>
+<tr class="even">
+<td><code>W_STATE_2024</code> (Literal: 4–32)</td>
+<td>—</td>
+<td><strong>29–63%</strong></td>
+</tr>
+<tr class="odd">
+<td><code>INCUMBENCY_PTS</code> (0–5)</td>
+<td>54–64%</td>
+<td>45–54%</td>
+</tr>
+<tr class="even">
+<td><code>W_KALSHI</code> (0–5)</td>
+<td>57–62%</td>
+<td>48–53%</td>
+</tr>
+<tr class="odd">
+<td><code>WINDOW_DAYS</code> (14–42)</td>
+<td>55–58%</td>
+<td>46–49%</td>
+</tr>
+<tr class="even">
+<td><code>WINDOW_OLDEST_WEIGHT</code> (0–1)</td>
+<td>57–61%</td>
+<td>49%</td>
+</tr>
+<tr class="odd">
+<td><code>POPULATION_WEIGHTS</code>, <code>PARTISAN_SHIFT</code></td>
+<td>&lt; 1 pt</td>
+<td>&lt; 1 pt</td>
+</tr>
+</tbody>
+</table>
+<p>Literal is very sensitive to its fundamentals weights because they change both how much state lean is kept <em>and</em> how much of the national environment gets through. Swing is fairly insensitive to its own (GB vs approval, 55–59%) because both national signals currently say about D+8 to D+9. In both variants the polls-vs-fundamentals balance is the biggest lever.</p>
+<p>(The 42-day window looks the same as 28 days here only because the snapshot cache starts on Sep 24. A live run pulls the full history.)</p>
+<hr>
+</section>
+<section id="data-notes-and-known-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="data-notes-and-known-limitations">8. Data notes and known limitations</h2>
+<ol type="1">
+<li><strong>VoteHub has very few national polls.</strong> Only 2 Trump approval polls and 3 generic-ballot polls fall in the 4-week window. When the window has fewer than 5, the most recent 5 are used, so approval currently draws on polls back to late August. The old <code>National_Polls.xlsx</code> had 34 approval polls from Sep 21 to Oct 14. It was left out per “use just VoteHub”, but adding it back would firm up the approval signal. Approval has a small weight in both variants, so this changes the fundamentals by well under a point.</li>
+<li><strong>Nominee table.</strong> VoteHub lists candidates by name, not party, so each poll is matched to <code>SETTINGS["NOMINEES"]</code> by surname. The table came from Kalshi’s market list on Oct 26. Idaho, Montana and South Dakota use “highest-polling non-Republican” (the Sheet2 independent rule), which picks Bodnar (MT) and Bengs (SD) when they poll ahead of the Democrat. Polls without both nominees are dropped (e.g.&nbsp;NH Pappas vs Scott Brown, MA Moulton vs Deaton). In the current window that removed none.</li>
+<li><strong>Independents other than Osborn</strong> (Bodnar, Bengs, Achilles) are counted as Democratic seats if they win. All three are below 10% on Kalshi, so this barely matters, but it should be stated.</li>
+<li><strong>“Percent Error” on VoteHub’s scorecard</strong> is used as the accuracy measure. VoteHub doesn’t say whether it is error on vote share or on margin, so only the <em>relative</em> values are used (each pollster vs the median), not as a size of poll error.</li>
+<li><strong>Kalshi as a margin.</strong> Converting a probability to a margin uses the model’s own race SD. Kalshi’s 98–99% markets are clipped to 99%, which slightly pulls safe races toward the middle. None of those races are close, so this has no effect on control.</li>
+<li><strong>Race SD assumes the three sources’ errors are independent.</strong> That is optimistic: polls and Kalshi are correlated. The resulting SDs (about 4–5 pts with polls, 6.4 without) are close to Model 1’s, so the two models are comparable, but the true uncertainty is probably a bit larger.</li>
+<li><strong>Fixed weights can’t tell good data from thin data.</strong> A race with one poll gets the same 62.5% poll weight as Texas with 14. Model 1’s precision weighting handled this automatically. This is the main price of the simpler design.</li>
+</ol>
+<hr>
+</section>
+<section id="decisions-for-the-group" class="level2">
+<h2 class="anchored" data-anchor-id="decisions-for-the-group">9. Decisions for the group</h2>
+<ol type="1">
+<li><strong>Swing or Literal</strong> (the reason both exist). Swing currently gives 58.0% / 51.3 seats; Literal gives 47.7% / 50.5.</li>
+<li><strong>Polls 10 : Fundamentals 5.</strong> This balance moves the answer more than anything else. Fixed weights can’t account for how many polls a race has (limitation 7).</li>
+<li><strong>Kalshi.</strong> At weight 1 it is effectively a comparison. If it is meant to “account for events and candidate quality” (Alaska, Texas, Nebraska), it would need roughly weight 3–5 to have any visible effect. The sweep shows P(51+) going from 58% to 62% (Swing) at weight 5.</li>
+<li><strong>Approval data:</strong> VoteHub only (as now), or add <code>National_Polls.xlsx</code> back for approval (limitation 1).</li>
+<li><strong>Incumbency for appointed senators</strong> (Moody, Husted, Darline Graham): currently the full 3 pts, the same as elected incumbents. Model 1 gave them half.</li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "ozempic_literal",
+  "name": "Ozempic (Literal)",
+  "family": "Ozempic",
+  "variant": "Literal",
+  "order": 21,
+  "notebook": "ozempic_literal.ipynb",
+  "testing_notebooks": [],
+  "description": "Same as Ozempic Swing, but fundamentals = literal 8:4:1 weighted average (blackboard formula).",
+  "standard_output": "Output/standard",
+  "testing_checks": null,
+  "enabled": true
+}
