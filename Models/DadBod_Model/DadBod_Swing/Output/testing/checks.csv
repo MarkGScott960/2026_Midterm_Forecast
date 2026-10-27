@@ -9,7 +9,7 @@ A,newest generic ballot poll (VoteHub),WARN,2026-10-04 (22 days old) - Kalshi av
 A,newest approval poll (VoteHub),PASS,2026-10-06 (20 days old)
 A,Kalshi race prices date,PASS,fetched 2026-10-26
 A,Kalshi races found,PASS,35/35
-A,Kalshi races found by title search,WARN,"used hand table for ['Alaska', 'Colorado', 'Delaware', 'Florida', 'Idaho', 'Iowa', 'Minnesota', 'Mississippi', 'New Mexico', 'Ohio', 'Oklahoma', 'Oregon', 'South Carolina', 'Texas']"
+A,Kalshi races found by title search,WARN,"used hand table for ['Alabama', 'Kansas', 'Louisiana', 'Michigan', 'New Hampshire', 'North Carolina', 'South Dakota', 'Texas', 'Virginia', 'West Virginia']"
 A,Kalshi search agrees with hand table,PASS,all 35 agree
 A,nominees agree with hand table,PASS,all 35 agree
 A,nominees from Kalshi names,PASS,34/35 from Kalshi; hand table used for ['Alaska'] (Kalshi lists party names there)
@@ -33,6 +33,6 @@ C,coverage: South Carolina,WARN,"1 polls (effective 1.0), Kalshi 24%"
 D,model vs Kalshi: Alaska,WARN,"model 35% vs Kalshi 74% (polls D+0.7, fundamentals R+5.6)"
 D,model vs Kalshi: Maine,WARN,"model 92% vs Kalshi 57% (polls D+1.4, fundamentals D+14.4)"
 E,most influential settings,PASS,W_FUNDAMENTALS: 49%-68%; W_POLLS: 50%-64%; INCUMBENCY_PTS: 54%-64%
-E,toggle combinations agree,PASS,P(51+) spread 1.2% across the 4 combinations
-E,stable across random seeds,PASS,"P(51+) range 0.9% over 5 seeds at 10,000 simulations"
+E,toggle combinations agree,PASS,P(51+) spread 1.1% across the 4 combinations
+E,stable across random seeds,PASS,"P(51+) range 1.0% over 5 seeds at 10,000 simulations"
 F,week-to-week stability,PASS,largest weekly move 7%

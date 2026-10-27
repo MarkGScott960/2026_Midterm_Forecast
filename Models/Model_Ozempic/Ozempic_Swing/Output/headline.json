@@ -2,7 +2,7 @@
   "as_of": "2026-10-26",
   "variant": "Swing",
   "p_d_51": 0.585,
-  "exp_d_seats": 51.2399,
+  "exp_d_seats": 51.2407,
   "median_d_seats": 51.0,
   "p10": 48.0,
   "p90": 55.0,
@@ -13,8 +13,8 @@
     "p10": 48.0,
     "p90": 55.0
   },
-  "kalshi_p_control": 0.635,
-  "kalshi_expected_seats": 51.7265,
+  "kalshi_p_control": 0.645,
+  "kalshi_expected_seats": 51.7345,
   "env": {
     "gb": 9.024040180849,
     "n_gb": 5,
@@ -27,7 +27,7 @@
     "swing_since_2024": 10.101868353041375
   },
   "config": {
-    "AS_OF_DATE": null,
+    "AS_OF_DATE": "2026-10-26",
     "W_POLLS": 10,
     "W_FUNDAMENTALS": 5,
     "W_KALSHI": 1,

@@ -1,8 +1,8 @@
 {
   "as_of": "2026-10-26",
   "variant": "Literal",
-  "p_d_51": 0.4823,
-  "exp_d_seats": 50.4866,
+  "p_d_51": 0.4825,
+  "exp_d_seats": 50.4872,
   "median_d_seats": 50.0,
   "p10": 47.0,
   "p90": 55.0,
@@ -13,8 +13,8 @@
     "p10": 46.0,
     "p90": 55.0
   },
-  "kalshi_p_control": 0.635,
-  "kalshi_expected_seats": 51.718,
+  "kalshi_p_control": 0.645,
+  "kalshi_expected_seats": 51.74250000000001,
   "env": {
     "gb": 9.024040180849,
     "n_gb": 5,

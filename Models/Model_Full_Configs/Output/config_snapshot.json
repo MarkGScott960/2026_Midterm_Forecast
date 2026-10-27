@@ -1,11 +1,11 @@
 {
-  "DATA_DIR": "/mnt/attach/outputs/repo/Data",
-  "OUT_DIR": "/mnt/attach/outputs/repo/Models/Model_Full_Configs/Output",
+  "DATA_DIR": "C:\\Users\\markg\\OneDrive\\Desktop\\DACCS\\2026_Midterm_Forecast\\Data",
+  "OUT_DIR": "C:\\Users\\markg\\OneDrive\\Desktop\\DACCS\\2026_Midterm_Forecast\\Models\\Model_Full_Configs\\Output",
   "LEANS_FILE": "leans_and_regions.csv",
   "POLLS_FILE": "Midterm_Polls.xlsx",
   "NATIONAL_FILE": "National_Polls.xlsx",
   "ELECTION_DAY": "2026-11-03",
-  "AS_OF_DATE": null,
+  "AS_OF_DATE": "2026-10-26",
   "N_SIMS": 10000,
   "SEED": 2026,
   "SEATS_UP": {

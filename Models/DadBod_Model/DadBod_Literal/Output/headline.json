@@ -1,26 +1,26 @@
 {
   "as_of": "2026-10-26",
-  "run_at": "2026-10-26 18:30",
+  "run_at": "2026-10-26 20:13",
   "variant": "Literal",
-  "p_d_51": 0.4668,
-  "exp_d_seats": 50.3127,
+  "p_d_51": 0.4667,
+  "exp_d_seats": 50.3108,
   "median_d_seats": 50.0,
   "p10": 46.0,
   "p90": 54.0,
   "no_kalshi": {
     "p_d_51": 0.4507,
-    "exp_d_seats": 50.1754,
+    "exp_d_seats": 50.1748,
     "median_d_seats": 50.0,
     "p10": 46.0,
     "p90": 55.0
   },
   "kalshi_p_control": 0.645,
-  "kalshi_expected_seats": 51.734500000000004,
+  "kalshi_expected_seats": 51.73350000000001,
   "national": {
     "generic_ballot": 9.678440923193264,
-    "net_approval": -21.875490865392667,
+    "net_approval": -21.8542021038065,
     "undecided_share_U": 3.2,
-    "kalshi_approve_pct": 37.65726676451349
+    "kalshi_approve_pct": 37.676930529251464
   },
   "fundamentals": {
     "share_of_2024_lean_kept": 0.6153846153846154
@@ -33,7 +33,7 @@
     "kalshi_national_cache.csv": "live"
   },
   "config": {
-    "AS_OF_DATE": null,
+    "AS_OF_DATE": "2026-10-26",
     "N_SIMS": 10000,
     "W_POLLS": 10,
     "W_FUNDAMENTALS": 5,
