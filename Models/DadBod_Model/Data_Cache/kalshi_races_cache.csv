@@ -1,76 +1,76 @@
 State,event_ticker,event_title,market_ticker,side,name,p_mid,found_by,fetched
-Michigan,SENATEMI-26,Michigan Senate winner?,SENATEMI-26-R,R,Mike Rogers,0.28500000000000003,search,2026-10-29
-Michigan,SENATEMI-26,Michigan Senate winner?,SENATEMI-26-D,OPP,Abdul El-Sayed,0.705,search,2026-10-29
-Tennessee,SENATETN-26,Tennessee Senate winner?,SENATETN-26-R,R,Bill Hagerty,0.965,search,2026-10-29
-Tennessee,SENATETN-26,Tennessee Senate winner?,SENATETN-26-D,OPP,Marquita Bradshaw,0.035500000000000004,search,2026-10-29
-Louisiana,KXSENATELA-26NOV,Louisiana Senate winner?,KXSENATELA-26NOV-D,OPP,Jamie Davis,0.11499999999999999,search,2026-10-29
-Louisiana,KXSENATELA-26NOV,Louisiana Senate winner?,KXSENATELA-26NOV-R,R,Julia Letlow,0.875,search,2026-10-29
-Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-R,R,Jim Risch,0.9484999999999999,search,2026-10-29
-Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-D,OPP,David Roth,0.004,search,2026-10-29
-Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-TACH,OPP,Todd Achilles,0.055,search,2026-10-29
-West Virginia,SENATEWV-26,West Virginia Senate winner?,SENATEWV-26-R,R,Shelley Moore Capito,0.9795,search,2026-10-29
-West Virginia,SENATEWV-26,West Virginia Senate winner?,SENATEWV-26-D,OPP,Rachel Fetty Anderson,0.0215,search,2026-10-29
-Alabama,SENATEAL-26,Alabama Senate winner?,SENATEAL-26-R,R,Barry Moore,0.978,search,2026-10-29
-Alabama,SENATEAL-26,Alabama Senate winner?,SENATEAL-26-D,OPP,Everett Wess,0.022,search,2026-10-29
-Oklahoma,SENATEOK-26,Oklahoma Senate winner?,SENATEOK-26-R,R,Kevin Hern,0.977,search,2026-10-29
-Oklahoma,SENATEOK-26,Oklahoma Senate winner?,SENATEOK-26-D,OPP,N’Kiyla Thomas,0.0225,search,2026-10-29
-Rhode Island,SENATERI-26,Rhode Island Senate winner?,SENATERI-26-R,R,Raymond McKay,0.0085,search,2026-10-29
-Rhode Island,SENATERI-26,Rhode Island Senate winner?,SENATERI-26-D,OPP,Jack Reed,0.991,search,2026-10-29
-Massachusetts,SENATEMA-26,Massachusetts Senate winner?,SENATEMA-26-R,R,John Deaton,0.017,search,2026-10-29
-Massachusetts,SENATEMA-26,Massachusetts Senate winner?,SENATEMA-26-D,OPP,Ed Markey,0.9835,search,2026-10-29
 Delaware,SENATEDE-26,Delaware Senate winner?,SENATEDE-26-R,R,Michael Katz,0.015,search,2026-10-29
-Delaware,SENATEDE-26,Delaware Senate winner?,SENATEDE-26-D,OPP,Chris Coons,0.985,search,2026-10-29
+Delaware,SENATEDE-26,Delaware Senate winner?,SENATEDE-26-D,OPP,Chris Coons,0.984,search,2026-10-29
 Texas,SENATETX-26,Texas Senate winner?,SENATETX-26-R,R,Ken Paxton,0.315,search,2026-10-29
 Texas,SENATETX-26,Texas Senate winner?,SENATETX-26-D,OPP,James Talarico,0.685,search,2026-10-29
-Ohio,SENATEOHS-26,Ohio Senate winner?,SENATEOHS-26-R,R,Jon Husted,0.325,search,2026-10-29
-Ohio,SENATEOHS-26,Ohio Senate winner?,SENATEOHS-26-D,OPP,Sherrod Brown,0.675,search,2026-10-29
-South Carolina,SENATESC-26,South Carolina Senate winner?,SENATESC-26-R,R,Darline Graham,0.715,search,2026-10-29
-South Carolina,SENATESC-26,South Carolina Senate winner?,SENATESC-26-D,OPP,Annie Andrews,0.28500000000000003,search,2026-10-29
-Illinois,SENATEIL-26,Illinois Senate winner?,SENATEIL-26-R,R,Don Tracy,0.016,search,2026-10-29
-Illinois,SENATEIL-26,Illinois Senate winner?,SENATEIL-26-D,OPP,Juliana Stratton,0.984,search,2026-10-29
-New Hampshire,SENATENH-26,New Hampshire Senate winner?,SENATENH-26-R,R,John E. Sununu,0.0995,search,2026-10-29
-New Hampshire,SENATENH-26,New Hampshire Senate winner?,SENATENH-26-D,OPP,Chris Pappas,0.9005000000000001,search,2026-10-29
-South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-R,R,Mike Rounds,0.9495,search,2026-10-29
-South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-D,OPP,Julian Beaudion,0.004,search,2026-10-29
-South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-BBEN,OPP,Brian Bengs,0.045,search,2026-10-29
-Florida,SENATEFLS-26,Florida Senate winner?,SENATEFLS-26-R,R,Ashley Moody,0.895,search,2026-10-29
-Florida,SENATEFLS-26,Florida Senate winner?,SENATEFLS-26-D,OPP,Angie Nixon,0.10500000000000001,search,2026-10-29
-Arkansas,SENATEAR-26,Arkansas Senate winner?,SENATEAR-26-R,R,Tom Cotton,0.9464999999999999,search,2026-10-29
-Arkansas,SENATEAR-26,Arkansas Senate winner?,SENATEAR-26-D,OPP,Hallie Shoffner,0.057999999999999996,search,2026-10-29
-Kansas,SENATEKS-26,Kansas Senate winner?,SENATEKS-26-R,R,Roger Marshall,0.51,search,2026-10-29
-Kansas,SENATEKS-26,Kansas Senate winner?,SENATEKS-26-D,OPP,Adam Hamilton,0.495,search,2026-10-29
-Colorado,SENATECO-26,Colorado Senate winner?,SENATECO-26-R,R,Mark Baisley,0.015,search,2026-10-29
-Colorado,SENATECO-26,Colorado Senate winner?,SENATECO-26-D,OPP,John Hickenlooper,0.981,search,2026-10-29
-Maine,SENATEME-26,Maine Senate winner?,SENATEME-26-R,R,Susan Collins,0.385,search,2026-10-29
-Maine,SENATEME-26,Maine Senate winner?,SENATEME-26-D,OPP,Troy Jackson,0.615,search,2026-10-29
-Oregon,SENATEOR-26,Oregon Senate winner?,SENATEOR-26-R,R,David Brock Smith,0.0125,search,2026-10-29
-Oregon,SENATEOR-26,Oregon Senate winner?,SENATEOR-26-D,OPP,Jeff Merkley,0.989,search,2026-10-29
-Georgia,SENATEGA-26,Georgia Senate winner?,SENATEGA-26-R,R,Mike Collins,0.0415,search,2026-10-29
-Georgia,SENATEGA-26,Georgia Senate winner?,SENATEGA-26-D,OPP,Jon Ossoff,0.9584999999999999,search,2026-10-29
+Wyoming,SENATEWY-26,Wyoming Senate winner?,SENATEWY-26-R,R,Harriet Hageman,0.988,search,2026-10-29
+Wyoming,SENATEWY-26,Wyoming Senate winner?,SENATEWY-26-D,OPP,James Byrd,0.011,search,2026-10-29
+Michigan,SENATEMI-26,Michigan Senate winner?,SENATEMI-26-R,R,Mike Rogers,0.275,search,2026-10-29
+Michigan,SENATEMI-26,Michigan Senate winner?,SENATEMI-26-D,OPP,Abdul El-Sayed,0.725,search,2026-10-29
+Rhode Island,SENATERI-26,Rhode Island Senate winner?,SENATERI-26-R,R,Raymond McKay,0.0085,search,2026-10-29
+Rhode Island,SENATERI-26,Rhode Island Senate winner?,SENATERI-26-D,OPP,Jack Reed,0.991,search,2026-10-29
+Arkansas,SENATEAR-26,Arkansas Senate winner?,SENATEAR-26-R,R,Tom Cotton,0.947,search,2026-10-29
+Arkansas,SENATEAR-26,Arkansas Senate winner?,SENATEAR-26-D,OPP,Hallie Shoffner,0.059,search,2026-10-29
+Alaska,SENATEAK-26,Alaska Senate winner?,SENATEAK-26-R,R,Republican party,0.315,search,2026-10-29
+Alaska,SENATEAK-26,Alaska Senate winner?,SENATEAK-26-D,OPP,Democratic party,0.685,search,2026-10-29
 Nebraska,SENATENE-26,Nebraska Senate winner?,SENATENE-26-R,R,Pete Ricketts,0.695,search,2026-10-29
 Nebraska,SENATENE-26,Nebraska Senate winner?,SENATENE-26-D,OPP,Cindy Burbank,0.003,search,2026-10-29
 Nebraska,SENATENE-26,Nebraska Senate winner?,SENATENE-26-DOSB,OPP,Dan Osborn,0.305,search,2026-10-29
-Alaska,SENATEAK-26,Alaska Senate winner?,SENATEAK-26-R,R,Republican party,0.315,fallback table,2026-10-29
-Alaska,SENATEAK-26,Alaska Senate winner?,SENATEAK-26-D,OPP,Democratic party,0.685,fallback table,2026-10-29
-Iowa,SENATEIA-26,Iowa Senate winner?,SENATEIA-26-R,R,Ashley Hinson,0.525,fallback table,2026-10-29
-Iowa,SENATEIA-26,Iowa Senate winner?,SENATEIA-26-D,OPP,Josh Turek,0.475,fallback table,2026-10-29
+Florida,SENATEFLS-26,Florida Senate winner?,SENATEFLS-26-R,R,Ashley Moody,0.901,search,2026-10-29
+Florida,SENATEFLS-26,Florida Senate winner?,SENATEFLS-26-D,OPP,Angie Nixon,0.10500000000000001,search,2026-10-29
+Minnesota,SENATEMN-26,Minnesota Senate winner?,SENATEMN-26-R,R,Michele Tafoya,0.10500000000000001,search,2026-10-29
+Minnesota,SENATEMN-26,Minnesota Senate winner?,SENATEMN-26-D,OPP,Peggy Flanagan,0.9005000000000001,search,2026-10-29
+Kansas,SENATEKS-26,Kansas Senate winner?,SENATEKS-26-R,R,Roger Marshall,0.52,search,2026-10-29
+Kansas,SENATEKS-26,Kansas Senate winner?,SENATEKS-26-D,OPP,Adam Hamilton,0.485,search,2026-10-29
+West Virginia,SENATEWV-26,West Virginia Senate winner?,SENATEWV-26-R,R,Shelley Moore Capito,0.9795,search,2026-10-29
+West Virginia,SENATEWV-26,West Virginia Senate winner?,SENATEWV-26-D,OPP,Rachel Fetty Anderson,0.019,search,2026-10-29
+Louisiana,KXSENATELA-26NOV,Louisiana Senate winner?,KXSENATELA-26NOV-D,OPP,Jamie Davis,0.11499999999999999,search,2026-10-29
+Louisiana,KXSENATELA-26NOV,Louisiana Senate winner?,KXSENATELA-26NOV-R,R,Julia Letlow,0.885,search,2026-10-29
+Mississippi,SENATEMS-26,Mississippi Senate winner?,SENATEMS-26-R,R,Cindy Hyde-Smith,0.885,search,2026-10-29
+Mississippi,SENATEMS-26,Mississippi Senate winner?,SENATEMS-26-D,OPP,Scott Colom,0.11499999999999999,search,2026-10-29
+Oklahoma,SENATEOK-26,Oklahoma Senate winner?,SENATEOK-26-R,R,Kevin Hern,0.977,search,2026-10-29
+Oklahoma,SENATEOK-26,Oklahoma Senate winner?,SENATEOK-26-D,OPP,N’Kiyla Thomas,0.0225,search,2026-10-29
+Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-R,R,Jim Risch,0.9475,search,2026-10-29
+Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-D,OPP,David Roth,0.001,search,2026-10-29
+Idaho,SENATEID-26,Idaho Senate winner?,SENATEID-26-TACH,OPP,Todd Achilles,0.055,search,2026-10-29
+Oregon,SENATEOR-26,Oregon Senate winner?,SENATEOR-26-R,R,David Brock Smith,0.012,search,2026-10-29
+Oregon,SENATEOR-26,Oregon Senate winner?,SENATEOR-26-D,OPP,Jeff Merkley,0.9884999999999999,search,2026-10-29
+Virginia,SENATEVA-26,Virginia Senate winner?,SENATEVA-26-R,R,Bert Mizusawa,0.0165,search,2026-10-29
+Virginia,SENATEVA-26,Virginia Senate winner?,SENATEVA-26-D,OPP,Mark Warner,0.9844999999999999,search,2026-10-29
+Iowa,SENATEIA-26,Iowa Senate winner?,SENATEIA-26-R,R,Ashley Hinson,0.525,search,2026-10-29
+Iowa,SENATEIA-26,Iowa Senate winner?,SENATEIA-26-D,OPP,Josh Turek,0.475,search,2026-10-29
+Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-R,R,Kurt Alme,0.885,search,2026-10-29
+Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-D,OPP,Alani Bankhead,0.0055,search,2026-10-29
+Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-IND,OPP,Seth Bodnar,0.10500000000000001,search,2026-10-29
+Massachusetts,SENATEMA-26,Massachusetts Senate winner?,SENATEMA-26-R,R,John Deaton,0.017,search,2026-10-29
+Massachusetts,SENATEMA-26,Massachusetts Senate winner?,SENATEMA-26-D,OPP,Ed Markey,0.9835,search,2026-10-29
+Tennessee,SENATETN-26,Tennessee Senate winner?,SENATETN-26-R,R,Bill Hagerty,0.9655,search,2026-10-29
+Tennessee,SENATETN-26,Tennessee Senate winner?,SENATETN-26-D,OPP,Marquita Bradshaw,0.035500000000000004,search,2026-10-29
+South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-R,R,Mike Rounds,0.9495,search,2026-10-29
+South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-D,OPP,Julian Beaudion,0.004,search,2026-10-29
+South Dakota,SENATESD-26,South Dakota Senate winner?,SENATESD-26-BBEN,OPP,Brian Bengs,0.045,search,2026-10-29
+Colorado,SENATECO-26,Colorado Senate winner?,SENATECO-26-R,R,Mark Baisley,0.0165,search,2026-10-29
+Colorado,SENATECO-26,Colorado Senate winner?,SENATECO-26-D,OPP,John Hickenlooper,0.984,search,2026-10-29
+Maine,SENATEME-26,Maine Senate winner?,SENATEME-26-R,R,Susan Collins,0.385,search,2026-10-29
+Maine,SENATEME-26,Maine Senate winner?,SENATEME-26-D,OPP,Troy Jackson,0.625,search,2026-10-29
+Alabama,SENATEAL-26,Alabama Senate winner?,SENATEAL-26-R,R,Barry Moore,0.9784999999999999,fallback table,2026-10-29
+Alabama,SENATEAL-26,Alabama Senate winner?,SENATEAL-26-D,OPP,Everett Wess,0.0195,fallback table,2026-10-29
+Georgia,SENATEGA-26,Georgia Senate winner?,SENATEGA-26-R,R,Mike Collins,0.041999999999999996,fallback table,2026-10-29
+Georgia,SENATEGA-26,Georgia Senate winner?,SENATEGA-26-D,OPP,Jon Ossoff,0.9595,fallback table,2026-10-29
+Illinois,SENATEIL-26,Illinois Senate winner?,SENATEIL-26-R,R,Don Tracy,0.016,fallback table,2026-10-29
+Illinois,SENATEIL-26,Illinois Senate winner?,SENATEIL-26-D,OPP,Juliana Stratton,0.9864999999999999,fallback table,2026-10-29
 Kentucky,SENATELA-26,Kentucky Senate winner?,SENATELA-26-R,R,Andy Barr,0.9655,fallback table,2026-10-29
 Kentucky,SENATELA-26,Kentucky Senate winner?,SENATELA-26-D,OPP,Charles Booker,0.035500000000000004,fallback table,2026-10-29
-Minnesota,SENATEMN-26,Minnesota Senate winner?,SENATEMN-26-R,R,Michele Tafoya,0.10500000000000001,fallback table,2026-10-29
-Minnesota,SENATEMN-26,Minnesota Senate winner?,SENATEMN-26-D,OPP,Peggy Flanagan,0.9005000000000001,fallback table,2026-10-29
-Mississippi,SENATEMS-26,Mississippi Senate winner?,SENATEMS-26-R,R,Cindy Hyde-Smith,0.885,fallback table,2026-10-29
-Mississippi,SENATEMS-26,Mississippi Senate winner?,SENATEMS-26-D,OPP,Scott Colom,0.11499999999999999,fallback table,2026-10-29
-Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-R,R,Kurt Alme,0.885,fallback table,2026-10-29
-Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-D,OPP,Alani Bankhead,0.0055,fallback table,2026-10-29
-Montana,SENATEMT-26,Montana Senate winner?,SENATEMT-26-IND,OPP,Seth Bodnar,0.10500000000000001,fallback table,2026-10-29
-New Jersey,SENATENJ-26,New Jersey Senate winner?,SENATENJ-26-R,R,Justin Murphy,0.028,fallback table,2026-10-29
-New Jersey,SENATENJ-26,New Jersey Senate winner?,SENATENJ-26-D,OPP,Cory Booker,0.9735,fallback table,2026-10-29
-New Mexico,SENATENM-26,New Mexico Senate winner?,SENATENM-26-R,R,Larry E. Marker,0.0155,fallback table,2026-10-29
+New Hampshire,SENATENH-26,New Hampshire Senate winner?,SENATENH-26-R,R,John E. Sununu,0.0925,fallback table,2026-10-29
+New Hampshire,SENATENH-26,New Hampshire Senate winner?,SENATENH-26-D,OPP,Chris Pappas,0.908,fallback table,2026-10-29
+New Jersey,SENATENJ-26,New Jersey Senate winner?,SENATENJ-26-R,R,Justin Murphy,0.026000000000000002,fallback table,2026-10-29
+New Jersey,SENATENJ-26,New Jersey Senate winner?,SENATENJ-26-D,OPP,Cory Booker,0.974,fallback table,2026-10-29
+New Mexico,SENATENM-26,New Mexico Senate winner?,SENATENM-26-R,R,Larry E. Marker,0.0135,fallback table,2026-10-29
 New Mexico,SENATENM-26,New Mexico Senate winner?,SENATENM-26-D,OPP,Ben Ray Luján,0.986,fallback table,2026-10-29
-North Carolina,SENATENC-26,North Carolina Senate winner?,SENATENC-26-R,R,Michael Whatley,0.035500000000000004,fallback table,2026-10-29
+North Carolina,SENATENC-26,North Carolina Senate winner?,SENATENC-26-R,R,Michael Whatley,0.036500000000000005,fallback table,2026-10-29
 North Carolina,SENATENC-26,North Carolina Senate winner?,SENATENC-26-D,OPP,Roy Cooper,0.9655,fallback table,2026-10-29
-Virginia,SENATEVA-26,Virginia Senate winner?,SENATEVA-26-R,R,Bert Mizusawa,0.016,fallback table,2026-10-29
-Virginia,SENATEVA-26,Virginia Senate winner?,SENATEVA-26-D,OPP,Mark Warner,0.9844999999999999,fallback table,2026-10-29
-Wyoming,SENATEWY-26,Wyoming Senate winner?,SENATEWY-26-R,R,Harriet Hageman,0.988,fallback table,2026-10-29
-Wyoming,SENATEWY-26,Wyoming Senate winner?,SENATEWY-26-D,OPP,James Byrd,0.011,fallback table,2026-10-29
+Ohio,SENATEOHS-26,Ohio Senate winner?,SENATEOHS-26-R,R,Jon Husted,0.325,fallback table,2026-10-29
+Ohio,SENATEOHS-26,Ohio Senate winner?,SENATEOHS-26-D,OPP,Sherrod Brown,0.675,fallback table,2026-10-29
+South Carolina,SENATESC-26,South Carolina Senate winner?,SENATESC-26-R,R,Darline Graham,0.715,fallback table,2026-10-29
+South Carolina,SENATESC-26,South Carolina Senate winner?,SENATESC-26-D,OPP,Annie Andrews,0.275,fallback table,2026-10-29
 CONTROL,CONTROLS-2026,Will Democrats win the U.S. Senate in 2026?,CONTROLS-2026-D,D,Democratic Party,0.675,search,2026-10-29

@@ -1,0 +1,36 @@
+{
+  "model": "Pray_For_The_Floor",
+  "variant": "",
+  "run_at": "2026-10-29 14:04",
+  "as_of": "2026-10-29",
+  "p_d_51": 0.6116,
+  "exp_d_seats": 51.4203,
+  "median_d_seats": 51.0,
+  "p10": 48.0,
+  "p90": 55.0,
+  "n_sims": 10000,
+  "kalshi_p_control": 0.675,
+  "kalshi_expected_seats": 52.198,
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "key_settings": {
+    "Poll source": "VoteHub API",
+    "Poll age": "all polls, half-life 21 days",
+    "Polls : fundamentals : Kalshi": "Bayesian precision (poll trust x1, prior SD 7.5); Kalshi precision 1/17^2",
+    "Poll reliability (thin races)": "automatic (Bayesian precision)",
+    "Fundamentals": "PVI x 2 + national environment (generic-ballot blend 0.5)",
+    "Incumbency": "2 pts (appointed 1)",
+    "LV : RV : A": "1 : 0.85 : 0.7",
+    "Flooding penalty": "1/k^0.5",
+    "House effects": "on (scorecard)",
+    "Ungraded pollsters": "random",
+    "National signals": "VoteHub polls + Kalshi averages (= 5 polls)",
+    "Kalshi races": "Bayesian input + comparison (found automatically)",
+    "Source errors": "correlated (rho 0.3)"
+  }
+}

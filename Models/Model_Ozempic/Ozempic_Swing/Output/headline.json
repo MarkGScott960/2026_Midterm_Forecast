@@ -1,20 +1,20 @@
 {
   "as_of": "2026-10-29",
   "variant": "Swing",
-  "p_d_51": 0.5933,
-  "exp_d_seats": 51.2658,
+  "p_d_51": 0.6111,
+  "exp_d_seats": 51.4705,
   "median_d_seats": 51.0,
-  "p10": 48.0,
+  "p10": 49.0,
   "p90": 55.0,
   "no_kalshi": {
-    "p_d_51": 0.5823,
-    "exp_d_seats": 51.2315,
+    "p_d_51": 0.5994,
+    "exp_d_seats": 51.4336,
     "median_d_seats": 51.0,
-    "p10": 48.0,
+    "p10": 49.0,
     "p90": 55.0
   },
   "kalshi_p_control": 0.675,
-  "kalshi_expected_seats": 52.206,
+  "kalshi_expected_seats": 52.203,
   "env": {
     "gb": 8.94861772295371,
     "n_gb": 5,

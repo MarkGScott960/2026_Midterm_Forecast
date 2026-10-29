@@ -1,26 +1,26 @@
 {
   "as_of": "2026-10-29",
-  "run_at": "2026-10-29 12:42",
+  "run_at": "2026-10-29 14:03",
   "variant": "Literal",
-  "p_d_51": 0.465,
-  "exp_d_seats": 50.2501,
+  "p_d_51": 0.4775,
+  "exp_d_seats": 50.4595,
   "median_d_seats": 50.0,
-  "p10": 46.0,
-  "p90": 54.0,
+  "p10": 47.0,
+  "p90": 55.0,
   "no_kalshi": {
-    "p_d_51": 0.4463,
-    "exp_d_seats": 50.0514,
+    "p_d_51": 0.4606,
+    "exp_d_seats": 50.2798,
     "median_d_seats": 50.0,
     "p10": 46.0,
-    "p90": 54.0
+    "p90": 55.0
   },
   "kalshi_p_control": 0.675,
-  "kalshi_expected_seats": 52.2065,
+  "kalshi_expected_seats": 52.198,
   "national": {
-    "generic_ballot": 9.091600063959902,
-    "net_approval": -21.28631224767432,
+    "generic_ballot": 9.11257760610798,
+    "net_approval": -21.135855748575512,
     "undecided_share_U": 3.2,
-    "kalshi_approve_pct": 38.05436958657024
+    "kalshi_approve_pct": 38.197533638094356
   },
   "fundamentals": {
     "share_of_2024_lean_kept": 0.6153846153846154

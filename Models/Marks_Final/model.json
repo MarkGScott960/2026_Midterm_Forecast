@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "marks_final",
+  "name": "Marks_Final",
+  "family": "Marks_Final",
+  "variant": "",
+  "order": 60,
+  "notebook": "marks_final.ipynb",
+  "testing_notebooks": ["Model Testing.ipynb"],
+  "description": "Pray_For_The_Floor calibrated on 1998-2022 Senate races, plus candidate effects in the prior, national/regional/state simulation errors in points, longshot-corrected Kalshi at real weight, fresher national signals, measured RV shift, and retried Kalshi search.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

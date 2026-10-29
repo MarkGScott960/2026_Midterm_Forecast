@@ -1,0 +1,65 @@
+{
+  "created": "2026-10-29 17:19",
+  "model": "marks_final",
+  "source": "FiveThirtyEight raw_polls.csv (live (GitHub)); Final Model/calibration.ipynb",
+  "settings": {
+    "POLL_START_CYCLE": 1998,
+    "PRIOR_START_CYCLE": 2014,
+    "COMPETITIVE_LIMIT": 15,
+    "FINAL_WINDOW_DAYS": 21,
+    "FAR_WINDOW_DAYS": [
+      22,
+      60
+    ],
+    "HALF_LIFE_DAYS": 14,
+    "SOURCE_ERROR_CORR": 0.3,
+    "CANDIDATE_EFFECT_CLIP": 25,
+    "SKIP_SETTINGS": [],
+    "WRITE_CALIBRATION": true,
+    "RUN_MODEL": true,
+    "RAW_POLLS_URL": "https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/raw_polls.csv"
+  },
+  "overrides": {
+    "PRIOR_SD": 9.35,
+    "SYSTEMATIC_POLL_ERROR_SD": 3.69,
+    "DAILY_DRIFT_SD": 0.84,
+    "INCUMBENCY_ADVANTAGE": 3.84,
+    "CANDIDATE_EFFECT_WEIGHT": 0.295,
+    "NATIONAL_ERROR_SD": 2.43,
+    "REGIONAL_ERROR_SD": 1.6,
+    "STATE_T_DF": 9.9,
+    "KALSHI_CONVERT_SD": 4.69,
+    "CORR_NATIONAL": 0.269,
+    "CORR_REGION": 0.117,
+    "T_DF": 9.9
+  },
+  "estimates": {
+    "races_polling": 181,
+    "races_prior": 118,
+    "national_sd_90pct_range": [
+      1.5065141912312678,
+      2.9444166337211324
+    ],
+    "state_floor_sd": 1.6928309014980898,
+    "single_poll_sd": 4.010469426942294,
+    "poll_floor_from_components": 3.3702526783553943,
+    "mean_polling_error": -0.8632294810387284,
+    "state_excess_kurtosis": 1.0128437182491137,
+    "replay_current": {
+      "PRIOR_SD": 7.5,
+      "SYSTEMATIC_POLL_ERROR_SD": 4.5,
+      "Brier": 0.10762856573927305,
+      "SD of z (want 1)": 0.927093228093164,
+      "inside 80% range": 0.7837837837837838,
+      "RMSE (pts)": 4.5042360186299195
+    },
+    "replay_calibrated": {
+      "PRIOR_SD": 9.345591331406565,
+      "SYSTEMATIC_POLL_ERROR_SD": 3.69134114656081,
+      "Brier": 0.10192511781983753,
+      "SD of z (want 1)": 0.9999999999999999,
+      "inside 80% range": 0.7297297297297297,
+      "RMSE (pts)": 4.530164052053924
+    }
+  }
+}

@@ -1,20 +1,20 @@
 {
   "as_of": "2026-10-29",
   "variant": "Literal",
-  "p_d_51": 0.497,
-  "exp_d_seats": 50.5467,
-  "median_d_seats": 50.0,
+  "p_d_51": 0.5248,
+  "exp_d_seats": 50.7919,
+  "median_d_seats": 51.0,
   "p10": 47.0,
   "p90": 55.0,
   "no_kalshi": {
-    "p_d_51": 0.4818,
-    "exp_d_seats": 50.3854,
-    "median_d_seats": 50.0,
-    "p10": 46.0,
+    "p_d_51": 0.5033,
+    "exp_d_seats": 50.6339,
+    "median_d_seats": 51.0,
+    "p10": 47.0,
     "p90": 55.0
   },
   "kalshi_p_control": 0.675,
-  "kalshi_expected_seats": 52.206,
+  "kalshi_expected_seats": 52.203,
   "env": {
     "gb": 8.94861772295371,
     "n_gb": 5,

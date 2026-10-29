@@ -20,7 +20,11 @@ Forecasting the 2026 U.S. Senate: **the chance Democrats hold at least 51 seats*
 ├── Models/
 │   ├── Model_Full_Configs/           Model 1  (model.json, notebook, README, Output/)
 │   ├── Model_Ozempic/                Model 2  (Ozempic_Swing/, Ozempic_Literal/, README, Data_Cache/)
-│   └── DadBod_Model/                 Model 3  (DadBod_Swing/, DadBod_Literal/, README, Data_Cache/)
+│   ├── DadBod_Model/                 Model 3  (DadBod_Swing/, DadBod_Literal/, README, Data_Cache/)
+│   ├── Pray_For_The_Floor/           Model 4
+│   ├── Rylyn_Model/                  Model 5
+│   └── Marks_Final/                  final-model candidate (model.json, notebook, Model Testing, candidate_history.csv, calibration.json)
+├── Final Model/                  <- calibration.ipynb: fine-tunes any model on 1998-2022 Senate races (writes calibration.json)
 └── Sample Code/                  <- the course's sample notebook
 ```
 
@@ -33,6 +37,7 @@ Forecasting the 2026 U.S. Senate: **the chance Democrats hold at least 51 seats*
 | **DadBod — Swing / Literal** | `Models/DadBod_Model/` | Ozempic + poll reliability, flooding penalty, house effects, correlated errors, Kalshi national averages, automatic Kalshi search, separate Model Testing notebook | `Models/DadBod_Model/README.md` |
 | **Pray_For_The_Floor** | `Models/Pray_For_The_Floor` | Model 1's Bayesian model on VoteHub polls + Kalshi as a third Bayesian input, random grades for ungraded pollsters every simulation, DadBod's controls | `Models/Pray_For_The_Floor/README.md` |
 | **Rylyn (Event Edition)** | `Models/Rylyn_Model` | Rylyn's starter-notebook model on the Oct 15 spreadsheet polls, plus opinion events, voting-access changes and a House map module | `Models/Rylyn_Model/README.md` |
+| **Marks_Final** | `Models/Marks_Final` | Pray_For_The_Floor calibrated on 1998–2022 Senate races, plus candidate effects in the prior, national/regional/state simulation errors in points, longshot-corrected Kalshi at real weight, fresher national signals, measured RV shift | `Models/Marks_Final/README.md` |
 
 
 
@@ -106,7 +111,7 @@ A new model needs three things. Copying them from a DadBod variant is the quicke
 | `id` | Short unique name, used with `run_all.py --only` |
 | `name` | Name shown in the report |
 | `family` | Models in the same family share a colour; variants get lighter shades and dashed lines |
-| `order` | Position in the report (Model 1 = 10, Ozempic = 20s, DadBod = 30s) |
+| `order` | Position in the report (Model 1 = 10, Ozempic = 20s, DadBod = 30s, Pray = 40, Rylyn = 50, Marks_Final = 60) |
 | `notebook` | The model notebook, relative to this folder |
 | `testing_notebooks` | Notebooks run after the model (e.g. Model Testing); `[]` if none |
 | `standard_output` | Where the standard files are written (keep `Output/standard`) |

@@ -1,0 +1,9 @@
+change undone,P(D >= 51),D seats,P(D) Maine,P(D) Alaska,P(D) Nebraska,P(D) Kansas,P(D) Texas,P(D) Ohio
+none (this run),0.7384,52.042,0.752,0.566,0.2236,0.4639,0.6846,0.7816
+"calibration (prior SD, poll floor, drift, incumbency, tails)",0.7258,51.8781,0.8125,0.5582,0.2029,0.3989,0.6272,0.7483
+candidate effects,0.7312,51.9738,0.7934,0.5282,0.207,0.4472,0.6846,0.757
+error components,0.715,52.0473,0.7518,0.5626,0.2267,0.4663,0.6889,0.7803
+"Kalshi (weight, conversion, longshot, range)",0.74,52.0773,0.7586,0.5332,0.2279,0.4661,0.6718,0.7822
+"national signals (GB blend, fresh polls)",0.7257,51.9398,0.7439,0.5572,0.2199,0.4533,0.677,0.7744
+RV shift + LV preference,0.7311,51.9909,0.7457,0.5566,0.2233,0.4623,0.6774,0.778
+EVERYTHING back to Pray,0.6116,51.4197,0.8966,0.3972,0.1431,0.3062,0.5826,0.6832
