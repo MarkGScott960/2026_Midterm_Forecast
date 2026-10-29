@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "rylyn",
+  "name": "Rylyn (Event Edition)",
+  "family": "Rylyn",
+  "variant": "Event Edition",
+  "order": 50,
+  "notebook": "rylyn_model.ipynb",
+  "testing_notebooks": ["Model Testing.ipynb"],
+  "description": "Rylyn's event model (ElectionGroupModelThing), ported verbatim: starter-notebook Bayesian model on the Oct 15 spreadsheet polls, plus opinion events estimated from same-pollster pairs, voting-access changes, and a House map module.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

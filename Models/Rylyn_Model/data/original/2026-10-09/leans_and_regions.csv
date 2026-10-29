@@ -1,0 +1,53 @@
+﻿State,PartisanLean,Region
+Alabama,-15,East South Central
+Alaska,-6,Pacific
+Arizona,-2,Mountain
+Arkansas,-15,West South Central
+California,12,Pacific
+Colorado,6,Mountain
+Connecticut,8,New England
+Delaware,8,South Atlantic
+Florida,-5,South Atlantic
+Georgia,-1,South Atlantic
+Hawaii,13,Pacific
+Idaho,-18,Mountain
+Illinois,6,East North Central
+Indiana,-9,East North Central
+Iowa,-6,West North Central
+Kansas,-8,West North Central
+Kentucky,-15,East South Central
+Louisiana,-11,West South Central
+Maine,4,New England
+Maryland,15,South Atlantic
+Massachusetts,14,New England
+Michigan,0,East North Central
+Minnesota,3,West North Central
+Mississippi,-11,East South Central
+Missouri,-9,West North Central
+Montana,-10,Mountain
+Nebraska,-10,West North Central
+Nevada,-1,Mountain
+New Hampshire,2,New England
+New Mexico,3,Mountain
+New Jersey,4,Middle Atlantic
+New York,8,Middle Atlantic
+North Carolina,-1,South Atlantic
+North Dakota,-18,West North Central
+Ohio,-5,East North Central
+Oklahoma,-17,West South Central
+Oregon,8,Pacific
+Pennsylvania,-1,Middle Atlantic
+Rhode Island,8,New England
+South Carolina,-8,South Atlantic
+South Dakota,-15,West North Central
+Tennessee,-14,East South Central
+Texas,-6,West South Central
+Utah,-11,Mountain
+Vermont,17,New England
+Virginia,3,South Atlantic
+Washington,10,Pacific
+DC,44,South Atlantic
+West Virginia,-21,South Atlantic
+Wisconsin,0,East North Central
+Wyoming,-23,Mountain
+Source,https://en.wikipedia.org/wiki/Cook_Partisan_Voting_Index,

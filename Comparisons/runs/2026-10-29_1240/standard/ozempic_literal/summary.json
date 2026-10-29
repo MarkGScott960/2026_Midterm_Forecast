@@ -1,0 +1,35 @@
+{
+  "model": "Ozempic",
+  "variant": "Literal",
+  "run_at": "2026-10-29 12:41",
+  "as_of": "2026-10-29",
+  "p_d_51": 0.497,
+  "exp_d_seats": 50.5467,
+  "median_d_seats": 50.0,
+  "p10": 47.0,
+  "p90": 55.0,
+  "n_sims": 10000,
+  "kalshi_p_control": 0.675,
+  "kalshi_expected_seats": 52.206,
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_cache.csv": "live"
+  },
+  "key_settings": {
+    "Poll source": "VoteHub API",
+    "Poll age": "last 28 days, weight 1.0 -> 0.25",
+    "Polls : fundamentals : Kalshi": "10 : 5 : 1 (fixed)",
+    "Poll reliability (thin races)": "none",
+    "Fundamentals": "Literal (2024 8 : generic ballot 4 : approval 1)",
+    "Incumbency": "3 pts",
+    "LV : RV : A": "1 : 0.9 : 0.8",
+    "Flooding penalty": "none",
+    "House effects": "none",
+    "Ungraded pollsters": "random",
+    "National signals": "VoteHub polls",
+    "Kalshi races": "input + comparison (hand-coded tickers)",
+    "Source errors": "independent"
+  }
+}

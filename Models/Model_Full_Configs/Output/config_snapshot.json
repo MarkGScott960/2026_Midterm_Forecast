@@ -5,7 +5,7 @@
   "POLLS_FILE": "Midterm_Polls.xlsx",
   "NATIONAL_FILE": "National_Polls.xlsx",
   "ELECTION_DAY": "2026-11-03",
-  "AS_OF_DATE": "2026-10-26",
+  "AS_OF_DATE": "2026-10-29",
   "N_SIMS": 10000,
   "SEED": 2026,
   "SEATS_UP": {

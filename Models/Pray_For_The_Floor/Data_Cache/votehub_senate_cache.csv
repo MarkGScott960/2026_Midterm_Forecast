@@ -1,0 +1,471 @@
+id,end_date,created_at,state,pollster,sample_size,population,partisan,internal,answers
+us-202thee5a838a4,2026-09-27,2026-10-16,Michigan,The Tyson Group,600.0,lv,REP,False,Abdul El-Sayed=44.0|Mike Rogers=43.0
+us-202thed1db38e3,2026-10-08,2026-10-16,Michigan,The Tyson Group,600.0,lv,REP,False,Abdul El-Sayed=44.0|Mike Rogers=46.0
+us-202bow14c3613e,2026-10-09,2026-10-16,Ohio,Bowling Green State University/YouGov,1000.0,lv,,False,Sherrod Brown=48.0|Jon Husted=42.0|Bill Redpath=3.0|Greg Levy=5.0
+us-202pub53b72052,2026-10-15,2026-10-16,Alaska,Public Policy Polling,578.0,rv,DEM,False,Mary Peltola=48.0|Dan Sullivan=47.0
+us-202you1e856ad2,2026-10-12,2026-10-15,Iowa,YouGov,2245.0,lv,,False,Ashley Hinson=46.0|Josh Turek=47.0
+us-202mdwe9967dcc,2026-10-10,2026-10-15,Florida,MDW,800.0,lv,,False,Ashley Moody=48.0|Angie Nixon=42.0
+us-202uni63b326ca,2026-05-16,2026-06-04,Maine,University of Massachusetts Lowell Center for Public Opinion/YouGov,650.0,lv,,False,Graham Platner=48.0|Susan Collins=43.0
+us-202vic0a006caa,2024-11-29,2026-02-17,North Carolina,Victory Insights,800.0,lv,,False,Roy Cooper=45.5|Lara Trump=44.3
+us-202vic15890316,2024-11-29,2026-02-17,North Carolina,Victory Insights,800.0,lv,,False,Roy Cooper=45.1|Thom Thillis=44.1
+us-202pubdc157848,2025-03-05,2026-02-17,North Carolina,Public Policy Polling,662.0,rv,,False,Roy Cooper=47.0|Thom Thillis=43.0
+us-202vicec5afb5c,2025-07-30,2026-02-17,North Carolina,Victory Insights,600.0,lv,,False,Roy Cooper=44.4|Michael Whatley=43.5
+us-202harc083001c,2025-08-12,2026-02-17,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=47.3|Michael Whatley=39.1
+us-202chab6c27b91,2025-09-08,2026-02-17,North Carolina,Change Research,855.0,lv,DEM,False,Roy Cooper=48.0|Michael Whatley=41.0
+us-202har2b123ce0,2025-09-15,2026-02-17,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=46.0|Michael Whatley=42.0
+us-202har1bdb30c5,2025-11-10,2026-02-17,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=47.0|Michael Whatley=39.0
+us-202harc344974e,2025-11-10,2026-02-17,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=48.1|Don Brown=38.0
+us-202eme013c2ece,2025-07-30,2026-02-17,North Carolina,Emerson College,1000.0,rv,,False,Michael Whatley=41.4|Roy Cooper=46.7
+us-202cha2976f667,2026-01-07,2026-02-17,North Carolina,Change Research,1105.0,lv,DEM,False,Roy Cooper=47.0|Michael Whatley=42.0
+us-202tipab84b110,2026-01-15,2026-02-17,North Carolina,TIPP Insights,1512.0,rv,REP,False,Roy Cooper=48.0|Michael Whatley=24.0
+us-202cha2111afda,2026-02-04,2026-02-20,North Carolina,Change Research,1069.0,rv,,False,Roy Cooper=50.0|Michael Whatley=40.0
+us-202onm04028dcb,2026-03-08,2026-03-12,Ohio,OnMessage,600.0,lv,,False,Sherrod Brown=47.0|Jon Husted=45.0
+us-202emeea9b3350,2025-12-08,2026-03-12,Ohio,Emerson College,850.0,rv,,False,Sherrod Brown=46.3|Jon Husted=48.8
+us-202bow288ac89a,2025-10-14,2026-03-12,Ohio,Bowling Green State University/YouGov,800.0,rv,,False,Sherrod Brown=49.0|Jon Husted=48.0
+us-202eme8f806411,2025-08-19,2026-03-12,Ohio,Emerson College,1000.0,rv,,False,Sherrod Brown=43.7|Jon Husted=49.5
+us-202bowabd25f95,2025-04-24,2026-03-12,Ohio,Bowling Green State University/YouGov,800.0,rv,,False,Sherrod Brown=46.0|Jon Husted=49.0
+us-202bowefe05ca7,2025-02-21,2026-03-12,Ohio,Bowling Green State University/YouGov,800.0,rv,,False,Sherrod Brown=41.0|Jon Husted=47.0
+us-202emc72b76be3,2026-02-22,2026-03-12,Ohio,EMC Research,1343.0,lv,,False,Sherrod Brown=51.0|Jon Husted=47.0
+us-202pub85665d25,2026-03-14,2026-03-16,North Carolina,Public Policy Polling,556.0,rv,,False,Roy Cooper=47.0|Michael Whatley=44.0
+us-202quad6aba264,2026-03-14,2026-03-16,Ohio,Quantus Insights,925.0,lv,,False,Sherrod Brown=44.0|Jon Husted=46.0
+us-202ala6fd3746f,2026-03-22,2026-03-29,Alaska,Alaska Survey Research,1283.0,lv,,False,Mary Peltola=52.4|Dan Sullivan=47.6
+us-202pub023ecafb,2026-01-17,2026-03-29,Alaska,Public Policy Polling,611.0,rv,DEM,False,Mary Peltola=49.0|Dan Sullivan=47.0
+us-202ala3b65f6ef,2026-01-11,2026-03-29,Alaska,Alaska Survey Research,1681.0,lv,,False,Mary Peltola=48.0|Dan Sullivan=46.4
+us-202eme1bcacacc,2026-03-02,2026-03-30,Georgia,Emerson College,1000.0,lv,,False,Jon Ossoff=47.7|Mike Collins=43.3
+us-202qua80fe18a7,2025-09-12,2026-03-30,Georgia,Quantus Insights,624.0,rv,,False,Jon Ossoff=37.8|Mike Collins=37.7
+us-202tip0382be0d,2025-08-01,2026-03-30,Georgia,TIPP Insights,2395.0,lv,REP,False,Jon Ossoff=45.0|Mike Collins=44.0
+us-202cyg167b9abc,2025-05-17,2026-03-30,Georgia,Cygnal,800.0,rv,DEM,False,Jon Ossoff=46.0|Mike Collins=43.0
+us-202traba6abade,2025-04-27,2026-03-30,Georgia,Trafalgar Group,1426.0,lv,REP,False,Jon Ossoff=47.5|Mike Collins=42.8
+us-202wpa60d3da4e,2025-01-15,2026-03-30,Georgia,WPA Intelligence,500.0,lv,REP,False,Jon Ossoff=44.0|Mike Collins=34.0
+us-202nex3971aa3a,2026-03-09,2026-03-30,North Carolina,Nexus Strategies/Strategic Partners Solutions,800.0,lv,,False,Roy Cooper=50.0|Michael Whatley=32.0
+us-202you2133db87,2026-03-18,2026-04-01,North Carolina,YouGov,871.0,lv,,False,Roy Cooper=48.0|Michael Whatley=34.0
+us-202eme1adbecdc,2026-03-31,2026-04-10,Florida,Emerson College,1125.0,lv,,False,Ashley Moody=45.9|Alexander Vindman=38.0
+us-202uni187076c4,2026-03-02,2026-04-10,Florida,University of North Florida,786.0,lv,,False,Ashley Moody=45.0|Alexander Vindman=38.0
+us-202mdw67caa80b,2026-04-03,2026-04-13,Florida,MDW Communications,1834.0,lv,,False,Ashley Moody=43.0|Alexander Vindman=42.0
+us-202eme9a6a68f5,2026-03-23,2026-04-14,New Hampshire,Emerson College,1100.0,lv,,False,Chris Pappas=45.3|John Sununu=43.7
+us-202saica770502,2026-03-18,2026-04-14,New Hampshire,Saint Anselm,1491.0,rv,,False,Chris Pappas=46.0|John Sununu=43.0
+us-202yese8051e85,2026-01-29,2026-04-14,New Hampshire,yes. every kid.,563.0,lv,,False,Chris Pappas=45.0|John Sununu=41.0
+us-202uni1250e038,2026-01-19,2026-04-14,New Hampshire,University of New Hampshire,2038.0,lv,,False,Chris Pappas=50.0|John Sununu=45.0
+us-202prad23da08c,2025-12-28,2026-04-14,New Hampshire,Praecones Analytica,603.0,rv,,False,Chris Pappas=42.3|John Sununu=35.6
+us-202saia99778cd,2025-11-19,2026-04-14,New Hampshire,Saint Anselm,2112.0,rv,,False,Chris Pappas=44.0|John Sununu=41.0
+us-202co/0b672f7f,2025-10-13,2026-04-14,New Hampshire,co/efficient,1034.0,lv,,False,Chris Pappas=45.0|John Sununu=42.0
+us-202uni0401d0f4,2025-09-23,2026-04-14,New Hampshire,University of New Hampshire,1225.0,lv,,False,Chris Pappas=49.0|John Sununu=43.0
+us-202co/465a61ff,2025-09-12,2026-04-14,New Hampshire,co/efficient,904.0,lv,,False,Chris Pappas=46.0|John Sununu=43.0
+us-202189327ac2c7,2025-09-04,2026-04-14,New Hampshire,1892 Polling,500.0,lv,,False,Chris Pappas=45.0|John Sununu=43.0
+us-202qua5256989f,2025-03-19,2026-04-14,New Hampshire,Quantus Insights,650.0,rv,REP,False,Chris Pappas=44.0|John Sununu=53.0
+us-202mai1c9d66fd,2026-03-31,2026-04-16,Maine,Maine People's Resource Center,1167.0,lv,,False,Susan Collins=39.3|Graham Platner=48.3
+us-202mai395fc865,2026-03-31,2026-04-16,Maine,Maine People's Resource Center,1167.0,lv,,False,Susan Collins=45.0|Janet Mills=41.9
+us-202emeae25a0b0,2026-03-23,2026-04-16,Maine,Emerson College,1075.0,lv,,False,Susan Collins=40.6|Graham Platner=47.8
+us-202eme316dd7a3,2026-03-23,2026-04-16,Maine,Emerson College,1075.0,lv,,False,Susan Collins=42.5|Janet Mills=46.2
+us-202quad631010c,2026-03-05,2026-04-16,Maine,Quantus Insights,800.0,lv,,False,Susan Collins=44.6|Janet Mills=43.0
+us-202qua10b03a8f,2026-03-05,2026-04-16,Maine,Quantus Insights,800.0,lv,,False,Susan Collins=41.8|Graham Platner=48.6
+us-202pan6f538bdb,2026-03-02,2026-04-16,Maine,Pan Atlantic SMS Group,810.0,lv,,False,Susan Collins=40.0|Graham Platner=44.0
+us-202pan8d235770,2026-03-02,2026-04-16,Maine,Pan Atlantic SMS Group,810.0,lv,,False,Susan Collins=44.0|Janet Mills=44.0
+us-202unib4f650e2,2026-02-16,2026-04-16,Maine,University of New Hampshire,1097.0,lv,,False,Susan Collins=40.0|Janet Mills=41.0
+us-202unie1113a54,2026-02-16,2026-04-16,Maine,University of New Hampshire,1105.0,lv,,False,Susan Collins=38.0|Graham Platner=49.0
+us-202fab3ee58419,2026-01-24,2026-04-16,Maine,"Fabrizio, Lee & Associates",800.0,lv,REP,False,Susan Collins=45.0|Janet Mills=44.0
+us-202fabb74398c5,2026-01-24,2026-04-16,Maine,"Fabrizio, Lee & Associates",800.0,lv,REP,False,Susan Collins=45.0|Graham Platner=44.0
+us-202panabcd1049,2025-12-07,2026-04-16,Maine,Pan Atlantic SMS Group,820.0,lv,,False,Susan Collins=43.0|Janet Mills=43.0
+us-202pan5a9b4cde,2025-12-07,2026-04-16,Maine,Pan Atlantic SMS Group,820.0,lv,,False,Susan Collins=42.0|Graham Platner=43.0
+us-202cyn79bb9aaf,2025-11-11,2026-04-16,Maine,Cyngal,600.0,lv,,False,Susan Collins=41.0|Dem=49.0
+us-202maic1315c13,2025-10-29,2026-04-16,Maine,Maine People's Resource Center,783.0,rv,,False,Susan Collins=41.0|Graham Platner=45.0
+us-202mai234492e4,2025-10-29,2026-04-16,Maine,Maine People's Resource Center,783.0,rv,,False,Susan Collins=46.0|Janet Mills=42.0
+us-202zen3e7d2e5c,2025-10-10,2026-04-16,Maine,Zenith Research,501.0,lv,,False,Susan Collins=37.0|Janet Mills=42.0
+us-202zena6743f9d,2025-10-10,2026-04-16,Maine,Zenith Research,501.0,lv,,False,Susan Collins=38.0|Graham Platner=38.0
+us-202higf04011a1,2026-04-06,2026-04-16,North Carolina,High Point University Survey Research Center/YouGov,703.0,lv,,False,Roy Cooper=50.0|Michael Whatley=42.0
+us-202hig7de64e7d,2026-04-06,2026-04-16,North Carolina,High Point University Survey Research Center/YouGov,800.0,rv,,False,Roy Cooper=49.0|Michael Whatley=39.0
+us-202gbab93d5de3,2026-03-16,2026-04-21,Iowa,GBAO,1200.0,lv,DEM,False,Ashley Hinson=47.0|Josh Turek=43.0
+us-202gba62b36025,2026-03-16,2026-04-21,Iowa,GBAO,1200.0,lv,DEM,False,Ashley Hinson=47.0|Zach Wahls=44.0
+us-202cha781abe34,2026-01-11,2026-04-21,Iowa,Change Research,1108.0,lv,,False,Ashley Hinson=44.0|Josh Turek=41.0
+us-202cha683eb5ac,2026-01-11,2026-04-21,Iowa,Change Research,1108.0,lv,,False,Ashley Hinson=44.0|Zach Wahls=41.0
+us-202imp28c38a71,2026-04-12,2026-04-21,Mississippi,Impact Research,500.0,lv,DEM,False,Scott Colom=44.0|Cindy Hyde-Smith=47.0
+us-202bow8a765810,2026-04-14,2026-04-21,Ohio,Bowling Green State University/YouGov,1000.0,rv,,False,Sherrod Brown=47.0|Jon Husted=50.0
+us-202eche7c2869f,2026-04-09,2026-04-21,Iowa,Echelon Insights,377.0,lv,,False,Ashley Hinson=44.0|Zach Wahls=46.0
+us-202echf4929c57,2026-04-09,2026-04-21,Iowa,Echelon Insights,377.0,lv,,False,Ashley Hinson=45.0|Josh Turek=46.0
+us-202ech1a9afcfb,2026-04-09,2026-04-21,Georgia,Echelon Insights,407.0,lv,,False,Jon Ossoff=51.0|Mike Collins=44.0
+us-202ech80c320f6,2026-04-09,2026-04-21,Georgia,Echelon Insights,407.0,lv,,False,Jon Ossoff=52.0|Buddy Carter=43.0
+us-202ech2b342f18,2026-04-09,2026-04-21,Florida,Echelon Insights,406.0,lv,,False,Ashley Moody=50.0|Alexander Vindman=43.0
+us-202ech472cd4f1,2026-04-09,2026-04-21,Maine,Echelon Insights,378.0,lv,,False,Susan Collins=45.0|Graham Platner=51.0
+us-202ech9490021c,2026-04-09,2026-04-21,Maine,Echelon Insights,378.0,lv,,False,Susan Collins=46.0|Janet Mills=48.0
+us-202echefadd030,2026-04-09,2026-04-21,Ohio,Echelon Insights,,,,False,Sherrod Brown=45.0|Jon Husted=51.0
+us-202alabcabdd28,2026-04-19,2026-04-23,Alaska,Alaska Survey Research,1946.0,lv,,False,Mary Peltola=52.0|Dan Sullivan=48.0
+us-202sur63027f3e,2026-10-12,2026-10-15,Minnesota,SurveyUSA,718.0,lv,,False,Peggy Flanagan=45.0|Michele Tafoya=42.0|Marisa Simonetti=2.0|Rebecca Whiting=2.0
+us-202ste008437cf,2026-04-13,2026-04-27,Florida,Stetson University,848.0,lv,,False,Ashley Moody=49.0|Alexander Vindman=42.0
+us-202ste198f7a4a,2026-04-13,2026-04-27,Florida,Stetson University,848.0,lv,,False,Ashley Moody=51.0|Angie Nixon=38.0
+us-202unie89cc6b4,2025-09-24,2026-04-28,Texas,University of Texas at Tyler,1032.0,rv,,False,Ken Paxton=38.0|James Talarico=37.0
+us-202uni8225dcc0,2025-10-01,2026-04-28,Texas,University of Houston/Texas Southern University,1650.0,rv,,False,Ken Paxton=49.0|James Talarico=46.0
+us-202rag0c28bfd3,2025-11-17,2026-04-28,Texas,Ragnar Research Partners,1000.0,lv,REP,False,Ken Paxton=44.0|James Talarico=44.0
+us-202uni0dc518c7,2026-01-31,2026-04-28,Texas,University of Houston/YouGov,1502.0,lv,,False,Ken Paxton=46.0|James Talarico=44.0
+us-202pub7e233927,2026-03-05,2026-04-28,Texas,Public Policy Polling,576.0,a,DEM,False,Ken Paxton=45.0|James Talarico=47.0
+us-202imp50137db2,2026-03-17,2026-04-28,Texas,Impact Research,900.0,lv,,False,Ken Paxton=43.0|James Talarico=44.0
+us-202texe500a6d5,2026-04-20,2026-04-28,Texas,Texas Public Opinion Research,1018.0,lv,,False,Ken Paxton=41.0|James Talarico=46.0
+us-202unidb95df99,2025-09-24,2026-04-28,Texas,University of Texas at Tyler,1032.0,rv,,False,John Cornyn=41.0|James Talarico=35.0
+us-202uni731e2279,2025-10-01,2026-04-28,Texas,University of Houston/Texas Southern University,1650.0,rv,,False,John Cornyn=48.0|James Talarico=45.0
+us-202rag8552bbbc,2025-11-17,2026-04-28,Texas,Ragnar Research Partners,1000.0,lv,REP,False,John Cornyn=46.0|James Talarico=40.0
+us-202emeef7cbc1d,2026-01-12,2026-04-28,Texas,Emerson College,1165.0,rv,,False,Ken Paxton=45.6|James Talarico=45.6
+us-202eme9b9f44a5,2026-01-12,2026-04-28,Texas,Emerson College,1165.0,rv,,False,John Cornyn=46.9|James Talarico=44.1
+us-202uni5040ddd3,2026-01-31,2026-04-28,Texas,University of Houston/YouGov,1502.0,lv,,False,John Cornyn=44.0|James Talarico=43.0
+us-202pubaf44626b,2026-03-05,2026-04-28,Texas,Public Policy Polling,576.0,a,DEM,False,John Cornyn=43.0|James Talarico=44.0
+us-202texaca3925a,2026-04-20,2026-04-28,Texas,Texas Public Opinion Research,1018.0,lv,,False,John Cornyn=41.0|James Talarico=44.0
+us-202opi5a64ca39,2026-04-24,2026-04-30,North Carolina,Opinion Diagnostics,830.0,lv,REP,False,Roy Cooper=50.4|Michael Whatley=41.4
+us-202you9dee520f,2026-04-20,2026-04-30,Texas,YouGov,1200.0,rv,,False,Ken Paxton=34.0|James Talarico=42.0
+us-202you0dcc69cb,2026-04-12,2026-04-30,Texas,YouGov,1200.0,rv,,False,John Cornyn=33.0|James Talarico=40.0
+us-202tav22537272,2026-01-28,2026-05-01,Kansas,Tavern Research,1013.0,lv,,False,Roger Marshall=54.0|Adam Hamilton=46.0
+us-202alabbd6655e,2026-04-19,2026-05-03,Alaska,Alaska Survey Research,,lv,,False,Mary Peltola=50.8|Dan Sullivan=47.3
+us-202weda6e4ad64,2026-10-14,2026-10-15,Mississippi,Wedgewood Polls,511.0,lv,,False,Cindy Hyde-Smith=52.0|Scott Colom=48.0
+us-202harb00382e0,2026-05-11,2026-05-15,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=49.8|Michael Whatley=38.7
+us-202texc28cf835,2026-05-06,2026-05-18,Texas,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,1223.0,lv,,False,James Talarico=45.0|Ken Paxton=45.0
+us-202checa283b6c,2026-05-09,2026-05-18,Florida,Cherry Communications,604.0,lv,REP,False,Alexander Vindman=40.0|Ashley Moody=48.0
+us-202chab31a8a6e,2026-05-08,2026-05-18,North Carolina,Change Research,957.0,lv,DEM,False,Roy Cooper=49.0|Michael Whatley=42.0
+us-202hen5c2d9c7e,2026-10-13,2026-10-16,Arkansas,Hendrix College,709.0,lv,,False,Tom Cotton=50.0|Hallie Shoffner=41.0|Jeff Wadlin=5.0
+us-202chae3c0b874,2026-05-16,2026-05-18,Florida,Change Research,2070.0,lv,,False,Alexander Vindman=47.0|Ashley Moody=45.0
+us-202tav507e89fe,2026-05-18,2026-05-19,Montana,Tavern Research,607.0,lv,,False,Seth Bodnar=50.0|Kurt Alme=50.0
+us-202tav2313c4bf,2026-05-18,2026-05-19,Montana,Tavern Research,607.0,lv,,False,Reilly Neill=42.0|Kurt Alme=58.0
+us-202tav65f6005d,2026-05-18,2026-05-19,Montana,Tavern Research,607.0,lv,,False,Reilly Neill=24.0|Seth Bodnar=26.0|Tom Jandron=3.0|Kurt Alme=46.0
+us-202pan29dbf8a8,2026-05-18,2026-05-20,Maine,Pan Atlantic SMS Group,827.0,lv,,False,Graham Platner=48.0|Susan Collins=41.0
+us-202mit9a5c32a0,2026-05-07,2026-05-20,Michigan,Mitchell Research & Communications,607.0,lv,,False,Abdul El-Sayed=42.0|Mike Rogers=41.0
+us-202mitf3d55a81,2026-05-07,2026-05-20,Michigan,Mitchell Research & Communications,606.0,lv,,False,Mallory McMorrow=43.0|Mike Rogers=41.0
+us-202mit39173145,2026-05-07,2026-05-20,Michigan,Mitchell Research & Communications,606.0,lv,,False,Haley Stevens=42.0|Mike Rogers=39.0
+us-202gle0133b0b3,2026-05-01,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Abdul El-Sayed=40.0|Mike Rogers=45.0
+us-202gleeeb6be84,2026-05-01,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Haley Stevens=42.0|Mike Rogers=44.0
+us-202gle2939b758,2026-05-01,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Mike Rogers=43.0|Mallory McMorrow=41.0
+us-202emeb507fcbb,2026-01-25,2026-05-20,Michigan,Emerson College,1000.0,lv,,False,Mallory McMorrow=45.7|Mike Rogers=42.6
+us-202emee754e4c5,2026-01-25,2026-05-20,Michigan,Emerson College,1000.0,lv,,False,Haley Stevens=47.3|Mike Rogers=41.6
+us-202eme5bdd236b,2026-01-25,2026-05-20,Michigan,Emerson College,1000.0,lv,,False,Abdul El-Sayed=42.5|Mike Rogers=42.8
+us-202glef7ac134b,2026-01-06,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Mike Rogers=48.0|Abdul El-Sayed=42.0
+us-202glec0316553,2026-01-06,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Mike Rogers=46.0|Mallory McMorrow=42.0
+us-202gle322439ae,2026-01-06,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Mike Rogers=44.0|Haley Stevens=44.0
+us-202mit61ba1fad,2025-11-21,2026-05-20,Michigan,Mitchell Research & Communications,616.0,lv,,False,Mike Rogers=42.0|Haley Stevens=40.0
+us-202mit87b44bfc,2025-11-21,2026-05-20,Michigan,Mitchell Research & Communications,616.0,lv,,False,Mike Rogers=44.0|Mallory McMorrow=38.0
+us-202mit590c99af,2025-11-21,2026-05-20,Michigan,Mitchell Research & Communications,616.0,lv,,False,Mike Rogers=41.0|Abdul El-Sayed=38.0
+us-202epid9595901,2025-11-11,2026-05-20,Michigan,EPIC-MRA,600.0,lv,,False,Haley Stevens=44.0|Mike Rogers=42.0
+us-202epi46ef28e5,2025-11-11,2026-05-20,Michigan,EPIC-MRA,600.0,lv,,False,Mike Rogers=42.0|Mallory McMorrow=43.0
+us-202ros2c880fd3,2025-10-25,2026-05-20,Michigan,Rosetta Stone,637.0,lv,,False,Mike Rogers=47.0|Haley Stevens=40.0
+us-202ros410812c7,2025-10-25,2026-05-20,Michigan,Rosetta Stone,637.0,lv,,False,Mike Rogers=45.0|Abdul El-Sayed=31.0
+us-202ros8e5ec4d9,2025-10-25,2026-05-20,Michigan,Rosetta Stone,637.0,lv,,False,Mike Rogers=46.0|Mallory McMorrow=39.0
+us-202nor7a88e643,2025-06-16,2026-05-20,Michigan,"Normington, Petts & Associates",700.0,lv,,False,Mike Rogers=48.0|Mallory McMorrow=44.0
+us-202norbd336de9,2025-06-16,2026-05-20,Michigan,"Normington, Petts & Associates",700.0,lv,,False,Haley Stevens=47.0|Mike Rogers=45.0
+us-202gleb42f5fae,2025-05-08,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,rv,,False,Haley Stevens=45.0|Mike Rogers=44.0
+us-202glec19f2301,2025-05-08,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,rv,,False,Mike Rogers=46.0|Mallory McMorrow=42.0
+us-202gledaa7038f,2025-05-08,2026-05-20,Michigan,"Glengariff Group, Inc.",600.0,rv,,False,Mike Rogers=47.0|Abdul El-Sayed=41.0
+us-202tar417e15f3,2025-03-06,2026-05-20,Michigan,Target Insyght,600.0,rv,,False,Mike Rogers=41.0|Haley Stevens=35.0
+us-202pub121c904c,2026-05-23,2026-05-28,Texas,Public Policy Polling,643.0,lv,DEM,False,James Talarico=45.0|Ken Paxton=38.0|Ted Brown=3.0
+us-202unia4c1a428,2026-05-25,2026-05-28,Maine,University of New Hampshire Survey Center,1280.0,lv,,False,Graham Platner=51.0|Susan Collins=42.0
+us-202emec7074b5d,2026-02-08,2026-05-28,Minnesota,Emerson College,1000.0,lv,,False,Angie Craig=46.6|Michele Tafoya=40.2
+us-202eme46470152,2026-02-08,2026-05-28,Minnesota,Emerson College,1000.0,lv,,False,Peggy Flanagan=47.1|Michele Tafoya=40.6
+us-202sur62cbc236,2025-03-04,2026-05-28,Massachusetts,SurveyUSA,775.0,rv,,False,Ed Markey=45.0|John Deaton=26.0
+us-202suf91850a3d,2025-11-23,2026-05-28,Massachusetts,Suffolk University,500.0,rv,,False,Ed Markey=54.0|John Deaton=31.0
+us-202sufcfbc9a05,2025-11-23,2026-05-28,Massachusetts,Suffolk University,500.0,rv,,False,Seth Moulton=52.0|John Deaton=29.0
+us-202uni06038789,2026-02-16,2026-05-28,Massachusetts,University of New Hampshire,616.0,lv,,False,Ed Markey=56.0|John Deaton=27.0
+us-202unif8cfec03,2026-02-16,2026-05-28,Massachusetts,University of New Hampshire,611.0,lv,,False,Seth Moulton=59.0|John Deaton=23.0
+us-202unid95802f4,2026-04-20,2026-05-28,Massachusetts,University of New Hampshire,600.0,lv,,False,Seth Moulton=56.0|John Deaton=25.0
+us-202unide9784b7,2026-04-20,2026-05-28,Massachusetts,University of New Hampshire,603.0,lv,,False,Ed Markey=55.0|John Deaton=32.0
+us-202grae15a8aed,2026-02-09,2026-05-28,Arkansas,GrayHouse,550.0,lv,REP,False,Tom Cotton=58.0|Hallie Shoffner=36.0
+us-202sli9f75fb57,2026-05-28,2026-05-29,Texas,Slingshot Strategies,1670.0,lv,DEM,False,James Talarico=48.0|Ken Paxton=45.0
+us-202bea6ef5bd7d,2026-06-01,2026-06-03,Ohio,Beacon Research/Shaw & Co. Research,1015.0,rv,,False,Sherrod Brown=53.0|Jon Husted=45.0
+us-202tip59dfdfa0,2026-05-23,2026-06-01,Michigan,TIPP Insights,1163.0,lv,REP,False,Abdul El-Sayed=43.0|Mike Rogers=42.0
+us-202tip6d4d41d9,2026-05-23,2026-06-01,Michigan,TIPP Insights,1456.0,rv,REP,False,Abdul El-Sayed=40.0|Mike Rogers=40.0
+us-202tip99de5023,2026-05-23,2026-06-01,Michigan,TIPP Insights,1163.0,lv,REP,False,Haley Stevens=48.0|Mike Rogers=41.0
+us-202tip199bb9db,2026-05-23,2026-06-01,Michigan,TIPP Insights,1456.0,rv,REP,False,Haley Stevens=45.0|Mike Rogers=38.0
+us-202tip3da9b019,2026-05-23,2026-06-01,Michigan,TIPP Insights,1163.0,lv,REP,False,Mallory McMorrow=45.0|Mike Rogers=42.0
+us-202tip7ac4a21f,2026-05-23,2026-06-01,Michigan,TIPP Insights,1456.0,rv,REP,False,Mallory McMorrow=42.0|Mike Rogers=39.0
+us-202qua6b878295,2026-06-04,2026-06-06,Texas,Quantus Insights,800.0,lv,,False,James Talarico=43.0|Ken Paxton=45.0
+us-202rec22b1c62b,2026-06-04,2026-06-09,Texas,ReconMR/Siena University,807.0,lv,,False,James Talarico=47.0|Ken Paxton=44.0
+us-202thec9ff409a,2026-06-08,2026-06-09,Maine,The Public Sentiment Institute,497.0,lv,,False,Graham Platner=43.0|Susan Collins=44.0
+us-202tav61219990,2026-06-08,2026-06-09,Maine,Tavern Research,1642.0,lv,,False,Graham Platner=51.0|Susan Collins=49.0
+us-202pub957d3bcc,2026-06-04,2026-06-09,Iowa,Public Policy Polling,557.0,rv,DEM,False,Josh Turek=46.0|Ashley Hinson=46.0
+us-202eme529afc79,2026-03-02,2026-06-12,Georgia,Emerson College,1000.0,lv,,False,Jon Ossoff=48.9|Derek Dooley=41.4
+us-202quafd79c6ef,2025-09-12,2026-06-12,Georgia,Quantus Insights,624.0,rv,,False,Jon Ossoff=42.1|Derek Dooley=35.4
+us-202tip53f19ba5,2025-08-01,2026-06-12,Georgia,TIPP Insights,2395.0,lv,REP,False,Jon Ossoff=45.0|Derek Dooley=42.0
+us-202pubd69c1e7f,2025-09-16,2026-06-12,Minnesota,Public Policy Polling,1015.0,lv,DEM,False,Angie Craig=47.0|Rep=43.0
+us-202pubde180c20,2025-09-16,2026-06-12,Minnesota,Public Policy Polling,1015.0,lv,DEM,False,Peggy Flanagan=46.0|Rep=44.0
+us-202tul3efe64f6,2026-06-04,2026-06-12,Michigan,Tulchin Research,500.0,lv,DEM,False,Abdul El-Sayed=46.0|Mike Rogers=41.0
+us-202fab5fd4622f,2026-06-03,2026-06-12,Maine,"Fabrizio, Lee & Associates",800.0,lv,REP,False,Susan Collins=46.0|Graham Platner=46.0
+us-202uni64743a1f,2026-04-21,2026-06-12,New Hampshire,University of New Hampshire,1295.0,lv,,False,Chris Pappas=49.0|John Sununu=42.0
+us-202harca09238f,2026-03-23,2026-06-15,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=48.9|Michael Whatley=41.1
+us-202ala3352af00,2026-06-07,2026-06-15,Alaska,Alaska Survey Research,1393.0,lv,,False,Mary Peltola=49.4|Dan Sullivan=44.2|Gerald Heikes=3.7|Dustin Darden=2.7
+us-202datff65423b,2025-10-23,2026-06-15,Alaska,Data for Progress,823.0,lv,DEM,False,Mary Peltola=46.0|Dan Sullivan=45.0
+us-202alafbc93030,2025-10-15,2026-06-15,Alaska,Alaska Survey Research,1708.0,lv,,False,Mary Peltola=48.0|Dan Sullvian=46.0
+us-202alab987738a,2026-05-17,2026-06-15,Alaska,Alaska Survey Research,1401.0,lv,,False,Mary Peltola=48.4|Dan Sullivan=43.8|Dustin Darden=5.1|Gerald Heikes=2.7
+us-202alaaac6776a,2025-08-01,2026-06-15,Alaska,Alaska Survey Research,1613.0,lv,,False,Dan Sullivan=46.7|Mary Peltola=42.5
+us-202datde291215,2025-07-27,2026-06-15,Alaska,Data for Progress,678.0,lv,,False,Mary Peltola=45.0|Dan Sullivan=46.0
+us-202qua64c2cf49,2026-06-11,2026-06-15,Maine,Quantus Insights,870.0,lv,,False,Graham Platner=46.0|Susan Collins=45.0
+us-202wic615cfb4b,2026-06-14,2026-06-17,Maine,Wick,1008.0,lv,,False,Graham Platner=47.6|Susan Collins=45.4
+us-202suf43021e00,2026-06-12,2026-06-17,Massachusetts,Suffolk University,500.0,rv,,False,Ed Markey=55.0|John Deaton=30.0
+us-202suf791a9846,2026-06-12,2026-06-17,Massachusetts,Suffolk University,500.0,rv,,False,Seth Moulton=54.0|John Deaton=26.0
+us-202cha0c7666ff,2026-05-16,2026-06-17,Florida,Change Research,1593.0,lv,,False,Alexander Vindman=47.0|Ashley Moody=45.0
+us-202cha4c08cfde,2026-06-14,2026-06-18,Florida,Change Research,1273.0,rv,DEM,False,Alexander Vindman=43.0|Ashley Moody=46.0
+us-202cha6cfd344c,2026-06-14,2026-06-18,Florida,Change Research,1015.0,lv,DEM,False,Alexander Vindman=46.0|Ashley Moody=46.0
+us-202zen354a92cf,2026-06-14,2026-06-18,Michigan,Zenith Research,602.0,lv,DEM,False,Abdul El-Sayed=45.0|Mike Rogers=42.0
+us-202zenec41aa86,2026-06-14,2026-06-18,Michigan,Zenith Research,602.0,lv,DEM,False,Mallory McMorrow=44.0|Mike Rogers=42.0
+us-202zena20bfa8f,2026-06-14,2026-06-18,Michigan,Zenith Research,602.0,lv,DEM,False,Haley Stevens=43.0|Mike Rogers=42.0
+us-202pubfd67a5f3,2026-06-11,2026-06-18,Montana,Public Opinion Strategies,500.0,lv,REP,False,Alani Bankhead=25.0|Kurt Alme=44.0|Seth Bodnar=20.0|Kyle Austin=4.0
+us-202the5a104154,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,996.0,rv,,False,Mark Warner=48.0|Bert Mizusawa=32.0|Mark Moran=4.0
+us-202the65a34aca,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,996.0,rv,,False,Mark Warner=48.0|Kim Farington=31.0|Mark Moran=4.0
+us-202the592aeef5,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,,lv,,False,Mark Warner=50.0|Bert Mizusawa=33.0|Mark Moran=3.0
+us-202thecc936039,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,,lv,,False,Mark Warner=51.0|Kim Farington=33.0|Mark Moran=3.0
+us-202the23cfbe50,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,,lv,,False,Mark Warner=51.0|David Williams=33.0|Mark Moran=3.0
+us-202the5f79b2da,2026-06-16,2026-06-18,Virginia,The Public Sentiment Institute,996.0,rv,,False,Mark Warner=48.0|David Williams=32.0|Mark Moran=4.0
+us-202mclfb3c3e69,2026-06-07,2026-06-22,Florida,McLaughlin & Associates,800.0,lv,REP,False,Ashley Moody=47.0|Alexander Vindman=40.0
+us-202texc8fd4814,2026-06-12,2026-06-23,Texas,Texas Politics Project at the University of Texas/YouGov,1200.0,rv,,False,Ken Paxton=43.0|James Talarico=42.0
+us-202youca5f07f2,2026-06-10,2026-06-23,North Carolina,YouGov,905.0,lv,,False,Roy Cooper=48.0|Michael Whatley=34.0
+us-202fabc4750dc3,2026-06-16,2026-06-25,Ohio,Fabrizio Ward/Impact Research,800.0,lv,,False,Sherrod Brown=48.0|Jon Husted=45.0
+us-202cyg40c776c5,2026-06-19,2026-06-28,Iowa,Cygnal,600.0,lv,REP,False,Ashley Hinson=46.0|Josh Turek=44.2
+us-202thefac9ff9a,2026-06-26,2026-06-29,Maine,The New York Times/Siena University,608.0,lv,,False,Graham Platner=49.0|Susan Collins=47.0
+us-202thee89c7bce,2026-06-27,2026-06-30,Texas,The New York Times/Siena University,656.0,lv,,False,James Talarico=47.0|Ken Paxton=47.0
+us-202the85ab5fb4,2026-06-28,2026-07-01,Ohio,The New York Times/Siena University,601.0,lv,,False,Jon Husted=50.0|Sherrod Brown=47.0
+us-202the011805d2,2026-06-29,2026-07-01,Alaska,The New York Times/Siena University,593.0,lv,,False,Mary Peltola=45.0|Dan Sullivan=47.0
+us-202the52e3337f,2026-06-27,2026-07-01,Iowa,The New York Times/Siena University,600.0,lv,,False,Ashley Hinson=48.0|Josh Turek=46.0
+us-202thef5594fea,2026-06-27,2026-07-01,North Carolina,The New York Times/Siena University,601.0,lv,,False,Roy Cooper=50.0|Michael Whatley=43.0
+us-202uni7ffc2e9d,2026-06-23,2026-07-01,Massachusetts,University of New Hampshire,623.0,lv,,False,Ed Markey=50.0|John Deaton=34.0
+us-202unieba4dd24,2026-06-23,2026-07-01,Massachusetts,University of New Hampshire,623.0,lv,,False,Seth Moulton=50.0|John Deaton=30.0
+us-202unib186ef52,2026-06-23,2026-07-01,New Hampshire,University of New Hampshire,2232.0,lv,,False,Chris Pappas=47.0|John Sununu=44.0
+us-202uni983e65a4,2026-06-23,2026-07-01,New Hampshire,University of New Hampshire,2232.0,lv,,False,Chris Pappas=52.0|Scott Brown=38.0
+us-202sai3a119d63,2026-06-25,2026-07-01,New Hampshire,Saint Anselm,1614.0,rv,,False,Chris Pappas=47.0|John Sununu=41.0
+us-202saif530b9d2,2026-06-25,2026-07-01,New Hampshire,Saint Anselm,1614.0,rv,,False,Chris Pappas=48.0|Scott Brown=36.0
+us-202uni56d3ce46,2026-06-23,2026-07-01,Rhode Island,University of New Hampshire,664.0,lv,,False,Jack Reed=52.0|Raymond McKay=34.0
+us-202gra7bd23a76,2026-06-24,2026-07-01,Montana,GrayHouse,500.0,lv,REP,False,Kurt Alme=41.0|Alani Bankhead=25.0|Seth Bodnar=17.0|Kyle Austin=3.0
+us-202bea83272bb9,2026-06-27,2026-07-01,Maine,Beacon Research/Shaw & Co. Research,1003.0,rv,,False,Susan Collins=50.0|Graham Platner=47.0
+us-202a2 1a5590cb,2026-06-28,2026-07-01,Texas,A2 Insights,618.0,lv,,False,James Talarico=48.4|Ken Paxton=46.1
+us-202tav5bb1680a,2026-06-19,2026-07-01,Montana,Tavern Research,400.0,lv,,False,Kurt Alme=49.0|Alani Bankhead=27.0|Seth Bodnar=25.0
+us-202tavf29ef95a,2026-06-19,2026-07-01,Montana,Tavern Research,400.0,lv,DEM,False,Kurt Alme=50.0|Seth Bodnar=50.0
+us-202tav16c902e1,2026-06-19,2026-07-01,Montana,Tavern Research,400.0,lv,DEM,False,Kurt Alme=56.0|Alani Bankhead=44.0
+us-202qua3b4e634a,2026-06-30,2026-07-02,Michigan,Quantus Insights,947.0,lv,,False,Abdul El-Sayed=45.2|Mike Rogers=44.1
+us-202qua38d03fbc,2026-06-30,2026-07-02,Michigan,Quantus Insights,947.0,lv,,False,Haley Stevens=45.1|Mike Rogers=43.7
+us-202qua1a64cfa3,2026-06-30,2026-07-02,Michigan,Quantus Insights,947.0,lv,,False,Mallory McMorrow=44.4|Mike Rogers=45.3
+us-202bea8e2b79ff,2026-06-27,2026-07-02,Georgia,Beacon Research/Shaw & Co. Research,1002.0,rv,,False,Jon Ossoff=56.0|Mike Collins=43.0
+us-202bea93a2c09c,2026-06-27,2026-07-02,Iowa,Beacon Research/Shaw & Co. Research,1003.0,rv,,False,Josh Turek=50.0|Ashley Hinson=46.0
+us-202ins62d5470c,2026-10-14,2026-10-16,Texas,InsiderAdvantage,1200.0,lv,,False,James Talarico=48.0|Ken Paxton=49.0
+us-202wic6dd1649c,2026-06-30,2026-07-09,Georgia,Wick,1175.0,lv,,False,Jon Ossoff=46.7|Mike Collins=42.9
+us-202pub96a42a3f,2026-07-11,2026-07-13,North Carolina,Public Policy Polling,759.0,lv,,False,Roy Cooper=48.0|Michael Whatley=44.0
+us-202act4e413645,2026-10-14,2026-10-15,Texas,ActiVote,400.0,lv,,False,James Talarico=51.9|Ken Paxton=48.1
+us-202uni1ae0881e,2026-07-17,2026-07-20,Florida,University of North Florida,848.0,lv,,False,Ashley Moody=50.0|Alexander Vindman=40.0
+us-202unia65b1e02,2026-07-20,2026-07-22,Maine,University of New Hampshire,1178.0,lv,,False,Troy Jackson=49.0|Susan Collins=46.0
+us-202fab389395b2,2026-07-16,2026-07-23,Georgia,"Fabrizio, Lee & Associates/Impact Research",1060.0,lv,,False,Jon Ossoff=52.0|Mike Collins=43.0
+us-202har44ddb49c,2026-06-24,2026-07-23,Montana,Hart Research Associates,800.0,lv,DEM,False,Kurt Alme=49.0|Alani Bankhead=43.0
+us-202tav913179a0,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=51.0|Seth Bodnar=49.0
+us-202tav1d399417,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=59.0|Alani Bankhead=41.0
+us-202tav5960dbe5,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=49.0|Alani Bankhead=22.0|Seth Bodnar=27.0
+us-202tav83ffdf29,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=49.0|Alani Bankhead=24.0|Seth Bodnar=25.0|Kyle Austin=2.0
+us-202tav8cd1705b,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=56.0|Alani Bankhead=36.0|Kyle Austin=8.0
+us-202tavbdc1a03d,2026-07-27,2026-07-28,Montana,Tavern Research,517.0,lv,,False,Kurt Alme=50.0|Seth Bodnar=45.0|Kyle Austin=5.0
+us-202gqr6f3c3766,2026-07-26,2026-07-28,Montana,GQR,500.0,lv,,False,Kurt Alme=41.0|Alani Bankhead=22.0|Seth Bodnar=27.0|Kyle Austin=6.0
+us-202gqre6dc037c,2026-07-26,2026-07-28,Montana,GQR,500.0,lv,,False,Kurt Alme=44.0|Alani Bankhead=40.0|Kyle Austin=13.0
+us-202gqr10c806ef,2026-07-26,2026-07-28,Montana,GQR,500.0,lv,,False,Kurt Alme=52.0|Alani Bankhead=44.0
+us-202gqr0fc65d4b,2026-07-26,2026-07-28,Montana,GQR,500.0,lv,,False,Kurt Alme=40.0|Seth Bodnar=44.0|Kyle Austin=11.0
+us-202gqrcac76706,2026-07-26,2026-07-28,Montana,GQR,500.0,lv,,False,Kurt Alme=44.0|Seth Bodnar=50.0
+us-202sli6204659f,2026-07-17,2026-07-28,Texas,Slingshot Strategies,1048.0,lv,,False,James Talarico=45.0|Ken Paxton=40.0|Ted Brown=1.0
+us-202theb6b894ea,2026-07-16,2026-07-28,Montana,The Bullfinch Group,793.0,lv,,False,Kurt Alme=36.0|Alani Bankhead=22.0|Seth Bodnar=24.0
+us-202gle7fc79cd5,2026-07-24,2026-07-28,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Abdul El-Sayed=38.7|Mike Rogers=49.0
+us-202gle6589d1bb,2026-07-24,2026-07-28,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Haley Stevens=45.5|Mike Rogers=44.7
+us-202beacaddacc4,2026-07-27,2026-07-30,North Carolina,Beacon Research/Shaw & Co. Research,1005.0,rv,,False,Roy Cooper=53.0|Michael Whatley=44.0
+us-202bea54820d8d,2026-07-27,2026-07-30,Texas,Beacon Research/Shaw & Co. Research,1006.0,rv,,False,James Talarico=51.0|Ken Paxton=48.0
+us-202epife4108d8,2026-07-31,2026-08-02,Michigan,EPIC-MRA,600.0,lv,,False,Mike Rogers=46.0|Abdul El-Sayed=43.0
+us-202epia42401c2,2026-07-31,2026-08-02,Michigan,EPIC-MRA,600.0,lv,,False,Haley Stevens=44.0|Mike Rogers=42.0
+us-202mit1e6a5692,2026-07-29,2026-08-03,Michigan,Mitchell Research & Communications,672.0,lv,,False,Abdul El-Sayed=45.0|Mike Rogers=45.0
+us-202mit132a3ca8,2026-07-29,2026-08-03,Michigan,Mitchell Research & Communications,672.0,lv,,False,Haley Stevens=41.0|Mike Rogers=45.0
+us-202wed4dcf8c6b,2026-07-31,2026-08-03,Texas,Wedgewood Polls,800.0,lv,,False,James Talarico=48.0|Ken Paxton=46.0
+us-202texee0a6ae6,2026-07-30,2026-08-04,Texas,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,1200.0,lv,,False,James Talarico=47.0|Ken Paxton=45.0|Ted Brown=2.0
+us-202yes4308b337,2026-07-11,2026-08-04,Alabama,yes. every kid.,601.0,lv,,False,Barry Moore=47.0|Everett Wess=32.0
+us-202harfe4afc0e,2026-08-01,2026-08-06,Maine,Hart Research Associates,802.0,lv,DEM,False,Troy Jackson=49.0|Susan Collins=45.0
+us-202eme4923d9f5,2026-08-04,2026-08-06,Iowa,Emerson College,712.0,lv,,False,Ashley Hinson=48.0|Josh Turek=45.0
+us-202you3c4a4a9f,2026-07-31,2026-08-07,Texas,YouGov Blue,1001.0,rv,DEM,False,James Talarico=48.0|Ken Paxton=45.0
+us-202chad53b9fb6,2026-08-01,2026-08-07,North Carolina,Change Research,967.0,lv,,False,Roy Cooper=50.0|Michael Whatley=41.0
+us-202rec773da2d7,2026-07-30,2026-08-07,Texas,ReconMR/Siena University,619.0,lv,,False,James Talarico=47.0|Ken Paxton=43.0
+us-202chaf0ea6e94,2026-08-06,2026-08-10,North Carolina,Change Research,915.0,lv,DEM,False,Roy Cooper=50.0|Michael Whatley=43.0
+us-202alaaa70f06a,2026-08-05,2026-08-12,Alaska,Alaska Survey Research,1371.0,lv,,False,Mary Peltola=50.8|Dan Sullivan=49.2
+us-202elodaa5cffa,2026-07-23,2026-08-12,North Carolina,Elon University/YouGov,717.0,rv,,False,Roy Cooper=51.0|Michael Whatley=35.0|Shannon Bray=1.0|Michael Dublin=2.0
+us-202elo069243f3,2026-07-23,2026-08-12,North Carolina,Elon University/YouGov,466.0,lv,,False,Roy Cooper=53.0|Michael Whatley=42.0|Shannon Bray=2.0|Michael Dublin=1.0
+us-202mar9ee393ca,2026-10-11,2026-10-15,Iowa,Marist University,1100.0,lv,,False,Ashley Hinson=45.0|Josh Turek=48.0
+us-202har82b4bcdc,2026-08-04,2026-08-13,Montana,Hart Research Associates,800.0,lv,,False,Kurt Alme=45.0|Alani Bankhead=15.0|Seth Bodnar=30.0|Kyle Austin=6.0
+us-202bea347c91b0,2026-08-10,2026-08-13,Maine,Beacon Research/Shaw & Co. Research,1000.0,rv,,False,Troy Jackson=48.0|Susan Collins=46.0
+us-202eme5bcac049,2026-08-10,2026-08-13,Texas,Emerson College,1000.0,lv,,False,James Talarico=46.0|Ken Paxton=47.0
+us-202har1cef6d8a,2026-08-10,2026-08-14,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=51.5|Michael Whatley=39.0
+us-202the39a65ca5,2026-08-07,2026-08-14,Idaho,The Bullfinch Group,608.0,lv,,False,Jim Risch=34.0|Todd Achilles=30.0|Matt Loesby=4.0
+us-202bea58e907c0,2026-08-10,2026-08-14,Ohio,Beacon Research/Shaw & Co. Research,1008.0,rv,,False,Sherrod Brown=53.0|Jon Husted=45.0
+us-202bea6ed87549,2026-08-10,2026-08-14,Michigan,Beacon Research/Shaw & Co. Research,1006.0,rv,,False,Abdul El-Sayed=47.0|Mike Rogers=51.0
+us-202inscfc77987,2026-10-14,2026-10-16,Maine,InsiderAdvantage,1200.0,lv,,False,Troy Jackson=49.0|Susan Collins=47.0
+us-202wedb13225b0,2026-08-13,2026-08-15,Ohio,Wedgewood Polls,800.0,lv,,False,Sherrod Brown=48.0|Jon Husted=44.0
+us-202gba7596c230,2026-08-10,2026-08-17,Michigan,GBAO Strategies,800.0,lv,DEM,False,Abdul El-Sayed=50.0|Mike Rogers=44.0
+us-202uni86a7074d,2026-08-12,2026-08-17,Massachusetts,University of Massachusetts Department of Political Science/YouGov,800.0,rv,,False,Ed Markey=51.0|John Deaton=30.0
+us-202unibd1bf2da,2026-08-12,2026-08-17,Massachusetts,University of Massachusetts Department of Political Science/YouGov,800.0,rv,,False,Seth Moulton=49.0|John Deaton=25.0
+us-202susb1d73b8b,2026-08-17,2026-08-19,Michigan,Susquehanna Polling & Research,800.0,rv,,False,Abdul El-Sayed=46.0|Mike Rogers=39.0
+us-202tip8915c085,2026-08-10,2026-08-19,Michigan,TIPP Insights,1528.0,rv,REP,False,Abdul El-Sayed=45.0|Mike Rogers=42.0
+us-202uni979cabda,2026-03-02,2026-08-19,Florida,University of North Florida,768.0,lv,,False,Angie Nixon=38.0|Ashley Moody=46.0
+us-202emed67d42c8,2026-03-31,2026-08-19,Florida,Emerson College,1125.0,lv,,False,Angie Nixon=36.0|Ashley Moody=47.0
+us-202unic788577e,2026-07-17,2026-08-19,Florida,University of North Florida,848.0,lv,,False,Angie Nixon=42.0|Ashley Moody=50.0
+us-202ins63791cfb,2026-08-17,2026-08-20,Georgia,InsiderAdvantage,800.0,lv,,False,Jon Ossoff=50.1|Mike Collins=42.6
+us-202j.le2159a92,2026-08-18,2026-08-20,Arkansas,J.L. Partners,803.0,lv,,False,Tom Cotton=51.0|Hallie Shoffner=35.0|Jeff Wadlin=4.0
+us-202sur47670306,2026-08-17,2026-08-20,Minnesota,SurveyUSA,661.0,lv,,False,Peggy Flanagan=46.0|Michele Tafoya=41.0|Marisa Simonetti=1.0|Rebecca Whiting=1.0
+us-202fab12ee3caf,2026-08-11,2026-08-20,Michigan,"Fabrizio, Lee & Associates/Impact Research",877.0,lv,,False,Abdul El-Sayed=48.0|Mike Rogers=47.0
+us-202sai47715591,2026-08-18,2026-08-25,New Hampshire,Saint Anselm College Survey Center,1411.0,lv,,False,Chris Pappas=48.0|John Sununu=41.0
+us-202saif937cd00,2026-08-18,2026-08-26,New Hampshire,Saint Anselm College Survey Center,1411.0,lv,,False,Chris Pappas=49.0|Scott Brown=37.0
+us-202hig0453aa0e,2026-08-12,2026-08-26,North Carolina,High Point University Survey Research Center,660.0,lv,,False,Roy Cooper=50.0|Michael Whatley=45.0
+us-202hig8ec8c4e5,2026-08-12,2026-08-26,North Carolina,High Point University Survey Research Center,800.0,rv,,False,Roy Cooper=48.0|Michael Whatley=41.0
+us-202the54ba4671,2026-08-13,2026-08-26,Texas,The Texas Politics Project at the University of Texas at Austin/YouGov,1218.0,rv,,False,James Talarico=42.0|Ken Paxton=39.0|Ted Brown=3.0
+us-202sufc2449e1f,2026-08-23,2026-08-26,Iowa,Suffolk University,500.0,lv,,False,Ashley Hinson=45.4|Josh Turek=40.8
+us-202unie006e257,2026-08-24,2026-08-26,New Hampshire,University of New Hampshire,1878.0,lv,,False,Chris Pappas=43.0|John Sununu=45.0
+us-202sli394bd9a0,2026-08-24,2026-08-27,Texas,Slingshot Strategies,1000.0,lv,,False,James Talarico=48.0|Ken Paxton=42.0|Ted Brown=1.0
+us-202uni2c6a92aa,2026-08-24,2026-08-27,Rhode Island,University of New Hampshire,750.0,lv,,False,Jack Reed=51.0|Raymond McKay=31.0|Michael Bahry=2.0
+us-202uni38178073,2026-08-24,2026-08-27,New Hampshire,University of New Hampshire,1878.0,lv,,False,Chris Pappas=45.0|Scott Brown=40.0
+us-202unic67dc15d,2026-08-24,2026-08-27,Massachusetts,University of New Hampshire,881.0,lv,,False,Ed Markey=49.0|John Deaton=30.0|Joe Tache=7.0
+us-202unif995f365,2026-08-24,2026-08-27,Massachusetts,University of New Hampshire,881.0,lv,,False,Seth Moulton=38.0|John Deaton=25.0|Joe Tache=16.0
+us-202dat084dfba9,2026-08-15,2026-08-29,Mississippi,Data for Progress,1018.0,lv,DEM,False,Cindy Hyde-Smith=47.0|Scott Colom=41.0
+us-202epi5f481027,2026-08-28,2026-08-29,Michigan,EPIC-MRA,600.0,lv,,False,Abdul El-Sayed=47.0|Mike Rogers=43.0
+us-202resf47cceea,2026-08-28,2026-09-01,New Mexico,Research & Polling Inc.,516.0,lv,,False,Ben Ray Luján=53.0|Larry Marker=38.0
+us-202micb55519f5,2026-08-20,2026-09-01,Michigan,Michigan State University Institute for Public Policy and Social Research/YouGov,779.0,lv,,False,Abdul El-Sayed=50.0|Mike Rogers=45.0
+us-202miccc27552a,2026-08-20,2026-09-01,Michigan,Michigan State University Institute for Public Policy and Social Research/YouGov,913.0,rv,,False,Abdul El-Sayed=48.0|Mike Rogers=44.0
+us-202emec4141ca7,2026-09-01,2026-09-03,Iowa,Emerson College,750.0,lv,,False,Ashley Hinson=50.0|Josh Turek=45.0
+us-202ala6eea5978,2026-08-23,2026-09-03,Alaska,Alaska Survey Research,1495.0,lv,,False,Mary Peltola=50.6|Dan Sullivan=49.4
+us-202tara610e9e2,2026-08-26,2026-09-03,Tennessee,Targoz Market Research,1157.0,rv,,False,Bill Hagerty=51.0|Marquita Bradshaw=31.0
+us-202youc39ac53a,2026-09-04,2026-09-10,Texas,YouGov,1000.0,rv,,False,James Talarico=48.0|Ken Paxton=43.0
+us-202elo857d928d,2026-08-31,2026-09-10,North Carolina,Elon University/YouGov,565.0,lv,,False,Roy Cooper=49.0|Michael Whatley=38.0|Shannon Bray=2.0|Michael Dublin=2.0
+us-202you8b2f9799,2026-09-08,2026-09-10,Maine,YouGov,1335.0,lv,,False,Troy Jackson=48.0|Susan Collins=44.0
+us-202fab22efb6bc,2026-09-01,2026-09-10,Texas,Fabrizio Ward/Impact Research,895.0,lv,,False,James Talarico=48.0|Ken Paxton=44.0
+us-202easa9c1ac17,2026-09-03,2026-09-11,North Carolina,East Carolina University,675.0,lv,,False,Roy Cooper=52.0|Michael Whatley=44.0|Shannon Bray=3.0|Michael Dublin=1.0
+us-202ins635442db,2026-09-09,2026-09-11,South Carolina,InsiderAdvantage,1200.0,lv,,False,Darline Graham=45.1|Annie Andrews=43.2
+us-202ins8df69531,2026-09-09,2026-09-11,Texas,InsiderAdvantage,1200.0,lv,,False,James Talarico=47.1|Ken Paxton=45.6|Ted Brown=2.2
+us-202ins890b679a,2026-09-09,2026-09-11,Ohio,InsiderAdvantage,1200.0,lv,,False,Sherrod Brown=47.3|Jon Husted=41.9
+us-202traa454dc67,2026-09-09,2026-09-11,Michigan,Trafalgar Group,1079.0,lv,REP,False,Abdul El-Sayed=46.3|Mike Rogers=44.8|Lydia Christensen=0.8|Tim Long=0.7|Douglas P. Marsh=0.4|Walter P. Kristy=0.2
+us-202cha69e5536b,2026-09-09,2026-09-11,Florida,Change Research,1107.0,lv,,False,Ashley Moody=47.0|Angie Nixon=47.0
+us-202qua8837472c,2026-09-10,2026-09-11,Minnesota,Quantus Insights,720.0,lv,,False,Peggy Flanagan=48.2|Michele Tafoya=44.4
+us-202qua2b8ed3cb,2026-09-10,2026-09-11,Florida,Quantus Insights,733.0,lv,,False,Ashley Moody=50.1|Angie Nixon=42.7
+us-202youa33846f3,2026-09-08,2026-09-11,Iowa,YouGov,2166.0,rv,,False,Ashley Hinson=43.0|Josh Turek=44.0
+us-202youe257a121,2026-09-08,2026-09-11,Iowa,YouGov,2041.0,lv,,False,Josh Turek=47.0|Ashley Hinson=43.0
+us-202co/dc2b4681,2026-09-16,2026-09-17,Iowa,co/efficient,831.0,lv,REP,False,Ashley Hinson=46.0|Josh Turek=42.0|Thomas Laehn=2.0
+us-202sura38c6933,2026-09-14,2026-09-17,Minnesota,SurveyUSA,654.0,lv,,False,Peggy Flanagan=42.0|Michele Tafoya=42.0|Marisa Simonetti=2.0|Rebecca Whiting=2.0
+us-202qua5c07dc65,2026-09-15,2026-09-17,Maine,Quantus Insights,621.0,lv,,False,Troy Jackson=46.4|Susan Collins=47.1
+us-202the9066d3a5,2026-09-14,2026-09-17,Michigan,The Washington Post/George Mason University School of Policy and Government,803.0,lv,,False,Abdul El-Sayed=48.0|Mike Rogers=45.0
+us-202emee56d4394,2026-09-14,2026-09-17,Texas,Emerson College,1000.0,lv,,False,James Talarico=47.0|Ken Paxton=46.0|Ted Brown=2.0
+us-202eme99d02ce6,2026-09-14,2026-09-17,Michigan,Emerson College,1000.0,lv,,False,Abdul El-Sayed=48.2|Mike Rogers=45.7|Lydia Christensen=0.5|Tim Long=0.6|Douglas P. Marsh=3.0|Walter P. Kristy=0.3
+us-202rec85c5cf76,2026-09-11,2026-09-17,Texas,ReconMR/Siena University,614.0,lv,,False,James Talarico=49.0|Ken Paxton=43.0
+us-202fabecd2ecd9,2026-09-11,2026-09-17,Alaska,"Fabrizio, Lee & Associates/Impact Research",800.0,lv,,False,Mary Peltola=53.0|Dan Sullivan=47.0
+us-202harfc1499b8,2026-09-15,2026-09-18,North Carolina,Harper Polling,608.0,lv,,False,Roy Cooper=49.0|Michael Whatley=34.0|Shannon Bray=3.0|Michael Dublin=2.0
+us-202co/0acc5699,2026-09-17,2026-09-18,Alaska,co/efficient,799.0,lv,,False,Mary Peltola=46.0|Dan Sullivan=49.0
+us-202st.73c64f89,2026-09-17,2026-09-18,Florida,St. Pete Polls,913.0,lv,,False,Ashley Moody=45.2|Angie Nixon=44.8
+us-202tra4f3f6f82,2026-09-16,2026-09-18,Ohio,Trafalgar Group,1085.0,lv,REP,False,Sherrod Brown=45.0|Jon Husted=42.0
+us-202qua7f691cd6,2026-09-15,2026-09-18,Montana,Quantus Insights,625.0,lv,,False,Kurt Alme=44.0|Alani Bankhead=23.0|Seth Bodnar=24.0
+us-202emeb0bb9def,2026-09-16,2026-09-18,Kansas,Emerson College,750.0,lv,,False,Roger Marshall=43.0|Adam Hamilton=45.0|David Graham=4.0
+us-202insf80352ad,2026-09-17,2026-09-18,North Carolina,InsiderAdvantage,1200.0,lv,,False,Roy Cooper=48.4|Michael Whatley=42.5|Shannon Bray=1.6|Michael Dublin=1.1
+us-202insfe93ffed,2026-09-17,2026-09-18,New Hampshire,InsiderAdvantage,1200.0,lv,,False,Chris Pappas=48.0|John Sununu=40.0
+us-202ins9dcc36f4,2026-10-14,2026-10-16,Kansas,InsiderAdvantage,1200.0,lv,,False,Roger Marshall=48.0|Adam Hamilton=47.0
+us-202marf54f428e,2026-09-20,2026-09-22,Iowa,Marist University,1050.0,rv,,False,Ashley Hinson=42.0|Josh Turek=50.0
+us-202insad41796a,2026-09-21,2026-09-22,Florida,InsiderAdvantage,600.0,lv,,False,Ashley Moody=49.3|Angie Nixon=41.8|Neil Gillespie=2.4
+us-202tex6938a787,2026-09-19,2026-09-22,Texas,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,1800.0,lv,,False,James Talarico=47.0|Ken Paxton=46.0|Ted Brown=3.0
+us-202suf59500e62,2026-09-20,2026-09-22,Michigan,Suffolk University,500.0,lv,,False,Abdul El-Sayed=47.0|Mike Rogers=40.0|Lydia Christensen=1.0|Tim Long=0.0|Douglas P. Marsh=0.0|Walter P. Kristy=1.0
+us-202co/b838141c,2026-09-23,2026-09-24,Michigan,co/efficient,843.0,lv,,False,Abdul El-Sayed=50.0|Mike Rogers=50.0
+us-202the9a68a494,2026-09-22,2026-09-24,Maine,The New York Times/Siena University,619.0,lv,,False,Susan Collins=49.0|Troy Jackson=46.0
+us-202thecf4746de,2026-09-22,2026-09-24,Michigan,The New York Times/Siena University,605.0,lv,,False,Abdul El-Sayed=49.0|Mike Rogers=44.0
+us-202the55816505,2026-09-22,2026-09-24,New Hampshire,The New York Times/Siena University,613.0,lv,,False,Chris Pappas=50.0|John Sununu=45.0
+us-202higae3d1182,2026-09-16,2026-09-24,North Carolina,High Point University Survey Research Center,706.0,lv,,False,Roy Cooper=50.0|Michael Whatley=42.0
+us-202uni866e047f,2026-09-14,2026-09-24,Maine,University of Massachusetts Lowell Center for Public Opinion/YouGov,650.0,lv,,False,Troy Jackson=48.0|Susan Collins=43.0
+us-202qua2790f813,2026-09-23,2026-09-25,Ohio,Quantus Insights,695.0,lv,,False,Sherrod Brown=47.8|Jon Husted=47.3
+us-202ste67ef4e2d,2026-09-21,2026-09-25,Florida,Stetson University Center for Public Opinion Research,830.0,lv,,False,Ashley Moody=51.0|Angie Nixon=40.0
+us-202uni02a0a46f,2026-09-21,2026-09-25,New Hampshire,University of New Hampshire,1418.0,lv,,False,Chris Pappas=50.0|John Sununu=42.0|Edmond Laplante=2.0
+us-202uni51f1c418,2026-09-21,2026-09-25,Maine,University of New Hampshire,1312.0,lv,,False,Troy Jackson=51.0|Susan Collins=47.0
+us-202wedd2e2b8b0,2026-09-24,2026-09-25,Kansas,Wedgewood Polls,500.0,lv,,False,Roger Marshall=48.0|Adam Hamilton=50.0|David Graham=2.0
+us-202bigbe8a8854,2026-09-23,2026-09-25,Georgia,Big Data Poll,678.0,lv,,False,Jon Ossoff=55.4|Mike Collins=44.6
+us-202gba71e992b6,2026-09-08,2026-09-25,Nebraska,GBAO Strategies,800.0,lv,DEM,False,Pete Ricketts=46.0|Dan Osborn=47.0
+us-202sli284b821d,2026-09-22,2026-09-25,Texas,Slingshot Strategies,1007.0,lv,,False,James Talarico=49.0|Ken Paxton=45.0|Ted Brown=3.0
+us-202insbbb32dd3,2026-09-23,2026-09-25,Georgia,InsiderAdvantage,1200.0,lv,,False,Jon Ossoff=50.0|Mike Collins=42.0
+us-202amec1fe2597,2026-09-24,2026-09-29,Montana,American Pulse Research & Polling,604.0,lv,,False,Kurt Alme=45.0|Alani Bankhead=19.0|Seth Bodnar=26.0
+us-202chad8109bd5,2026-09-27,2026-09-29,Florida,Change Research,1063.0,lv,,False,Ashley Moody=48.0|Angie Nixon=47.0
+us-202mara7f1d430,2026-09-27,2026-09-29,Ohio,Marist University,1298.0,rv,,False,Sherrod Brown=51.0|Jon Husted=43.0
+us-202mas5785b9ea,2026-09-22,2026-09-29,Massachusetts,MassINC Polling Group,800.0,lv,,False,Ed Markey=52.0|John Deaton=26.0|Joe Tache=2.0|Shriya Ayyadurai=2.0
+us-202cyg13fa7f0a,2026-09-21,2026-09-29,Michigan,Cygnal/Beacon Research,600.0,lv,,False,Abdul El-Sayed=45.0|Mike Rogers=40.0|Lydia Christensen=1.0|Tim Long=0.0|Douglas P. Marsh=0.0|Walter P. Kristy=0.0
+us-202big1f625134,2026-09-27,2026-09-29,Ohio,Big Data Poll,680.0,lv,,False,Sherrod Brown=46.3|Jon Husted=42.6
+us-202co/7102b7eb,2026-09-30,2026-10-01,Maine,co/efficient,1240.0,lv,,False,Susan Collins=48.0|Troy Jackson=46.0
+us-202beac0286b40,2026-09-28,2026-10-01,Michigan,Beacon Research/Shaw & Co. Research,1028.0,lv,,False,Abdul El-Sayed=50.0|Mike Rogers=49.0
+us-202bigf2db767c,2026-09-29,2026-10-01,North Carolina,Big Data Poll,642.0,lv,,False,Roy Cooper=51.0|Michael Whatley=39.0|Shannon Bray=7.0|Michael Dublin=4.0
+us-202rmg809825be,2026-09-25,2026-10-01,Alabama,RMG Research,800.0,rv,REP,False,Barry Moore=54.0|Everett Wess=33.0
+us-202fabe2bcab70,2026-09-22,2026-10-02,Maine,"Fabrizio, Lee & Associates/Impact Research",982.0,lv,,False,Troy Jackson=50.0|Susan Collins=47.0
+us-202insea9816ae,2026-09-29,2026-10-02,Ohio,InsiderAdvantage,1200.0,lv,,False,Sherrod Brown=44.0|Jon Husted=43.0|Bill Redpath=4.0|Greg Levy=2.0
+us-202wedfe4427b1,2026-10-01,2026-10-02,Maine,Wedgewood Polls,400.0,lv,,False,Troy Jackson=52.0|Susan Collins=48.0
+us-202beaadb6c4f9,2026-09-28,2026-10-02,Iowa,Beacon Research/Shaw & Co. Research,1008.0,lv,,False,Ashley Hinson=47.0|Josh Turek=49.0
+us-202tra046dabbf,2026-09-30,2026-10-02,Michigan,Trafalgar Group,1085.0,lv,REP,False,Abdul El-Sayed=47.0|Mike Rogers=45.0|Lydia Christensen=2.0|Tim Long=1.0|Douglas P. Marsh=0.0|Walter P. Kristy=0.0
+us-202beab9600d9b,2026-09-28,2026-10-02,Texas,Beacon Research/Shaw & Co. Research,881.0,lv,,False,James Talarico=51.0|Ken Paxton=49.0
+us-202ins4236730d,2026-09-29,2026-10-02,South Carolina,InsiderAdvantage,1200.0,lv,,False,Darline Graham=46.0|Annie Andrews=45.0|Kasie Whitener=2.0|Mark Hackett=3.0
+us-202qua198b0338,2026-09-30,2026-10-02,Alaska,Quantus Insights,758.0,lv,,False,Mary Peltola=47.2|Dan Sullivan=47.8
+us-202big7e4bf32f,2026-09-30,2026-10-02,Minnesota,Big Data Poll,622.0,lv,,False,Peggy Flanagan=46.0|Michele Tafoya=44.0|Rebecca Whiting=5.0
+us-202wed7f897488,2026-10-03,2026-10-04,Georgia,Wedgewood Polls,600.0,lv,,False,Jon Ossoff=55.0|Mike Collins=45.0
+us-202mit7960c973,2026-10-01,2026-10-06,Michigan,Mitchell Research & Communications,682.0,lv,,False,Abdul El-Sayed=46.0|Mike Rogers=41.0|Lydia Christensen=3.0|Tim Long=1.0|Douglas P. Marsh=1.0|Walter P. Kristy=2.0
+us-202surae0ec3b2,2026-09-30,2026-10-06,New Mexico,SurveyUSA,576.0,lv,,False,Ben Ray Luján=54.0|Larry Marker=36.0
+us-202pub12c802d5,2026-10-01,2026-10-06,Illinois,Public Policy Polling,569.0,lv,DEM,False,Juliana Stratton=49.0|Don Tracy=36.0
+us-202mare89f317d,2026-10-04,2026-10-06,Maine,Marist University,1505.0,rv,,False,Troy Jackson=51.0|Susan Collins=47.0
+us-202gui7fa4251f,2026-09-28,2026-10-08,Texas,Guidant Polling and Strategy,800.0,lv,,False,James Talarico=46.6|Ken Paxton=44.2|Ted Brown=4.0
+us-202guic8eacfa2,2026-09-27,2026-10-08,Michigan,Guidant Polling and Strategy,800.0,lv,,False,Abdul El-Sayed=48.0|Mike Rogers=43.0|Lydia Christensen=1.0|Tim Long=1.0|Douglas P. Marsh=0.0|Walter P. Kristy=0.0
+us-202cnna1713372,2026-10-05,2026-10-08,Ohio,CNN/SSRS,760.0,lv,,False,Sherrod Brown=49.0|Jon Husted=43.0
+us-202cnnc393624c,2026-10-05,2026-10-08,Iowa,CNN/SSRS,801.0,lv,,False,Ashley Hinson=45.0|Josh Turek=43.0
+us-202unic8d0412d,2026-09-28,2026-10-08,Texas,University of Massachusetts Lowell Center for Public Opinion/YouGov,850.0,lv,,False,James Talarico=45.0|Ken Paxton=45.0|Ted Brown=2.0
+us-202unifcec5d26,2026-09-21,2026-10-08,Massachusetts,University of New Hampshire,564.0,lv,,False,Ed Markey=53.0|John Deaton=30.0|Joe Tache=9.0
+us-202uni2e797321,2026-09-21,2026-10-08,Rhode Island,University of New Hampshire,598.0,lv,,False,Jack Reed=53.0|Raymond McKay=33.0|Michael Bahry=5.0
+us-202st.fc2e22ed,2026-10-07,2026-10-09,Florida,St. Pete Polls,836.0,lv,,False,Ashley Moody=47.0|Angie Nixon=45.0
+us-202eas168b53d4,2026-10-03,2026-10-09,North Carolina,East Carolina University,810.0,lv,,False,Roy Cooper=53.0|Michael Whatley=46.0|Shannon Bray=2.0|Michael Dublin=0.0
+us-202co/ed81e3f8,2026-10-06,2026-10-09,Ohio,co/efficient,925.0,lv,REP,False,Sherrod Brown=45.0|Jon Husted=46.0
+us-202co/52c27a2f,2026-10-06,2026-10-09,Ohio,co/efficient,925.0,lv,REP,False,Sherrod Brown=43.0|Jon Husted=44.0|Gregory Levy=3.0|Bill Redpath=1.0
+us-202z tb2a3f7be,2026-10-01,2026-10-09,Michigan,Z to A Research,483.0,lv,DEM,False,Abdul El-Sayed=49.0|Mike Rogers=42.0|Lydia Christensen=3.0
+us-202gqr63b7a4d3,2026-10-04,2026-10-09,Minnesota,GQR,800.0,lv,DEM,False,Peggy Flanagan=50.0|Michele Tafoya=42.0|Marisa Simonetti=4.0|Rebecca Whiting=2.0
+us-202tar0bbd9d56,2026-10-04,2026-10-09,Florida,Targoz Market Research,857.0,lv,,False,Angie Nixon=42.0|Ashley Moody=52.0
+us-202tarc49d2a14,2026-10-04,2026-10-09,Florida,Targoz Market Research,1200.0,rv,,False,Angie Nixon=38.0|Ashley Moody=50.0
+us-202eme2172a9a0,2026-10-06,2026-10-09,Iowa,Emerson College,650.0,lv,,False,Josh Turek=45.0|Ashley Hinson=46.6|Thomas Laehn=1.5
+us-202the6b777566,2026-10-05,2026-10-09,Maine,The Washington Post/George Mason University School of Policy and Government,800.0,lv,,False,Troy Jackson=50.0|Susan Collins=45.0
+us-202gracbfdd9ed,2026-10-04,2026-10-09,Arkansas,Grayhouse,550.0,lv,,False,Hallie Shoffner=40.0|Tom Cotton=51.0|Jeff Wadlin=4.0
+us-202nat61ba6088,2026-10-05,2026-10-13,Nebraska,National Public Affairs,800.0,lv,,False,Pete Ricketts=49.0|Dan Osborn=46.0
+us-202recc152b3f7,2026-10-08,2026-10-13,Texas,ReconMR/Siena University,617.0,lv,,False,James Talarico=48.0|Ken Paxton=44.0
+us-202surbcf9e1be,2026-10-11,2026-10-13,North Carolina,SurveyUSA,643.0,lv,,False,Roy Cooper=54.0|Michael Whatley=40.0
+us-202chaa0d9b00c,2026-10-07,2026-10-13,North Carolina,Change Research,829.0,lv,DEM,False,Roy Cooper=50.0|Michael Whatley=40.0|Shannon Bray=2.0|Michael Dublin=1.0
+us-202quaee83ce98,2026-10-11,2026-10-13,Texas,Quantus Insights,854.0,lv,,False,James Talarico=46.7|Ken Paxton=47.2|Ted Brown=2.2
+us-202uni13705323,2026-10-12,2026-10-20,Massachusetts,University of Massachusetts Department of Political Science/YouGov,800.0,rv,,False,Ed Markey=56.0|John Deaton=29.0|Joe Tache=3.0|Shriya Ayyadurai=6.0
+us-202nat70f2036c,2026-10-12,2026-10-20,Iowa,National Public Affairs,678.0,lv,,False,Ashley Hinson=47.0|Josh Turek=44.0|Thomas Laehn=4.0
+us-202quae590b629,2026-10-17,2026-10-20,Georgia,Quantus Insights,755.0,lv,,False,Jon Ossoff=51.8|Mike Collins=44.9
+us-202co/2755fd48,2026-10-19,2026-10-20,Iowa,co/efficient,863.0,lv,REP,False,Ashley Hinson=48.0|Josh Turek=45.0|Thomas Laehn=2.0
+us-202thef799bd14,2026-10-16,2026-10-20,Alabama,The Alabama Poll,600.0,lv,,False,Barry Moore=56.0|Everett Wess=35.0
+us-202embbacff0bd,2026-10-08,2026-10-20,Rhode Island,Embold Research,815.0,lv,,False,Jack Reed=55.0|Raymond McKay=32.0|Michael Bahry=4.0
+us-202suf710febda,2026-10-17,2026-10-20,Massachusetts,Suffolk University,500.0,lv,,False,Ed Markey=60.0|John Deaton=32.0|Joe Tache=1.0|Shriya Ayyadurai=1.0
+us-202mar3b19e64d,2026-10-18,2026-10-20,Ohio,Marist University,1176.0,lv,,False,Sherrod Brown=48.0|Jon Husted=44.0
+us-202elo000dcdfc,2026-10-08,2026-10-20,North Carolina,Elon University/YouGov,561.0,lv,,False,Roy Cooper=52.0|Michael Whatley=39.0|Shannon Bray=2.0|Michael Dublin=1.0
+us-202qua7812bd54,2026-10-18,2026-10-20,Montana,Quantus Insights,686.0,lv,,False,Kurt Alme=46.0|Alani Bankhead=29.0|Seth Bodnar=21.0|Kyle Austin=2.0
+us-202data959fae6,2026-10-16,2026-10-21,Alaska,Data for Progress,671.0,lv,,False,Mary Peltola=51.0|Dan Sullivan=49.0
+us-202act204154cb,2026-10-20,2026-10-21,Georgia,ActiVote,400.0,lv,,False,Jon Ossoff=54.0|Mike Collins=46.0
+us-202act5e47e608,2026-10-20,2026-10-21,Illinois,ActiVote,400.0,lv,,False,Juliana Stratton=59.0|Don Tracy=42.0
+us-202act3e915bba,2026-10-20,2026-10-21,North Carolina,ActiVote,400.0,lv,,False,Roy Cooper=56.9|Michael Whatley=43.1
+us-202marad729239,2026-10-18,2026-10-21,Michigan,Marist University,,lv,,False,Abdul El-Sayed=50.0|Mike Rogers=48.0
+us-202uni278821c4,2026-10-15,2026-10-21,Georgia,University of Georgia School of Public and International Affairs,1000.0,lv,,False,Jon Ossoff=48.0|Mike Collins=40.0
+us-202unif780f058,2026-10-19,2026-10-21,Florida,University of North Florida,1414.0,lv,,False,Ashley Moody=49.0|Angie Nixon=45.0
+us-202vot936927b5,2026-10-20,2026-10-22,Ohio,VoteHub/Verasight,531.0,lv,,False,Sherrod Brown=47.5|Jon Husted=43.6|Bill Redpath=1.1|Greg Levy=1.0
+us-202new4178c636,2026-10-13,2026-10-22,Texas,New River Strategies/GS Strategy Group,934.0,lv,,False,James Talarico=49.0|Ken Paxton=44.0
+us-202newc8f58efe,2026-10-13,2026-10-22,Iowa,New River Strategies/GS Strategy Group,602.0,lv,,False,Ashley Hinson=44.0|Josh Turek=46.0|Thomas Laehn=8.0
+us-202new8d3274bf,2026-10-13,2026-10-22,Ohio,New River Strategies/GS Strategy Group,959.0,lv,,False,Sherrod Brown=49.0|Jon Husted=43.0|Bill Redpath=3.0|Greg Levy=4.0
+us-202actbd0ac41f,2026-10-21,2026-10-22,Texas,ActiVote,400.0,lv,,False,James Talarico=51.0|Ken Paxton=49.0
+us-202co/bf7a2617,2026-10-20,2026-10-22,Florida,co/efficient,1014.0,lv,REP,False,Ashley Moody=48.0|Angie Nixon=40.0|Neil Gillespie=2.0
+us-202quabb30f998,2026-10-19,2026-10-22,South Dakota,Quantus Insights,657.0,lv,,False,Mike Rounds=59.0|Brian Bengs=37.0
+us-202bea80ab32e9,2026-10-19,2026-10-22,Ohio,Beacon Research/Shaw & Co. Research,1592.0,lv,,False,Sherrod Brown=52.0|Jon Husted=47.0
+us-202bea368d4e46,2026-10-19,2026-10-22,Texas,Beacon Research/Shaw & Co. Research,1398.0,lv,,False,James Talarico=49.0|Ken Paxton=49.0
+us-202eme43ceed84,2026-10-19,2026-10-22,Texas,Emerson College,1000.0,lv,,False,James Talarico=48.0|Ken Paxton=46.0|Ted Brown=1.0
+us-202masda7d2a14,2026-10-14,2026-10-22,South Dakota,Mason-Dixon,500.0,lv,,False,Mike Rounds=56.0|Brian Bengs=37.0
+us-202cyg0d88fe11,2026-10-17,2026-10-22,Alabama,Cygnal,500.0,lv,,False,Barry Moore=50.0|Everett Wess=35.0
+us-202har90f566f4,2026-10-20,2026-10-22,North Carolina,Harper Polling,600.0,lv,,False,Roy Cooper=49.0|Michael Whatley=39.0|Shannon Bray=3.0|Michael Dublin=2.0
+us-202pol8bd7b267,2026-10-18,2026-10-22,Texas,Pollfinity,278.0,lv,,False,James Talarico=48.0|Ken Paxton=43.0|Ted Brown=2.0
+us-202eme8e34bf7e,2026-10-20,2026-10-22,South Dakota,Emerson College,803.0,lv,,False,Mike Rounds=50.0|Brian Bengs=42.0
+us-202natd1a93c5a,2026-10-18,2026-10-23,Nebraska,National Public Affairs,598.0,lv,,False,Pete Ricketts=50.0|Dan Osborn=47.0
+us-202sai55f1c7c2,2026-10-20,2026-10-23,New Hampshire,Saint Anselm,1672.0,lv,,False,Chris Pappas=50.0|John Sununu=43.0
+us-202bea00f453c2,2026-10-20,2026-10-23,Maine,Beacon Research/Shaw & Co. Research,1514.0,lv,,False,Troy Jackson=49.0|Susan Collins=49.0
+us-202vot954dd8b2,2026-10-20,2026-10-23,Texas,VoteHub/Verasight,601.0,lv,,False,James Talarico=47.6|Ken Paxton=45.2|Ted Brown=1.4
+us-202slidcb5236a,2026-10-18,2026-10-23,Texas,Slingshot Strategies,969.0,lv,,False,James Talarico=51.0|Ken Paxton=47.0|Ted Brown=2.0
+us-202ins750c2821,2026-10-22,2026-10-23,Iowa,InsiderAdvantage,1200.0,lv,,False,Ashley Hinson=47.0|Josh Turek=45.0
+us-202ins51d307b7,2026-10-22,2026-10-23,Michigan,InsiderAdvantage,1200.0,lv,,False,Abdul El-Sayed=47.0|Mike Rogers=46.0
+us-202ins6e5f29f2,2026-10-22,2026-10-23,Ohio,InsiderAdvantage,1200.0,lv,,False,Sherrod Brown=47.0|Jon Husted=44.0
+us-202mic57c88db3,2026-10-19,2026-10-27,Michigan,Michigan State University Institute for Public Policy and Social Research/YouGov,836.0,lv,,False,Abdul El-Sayed=48.0|Mike Rogers=45.5
+us-202qua525d8d11,2026-10-25,2026-10-27,North Carolina,Quantus Insights,722.0,lv,,False,Roy Cooper=51.4|Michael Whatley=42.8|Shannon Bray=1.3|Michael Dublin=0.7
+us-202tarbd5d9c4c,2026-10-25,2026-10-27,South Carolina,Targoz Market Research,895.0,lv,,False,Darline Graham=47.0|Annie Andrews=46.0|Kasie Whitener=2.0|Mark Hackett=1.0
+us-202mar84640418,2026-10-25,2026-10-27,Maine,Marist University,1449.0,lv,,False,Troy Jackson=49.0|Susan Collins=47.0
+us-202youe49ed5b8,2026-10-21,2026-10-27,Texas,YouGov,1000.0,rv,,False,James Talarico=50.0|Ken Paxton=45.0
+us-202gle5c572e3a,2026-10-22,2026-10-27,Michigan,"Glengariff Group, Inc.",600.0,lv,,False,Abdul El-Sayed=51.4|Mike Rogers=45.1
+us-202ech9cca8dca,2026-10-23,2026-10-27,Florida,Echelon Insights,515.0,lv,,False,Ashley Moody=51.0|Angie Nixon=43.0|Neil Gillespie=3.0
+us-202echc0a48602,2026-10-23,2026-10-27,Georgia,Echelon Insights,508.0,lv,,False,Jon Ossoff=55.0|Mike Collins=40.0|Allen Buckley=3.0
+us-202echbc68f468,2026-10-23,2026-10-27,Iowa,Echelon Insights,403.0,lv,,False,Josh Turek=45.0|Ashley Hinson=43.0|Thomas Laehn=7.0
+us-202ech31fe342b,2026-10-23,2026-10-27,Maine,Echelon Insights,413.0,lv,,False,Troy Jackson=51.0|Susan Collins=44.0
+us-202ech8ce34abf,2026-10-23,2026-10-27,Nebraska,Echelon Insights,407.0,lv,,False,Pete Ricketts=47.0|Dan Osborn=46.0|Robin Richards=2.0|Chuck Conboy=1.0
+us-202ech01f06c61,2026-10-23,2026-10-27,Ohio,Echelon Insights,508.0,lv,,False,Sherrod Brown=47.0|Jon Husted=47.0|Bill Redpath=1.0|Greg Levy=2.0
+us-202actc8c031ff,2026-10-27,2026-10-27,Florida,ActiVote,400.0,lv,,False,Ashley Moody=53.0|Angie Nixon=47.0
+us-202conf574c6cb,2026-10-23,2026-10-29,Montana,Concord Public Opinion Partners,410.0,lv,DEM,False,Kurt Alme=38.0|Alani Bankhead=10.0|Seth Bodnar=39.0|Kyle Austin=2.0

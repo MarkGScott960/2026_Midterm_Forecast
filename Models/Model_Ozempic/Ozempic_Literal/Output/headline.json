@@ -1,32 +1,32 @@
 {
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-29",
   "variant": "Literal",
-  "p_d_51": 0.4825,
-  "exp_d_seats": 50.4872,
+  "p_d_51": 0.497,
+  "exp_d_seats": 50.5467,
   "median_d_seats": 50.0,
   "p10": 47.0,
   "p90": 55.0,
   "no_kalshi": {
-    "p_d_51": 0.4727,
-    "exp_d_seats": 50.3807,
+    "p_d_51": 0.4818,
+    "exp_d_seats": 50.3854,
     "median_d_seats": 50.0,
     "p10": 46.0,
     "p90": 55.0
   },
-  "kalshi_p_control": 0.645,
-  "kalshi_expected_seats": 51.74250000000001,
+  "kalshi_p_control": 0.675,
+  "kalshi_expected_seats": 52.206,
   "env": {
-    "gb": 9.024040180849,
+    "gb": 8.94861772295371,
     "n_gb": 5,
-    "net_approval": -22.33578484978896,
-    "appr": 7.817524697426136,
+    "net_approval": -21.945238402641138,
+    "appr": 7.680833440924398,
     "n_appr": 5
   },
   "fundamentals": {
     "share_of_2024_lean_kept": 0.6153846153846154
   },
   "config": {
-    "AS_OF_DATE": null,
+    "AS_OF_DATE": "2026-10-29",
     "W_POLLS": 10,
     "W_FUNDAMENTALS": 5,
     "W_KALSHI": 1,

@@ -1,0 +1,14 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "pray_for_the_floor",
+  "name": "Pray_For_The_Floor",
+  "family": "Pray_For_The_Floor",
+  "variant": "",
+  "order": 40,
+  "notebook": "pray_for_the_floor.ipynb",
+  "testing_notebooks": ["Model Testing.ipynb"],
+  "description": "Model 1's Bayesian backbone on VoteHub polls, with Kalshi as a third Bayesian input, Kalshi national averages, scorecard grades and leans, random grades for ungraded pollsters redrawn every simulation, and DadBod's reliability and correlated-error controls.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

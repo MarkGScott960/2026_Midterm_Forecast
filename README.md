@@ -31,6 +31,10 @@ Forecasting the 2026 U.S. Senate: **the chance Democrats hold at least 51 seats*
 | **Model 1 — Full Configs** | `Models/Model_Full_Configs` | Bayesian model on the course spreadsheet polls; ~90 settings | `Models/Model_Full_Configs/README.md` |
 | **Ozempic — Swing / Literal** | `Models/Model_Ozempic/` | Slim: VoteHub polls (last 28 days), fixed polls : fundamentals : Kalshi = 10 : 5 : 1 | `Models/Model_Ozempic/README.md` |
 | **DadBod — Swing / Literal** | `Models/DadBod_Model/` | Ozempic + poll reliability, flooding penalty, house effects, correlated errors, Kalshi national averages, automatic Kalshi search, separate Model Testing notebook | `Models/DadBod_Model/README.md` |
+| **Pray_For_The_Floor** | `Models/Pray_For_The_Floor` | Model 1's Bayesian model on VoteHub polls + Kalshi as a third Bayesian input, random grades for ungraded pollsters every simulation, DadBod's controls | `Models/Pray_For_The_Floor/README.md` |
+| **Rylyn (Event Edition)** | `Models/Rylyn_Model` | Rylyn's starter-notebook model on the Oct 15 spreadsheet polls, plus opinion events, voting-access changes and a House map module | `Models/Rylyn_Model/README.md` |
+
+
 
 *Swing* and *Literal* differ only in the "fundamentals" (the no-polls expectation for each race); each model's README explains the difference. Every model notebook starts with an **install** cell. Run it once per computer.
 
