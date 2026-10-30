@@ -4,34 +4,34 @@ A,source: votehub_generic_ballot_cache.csv,PASS,live
 A,source: votehub_approval_cache.csv,PASS,live
 A,source: kalshi_races_cache.csv,PASS,live
 A,source: kalshi_national_cache.csv,PASS,live
-A,newest state poll,PASS,2026-10-27 (2 days old)
+A,newest state poll,PASS,2026-10-28 (1 days old)
 A,newest generic ballot poll (VoteHub),WARN,2026-10-04 (25 days old) - Kalshi averages fill the gap
 A,newest approval poll (VoteHub),WARN,2026-10-06 (23 days old) - Kalshi averages fill the gap
 A,Kalshi race prices date,PASS,fetched 2026-10-29
 A,Kalshi races found,PASS,35/35
-A,Kalshi races found by title search,WARN,"used hand table for ['Alabama', 'Alaska', 'Arkansas', 'Kansas', 'Louisiana', 'Massachusetts', 'Minnesota', 'Montana', 'New Hampshire', 'North Carolina', 'Oklahoma', 'South Carolina', 'Wyoming']"
+A,Kalshi races found by title search,WARN,"used hand table for ['Alaska', 'Florida', 'Illinois', 'Iowa', 'Kentucky', 'Maine', 'Michigan', 'Mississippi', 'North Carolina', 'South Dakota', 'Tennessee']"
 A,Kalshi search agrees with hand table,PASS,all 35 agree
 A,nominees agree with hand table,PASS,all 35 agree
 A,nominees from Kalshi names,PASS,34/35 from Kalshi; hand table used for ['Alaska'] (Kalshi lists party names there)
-A,polls dropped for missing nominees,PASS,0 of 100 polls in the window (old hypothetical match-ups)
-A,weight from ungraded pollsters,PASS,"54 of 100 polls, 47% of poll weight (random grades)"
-A,"national: generic ballot (D-R, two-party)",PASS,5 VoteHub polls (effective 4.4) + Kalshi counted as 5 -> +9.1
-A,national: net approval,PASS,5 VoteHub polls (effective 4.5) + Kalshi counted as 5 -> -21.1
+A,polls dropped for missing nominees,PASS,0 of 105 polls in the window (old hypothetical match-ups)
+A,weight from ungraded pollsters,PASS,"58 of 105 polls, 48% of poll weight (random grades)"
+A,"national: generic ballot (D-R, two-party)",PASS,5 VoteHub polls (effective 4.4) + Kalshi counted as 5 -> +9.8
+A,national: net approval,PASS,5 VoteHub polls (effective 4.5) + Kalshi counted as 5 -> -21.2
 A,undecided share U used for Kalshi approval,PASS,U = 3.2 pts
 B,probabilities between 0 and 1,PASS,race and Kalshi probabilities
 B,source shares add to 100%,PASS,max error 1.1e-16
 B,no missing race margins,PASS,post_mean / post_sd
-B,seat counts possible,PASS,range 35-68 (possible 34-69)
-B,mean seats = sum of race probabilities,PASS,51.25 vs 51.25
+B,seat counts possible,PASS,range 34-68 (possible 34-69)
+B,mean seats = sum of race probabilities,PASS,51.36 vs 51.36
 B,simulation noise on P(51+),PASS,"±1.0% (95% range) with 10,000 simulations"
-B,reliability between 0 and 1,PASS,range 0.00-0.90
+B,reliability between 0 and 1,PASS,range 0.00-0.91
 C,coverage: Alaska,WARN,"2 polls (effective 1.8), Kalshi 68%"
 C,coverage: Kansas,WARN,"2 polls (effective 2.0), Kalshi 48%"
 C,coverage: Nebraska,WARN,"3 polls (effective 2.8), Kalshi 31%"
-C,coverage: South Carolina,WARN,"1 polls (effective 1.0), Kalshi 29%"
-D,model vs Kalshi: Alaska,WARN,"model 33% vs Kalshi 68% (polls D+0.8, fundamentals R+6.1)"
-D,model vs Kalshi: Maine,WARN,"model 94% vs Kalshi 62% (polls D+2.5, fundamentals D+14.0)"
-E,most influential settings,PASS,W_FUNDAMENTALS: 46%-74%; W_POLLS: 48%-66%; INCUMBENCY_PTS: 54%-64%
-E,toggle combinations agree,PASS,P(51+) spread 0.6% across the 4 combinations
-E,stable across random seeds,PASS,"P(51+) range 0.8% over 5 seeds at 10,000 simulations"
+C,coverage: South Carolina,WARN,"2 polls (effective 1.7), Kalshi 28%"
+D,model vs Kalshi: Alaska,WARN,"model 34% vs Kalshi 68% (polls D+0.8, fundamentals R+5.6)"
+D,model vs Kalshi: Maine,WARN,"model 94% vs Kalshi 62% (polls D+2.5, fundamentals D+14.4)"
+E,most influential settings,PASS,W_FUNDAMENTALS: 50%-74%; W_POLLS: 51%-67%; INCUMBENCY_PTS: 57%-66%
+E,toggle combinations agree,PASS,P(51+) spread 0.4% across the 4 combinations
+E,stable across random seeds,PASS,"P(51+) range 1.0% over 5 seeds at 10,000 simulations"
 F,week-to-week stability,PASS,largest weekly move 7%

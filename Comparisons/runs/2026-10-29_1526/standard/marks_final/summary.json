@@ -1,0 +1,37 @@
+{
+  "model": "Marks_Final",
+  "variant": "",
+  "run_at": "2026-10-29 15:32",
+  "as_of": "2026-10-29",
+  "p_d_51": 0.7557,
+  "exp_d_seats": 52.1774,
+  "median_d_seats": 52.0,
+  "p10": 49.0,
+  "p90": 55.0,
+  "n_sims": 10000,
+  "kalshi_p_control": 0.675,
+  "kalshi_expected_seats": 52.2145,
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "key_settings": {
+    "Poll source": "VoteHub API",
+    "Poll age": "all polls, half-life 21 days",
+    "Polls : fundamentals : Kalshi": "Bayesian precision (poll floor 3.7, prior SD 9.3); Kalshi precision 1/8^2, longshot-corrected, conversion SD >= 4.69",
+    "Poll reliability (thin races)": "automatic (Bayesian precision)",
+    "Fundamentals": "PVI x 2 + national environment (generic-ballot blend 0.75) + candidate effects x 0.29",
+    "Incumbency": "3.8 pts (appointed 1)",
+    "LV : RV : A": "1 : 0.85 : 0.7; RV shift +0.9 (measured)",
+    "Flooding penalty": "1/k^0.5",
+    "House effects": "on (scorecard)",
+    "Ungraded pollsters": "random",
+    "National signals": "VoteHub polls + Kalshi averages (= 5 polls)",
+    "Kalshi races": "Bayesian input + comparison (found automatically)",
+    "Source errors": "correlated (rho 0.3); sims: national 2.4 + region 1.6 + state, in pts",
+    "Calibration": "calibration.json (2026-10-29 17:19)"
+  }
+}

@@ -1,9 +1,11 @@
 change undone,P(D >= 51),D seats,P(D) Maine,P(D) Alaska,P(D) Nebraska,P(D) Kansas,P(D) Texas,P(D) Ohio
-none (this run),0.7384,52.042,0.752,0.566,0.2236,0.4639,0.6846,0.7816
-"calibration (prior SD, poll floor, drift, incumbency, tails)",0.7258,51.8781,0.8125,0.5582,0.2029,0.3989,0.6272,0.7483
-candidate effects,0.7312,51.9738,0.7934,0.5282,0.207,0.4472,0.6846,0.757
-error components,0.715,52.0473,0.7518,0.5626,0.2267,0.4663,0.6889,0.7803
-"Kalshi (weight, conversion, longshot, range)",0.74,52.0773,0.7586,0.5332,0.2279,0.4661,0.6718,0.7822
-"national signals (GB blend, fresh polls)",0.7257,51.9398,0.7439,0.5572,0.2199,0.4533,0.677,0.7744
-RV shift + LV preference,0.7311,51.9909,0.7457,0.5566,0.2233,0.4623,0.6774,0.778
-EVERYTHING back to Pray,0.6116,51.4197,0.8966,0.3972,0.1431,0.3062,0.5826,0.6832
+none (this run),0.7603,52.2322,0.755,0.5934,0.2506,0.4729,0.6999,0.7714
+"calibration (prior SD, poll floor, drift, incumbency, tails)",0.7543,52.1283,0.8208,0.5909,0.2274,0.4204,0.6551,0.7512
+candidate effects,0.7506,52.1481,0.798,0.553,0.226,0.455,0.6999,0.7424
+error components,0.7266,52.2324,0.759,0.6,0.2408,0.4796,0.7024,0.7651
+"Kalshi (weight, conversion, longshot, range)",0.7647,52.2959,0.7627,0.5632,0.2576,0.4724,0.688,0.7656
+"national signals (GB blend, fresh polls)",0.7341,52.0492,0.7414,0.5759,0.2414,0.4553,0.6846,0.7561
+RV shift + LV preference,0.7574,52.2222,0.7569,0.5721,0.2503,0.4727,0.6943,0.7719
+in-cycle house effects,0.7549,52.1635,0.7699,0.5504,0.2462,0.4975,0.7051,0.7708
+7-day half-life,0.7587,52.2328,0.7584,0.6176,0.2509,0.4653,0.6838,0.7885
+EVERYTHING back to Pray,0.6257,51.4688,0.8952,0.4043,0.1403,0.3174,0.5837,0.6971

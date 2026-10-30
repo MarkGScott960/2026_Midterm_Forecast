@@ -1,0 +1,35 @@
+{
+  "model": "Rylyn",
+  "variant": "Event Edition",
+  "run_at": "2026-10-29 16:04",
+  "as_of": "2026-10-29",
+  "p_d_51": 0.6704,
+  "exp_d_seats": 51.6909,
+  "median_d_seats": 52.0,
+  "p10": 49.0,
+  "p90": 55.0,
+  "n_sims": 10000,
+  "kalshi_p_control": null,
+  "kalshi_expected_seats": null,
+  "sources": {
+    "Midterm_Polls.xlsx": "file (Oct 15 release)",
+    "National_Polls.xlsx": "file (Oct 15 release)",
+    "Events.xlsx": "file"
+  },
+  "key_settings": {
+    "Poll source": "Midterm_Polls.xlsx (Adler, Oct 15 release; 1 row fixed)",
+    "Poll age": "all polls, half-life 14 days",
+    "Polls : fundamentals : Kalshi": "Bayesian precision (prior SD 7); no Kalshi",
+    "Poll reliability (thin races)": "automatic (Bayesian precision)",
+    "Fundamentals": "PVI x 2 + approval environment (0.35 x net approval)",
+    "Incumbency": "off",
+    "LV : RV : A": "1 : 0.85 : 1 (national adults 0.8)",
+    "Flooding penalty": "1/k^0.5",
+    "House effects": "partisan sponsors only (3 pts); RV +1",
+    "Ungraded pollsters": "rank 6.5 (fixed)",
+    "National signals": "approval polls only (spreadsheet)",
+    "Kalshi races": "not used",
+    "Source errors": "independent (Bayesian)",
+    "Events": "opinion events on; 5 active access changes"
+  }
+}

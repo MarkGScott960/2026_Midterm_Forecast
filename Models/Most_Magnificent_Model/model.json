@@ -1,0 +1,16 @@
+{
+  "_about": "Registers this model with run_all.py. See the repo README, 'Adding a model'.",
+  "id": "most_magnificent_model",
+  "name": "Most_Magnificent_Model",
+  "family": "Most_Magnificent_Model",
+  "variant": "",
+  "order": 60,
+  "notebook": "Most_Magnificent_Model.ipynb",
+  "testing_notebooks": [
+    "Model Testing.ipynb"
+  ],
+  "description": "Team 5's final model: Pray_For_The_Floor calibrated on 1998-2022 Senate races, plus candidate effects in the prior, in-cycle pollster house effects, national/regional/state simulation errors in points, longshot-corrected Kalshi at real weight, fresher national signals, measured RV shift, and retried Kalshi search.",
+  "standard_output": "Output/standard",
+  "testing_checks": "Output/testing/checks.csv",
+  "enabled": true
+}

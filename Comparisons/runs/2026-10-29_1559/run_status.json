@@ -1,0 +1,152 @@
+{
+  "run_info": {
+    "run_at": "2026-10-29 15:59",
+    "as_of": "2026-10-29",
+    "n_sims": 10000,
+    "report_only": false,
+    "unregistered": []
+  },
+  "status": {
+    "model1": {
+      "model": {
+        "ok": true,
+        "seconds": 20.3,
+        "error": null
+      },
+      "testing": []
+    },
+    "ozempic_swing": {
+      "model": {
+        "ok": true,
+        "seconds": 17.2,
+        "error": null
+      },
+      "testing": []
+    },
+    "ozempic_literal": {
+      "model": {
+        "ok": true,
+        "seconds": 17.3,
+        "error": null
+      },
+      "testing": []
+    },
+    "dadbod_swing": {
+      "model": {
+        "ok": true,
+        "seconds": 21.3,
+        "error": null
+      },
+      "testing": [
+        {
+          "notebook": "Model Testing.ipynb",
+          "ok": true,
+          "seconds": 36.4,
+          "error": null
+        }
+      ]
+    },
+    "dadbod_literal": {
+      "model": {
+        "ok": true,
+        "seconds": 19.4,
+        "error": null
+      },
+      "testing": [
+        {
+          "notebook": "Model Testing.ipynb",
+          "ok": true,
+          "seconds": 34.0,
+          "error": null
+        }
+      ]
+    },
+    "pray_for_the_floor": {
+      "model": {
+        "ok": true,
+        "seconds": 18.5,
+        "error": null
+      },
+      "testing": [
+        {
+          "notebook": "Model Testing.ipynb",
+          "ok": true,
+          "seconds": 59.2,
+          "error": null
+        }
+      ]
+    },
+    "rylyn": {
+      "model": {
+        "ok": true,
+        "seconds": 9.3,
+        "error": null
+      },
+      "testing": [
+        {
+          "notebook": "Model Testing.ipynb",
+          "ok": true,
+          "seconds": 57.2,
+          "error": null
+        }
+      ]
+    },
+    "marks_final": {
+      "model": {
+        "ok": true,
+        "seconds": 29.8,
+        "error": null
+      },
+      "testing": [
+        {
+          "notebook": "Model Testing.ipynb",
+          "ok": true,
+          "seconds": 216.5,
+          "error": null
+        }
+      ]
+    }
+  },
+  "models": [
+    {
+      "id": "model1",
+      "name": "Model 1 (Full Configs)",
+      "fresh": true
+    },
+    {
+      "id": "ozempic_swing",
+      "name": "Ozempic (Swing)",
+      "fresh": true
+    },
+    {
+      "id": "ozempic_literal",
+      "name": "Ozempic (Literal)",
+      "fresh": true
+    },
+    {
+      "id": "dadbod_swing",
+      "name": "DadBod (Swing)",
+      "fresh": true
+    },
+    {
+      "id": "dadbod_literal",
+      "name": "DadBod (Literal)",
+      "fresh": true
+    },
+    {
+      "id": "pray_for_the_floor",
+      "name": "Pray_For_The_Floor",
+      "fresh": true
+    },
+    {
+      "id": "rylyn",
+      "name": "Rylyn (Event Edition)",
+      "fresh": true
+    },
+    {
+      "id": "marks_final",
+      "name": "Marks_Final",
+      "fresh": true
+    }
+  ]
+}

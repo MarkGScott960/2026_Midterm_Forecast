@@ -1,0 +1,94 @@
+{
+  "created": "2026-10-29 22:45",
+  "model": "most_magnificent_model",
+  "source": "FiveThirtyEight raw_polls.csv (live (GitHub)); Final Model/calibration.ipynb",
+  "settings": {
+    "POLL_START_CYCLE": 1998,
+    "PRIOR_START_CYCLE": 2014,
+    "COMPETITIVE_LIMIT": 15,
+    "FINAL_WINDOW_DAYS": 21,
+    "FAR_WINDOW_DAYS": [
+      22,
+      60
+    ],
+    "HALF_LIFE_DAYS": 7,
+    "HOUSE_EFFECT_K": 5,
+    "HALF_LIFE_GRID": [
+      3,
+      5,
+      7,
+      10,
+      14,
+      21,
+      30
+    ],
+    "SOURCE_ERROR_CORR": 0.3,
+    "CANDIDATE_EFFECT_CLIP": 25,
+    "SKIP_SETTINGS": [],
+    "WRITE_CALIBRATION": true,
+    "RUN_MODEL": true,
+    "RAW_POLLS_URL": "https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/raw_polls.csv"
+  },
+  "overrides": {
+    "PRIOR_SD": 9.32,
+    "SYSTEMATIC_POLL_ERROR_SD": 3.87,
+    "DAILY_DRIFT_SD": 0.762,
+    "INCUMBENCY_ADVANTAGE": 3.78,
+    "CANDIDATE_EFFECT_WEIGHT": 0.298,
+    "NATIONAL_ERROR_SD": 2.52,
+    "RECENCY_HALF_LIFE_DAYS": 7,
+    "HOUSE_EFFECT_K": 5,
+    "REGIONAL_ERROR_SD": 1.51,
+    "STATE_T_DF": 10.9,
+    "KALSHI_CONVERT_SD": 4.42,
+    "CORR_NATIONAL": 0.326,
+    "CORR_REGION": 0.117,
+    "T_DF": 10.9
+  },
+  "estimates": {
+    "races_polling": 179,
+    "races_prior": 118,
+    "national_sd_90pct_range": [
+      1.7021933150602773,
+      2.8783415712318563
+    ],
+    "state_floor_sd": 1.7323497112287112,
+    "single_poll_sd": 3.301882455548075,
+    "poll_floor_from_components": 3.3411271910753246,
+    "mean_polling_error": -0.701585147461715,
+    "national_sd_about_mean": 2.4253353605923538,
+    "bias_prediction_rmse": {
+      "no correction (0)": 2.6376316245277387,
+      "average of all earlier cycles": 2.7565238068543487,
+      "average of the previous 3 cycles": 2.902270424355738,
+      "previous cycle": 3.8200851498670545
+    },
+    "bias_persistence_corr": -0.18346660132355241,
+    "half_life_rmse": {
+      "3": 4.462009318243829,
+      "5": 4.424415927202827,
+      "7": 4.4273692529846995,
+      "10": 4.456736986843327,
+      "14": 4.505679610359978,
+      "21": 4.579031236151107,
+      "30": 4.643601705166622
+    },
+    "state_excess_kurtosis": 0.8748975110151926,
+    "replay_current": {
+      "PRIOR_SD": 7.5,
+      "SYSTEMATIC_POLL_ERROR_SD": 4.5,
+      "Brier": 0.11025430353166638,
+      "SD of z (want 1)": 0.9500870538546218,
+      "inside 80% range": 0.8055555555555556,
+      "RMSE (pts)": 4.42749040770553
+    },
+    "replay_calibrated": {
+      "PRIOR_SD": 9.32250067537746,
+      "SYSTEMATIC_POLL_ERROR_SD": 3.8656771729273998,
+      "Brier": 0.10378016890878487,
+      "SD of z (want 1)": 1.0,
+      "inside 80% range": 0.7777777777777778,
+      "RMSE (pts)": 4.402541652319162
+    }
+  }
+}
