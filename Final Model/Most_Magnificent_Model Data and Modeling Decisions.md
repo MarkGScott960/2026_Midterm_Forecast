@@ -81,7 +81,7 @@ Why include Kalshi at all: it is a separate read on candidate quality and late n
 
 ## Uncertainty and simulations
 
-The uncertainty settings were measured on every competitive Senate race from 1998-2022, not guessed. In a replay of past races, the calibrated settings predicted winners better than our earlier guesses (Brier score 0.102 vs 0.107).
+The uncertainty settings were measured on every competitive Senate race from 1998-2022. In a replay of past races, the calibrated settings predicted winners better than our earlier guesses (Brier score 0.102 vs 0.107).
 
 | Setting | Value | What it means |
 | --- | --- | --- |
@@ -112,5 +112,5 @@ Only the national error has fat tails, so a bad polling year can hit every race 
 - **The model and Kalshi agree on seats.** The model's expected seat count matches what Kalshi's race prices add up to (about 52). The gap in P(51+) is about how spread out the outcomes are, not the average.
 - **Thin polling:** Kansas, Nebraska and South Carolina rest on about 2 effective polls each, so they lean more on fundamentals and Kalshi.
 - **National mood data is stale:** VoteHub's national polls are 3-4 weeks old; Kalshi's polling-average markets fill the gap.
-- **Judgment calls not set from history:** Kalshi's weight, the approval-to-margin slope (0.35), and Osborn's 80% caucus probability.
+- **Judgment calls not set from history:** Kalshi's weight (as minimal as possible while remaining as a fall back for sparse polls), the approval-to-margin slope (0.35), and Osborn's 80% caucus probability.
 - **Final numbers come from the 9:00 AM Nov 3 run**; the dashboard's history chart shows how stable the forecast was in the final days.
