@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-10-30",
+  "run_at": "2026-10-30 02:10",
+  "p_d_51": 0.76296,
+  "exp_d_seats": 52.2526,
+  "median_d_seats": 52.0,
+  "p10": 49.0,
+  "p90": 55.0,
+  "env": 9.529039007097772,
+  "p_d_control": 0.76296,
+  "mean_d_seats": 52.2526,
+  "rv_shift": 0.878378378378378,
+  "rv_pairs": 32,
+  "kalshi_off": {
+    "p_d_51": 0.77068,
+    "exp_d_seats": 52.33343,
+    "median_d_seats": 52.0,
+    "p10": 49.0,
+    "p90": 56.0,
+    "env": 9.529039007097772,
+    "p_d_control": 0.77068,
+    "mean_d_seats": 52.33343,
+    "rv_shift": 0.878378378378378,
+    "rv_pairs": 32
+  },
+  "kalshi_p_control": 0.675,
+  "kalshi_expected_seats": 52.32000000000001,
+  "national": {
+    "generic_ballot": 10.307642355807172,
+    "net_approval": -20.55208274562735,
+    "env": 9.529039007097772,
+    "undecided_share_U": 3.2
+  },
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  }
+}

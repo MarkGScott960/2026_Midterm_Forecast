@@ -1,0 +1,42 @@
+section,check,status,detail
+A,source: votehub_senate_cache.csv,PASS,live
+A,source: votehub_generic_ballot_cache.csv,PASS,live
+A,source: votehub_approval_cache.csv,PASS,live
+A,source: kalshi_races_cache.csv,PASS,live
+A,source: kalshi_national_cache.csv,PASS,live
+A,newest state poll,PASS,2026-10-28 (2 days old)
+A,newest generic ballot poll (VoteHub),WARN,2026-10-04 (26 days old) - Kalshi averages fill the gap
+A,newest approval poll (VoteHub),WARN,2026-10-06 (24 days old) - Kalshi averages fill the gap
+A,Kalshi race prices date,PASS,fetched 2026-10-30
+A,Kalshi races found,PASS,35/35
+A,Kalshi races found by title search,PASS,all
+A,Kalshi search agrees with fallback table,PASS,all agree
+A,nominees agree with fallback table,PASS,all 35 agree
+A,nominees from Kalshi names,PASS,34/35 from Kalshi; fallback table used for ['Alaska']
+A,polls dropped for missing nominees,WARN,112 of 486 VoteHub rows (old hypothetical match-ups)
+A,weight from ungraded pollsters,PASS,"214 of 366 polls, 39% of poll weight (random grades)"
+A,national: generic ballot (D-R),PASS,10 VoteHub polls (= 1.1 fresh polls) + Kalshi counted as 5 -> +10.3
+A,national: net approval,PASS,1020 VoteHub polls (= 0.9 fresh polls) + Kalshi counted as 5 -> -20.6
+A,Kalshi requests,PASS,no failed requests
+A,calibration,PASS,"calibration.json from 2026-10-29 22:45 (0 days old), 14 settings, model most_magnificent_model"
+A,candidate history matches the nominees,PASS,11 rows used
+A,RV shift,PASS,+0.88 pts from 32 LV/RV survey pairs
+A,undecided share U used for Kalshi approval,PASS,U = 3.2 pts
+B,probabilities between 0 and 1,PASS,race and Kalshi probabilities
+B,source shares add to 100%,PASS,max error 2.2e-16
+B,no missing race margins,PASS,post_mean / post_sd
+B,seat counts possible,PASS,range 39-65 (possible 33-69)
+B,mean seats = sum of race probabilities,PASS,52.26 vs 52.25
+B,independent vs correlated simulations agree,PASS,largest race gap 0.4%
+B,simulation noise on P(51+),PASS,"±0.3% (95% range) with 100,000 simulations"
+B,Kalshi share of the final margin,PASS,"median 0%, max 58% (Louisiana)"
+B,seat tails plausible,PASS,"99% of simulations between 45 and 59 D seats (min 39, max 65)"
+C,coverage: Kansas,WARN,"5 polls (effective 1.9), Kalshi 48%"
+C,coverage: Nebraska,WARN,"4 polls (effective 2.5), Kalshi 32%"
+C,coverage: South Carolina,WARN,"4 polls (effective 2.1), Kalshi 28%"
+D,model vs Kalshi,PASS,no race differs by more than 25 points
+E,most influential settings,PASS,D_SEATS_FOR_CONTROL: 62%-76%; NATIONAL_ERROR_SD: 71%-81%; POLL_PRECISION_MULT: 74%-81%
+E,toggle combinations agree,PASS,P(51+) spread 0.6% across the 4 combinations
+E,random vs fixed grades,PASS,P(51+) 76.3% vs 75.7%; 9 races move by more than 0.5 pts
+E,stable across random seeds,PASS,"P(51+) range 0.5% over 5 seeds at 100,000 simulations"
+F,week-to-week stability,PASS,largest weekly move 11%
