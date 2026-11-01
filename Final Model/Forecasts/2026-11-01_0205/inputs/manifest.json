@@ -1,0 +1,61 @@
+{
+  "saved_at": "2026-11-01T02:10:12",
+  "as_of": "2026-11-01",
+  "sources": {
+    "votehub_senate_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "files": {
+    "Data_Cache/kalshi_history_cache.csv": {
+      "bytes": 202755,
+      "modified": "2026-11-01T02:09:28"
+    },
+    "Data_Cache/kalshi_national_cache.csv": {
+      "bytes": 1407,
+      "modified": "2026-11-01T02:10:03"
+    },
+    "Data_Cache/kalshi_races_cache.csv": {
+      "bytes": 7939,
+      "modified": "2026-11-01T02:10:02"
+    },
+    "Data_Cache/votehub_approval_cache.csv": {
+      "bytes": 65594,
+      "modified": "2026-11-01T02:09:45"
+    },
+    "Data_Cache/votehub_generic_ballot_cache.csv": {
+      "bytes": 35285,
+      "modified": "2026-11-01T02:09:44"
+    },
+    "Data_Cache/votehub_senate_cache.csv": {
+      "bytes": 65238,
+      "modified": "2026-11-01T02:09:43"
+    },
+    "calibration.json": {
+      "bytes": 2709,
+      "modified": "2026-10-29T19:38:05"
+    },
+    "candidate_history.csv": {
+      "bytes": 3568,
+      "modified": "2026-10-29T13:13:07"
+    },
+    "Most_Magnificent_Model.ipynb": {
+      "bytes": 416228,
+      "modified": "2026-11-01T02:10:12"
+    },
+    "Data/votehub_pollster_scorecards.csv": {
+      "bytes": 1937,
+      "modified": "2026-10-31T14:38:34"
+    },
+    "Data/leans_and_regions.csv": {
+      "bytes": 1520,
+      "modified": "2026-10-15T09:03:16"
+    },
+    "Data/pres_2024_results.csv": {
+      "bytes": 1120,
+      "modified": "2026-10-26T09:46:07"
+    }
+  }
+}

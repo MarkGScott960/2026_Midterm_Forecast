@@ -1,6 +1,6 @@
 # Most\_Magnificent\_Model: Data and Modeling Decisions
 
-Oct 29, 2026 - @Mark
+Oct 29, 2026 - @Mark (updated Oct 31)
 
 ## Output
 
@@ -8,6 +8,7 @@ Most\_Magnificent\_Model gives three outputs: the chance Democrats hold at least
 
 - **When it runs:** every 3 hours from Oct 29, 8:05 PM, with a final run at 9:00 AM on Nov 3. Each run refreshes all data.
 - **Where results go:** `Final Model/Forecasts/latest.html` (dashboard), with every chart also saved as an HTML and PNG file for Quarto. Warnings from the built-in checks are logged to `Forecasts/model_warnings.xlsx`.
+- **What each run saves (from the first run after Oct 31, 2:40 PM):** every input file the run used (the downloaded VoteHub and Kalshi data, the scorecard, lean and 2024 files, `calibration.json`, `candidate_history.csv` and the model notebook itself) goes to `Forecasts/<run>/inputs/` with a `manifest.json`. Any run from then on can be re-created exactly, for example to re-run the history with a changed method. Runs before that saved only their outputs.
 
 
 ## Where the data comes from
@@ -43,7 +44,7 @@ Each poll's weight is the product of the factors below, and a race's polling ave
 | Past accuracy | Based on the pollster's past error, kept between 0.5x and 2x | Rewards firms that missed by less, without letting one dominate |
 | Flooding | A firm with k polls of a race gets $1/\sqrt{k}$ per poll | One pollster can't drown out the others |
 
-**Ungraded pollsters (about 40% of poll weight).** VoteHub grades only 42 firms. Instead of treating every unknown firm as the worst, each ungraded firm gets the grade, accuracy and lean of a randomly drawn graded firm, **redrawn in every one of the 100,000 simulations**. Our uncertainty about these firms then shows up in the probabilities. Using the lowest grade instead changed P(51+) by about 1 point.
+**Ungraded pollsters (about 40% of poll weight).** VoteHub grades only 42 firms. Instead of treating every unknown firm as the worst, each ungraded firm gets the grade, accuracy and lean of a randomly drawn graded firm, **redrawn in every one of the 100,000 simulations**. Our uncertainty about these firms then shows up in the probabilities. Using the lowest grade instead changed P(51+) by about 1 point. Two graded firms appeared in VoteHub under other names and were being treated as ungraded until Oct 31: "The Bullfinch Group" (scorecard: Bullfinch, grade D, leans D+2.0) and "The Washington Post/George Mason University Schar School" (WaPo-GMU, grade C). Both are now matched; the effect on the forecast is under 0.2 pts of P(51+).
 
 **Margin adjustments:**
 
@@ -95,13 +96,18 @@ The uncertainty settings were measured on every competitive Senate race from 199
 
 Only the national error has fat tails, so a bad polling year can hit every race at once without producing absurd outcomes.
 
+- **Does 2024 change the national miss?** The historical file stops at 2022. 2024 Senate polls overstated Democrats by about 3 pts (Silver Bulletin). Adding a 2024 year of that size to the calibration leaves the national miss at about 2.42 pts (2.43 without it): a 3-pt miss is already inside the range of past years (2020: 5.6, 2014: 4.0). The 2.5 pts used already covers it, so it was left unchanged.
+- **Robustness:** with national polling misses 60% larger than history (4.0 pts instead of 2.5), P(D >= 51) is still about 72%. With a much smaller national miss (1.5 pts) it is about 84%. The expected seat count stays at about 52.4 in every case; this setting only changes how spread out the outcomes are.
+
 ## Options we tested and rejected
 
 | Option | Decision | Why |
 | --- | --- | --- |
 | "Literal" fundamentals (8 : 4 : 1 weighted average of 2024 result, generic ballot, approval) | Rejected | Averaging a state margin with national numbers pulled safe states toward 50-50 and cost \~10 pts of P(51+); we use 2024 lean + national swing instead |
 | Averaging all team models | Rejected | They share the same data, so averaging mostly mixes in weaker choices (stale data, uncalibrated settings) |
-| Correcting for poll bias toward Democrats | Rejected | Polls missed toward Republicans in 2014, 2016 and 2020 but toward Democrats in 2022; on 1998-2022 data a cycle's miss can't be predicted from earlier ones, and "no correction" forecast best |
+| Correcting for poll bias toward Democrats | Rejected | Polls overstated Democrats in 2014, 2016, 2020 and 2024 were close to even or mixed in 2018, and understated them in 2022 and in the 2025 governor races (NJ by about 9 pts). The pattern is strongest when Trump is on the ballot; 2026 is a midterm. Out-of-sample test on 2004-2022 Senate races, correcting each year by the average miss of earlier years: Brier 0.116 with the correction vs 0.110 without (midterms: 0.079 vs 0.075); a half-size correction also did worse (0.113). The yearly miss averages about 0.5 pts toward Democrats but swings about +/-2.9 pts from year to year, so its direction can't be predicted. A possible miss in either direction is handled by the national error in the simulations instead |
+| Extra uncertainty for old polls (beyond 10 days) | Tested, not used | Recomputed with the model's own formula: -0.05 expected seats and under 0.5 pts of P(51+). Largest changes were Alaska 59% to 58% and Ohio 76% to 75%; it mainly affects safe states with one old poll (Idaho, Virginia) |
+| Re-running the history chart after a method change | Not done | Runs before Oct 31 didn't save their input data, and the model's backtest mode can't rebuild the Kalshi national averages or the 3-hourly timing. The Oct 31 changes moved P(51+) by under 0.2 pts, inside normal run-to-run movement, so the published history is kept as it was |
 | Adjusting old polls for the national trend | Rejected | Didn't reliably help on past races and made things slightly worse once house effects were added |
 | Rylyn's events layer | Not used | Her own check showed 67.0% with events and 67.0% without |
 | More than 100,000 simulations | Not needed | Simulation noise is already +/-0.3 pts; the real uncertainty is in the data |

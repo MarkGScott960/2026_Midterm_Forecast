@@ -12,8 +12,10 @@ final_forecast.py - scheduled Most_Magnificent_Model forecasts + dashboard (Team
                                         running script first (Ctrl+C)
 
 Every scheduled run executes Model Testing.ipynb and then Most_Magnificent_Model.ipynb (both at N_SIMS), saves everything in
-Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html, figures/*.html + *.png, data), appends to Forecasts/history.csv and
-race_history.csv, and copies the dashboard to Forecasts/latest.html.
+Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html + dashboard.pdf, figures/*.html + *.png, data, inputs/ = every input file the run used),
+appends to Forecasts/history.csv and
+race_history.csv, and copies the dashboard to Forecasts/latest.html and latest.pdf. PDFs are printed by headless
+Microsoft Edge (or Chrome); if neither is found the run still finishes, just without the PDF.
 
 Schedule rules
 - Run times are fixed when the schedule starts (start, +6 h, +12 h, ...), up to the last one at least
@@ -64,7 +66,10 @@ WARNINGS_XLSX = OUT / "model_warnings.xlsx"  # every WARN / FAIL from Model Test
 
 D_BLUE, R_RED, K_GRAY, INK, GRID = "#1A6FB0", "#C8312B", "#7A7A7A", "#2B2B2B", "#E6E6E6"
 TOSS_PURPLE, NONE_GRAY = "#8E6BBF", "#E9E9E9"
-CALLS = {"Democrat / Independent": D_BLUE, "Republican": R_RED, "Too close to call": TOSS_PURPLE, "No election": NONE_GRAY}
+# Race ratings (D = Democrat or independent). Cut-offs come from the model's RATING_TOSSUP / RATING_LEAN / RATING_LIKELY
+CALLS = {"Safe D": "#08306B", "Likely D": D_BLUE, "Lean D": "#8DB8E2", "Toss-up": TOSS_PURPLE,
+         "Lean R": "#EFA39D", "Likely R": R_RED, "Safe R": "#8A1D18", "No election": NONE_GRAY}
+CALL_TEXT = {"Lean D": INK, "Lean R": INK, "No election": "#8A8A8A"}  # label colour on the map tile (default white)
 ABBR = {"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO", "Connecticut": "CT",
         "Delaware": "DE", "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA",
         "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA", "Michigan": "MI",
@@ -270,24 +275,39 @@ def collect(model_out, testing_out, n_sims, kind, slot, runtime_s, statuses):
            "testing_warn": int((checks["status"] == "WARN").sum()) if checks is not None else None,
            "testing_fail": int((checks["status"] == "FAIL").sum()) if checks is not None else None,
            "sources_live": sum(v == "live" for v in summ.get("sources", {}).values()), "sources_total": len(summ.get("sources", {}))}
-    tossup = 0.60
+    cuts = rating_cuts({})
     cfg_snap = model_out / "config_snapshot.json"
     if cfg_snap.exists():
         try:
-            tossup = float(json.loads(cfg_snap.read_text()).get("RATING_TOSSUP", tossup))
+            cuts = rating_cuts(json.loads(cfg_snap.read_text()))
         except Exception:
             pass
-    races["call"] = [race_call(p, tossup) for p in races["p_dem"]]
+    races["call"] = [race_call(p, cuts) for p in races["p_dem"]]
     load = lambda p: json.loads(p.read_text()) if p.exists() else {}
-    return {"summary": summ, "races": races, "seats": seats, "row": row, "checks": checks, "statuses": statuses, "tossup": tossup,
+    return {"summary": summ, "races": races, "seats": seats, "row": row, "checks": checks, "statuses": statuses, "cuts": cuts,
             "cfg": load(cfg_snap), "headline": load(model_out / "headline.json")}
 
 
-def race_call(p, tossup):
-    """Model's own rating rule: the favourite needs at least RATING_TOSSUP (60%) or the race is too close to call."""
-    if max(p, 1 - p) < tossup:
-        return "Too close to call"
-    return "Democrat / Independent" if p >= 0.5 else "Republican"
+def rating_cuts(cfg):
+    """(toss-up, lean, likely) cut-offs from the model's config: favourite under 60% = Toss-up, 60-75% Lean, 75-95% Likely,
+    95%+ Safe."""
+    cfg = cfg or {}
+    return tuple(float(cfg.get(k, d)) for k, d in (("RATING_TOSSUP", 0.60), ("RATING_LEAN", 0.75), ("RATING_LIKELY", 0.95)))
+
+
+def race_call(p, cuts):
+    """Model's own rating: Toss-up / Lean / Likely / Safe by the favourite's win probability."""
+    toss, lean, likely = cuts
+    fav = max(p, 1 - p)
+    if fav < toss:
+        return "Toss-up"
+    side = "D" if p >= 0.5 else "R"
+    return ("Lean " if fav < lean else "Likely " if fav < likely else "Safe ") + side
+
+
+def cuts_label(cuts):
+    toss, lean, likely = cuts
+    return f"Toss-up under {toss:.0%}, Lean {toss:.0%}-{lean:.0%}, Likely {lean:.0%}-{likely:.0%}, Safe {likely:.0%}+"
 
 
 def map_frame(res):
@@ -401,7 +421,7 @@ def plotly_figs(res, hist):
     for _, x in m.iterrows():
         f.add_shape(type="rect", x0=x["cx"] + 0.05, x1=x["cx"] + 0.95, y0=x["cy"] + 0.05, y1=x["cy"] + 0.95,
                     fillcolor=CALLS[x["call"]], opacity=1, line=dict(color="white", width=1.5), layer="above")
-        txt = "#8A8A8A" if x["call"] == "No election" else "white"
+        txt = CALL_TEXT.get(x["call"], "white")
         f.add_annotation(x=x["cx"] + 0.5, y=x["cy"] + 0.5, text=f"<b>{x['abbr']}</b>" + ("" if x["call"] == "No election" else
                          f"<br><span style='font-size:10px'>{pct_label(x['p_dem'])}</span>"), showarrow=False, font=dict(color=txt, size=12))
     for call, col in CALLS.items():
@@ -416,8 +436,8 @@ def plotly_figs(res, hist):
                                marker=dict(symbol="square", size=12, color=col), showlegend=True))
     for i, t in enumerate(f.data):  # legend shows only the visible swatches
         t.showlegend = i % 2 == 1
-    f.update_layout(**{k: v for k, v in base.items() if k != "margin"}, margin=dict(l=10, r=10, t=50, b=10), height=520,
-                    title=f"Projected winner by state (number = Model P(D/Ind wins); too close to call = favourite under {res['tossup']:.0%})",
+    f.update_layout(**{k: v for k, v in base.items() if k != "margin"}, margin=dict(l=10, r=10, t=70, b=10), height=540,
+                    title=f"Race ratings (number = Model P(D/Ind wins); D includes independents)<br><sup>{cuts_label(res['cuts'])}</sup>",
                     xaxis=dict(visible=False, range=[-0.2, 12.2]), yaxis=dict(visible=False, range=[-7.3, 1.2], scaleanchor="x"),
                     plot_bgcolor="rgba(0,0,0,0)", legend=dict(orientation="h", y=-0.02, x=0.5, xanchor="center", yanchor="top"))
     figs["race_map"] = f
@@ -499,14 +519,14 @@ def png_figs(res, hist, folder):
         call = m.loc[ab, "call"]
         ax.add_patch(matplotlib.patches.FancyBboxPatch((cx + 0.05, -cy + 0.05), 0.9, 0.9, boxstyle="round,pad=0,rounding_size=0.08",
                                                        facecolor=CALLS[call], edgecolor="white", lw=1.5))
-        txt = "white" if call != "No election" else "#8A8A8A"
+        txt = CALL_TEXT.get(call, "white")
         ax.text(cx + 0.5, -cy + 0.62, ab, ha="center", va="center", fontsize=10, fontweight="bold", color=txt)
         if call != "No election":
             ax.text(cx + 0.5, -cy + 0.3, pct_label(m.loc[ab, "p_dem"]), ha="center", va="center", fontsize=8, color=txt)
     ax.set_xlim(-0.2, 12.2); ax.set_ylim(-7.4, 1.3); ax.set_aspect("equal"); ax.axis("off")
     handles = [matplotlib.patches.Patch(color=c, label=f"{k} ({int((m['call'] == k).sum())})") for k, c in CALLS.items()]
     ax.legend(handles=handles, loc="lower center", ncol=4, frameon=False, bbox_to_anchor=(0.5, -0.06))
-    ax.set_title(f"Projected winner by state (number = Model P(D/Ind wins); too close to call = favourite under {res['tossup']:.0%})",
+    ax.set_title(f"Race ratings (number = Model P(D/Ind wins); D includes independents)\n{cuts_label(res['cuts'])}",
                  loc="left", fontweight="bold", fontsize=10)
     fig.tight_layout(); paths["race_map"] = folder / "race_map.png"; fig.savefig(paths["race_map"], dpi=200); plt.close(fig)
 
@@ -546,6 +566,14 @@ th{cursor:pointer;background:var(--card);position:sticky;top:0} th:first-child,t
 .eqf{font-family:'Cambria Math',Cambria,Georgia,serif;font-size:16px;margin:4px 0;overflow-x:auto} .eqw{font-size:13px;color:var(--muted)}
 .kv td{text-align:left;white-space:normal} .kv td:first-child{width:32%;color:var(--muted)} .notes li{margin:3px 0;font-size:13px}
 @media (prefers-color-scheme: dark){:root{--ink:#E8E8E8;--muted:#A0A0A0;--line:#333;--bg:#141414;--card:#1D1F22}}
+@page{size:letter landscape;margin:0.4in}
+@media print{
+ :root{--ink:#2B2B2B;--muted:#6B6B6B;--line:#E6E6E6;--bg:#FFFFFF;--card:#F7F8FA}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ main{max-width:none;padding:0} h2{break-before:page;margin-top:0} h2.keep{break-before:auto;margin-top:24px}
+ .tile,.eq,tr,.js-plotly-plot,.kv{break-inside:avoid} th{position:static} .wrap,.eqf{overflow:visible}
+ .modebar-container{display:none!important}
+}
 """
 SORT_JS = """
 document.querySelectorAll('table.sortable').forEach(t=>{t.querySelectorAll('th').forEach((th,i)=>{th.addEventListener('click',()=>{
@@ -633,6 +661,30 @@ def equations_html(res):
     return "".join(out)
 
 
+def kalshi_note(row, races, min_gap=0.05, max_names=4):
+    """One line under the tiles: why the model's control odds differ from Kalshi's. Names the competitive races where the
+    model and the market disagree by at least min_gap, in the direction of the control gap."""
+    kc, ks = row.get("kalshi_p_control"), row.get("kalshi_seats")
+    if kc is None or ks is None or pd.isna(kc) or pd.isna(ks):
+        return ""
+    r = races[races["kalshi_p"].notna()].copy()
+    r["gap"] = r["p_dem"] - r["kalshi_p"]
+    r = r[r["kalshi_p"].between(0.15, 0.85) | r["p_dem"].between(0.15, 0.85)]  # competitive races only
+    up = row["p_d_51"] >= kc
+    pick = r[r["gap"] >= min_gap] if up else r[r["gap"] <= -min_gap]
+    names = pick.reindex(pick["gap"].abs().sort_values(ascending=False).index)["state"].head(max_names).tolist()
+    ms = row["mean_seats"]
+    seats = (f"The model and Kalshi expect about the same number of Democratic seats ({ms:.1f} vs {ks:.1f})"
+             if abs(ms - ks) < 0.5 else f"The model expects {ms:.1f} Democratic seats, Kalshi's race prices {ks:.1f}")
+    if not names:
+        why = "."
+    else:
+        listed = names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+        why = (f"; the model's {'higher' if up else 'lower'} control odds come from rating {listed} "
+               f"{'higher' if up else 'lower'} for Democrats than the market does.")
+    return f"<div class='sub' style='margin-top:12px'>{seats}{why}</div>"
+
+
 def build_dashboard(res, hist, figs, title_tag, path):
     import plotly
     row, summ, races = res["row"], res["summary"], res["races"].copy()
@@ -643,14 +695,14 @@ def build_dashboard(res, hist, figs, title_tag, path):
     tiles = f"""
 <div class='tiles'>
  <div class='tile'><div class='k'>P(Democrats >= {CONTROL_SEATS} seats)</div><div class='v blue'>{row['p_d_51']:.1%}</div>
-  <div class='s'>{P_INTERVAL}% simulation interval {row['p_lo']:.1%}-{row['p_hi']:.1%}</div></div>
+  <div class='s'>simulation precision \\(\\pm{(row['p_hi'] - row['p_lo']) / 2 * 100:.1f}\\) pts</div></div>
  <div class='tile'><div class='k'>Expected Democratic seats</div><div class='v'>{row['mean_seats']:.1f}</div>
   <div class='s'>median {row['median_seats']:.0f} | {s_iv}</div></div>
  <div class='tile'><div class='k'>Kalshi control market</div><div class='v' style='color:#7A7A7A'>{'-' if kc is None else f'{kc:.1%}'}</div>
   <div class='s'>sum of race prices: {'-' if ks is None else f'{ks:.1f} seats'}</div></div>
  <div class='tile'><div class='k'>Run</div><div class='v' style='font-size:20px'>{row['run_at']}</div>
   <div class='s'>{row['n_sims']:,} simulations | data as of {row['as_of']} | {row['runtime_min']:.0f} min</div></div>
-</div>"""
+</div>{kalshi_note(row, races)}"""
     # race table
     first = hist[hist["kind"] != "test"].head(1)
     base_races = None
@@ -698,12 +750,12 @@ def build_dashboard(res, hist, figs, title_tag, path):
     fig_html = {k: f.to_html(full_html=False, include_plotlyjs=False, config={"displaylogo": False, "responsive": True}) for k, f in figs.items()}
     body = f"""<h1>2026 Senate forecast - Most_Magnificent_Model {badge}</h1><div class='sub'>Team 5: {', '.join(TEAM)}</div><div class='sub'>{title_tag}</div>
 {tiles}
-<h2>Seat distribution</h2>{fig_html['seat_distribution']}
+<h2 class='keep'>Seat distribution</h2>{fig_html['seat_distribution']}
 <h2>Map</h2>{fig_html['race_map']}
 <h2>Race by race</h2>{fig_html['races_vs_kalshi']}{race_table}
 <h2>History</h2>{fig_html['history_control']}{fig_html['history_seats']}
 <h2>Notes</h2>{notes_html}
-<h2>Key settings</h2><table class='kv'><tbody>{ks_rows}</tbody></table>
+<h2 class='keep'>Key settings</h2><table class='kv'><tbody>{ks_rows}</tbody></table>
 <h2>Equations and weights</h2>{equations_html(res)}"""
     html = (f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
             f"<title>Most_Magnificent_Model Forecast</title><style>{CSS}</style><script>{plotly.offline.get_plotlyjs()}</script>"
@@ -743,6 +795,152 @@ def save_figures(figs, res, hist, folder):
         png_figs(res, hist, folder)
     except Exception as e:
         say(f"PNG export failed ({type(e).__name__}: {e}); HTML figures were saved")
+
+
+# ------------------------------------------------------------------ PDF copy of each dashboard
+PDF_BROWSERS = [  # Edge ships with Windows; Chrome / Chromium are fallbacks. FORECAST_PDF_BROWSER overrides all of them
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+]
+PDF_WIDTH_PX = 980  # printable width of a landscape Letter page at 0.4 in margins: charts are drawn at this width so they fit
+PDF_MAX_CHART_PX = 640  # printable height is ~740 px; leaves room for the section heading
+
+
+def find_pdf_browser():
+    cands = [os.environ.get("FORECAST_PDF_BROWSER")] + PDF_BROWSERS
+    cands += [shutil.which(n) for n in ("msedge", "microsoft-edge", "google-chrome", "chrome", "chromium", "chromium-browser")]
+    return next((c for c in cands if c and Path(c).exists()), None)
+
+
+_PLAYWRIGHT_TRIED_INSTALL = False
+
+
+def _pdf_playwright(html_path, out):
+    """Preferred: Playwright drives the installed Edge (or Chrome), waits until every chart and equation has finished
+    drawing, then prints. Needs only `pip install playwright` - it uses the browser already on the PC."""
+    global _PLAYWRIGHT_TRIED_INSTALL
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        if _PLAYWRIGHT_TRIED_INSTALL:
+            raise
+        _PLAYWRIGHT_TRIED_INSTALL = True
+        say("Installing playwright (once, for the PDF copies) ...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "playwright"], timeout=600, check=True)
+        from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        browser, err = None, None
+        for opts in ({"channel": "msedge"}, {"channel": "chrome"}, {}):  # installed Edge, then Chrome, then Playwright's own
+            try:
+                browser = pw.chromium.launch(**opts)
+                break
+            except Exception as e:
+                err = e
+        if browser is None:
+            raise err
+        try:
+            page = browser.new_page(viewport={"width": PDF_WIDTH_PX, "height": 1400})
+            page.goto(Path(html_path).resolve().as_uri(), wait_until="load", timeout=120_000)
+            page.evaluate("() => (window.MathJax && MathJax.startup && MathJax.startup.promise) ? MathJax.startup.promise.then(() => true) : true")
+            page.wait_for_function("() => [...document.querySelectorAll('.js-plotly-plot')].every(d => d.querySelector('.main-svg'))",
+                                   timeout=60_000)
+            # charts taller than a printed page (the race-by-race chart) are scaled down as a whole, labels included,
+            # so they fit under their heading instead of leaving it alone on a page
+            page.evaluate(f"() => document.querySelectorAll('.js-plotly-plot').forEach(d => {{"
+                          f" if (d.offsetHeight > {PDF_MAX_CHART_PX}) d.parentElement.style.zoom = {PDF_MAX_CHART_PX} / d.offsetHeight; }})")
+            page.wait_for_timeout(500)
+            page.pdf(path=str(out), prefer_css_page_size=True, print_background=True)
+        finally:
+            browser.close()
+
+
+def _pdf_cli(html_path, out):
+    """Fallback: Edge/Chrome's own --print-to-pdf (no extra package, but it can't wait for the page explicitly)."""
+    import tempfile
+    browser = find_pdf_browser()
+    if browser is None:
+        raise RuntimeError("no Edge/Chrome found (set FORECAST_PDF_BROWSER to the browser's .exe)")
+    with tempfile.TemporaryDirectory() as profile:  # throwaway profile, so an open Edge window doesn't interfere
+        cmd = [browser, "--headless=new", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
+               f"--user-data-dir={profile}", f"--window-size={PDF_WIDTH_PX},1400", "--hide-scrollbars",
+               "--run-all-compositor-stages-before-draw", "--virtual-time-budget=30000",
+               "--no-pdf-header-footer", "--print-to-pdf-no-header", f"--print-to-pdf={out}", Path(html_path).resolve().as_uri()]
+        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=180)
+
+
+def write_pdf(html_path, pdf_path):
+    """Print a finished dashboard to PDF (charts become static; everything else is the same page). Never breaks a run:
+    on any problem it logs one line and returns False."""
+    pdf_path = Path(pdf_path)
+    tmp = pdf_path.with_name(pdf_path.stem + ".tmp.pdf")
+    errors = []
+    for name, fn in (("playwright", _pdf_playwright), ("browser command line", _pdf_cli)):
+        tmp.unlink(missing_ok=True)
+        try:
+            fn(html_path, tmp)
+        except Exception as e:
+            errors.append(f"{name}: {type(e).__name__}: {str(e).splitlines()[0][:150] if str(e) else ''}")
+            continue
+        if tmp.exists() and tmp.stat().st_size > 10_000:
+            break
+        errors.append(f"{name}: no PDF produced")
+    else:
+        tmp.unlink(missing_ok=True)
+        say(f"PDF skipped for {Path(html_path).name} ({'; '.join(errors)})")
+        return False
+    try:
+        os.replace(tmp, pdf_path)
+    except PermissionError:  # the old PDF is open in a viewer
+        alt = pdf_path.with_name(pdf_path.stem + f"_{now().strftime('%H%M%S')}.pdf")
+        os.replace(tmp, alt)
+        say(f"{pdf_path.name} is open in another program, so this PDF was saved as {alt.name}")
+        return alt
+    return pdf_path
+
+
+def copy_latest(src, name):
+    """Copy a dashboard file to Forecasts/<name>; if it's open in a viewer, say so instead of crashing the run."""
+    try:
+        shutil.copy2(src, OUT / name)
+    except PermissionError:
+        say(f"{name} is open in another program and wasn't updated; the run's own copy is {Path(src).relative_to(REPO)}")
+
+
+# ------------------------------------------------------------------ input snapshot (for exact re-runs later)
+INPUT_FILES = [  # (source, name in the snapshot); copied AFTER the forecast notebook, so these are exactly the files it used
+    *[(f, f"Data_Cache/{f.name}") for f in sorted((MODEL_DIR / "Data_Cache").glob("*.csv"))],
+    (MODEL_DIR / "calibration.json", "calibration.json"),
+    (MODEL_DIR / "candidate_history.csv", "candidate_history.csv"),
+    (MODEL_NB, MODEL_NB.name),  # the model code as it was for this run
+    (REPO / "Data" / "votehub_pollster_scorecards.csv", "Data/votehub_pollster_scorecards.csv"),
+    (REPO / "Data" / "leans_and_regions.csv", "Data/leans_and_regions.csv"),
+    (REPO / "Data" / "pres_2024_results.csv", "Data/pres_2024_results.csv"),
+]
+
+
+def save_inputs(dest, model_out):
+    """Copy every input the forecast just used into <run folder>/inputs/ (about 1 MB), plus a manifest. With these, the
+    same run can be re-created later: point the model's CACHE_DIR / DATA_DIR at this folder with the network off, and
+    every source falls back to these saved copies (with_cache reads the cache when a download fails)."""
+    try:
+        files = [(src, name) for src, name in INPUT_FILES if Path(src).exists()]
+        for src, name in files:
+            (dest / name).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dest / name)
+        head = model_out / "headline.json"
+        manifest = {"saved_at": now().isoformat(timespec="seconds"),
+                    "as_of": json.loads(head.read_text()).get("as_of") if head.exists() else None,
+                    "sources": json.loads(head.read_text()).get("sources", {}) if head.exists() else {},
+                    "files": {name: {"bytes": (dest / name).stat().st_size,
+                                     "modified": dt.datetime.fromtimestamp(Path(src).stat().st_mtime).isoformat(timespec="seconds")}
+                              for src, name in files}}
+        (dest / "manifest.json").write_text(json.dumps(manifest, indent=2))
+    except Exception as e:  # never let the snapshot break a run
+        say(f"Input snapshot failed ({type(e).__name__}: {e}); the run itself is fine")
 
 
 # ------------------------------------------------------------------ one run
@@ -787,6 +985,7 @@ def do_run(kind, slot, n_sims, test=False):
     for name in ("headline.json", "config_snapshot.json", "race_probabilities.csv"):
         if (model_out / name).exists():
             shutil.copy2(model_out / name, data / name)
+    save_inputs(folder / "inputs", model_out)
     # history (tests are shown on their own dashboard but never written to the history files)
     hist = pd.read_csv(HISTORY) if HISTORY.exists() else pd.DataFrame()
     races = res["races"].assign(run_at=res["row"]["run_at"], kind=kind)[["run_at", "kind", "state", "call", "p_dem", "kalshi_p", "margin", "sd", "n_polls"]]
@@ -807,10 +1006,14 @@ def do_run(kind, slot, n_sims, test=False):
     if test:
         dash = OUT / f"test_{stamp}.html"
         build_dashboard(res, hist_show, figs, tag, dash)
+        write_pdf(dash, dash.with_suffix(".pdf"))
     else:
         dash = folder / "dashboard.html"
         build_dashboard(res, hist_show, figs, tag, dash)
-        shutil.copy2(dash, OUT / "latest.html")
+        copy_latest(dash, "latest.html")
+        pdf = write_pdf(dash, folder / "dashboard.pdf")
+        if pdf:
+            copy_latest(pdf, "latest.pdf")
     say(f"=== Run finished in {fmt_td(runtime)}: P(D >= {CONTROL_SEATS}) {res['row']['p_d_51']:.1%} "
         f"({P_INTERVAL}%: {res['row']['p_lo']:.1%}-{res['row']['p_hi']:.1%}), mean seats {res['row']['mean_seats']:.2f} "
         f"| dashboard: {dash.relative_to(REPO)}")
@@ -824,8 +1027,8 @@ def load_saved_run(folder, row):
     cfg, headline = load(d / "config_snapshot.json"), load(d / "headline.json")
     races, seats = pd.read_csv(d / "races.csv"), pd.read_csv(d / "seats.csv")
     checks = pd.read_csv(d / "checks.csv") if (d / "checks.csv").exists() else None
-    tossup = float(cfg.get("RATING_TOSSUP", 0.60))
-    races["call"] = [race_call(p, tossup) for p in races["p_dem"]]
+    cuts = rating_cuts(cfg)
+    races["call"] = [race_call(p, cuts) for p in races["p_dem"]]
     row = {k: (None if isinstance(v, float) and np.isnan(v) else v) for k, v in row.items()}
     for k in ("testing_pass", "testing_warn", "testing_fail", "n_sims", "sources_live", "sources_total"):
         if row.get(k) is not None:
@@ -833,7 +1036,7 @@ def load_saved_run(folder, row):
     statuses = {"model": {"ok": True, "error": None},
                 "testing": {"ok": True, "error": None} if checks is not None else {"ok": False, "error": "no checks saved"}}
     return {"summary": load(d / "summary.json"), "races": races, "seats": seats, "row": row, "checks": checks,
-            "statuses": statuses, "tossup": tossup, "cfg": cfg, "headline": headline}
+            "statuses": statuses, "cuts": cuts, "cfg": cfg, "headline": headline}
 
 
 def rebuild_reports():
@@ -862,10 +1065,13 @@ def rebuild_reports():
         tag = ("final forecast, " if r["kind"] == "final" else "scheduled run, ") + str(r["run_at"])
         build_dashboard(res, hist_upto, figs, tag, folder / "dashboard.html")
         last = folder / "dashboard.html"
-        say(f"Rebuilt {folder.name}")
+        pdf = write_pdf(last, folder / "dashboard.pdf")
+        say(f"Rebuilt {folder.name}" + (" (HTML + PDF)" if pdf else " (HTML only)"))
     if last is not None:
-        shutil.copy2(last, OUT / "latest.html")
-        say(f"latest.html = {last.parent.name}")
+        copy_latest(last, "latest.html")
+        if (last.parent / "dashboard.pdf").exists():
+            copy_latest(last.parent / "dashboard.pdf", "latest.pdf")
+        say(f"latest.html / latest.pdf = {last.parent.name}")
 
 
 # ------------------------------------------------------------------ main loop
@@ -873,7 +1079,7 @@ def main():
     ap = argparse.ArgumentParser(description="Scheduled Most_Magnificent_Model forecasts + dashboard.")
     ap.add_argument("--test", action="store_true", help=f"one quick run ({TEST_N_SIMS:,} simulations) -> Forecasts/test_<datetime>.html")
     ap.add_argument("--status", action="store_true", help="show the schedule and exit")
-    ap.add_argument("--report", action="store_true", help="rebuild every saved run's dashboard and latest.html with the current code")
+    ap.add_argument("--report", action="store_true", help="rebuild every saved run's dashboard (HTML + PDF) and latest.html / latest.pdf with the current code")
     ap.add_argument("--reset", action="store_true", help="DELETE the schedule, history, warnings workbook, latest.html and every scheduled-run folder "
                     "(test files are kept), then start a fresh schedule. Stop any running copy of this script first")
     a = ap.parse_args()
@@ -888,7 +1094,7 @@ def main():
         gone = [p for p in OUT.iterdir() if re.fullmatch(r"\d{4}-\d{2}-\d{2}_\d{4}", p.name) and p.is_dir()]
         for p in gone:
             shutil.rmtree(p)
-        for p in (STATE, HISTORY, RACE_HISTORY, WARNINGS_XLSX, OUT / "latest.html"):
+        for p in (STATE, HISTORY, RACE_HISTORY, WARNINGS_XLSX, OUT / "latest.html", OUT / "latest.pdf"):
             p.unlink(missing_ok=True)
         say(f"RESET: deleted the schedule, history, warnings workbook, latest.html and {len(gone)} run folder(s). Starting a fresh schedule.")
 
