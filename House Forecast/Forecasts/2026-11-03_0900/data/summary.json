@@ -1,0 +1,40 @@
+{
+  "model": "House_Model",
+  "run_at": "2026-11-03 09:00",
+  "as_of": "2026-11-03",
+  "p_d_218": 0.94175,
+  "exp_d_seats": 243.53705,
+  "median_d_seats": 242.0,
+  "p10": 222.0,
+  "p90": 267.0,
+  "kalshi_p_control": 0.9384999999999999,
+  "kalshi_expected_seats": 244.00378031561124,
+  "kalshi_districts": 76,
+  "env": 9.12067673928089,
+  "rv_shift": 1.155172413793103,
+  "tipping_point_margin": 5.594085492482867,
+  "n_sims": 100000,
+  "sources": {
+    "votehub_house_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_house_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "key_settings": {
+    "Poll source": "VoteHub API (us-representative + generic ballot + approval)",
+    "Poll age": "all polls, half-life 7 days",
+    "Polls : fundamentals : Kalshi": "Bayesian precision (poll floor 5.6, prior SD 6.6); Kalshi precision 1/8^2, longshot-corrected, conversion SD >= 7.26",
+    "Fundamentals": "1.78 x partisan lean (2024 pres., 2026 lines) + national environment (generic-ballot blend 0.75)",
+    "Incumbency": "4.5 pts for an incumbent running in the district",
+    "LV : RV : A": "1 : 0.85 : 0.7; RV shift +1.2 (measured)",
+    "Flooding penalty": "1/k^0.5",
+    "House effects": "in-cycle, shrunk to scorecard (k 5)",
+    "Ungraded pollsters": "random",
+    "National signals": "VoteHub polls + Kalshi averages (= 5 polls)",
+    "Kalshi races": "Bayesian input + comparison (found automatically)",
+    "Source errors": "correlated (rho 0.3); sims: national 3.4 + region 2.7 + state 2.4 + district, in pts",
+    "Single-party races": "uncontested / same-party top-two seats counted as certain",
+    "Calibration": "house_calibration.json (2026-11-02 15:38)"
+  }
+}

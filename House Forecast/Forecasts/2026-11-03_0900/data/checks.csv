@@ -1,0 +1,16 @@
+section,check,status,detail
+data,"435 districts, each with a partisan lean and region",PASS,435 rows; missing lean 0; missing region 0
+data,every source downloaded live this run,PASS,"votehub_house_cache.csv: live, votehub_generic_ballot_cache.csv: live, votehub_approval_cache.csv: live, kalshi_house_races_cache.csv: live, kalshi_national_cache.csv: live"
+Kalshi,district markets found (expect 40+),PASS,76 districts with a price
+Kalshi,House-control market found,PASS,P(D control) = 0.9384999999999999
+Kalshi,Kalshi nominee names agree with the district file,PASS,all agree
+polls,VoteHub district polls matched to both nominees (expect most),PASS,170 of 192 general-election rows matched; 16 dropped (a nominee missing)
+polls,polled districts,PASS,"81 districts with polls, 167 polls used"
+national,environment within D-10 to R-10,PASS,D+9.1
+data,AK-AL: independent Bill Hill modelled on the D side,PASS,"P(D-side candidate wins) 16%, counts for D with probability 0.8; race_type IND"
+data,CA-06: independent Kevin Kiley modelled on the R side,PASS,"P(D-side candidate wins) 98%, counts for D with probability 0; race_type IND"
+simulation,correlated vs independent race probabilities agree (< 3%),PASS,largest gap 0.006 (KY-06)
+simulation,fixed seats (single-party races),PASS,"16 certain D, 1 certain R"
+Kalshi,no district differs from Kalshi by more than 25 pts,WARN,TX-15 model 62% vs Kalshi 88%
+Kalshi,P(D control) within 15 pts of Kalshi's control market,PASS,model 94.2% vs Kalshi 93.8%
+simulation,seat total possible,PASS,mean 243.5

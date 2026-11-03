@@ -41,6 +41,7 @@ Forecasting the 2026 U.S. Senate: **the chance Democrats hold at least 51 seats*
 | **DadBod - Swing / Literal** | `Models/DadBod_Model/` | Ozempic + poll reliability, flooding penalty, house effects, correlated errors, Kalshi national averages, automatic Kalshi search, separate Model Testing notebook | `Models/DadBod_Model/README.md` |
 | **Pray_For_The_Floor** | `Models/Pray_For_The_Floor` | Model 1's Bayesian model on VoteHub polls + Kalshi as a third Bayesian input, random grades for ungraded pollsters every simulation, DadBod's controls | `Models/Pray_For_The_Floor/README.md` |
 | **Rylyn (Event Edition)** | `Models/Rylyn_Model` | Rylyn's starter-notebook model on the Oct 15 spreadsheet polls, plus opinion events, voting-access changes and a House map module | `Models/Rylyn_Model/README.md` |
+| **Most_Magnificent_Model** (final) | `Models/Most_Magnificent_Model` | Team 5's final model: a group-project copy of Marks_Final with in-cycle house effects and a 7-day recency half-life. This is the one `final_forecast.py` runs | `Models/Most_Magnificent_Model/README.md` |
 | **Marks_Final** | `Models/Marks_Final` | Pray_For_The_Floor calibrated on 1998-2022 Senate races, plus candidate effects in the prior, national/regional/state simulation errors in points, longshot-corrected Kalshi at real weight, fresher national signals, measured RV shift | `Models/Marks_Final/README.md` |
 
 
@@ -146,8 +147,9 @@ That's all, folks. The next `python run_all.py` picks the model up automatically
 
 ## Running the final forecast on election day (9 AM, Nov 3)
 
-The final forecast script is built: `Senate Forecast/Final Model/final_forecast.py` (see the README in that folder), with its House twin at `House Forecast/house_forecasts.py`. To keep it ticking on election day it needs:
-1. The script itself, which executes the chosen model(s) the same way `run_all.py` does.
-2. A **Windows Task Scheduler** task running it with the same Python Jupyter uses (e.g. `C:\...\python.exe final_forecast.py`), with its own folder (`Senate Forecast/Final Model`) as the "Start in" directory.
-3. The computer **awake and online at 9 AM** ("Wake the computer to run this task"), caffeinated if possible.
-4. A timestamped archive of the output, so the published 9 AM numbers are preserved exactly.
+The final forecast is `Senate Forecast/Final Model/final_forecast.py` (details in that folder's README), with its House twin at `House Forecast/house_forecasts.py`. Each is its own scheduler, no Task Scheduler required:
+
+1. **Start it once** with the same Python Jupyter uses (`python final_forecast.py`) and leave the window open. It runs Most_Magnificent_Model (Model Testing first, then the forecast, 100,000 simulations) right away, then every 3 hours on fixed clock times, then a **final run at 9:00 AM Tue Nov 3**, then stops for good. Ctrl+C and a restart resume the same schedule; missed runs are made up with one run.
+2. **Keep the computer awake and online** through 9 AM (caffeinated if possible).
+3. **Every run is archived** in `Forecasts/<YYYY-MM-DD_HHMM>/`: the dashboard (HTML + PDF), each chart as HTML, PNG and JPEG, the data, and every input file the run used, so the published 9 AM numbers can be reproduced exactly. `Forecasts/latest.html` is always the newest dashboard.
+4. `python final_forecast.py --report` rebuilds every saved dashboard and figure from the saved data (no model run), for touch-ups after the fact.

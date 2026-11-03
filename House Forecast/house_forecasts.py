@@ -320,24 +320,33 @@ def plotly_figs(res, hist):
 
     # 2. all 435 seats, safest D to safest R (one square per district, a quilt of 435 patches)
     w = waffle_frame(res)
-    f = go.Figure()
-    for call in CALL_ORDER:
-        g = w[w["call"] == call]
-        hov = (g["district"] + " - " + call + "<br>" + g.apply(matchup, axis=1) + "<br>Model " + g["p_dem"].map(pct_label)
-               + " | Kalshi " + g["kalshi_p"].map(pct_label) + "<br>projected "
-               + [margin_label(m, t) for m, t in zip(g["margin"], g["race_type"])])
-        f.add_trace(go.Scatter(x=g["col"], y=-g["row"], mode="markers", name=f"{call} ({len(g)})", text=hov,
-                               hovertemplate="%{text}<extra></extra>", marker=dict(symbol="square", size=13, color=CALLS[call],
-                                                                                      line=dict(color="white", width=1))))
+    # Drawn as a heatmap, so each square is a cell in data units: the grid scales with the window instead of fixed-pixel
+    # markers that crowd together on a narrow screen. Hover labels then also flip left near the right edge.
+    nr, nc = int(w["row"].max()) + 1, int(w["col"].max()) + 1
+    code = {c: i for i, c in enumerate(CALL_ORDER)}
+    z = np.full((nr, nc), np.nan)
+    txt = np.full((nr, nc), "", dtype=object)
+    for d in w.itertuples():
+        z[d.row, d.col] = code[d.call]
+        txt[d.row, d.col] = (f"{d.district} - {d.call}<br>{matchup(w.loc[d.Index])}<br>Model {pct_label(d.p_dem)} | Kalshi "
+                             f"{pct_label(d.kalshi_p)}<br>projected {margin_label(d.margin, d.race_type)}")
+    k = len(CALL_ORDER)
+    scale = [pair for i, c in enumerate(CALL_ORDER) for pair in ([i / k, CALLS[c]], [(i + 1) / k, CALLS[c]])]
+    f = go.Figure(go.Heatmap(z=z, x=list(range(nc)), y=list(range(nr)), zmin=-0.5, zmax=k - 0.5, colorscale=scale, showscale=False,
+                             xgap=3, ygap=3, text=txt, hovertemplate="%{text}<extra></extra>", hoverongaps=False))
+    for call in CALL_ORDER:  # legend only (the heatmap has none)
+        f.add_trace(go.Scatter(x=[None], y=[None], mode="markers", name=f"{call} ({int((w['call'] == call).sum())})",
+                               marker=dict(symbol="square", size=12, color=CALLS[call]), hoverinfo="skip"))
     t = w.iloc[CONTROL_SEATS - 1]  # the 218th-best seat for Democrats
-    f.add_trace(go.Scatter(x=[t["col"]], y=[-t["row"]], mode="markers", showlegend=False, hoverinfo="skip",
-                           marker=dict(symbol="square-open", size=21, color=INK, line=dict(width=2.5))))
-    f.add_annotation(x=t["col"], y=-t["row"], text=f"seat {CONTROL_SEATS}: {t['district']}", showarrow=True, ay=-70, ax=0,
-                     font=dict(size=11, color=INK), bgcolor="white", yanchor="bottom")
-    f.update_layout(**{k: v for k, v in base.items() if k != "margin"}, margin=dict(l=10, r=10, t=70, b=10), height=400,
+    f.add_shape(type="rect", x0=t["col"] - 0.5, x1=t["col"] + 0.5, y0=t["row"] - 0.5, y1=t["row"] + 0.5,
+                line=dict(color=INK, width=3.5), fillcolor="rgba(0,0,0,0)", opacity=1, layer="above")
+    f.add_annotation(x=t["col"], y=-0.6, text=f"seat {CONTROL_SEATS} (outlined): {t['district']}", showarrow=False,
+                     yanchor="bottom", font=dict(size=12, color=INK))
+    f.update_layout(**{k_: v for k_, v in base.items() if k_ != "margin"}, margin=dict(l=10, r=10, t=70, b=10), height=470,
                     title=f"All 435 seats, from safest Democratic to safest Republican<br><sup>{cuts_label(res['cuts'])}</sup>",
-                    xaxis=dict(visible=False), yaxis=dict(visible=False, scaleanchor="x"), plot_bgcolor="rgba(0,0,0,0)",
-                    legend=dict(orientation="h", y=-0.02, x=0.5, xanchor="center", yanchor="top"))
+                    xaxis=dict(visible=False, range=[-0.5, nc - 0.5], constrain="domain"),
+                    yaxis=dict(visible=False, range=[nr - 0.5, -1.9], scaleanchor="x", constrain="domain"),
+                    plot_bgcolor="rgba(0,0,0,0)", legend=dict(orientation="h", y=-0.02, x=0.5, xanchor="center", yanchor="top"))
     figs["seat_chart"] = f
 
     # 3. state tile map: expected D seats / seats

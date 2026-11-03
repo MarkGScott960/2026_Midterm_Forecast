@@ -1,0 +1,203 @@
+{
+  "created": "2026-11-02 15:38",
+  "model": "house_model",
+  "source": "FiveThirtyEight raw_polls.csv (Final Model/Data_Cache/raw_polls.csv) + election-results (House 2014/2018/2022) + Daily Kos/Downballot district presidential results; House Forecast/house_calibration.py",
+  "settings": {
+    "COMPETITIVE_LIMIT": 15,
+    "FIT_LIMIT": 30,
+    "MAX_THIRD_PARTY": 15,
+    "PRIOR_CYCLES": [
+      2018,
+      2022
+    ],
+    "FINAL_WINDOW_DAYS": 21,
+    "HALF_LIFE_DAYS": 7,
+    "PARTISAN_SHIFT": 3.0,
+    "POLL_START_CYCLE": 1998,
+    "NATIONAL_PRES": {
+      "2012": 3.8599999999999994,
+      "2016": 2.0899999999999963,
+      "2020": 4.460000000000001
+    }
+  },
+  "overrides": {
+    "PVI_TO_MARGIN": 1.784,
+    "INCUMBENCY_ADVANTAGE": 4.51,
+    "PRIOR_SD": 6.56,
+    "NATIONAL_ERROR_SD": 3.35,
+    "REGIONAL_ERROR_SD": 2.68,
+    "STATE_ERROR_SD": 2.42,
+    "SYSTEMATIC_POLL_ERROR_SD": 5.62,
+    "KALSHI_CONVERT_SD": 7.26,
+    "DAILY_DRIFT_SD": 0.762,
+    "RECENCY_HALF_LIFE_DAYS": 7,
+    "HOUSE_EFFECT_K": 5,
+    "STATE_T_DF": 10.9
+  },
+  "from_senate_calibration": [
+    "DAILY_DRIFT_SD",
+    "RECENCY_HALF_LIFE_DAYS",
+    "HOUSE_EFFECT_K",
+    "STATE_T_DF"
+  ],
+  "estimates": {
+    "fundamentals": {
+      "prior_cycles": [
+        2018,
+        2022
+      ],
+      "fit_by_cycle_all": {
+        "2014": {
+          "slope_b": 0.712,
+          "incumbency": 11.07,
+          "n": 229
+        },
+        "2018": {
+          "slope_b": 0.892,
+          "incumbency": 4.41,
+          "n": 261
+        },
+        "2022": {
+          "slope_b": 0.887,
+          "incumbency": 4.69,
+          "n": 249
+        }
+      },
+      "b": 0.892087725474765,
+      "PVI_TO_MARGIN": 1.78417545094953,
+      "INCUMBENCY_ADVANTAGE": 4.508907002619006,
+      "local_sd": 5.646584848248035,
+      "regional_sd": 2.6807757839898825,
+      "state_sd": 2.4232486270386224,
+      "n_fit": 510,
+      "n_competitive": 222,
+      "n_region_groups": 18,
+      "n_state_groups": 74,
+      "wrong_winner_share_competitive": 0.08558558558558559,
+      "local_sd_by_cycle": {
+        "2018": 5.449301912150822,
+        "2022": 5.88248444901488
+      },
+      "mean_resid_by_cycle": {
+        "2018": -1.5,
+        "2022": 2.13
+      }
+    },
+    "generic_ballot_errors": [
+      {
+        "cycle": 1998,
+        "avg": 3.3,
+        "actual": -0.89,
+        "n_polls": 20,
+        "error": 4.19
+      },
+      {
+        "cycle": 2000,
+        "avg": 2.11,
+        "actual": -0.34,
+        "n_polls": 30,
+        "error": 2.45
+      },
+      {
+        "cycle": 2002,
+        "avg": 0.14,
+        "actual": -4.71,
+        "n_polls": 25,
+        "error": 4.85
+      },
+      {
+        "cycle": 2004,
+        "avg": 1.21,
+        "actual": -2.57,
+        "n_polls": 31,
+        "error": 3.78
+      },
+      {
+        "cycle": 2006,
+        "avg": 13.24,
+        "actual": 7.89,
+        "n_polls": 27,
+        "error": 5.35
+      },
+      {
+        "cycle": 2008,
+        "avg": 9.34,
+        "actual": 10.55,
+        "n_polls": 21,
+        "error": -1.2
+      },
+      {
+        "cycle": 2010,
+        "avg": -7.11,
+        "actual": -6.51,
+        "n_polls": 32,
+        "error": -0.59
+      },
+      {
+        "cycle": 2012,
+        "avg": -0.12,
+        "actual": 1.09,
+        "n_polls": 21,
+        "error": -1.21
+      },
+      {
+        "cycle": 2014,
+        "avg": -2.23,
+        "actual": -5.62,
+        "n_polls": 15,
+        "error": 3.39
+      },
+      {
+        "cycle": 2016,
+        "avg": 2.76,
+        "actual": -1.03,
+        "n_polls": 24,
+        "error": 3.8
+      },
+      {
+        "cycle": 2018,
+        "avg": 7.13,
+        "actual": 8.51,
+        "n_polls": 37,
+        "error": -1.38
+      },
+      {
+        "cycle": 2020,
+        "avg": 7.47,
+        "actual": 2.96,
+        "n_polls": 26,
+        "error": 4.51
+      },
+      {
+        "cycle": 2022,
+        "avg": -0.62,
+        "actual": -2.64,
+        "n_polls": 55,
+        "error": 2.02
+      }
+    ],
+    "generic_ballot_mean_error": 2.3,
+    "district_polls": {
+      "races": 703,
+      "rmse": 7.2637343251731785,
+      "mean_error": 0.5252630227461828,
+      "national_sd_from_district_polls": 2.817735017220456,
+      "median_n_eff": 1.0,
+      "rmse_by_cycle": {
+        "1998": 9.28,
+        "2000": 6.04,
+        "2002": 5.9,
+        "2004": 6.01,
+        "2006": 6.58,
+        "2008": 6.65,
+        "2010": 8.35,
+        "2012": 7.72,
+        "2014": 8.68,
+        "2016": 8.31,
+        "2018": 6.39,
+        "2020": 7.51,
+        "2022": 5.79
+      }
+    }
+  }
+}

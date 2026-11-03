@@ -1,6 +1,6 @@
 # Most_Magnificent_Model - Team 5's final model (modest name, modest model)
 
-**Pray_For_The_Floor, calibrated on past Senate races, with the structural problems from the Oct 29 model review fixed.**
+**Pray_For_The_Floor, calibrated on past Senate races, with the structural problems from the Oct 29 model review fixed.** This is the model `Final Model/final_forecast.py` runs every 3 hours through the final 9:00 AM Nov 3 forecast; the numbers below are from Oct 29 and are kept as a record (the live ones are on the dashboard).
 
 | File | What it is |
 |---|---|

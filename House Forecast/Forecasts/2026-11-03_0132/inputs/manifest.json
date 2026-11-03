@@ -1,0 +1,15 @@
+{
+  "saved_at": "2026-11-03T01:33:13",
+  "files": [
+    "Data/house_districts_2026.csv",
+    "Data/leans_and_regions.csv",
+    "Data/votehub_pollster_scorecards.csv",
+    "Data_Cache/kalshi_house_races_cache.csv",
+    "Data_Cache/kalshi_national_cache.csv",
+    "Data_Cache/votehub_approval_cache.csv",
+    "Data_Cache/votehub_generic_ballot_cache.csv",
+    "Data_Cache/votehub_house_cache.csv",
+    "house_calibration.json",
+    "house_model.py"
+  ]
+}
