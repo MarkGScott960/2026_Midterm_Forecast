@@ -1,0 +1,22 @@
+# Each 2026 nominee's most recent TOP-OF-TICKET statewide race (Senate, governor, at-large House), competitive races only.
+# All margins are Democrat/independent minus Republican, in points. baseline = state_pres_margin - national_pres_margin + national_house_margin
+# (what a generic candidate of the party would have done that year). over-performance = race_margin - baseline; the model adds
+# CANDIDATE_EFFECT_WEIGHT x the sum for both nominees to the prior. Presidential: 2020 state margins from FiveThirtyEight raw_polls.csv,
+# 2024 from Data/pres_2024_results.csv; national 2020 pres D+4.46, 2024 R+1.48; national House 2020 D+3.1, 2024 R+2.6 (Wikipedia).
+# use = no: listed for transparency but not used (down-ballot office, or older than CANDIDATE_MAX_AGE_YEARS). Checked Oct 29, 2026.
+state,candidate,party,office,year,race_margin,state_pres_margin,national_pres_margin,national_house_margin,use,source,notes
+Maine,Susan Collins,R,Senate,2020,-8.60,9.07,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Maine,Collins 51.0 Gideon 42.4
+Alaska,Dan Sullivan,R,Senate,2020,-12.70,-10.06,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Alaska,Sullivan 53.9 Gross 41.2
+Alaska,Mary Peltola,D,US House at-large (statewide),2024,-2.60,-13.13,-1.48,-2.6,yes,https://www.juneauempire.com/news/ranked-choice-voting-repeal-fails-by-0-2-begich-defeats-peltola-51-3-48-7-with-all-ballots-counted,Final ranked-choice round Begich 51.3 Peltola 48.7
+Nebraska,Dan Osborn,I,Senate,2024,-6.67,-20.46,-1.48,-2.6,yes,https://en.wikipedia.org/wiki/2024_Nebraska_elections,Fischer 53.19 Osborn 46.52
+Nebraska,Pete Ricketts,R,Senate (special),2024,-25.16,-20.46,-1.48,-2.6,yes,https://en.wikipedia.org/wiki/2024_United_States_Senate_special_election_in_Nebraska,Ricketts 62.58 Love 37.42
+Ohio,Sherrod Brown,D,Senate,2024,-3.62,-11.21,-1.48,-2.6,yes,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Ohio,Moreno 50.09 Brown 46.47
+North Carolina,Roy Cooper,D,Governor,2020,4.51,-1.35,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_North_Carolina_gubernatorial_election,Cooper 51.5 Forest 47.0
+Georgia,Jon Ossoff,D,Senate (November general),2020,-1.78,0.24,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Georgia,Perdue 49.7 Ossoff 47.9 (Ossoff won the Jan 2021 runoff)
+Michigan,Mike Rogers,R,Senate,2024,0.34,-1.42,-1.48,-2.6,yes,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Michigan,Slotkin 48.64 Rogers 48.30
+Kansas,Roger Marshall,R,Senate,2020,-11.44,-14.65,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Kansas,Marshall 53.2 Bollier 41.8
+Mississippi,Cindy Hyde-Smith,R,Senate,2020,-9.98,-16.55,4.46,3.1,yes,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Mississippi,Hyde-Smith 54.1 Espy 44.1
+Texas,Ken Paxton,R,Attorney General,2022,-9.70,-5.58,4.46,-2.7,no,https://en.wikipedia.org/wiki/2022_Texas_Attorney_General_election,Down-ballot office (measures the ticket more than the candidate)
+Florida,Ashley Moody,R,Attorney General,2022,-21.20,-3.36,4.46,-2.7,no,https://en.wikipedia.org/wiki/2022_Florida_Attorney_General_election,Down-ballot office
+Ohio,Jon Husted,R,Lieutenant Governor (on ticket),2022,-25.00,-8.03,4.46,-2.7,no,https://en.wikipedia.org/wiki/2022_Ohio_gubernatorial_election,Ran on the governor's ticket
+New Hampshire,John E. Sununu,R,Senate,2008,6.30,9.61,7.27,10.6,no,https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_New_Hampshire,Older than 8 years

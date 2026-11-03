@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-11-02",
+  "run_at": "2026-11-02 19:33",
+  "p_d_218": 0.94308,
+  "exp_d_seats": 244.0211,
+  "median_d_seats": 242.0,
+  "p10": 222.0,
+  "p90": 268.0,
+  "env": 9.305712963913994,
+  "rv_shift": 1.155172413793103,
+  "rv_pairs": 24,
+  "kalshi_p_control": 0.9355,
+  "kalshi_expected_seats": 244.19296388528707,
+  "kalshi_districts": 76,
+  "tipping_point_margin": 5.64529480690471,
+  "p_d_control": 0.94308,
+  "national": {
+    "generic_ballot": 10.12557790449815,
+    "net_approval": -19.560337549032916,
+    "env": 9.305712963913994
+  },
+  "sources": {
+    "votehub_house_cache.csv": "live",
+    "votehub_generic_ballot_cache.csv": "live",
+    "votehub_approval_cache.csv": "live",
+    "kalshi_house_races_cache.csv": "live",
+    "kalshi_national_cache.csv": "live"
+  },
+  "kalshi_failures": 0
+}

@@ -1,0 +1,436 @@
+district,state,state_abbr,harris24,trump24,pres24_margin,partisan_lean,pres20_margin,holder,holder_party,incumbent,incumbent_party,status,dem_candidate,rep_candidate,other_candidate,race_type,candidates_source,notes,region
+AK-AL,Alaska,AK,41.41,54.54,-13.14,-5.82,-10.12,Nick Begich,R,Nick Begich,R,running,Bill Hill,Nick Begich,Eric Hafner (D),IND,checked race by race,"Bill Hill (independent, backed by national Democratic groups) vs Nick Begich (R); Eric Hafner (D) also on the ballot",Pacific
+AL-01,Alabama,AL,31.54,67.56,-36.02,-17.27,,Barry Moore,R,,,open,Clyde Jones Jr.,Jerry Carl,,DR,checked race by race,,East South Central
+AL-02,Alabama,AL,42.41,56.75,-14.34,-6.42,,Shomari Figures,D,Shomari Figures,D,running,Shomari Figures,Rhett Marques,,DR,checked race by race,,East South Central
+AL-03,Alabama,AL,26.25,72.94,-46.69,-22.6,,Mike Rogers,R,Mike Rogers,R,running,Lee McInnis,Mike Rogers,,DR,checked race by race,,East South Central
+AL-04,Alabama,AL,16.42,82.84,-66.43,-32.47,,Robert Aderholt,R,Robert Aderholt,R,running,Amanda Pusczek,Robert Aderholt,,DR,checked race by race,,East South Central
+AL-05,Alabama,AL,34.79,63.9,-29.11,-13.81,,Dale Strong,R,Dale Strong,R,running,Andrew Sneed,Dale Strong,,DR,checked race by race,,East South Central
+AL-06,Alabama,AL,32.14,66.76,-34.61,-16.56,,Gary Palmer,R,Gary Palmer,R,running,Maurice Mercer,Gary Palmer,,DR,checked race by race,,East South Central
+AL-07,Alabama,AL,58.47,40.68,17.8,9.65,,Terri Sewell,D,Terri Sewell,D,running,Terri Sewell,Ammie Akin,,DR,checked race by race,,East South Central
+AR-01,Arkansas,AR,26.4,71.69,-45.29,-21.9,-40.91,Rick Crawford,R,Rick Crawford,R,running,Terri Green,Rick Crawford,,DR,checked race by race,,West South Central
+AR-02,Arkansas,AR,41.03,56.56,-15.53,-7.02,-13.12,French Hill,R,French Hill,R,running,Chris Jones,French Hill,,DR,checked race by race,,West South Central
+AR-03,Arkansas,AR,36.19,61.08,-24.89,-11.7,-23.42,Steve Womack,R,Steve Womack,R,running,Robb Ryerse,Steve Womack,,DR,checked race by race,,West South Central
+AR-04,Arkansas,AR,29.12,69.03,-39.91,-19.21,-35.25,Bruce Westerman,R,Bruce Westerman,R,running,James Russell,Bruce Westerman,,DR,checked race by race,,West South Central
+AZ-01,Arizona,AZ,47.97,51.08,-3.11,-0.81,1.49,David Schweikert,R,,,open,Amish Shah,Jay Feely,,DR,checked race by race,,Mountain
+AZ-02,Arizona,AZ,42.01,56.98,-14.97,-6.74,-7.88,Eli Crane,R,Eli Crane,R,running,Jonathan Nez,Eli Crane,,DR,checked race by race,,Mountain
+AZ-03,Arizona,AZ,69.19,29.44,39.75,20.62,50.63,Yassamin Ansari,D,Yassamin Ansari,D,running,Yassamin Ansari,,,DR,checked race by race,,Mountain
+AZ-04,Arizona,AZ,52.63,45.96,6.67,4.08,10.3,Greg Stanton,D,Greg Stanton,D,running,Greg Stanton,Zuhdi Jasser,,DR,checked race by race,,Mountain
+AZ-05,Arizona,AZ,39.47,59.45,-19.98,-9.24,-16.38,Andy Biggs,R,,,open,Elizabeth Lee,Mark Lamb,,DR,checked race by race,,Mountain
+AZ-06,Arizona,AZ,49.08,49.83,-0.75,0.37,0.07,Juan Ciscomani,R,Juan Ciscomani,R,running,JoAnna Mendoza,Juan Ciscomani,,DR,checked race by race,,Mountain
+AZ-07,Arizona,AZ,60.48,38.35,22.13,11.81,32.77,Adelita Grijalva,D,Adelita Grijalva,D,running,Adelita Grijalva,Daniel Butierez,,DR,checked race by race,,Mountain
+AZ-08,Arizona,AZ,41.37,57.7,-16.33,-7.42,-13.53,Abe Hamadeh,R,Abraham Hamadeh,R,running,Bernadette Greene-Placentia,Abraham Hamadeh,,DR,checked race by race,,Mountain
+AZ-09,Arizona,AZ,34.04,65.12,-31.08,-14.79,-25.76,Paul Gosar,R,Paul Gosar,R,running,Dani Sterbinsky,Paul Gosar,,DR,checked race by race,,Mountain
+CA-01,California,CA,54.49,42.27,12.22,6.86,,James Gallagher,R,James Gallagher,R,running,Mike McGuire,James Gallagher,,DR,checked race by race,,Pacific
+CA-02,California,CA,60.75,36.11,24.64,13.07,,Jared Huffman,D,Jared Huffman,D,running,Jared Huffman,Robin Littau,,DR,checked race by race,,Pacific
+CA-03,California,CA,53.35,43.19,10.16,5.83,,Kevin Kiley,I,Ami Bera,D,running,Ami Bera,Robb Tucker,,DR,checked race by race,,Pacific
+CA-04,California,CA,55.75,41.25,14.5,8.0,,Mike Thompson,D,Mike Thompson,D,running,Mike Thompson,,Eric Jones (D),DD,checked race by race,,Pacific
+CA-05,California,CA,38.39,59.09,-20.7,-9.6,,Tom McClintock,R,Tom McClintock,R,running,Michael Masuda,Tom McClintock,,DR,checked race by race,,Pacific
+CA-06,California,CA,52.57,44.17,8.4,4.95,,Ami Bera,D,Kevin Kiley,I,running,Richard Pan,,Kevin Kiley (I),IND,checked race by race,"Kevin Kiley (independent, formerly R) vs Richard Pan (D); no Republican on the ballot",Pacific
+CA-07,California,CA,54.79,41.97,12.81,7.15,,Doris Matsui,D,Doris Matsui,D,running,Doris Matsui,,Mai Vang (D),DD,checked race by race,,Pacific
+CA-08,California,CA,65.46,31.4,34.06,17.78,,John Garamendi,D,John Garamendi,D,running,John Garamendi,Rudy Recile,,DR,checked race by race,,Pacific
+CA-09,California,CA,54.14,42.72,11.42,6.46,,Josh Harder,D,Josh Harder,D,running,Josh Harder,John McBride,,DR,checked race by race,,Pacific
+CA-10,California,CA,65.11,31.56,33.55,17.52,,Mark DeSaulnier,D,Mark DeSaulnier,D,running,Mark DeSaulnier,Jeff Frese,,DR,checked race by race,,Pacific
+CA-11,California,CA,81.8,14.08,67.72,34.61,,Nancy Pelosi,D,,,open,Scott Wiener,,Connie Chan (D),DD,checked race by race,,Pacific
+CA-12,California,CA,84.53,10.64,73.89,37.69,,Lateefah Simon,D,Lateefah Simon,D,running,Lateefah Simon,,Jamie Joyce (D),DD,checked race by race,,Pacific
+CA-13,California,CA,48.81,48.43,0.37,0.93,,Adam Gray,D,Adam Gray,D,running,Adam Gray,Kevin Lincoln,,DR,checked race by race,,Pacific
+CA-14,California,CA,65.39,30.63,34.76,18.12,,Aisha Wahab,D,Aisha Wahab,D,running,Aisha Wahab,,Melissa Hernandez (D),DD,checked race by race,,Pacific
+CA-15,California,CA,72.19,24.3,47.89,24.69,,Kevin Mullin,D,Kevin Mullin,D,running,Kevin Mullin,Charles Hoelter,,DR,checked race by race,,Pacific
+CA-16,California,CA,72.27,24.16,48.11,24.8,,Sam Liccardo,D,Sam Liccardo,D,running,Sam Liccardo,Peter Soule,,DR,checked race by race,,Pacific
+CA-17,California,CA,67.31,28.34,38.97,20.23,,Ro Khanna,D,Ro Khanna,D,running,Ro Khanna,Ritesh Tandon,,DR,checked race by race,,Pacific
+CA-18,California,CA,62.66,34.21,28.45,14.97,,Zoe Lofgren,D,Zoe Lofgren,D,running,Zoe Lofgren,Shane Lewis,,DR,checked race by race,,Pacific
+CA-19,California,CA,65.45,31.04,34.41,17.95,,Jimmy Panetta,D,Jimmy Panetta,D,running,Jimmy Panetta,Peter Coe Verbica,,DR,checked race by race,,Pacific
+CA-20,California,CA,32.75,64.98,-32.23,-15.37,,Vince Fong,R,Vince Fong,R,running,Sandra Van Scotter,Vince Fong,,DR,checked race by race,,Pacific
+CA-21,California,CA,51.65,45.68,5.97,3.73,,Jim Costa,D,Jim Costa,D,running,Jim Costa,Kyle Kirkland,,DR,checked race by race,,Pacific
+CA-22,California,CA,47.75,49.6,-1.85,-0.18,,David Valadao,R,David Valadao,R,running,Randy Villegas,David Valadao,,DR,checked race by race,,Pacific
+CA-23,California,CA,38.99,58.39,-19.4,-8.95,,Jay Obernolte,R,Jay Obernolte,R,running,Tessa Lynn Hodge,Jay Obernolte,,DR,checked race by race,,Pacific
+CA-24,California,CA,60.91,35.97,24.94,13.22,,Salud Carbajal,D,Salud Carbajal,D,running,Salud Carbajal,Bob Smith,,DR,checked race by race,,Pacific
+CA-25,California,CA,51.79,45.98,5.81,3.65,,Raul Ruiz,D,Raul Ruiz,D,running,Raul Ruiz,Joe Males,,DR,checked race by race,,Pacific
+CA-26,California,CA,56.23,40.95,15.28,8.39,,Julia Brownley,D,,,open,Jacqui Irwin,Sam Gallucci,,DR,checked race by race,,Pacific
+CA-27,California,CA,53.35,43.62,9.73,5.61,,George Whitesides,D,George Whitesides,D,running,George Whitesides,Jason Gibbs,,DR,checked race by race,,Pacific
+CA-28,California,CA,60.99,35.7,25.28,13.39,,Judy Chu,D,Judy Chu,D,running,Judy Chu,April Verlato,,DR,checked race by race,,Pacific
+CA-29,California,CA,65.28,31.64,33.64,17.57,,Luz Rivas,D,Luz Rivas,D,running,Luz Rivas,,Angelica Duenas (D),DD,checked race by race,,Pacific
+CA-30,California,CA,68.3,28.28,40.02,20.76,,Laura Friedman,D,Laura Friedman,D,running,Laura Friedman,Scott Meyers,,DR,checked race by race,,Pacific
+CA-31,California,CA,54.61,42.39,12.23,6.86,,Gil Cisneros,D,Gil Cisneros,D,running,Gil Cisneros,Eric Ching,,DR,checked race by race,,Pacific
+CA-32,California,CA,61.04,36.04,25.0,13.25,,Brad Sherman,D,Brad Sherman,D,running,Brad Sherman,Larry Thompson,,DR,checked race by race,,Pacific
+CA-33,California,CA,53.43,43.65,9.78,5.64,,Pete Aguilar,D,Pete Aguilar,D,running,Pete Aguilar,Stephanie Vargas,,DR,checked race by race,,Pacific
+CA-34,California,CA,73.06,22.42,50.64,26.07,,Jimmy Gomez,D,Jimmy Gomez,D,running,Jimmy Gomez,,Angela Gonzales-Torres (D),DD,checked race by race,,Pacific
+CA-35,California,CA,52.38,44.58,7.8,4.65,,Norma Torres,D,Norma Torres,D,running,Norma Torres,Mike Cargile,,DR,checked race by race,,Pacific
+CA-36,California,CA,67.92,28.81,39.11,20.3,,Ted Lieu,D,Ted Lieu,D,running,Ted Lieu,Houston Brignano,,DR,checked race by race,,Pacific
+CA-37,California,CA,78.66,18.27,60.39,30.94,,Sydney Kamlager-Dove,D,Sydney Kamlager-Dove,D,running,Sydney Kamlager-Dove,,Samantha Mota (D),DD,checked race by race,,Pacific
+CA-38,California,CA,54.5,42.18,12.32,6.91,,Linda Sanchez,D,,,open,Hilda Solis,Pedro Casas,,DR,checked race by race,,Pacific
+CA-39,California,CA,53.21,43.73,9.48,5.49,,Mark Takano,D,Mark Takano,D,running,Mark Takano,Steve Manos,,DR,checked race by race,,Pacific
+CA-40,California,CA,42.4,54.63,-12.23,-5.37,,Young Kim,R,Young Kim,R,running,,Young Kim,Ken Calvert (R),RR,checked race by race,"Two Republican incumbents (Young Kim, Ken Calvert) face each other",Pacific
+CA-41,California,CA,55.57,41.37,14.2,7.85,,Ken Calvert,R,Linda Sanchez,D,running,Linda Sanchez,Mitch Clemmons,,DR,checked race by race,,Pacific
+CA-42,California,CA,55.0,41.86,13.13,7.31,,Robert Garcia,D,Robert Garcia,D,running,Robert Garcia,Brian Burley,,DR,checked race by race,,Pacific
+CA-43,California,CA,72.88,23.91,48.96,25.23,,Maxine Waters,D,Maxine Waters,D,running,Maxine Waters,Cristian Morales,,DR,checked race by race,,Pacific
+CA-44,California,CA,66.0,30.83,35.17,18.33,,Nanette Barragan,D,Nanette Barragan,D,running,Nanette Barragan,Genevieve Angel,,DR,checked race by race,,Pacific
+CA-45,California,CA,50.52,46.58,3.94,2.72,,Derek Tran,D,Derek Tran,D,running,Derek Tran,Chuong Vo,,DR,checked race by race,,Pacific
+CA-46,California,CA,56.51,40.35,16.16,8.83,,Lou Correa,D,Lou Correa,D,running,Lou Correa,David Pan,,DR,checked race by race,,Pacific
+CA-47,California,CA,53.17,43.1,10.08,5.79,,Dave Min,D,Dave Min,D,running,Dave Min,Jenny Le Roux,,DR,checked race by race,,Pacific
+CA-48,California,CA,50.39,47.0,3.39,2.44,,Darrell Issa,R,,,open,Marni von Wilpert,Jim Desmond,,DR,checked race by race,,Pacific
+CA-49,California,CA,54.57,42.47,12.1,6.8,,Mike Levin,D,Mike Levin,D,running,Mike Levin,Armen Kurdian,,DR,checked race by race,,Pacific
+CA-50,California,CA,57.59,39.33,18.25,9.87,,Scott Peters,D,Scott Peters,D,running,Scott Peters,Steve Cohen,,DR,checked race by race,,Pacific
+CA-51,California,CA,57.67,39.42,18.26,9.88,,Sara Jacobs,D,Sara Jacobs,D,running,Sara Jacobs,Ricardo Cabrera,,DR,checked race by race,,Pacific
+CA-52,California,CA,57.47,39.9,17.57,9.53,,Juan Vargas,D,Juan Vargas,D,running,Juan Vargas,Jeff Belle,,DR,checked race by race,,Pacific
+CO-01,Colorado,CO,76.7,20.63,56.07,28.78,61.29,Diana DeGette,D,,,open,Melat Kiros,Christy Peterson,,DR,checked race by race,,Mountain
+CO-02,Colorado,CO,68.51,28.72,39.78,20.64,39.87,Joe Neguse,D,Joe Neguse,D,running,Joe Neguse,Kelley Dennison,,DR,checked race by race,,Mountain
+CO-03,Colorado,CO,43.89,53.62,-9.73,-4.12,-8.25,Jeff Hurd,R,Jeff Hurd,R,running,Dwayne Romero,Jeff Hurd,,DR,checked race by race,,Mountain
+CO-04,Colorado,CO,39.64,57.9,-18.25,-8.38,-18.55,Lauren Boebert,R,Lauren Boebert,R,running,Eileen Laubacher,Lauren Boebert,,DR,checked race by race,,Mountain
+CO-05,Colorado,CO,44.1,53.19,-9.08,-3.79,-10.11,Jeff Crank,R,Jeff Crank,R,running,Jessica Killin,Jeff Crank,,DR,checked race by race,,Mountain
+CO-06,Colorado,CO,58.46,38.68,19.78,10.64,23.8,Jason Crow,D,Jason Crow,D,running,Jason Crow,Jason Clark,,DR,checked race by race,,Mountain
+CO-07,Colorado,CO,56.1,41.11,14.98,8.24,14.17,Brittany Pettersen,D,Brittany Pettersen,D,running,Brittany Pettersen,Tim Bennett,,DR,checked race by race,,Mountain
+CO-08,Colorado,CO,47.75,49.58,-1.83,-0.17,4.56,Gabe Evans,R,Gabe Evans,R,running,Manny Rutinel,Gabe Evans,,DR,checked race by race,,Mountain
+CT-01,Connecticut,CT,60.61,37.73,22.88,12.19,28.08,John Larson,D,,,open,Luke Bronin,Amy Chai,,DR,checked race by race,,New England
+CT-02,Connecticut,CT,53.03,45.3,7.73,4.61,11.45,Joe Courtney,D,Joe Courtney,D,running,Joe Courtney,George Austin,,DR,checked race by race,,New England
+CT-03,Connecticut,CT,56.07,42.01,14.06,7.78,19.72,Rosa DeLauro,D,Rosa DeLauro,D,running,Rosa DeLauro,Chris Lancia,,DR,checked race by race,,New England
+CT-04,Connecticut,CT,60.9,37.54,23.36,12.43,31.0,Jim Himes,D,Jim Himes,D,running,Jim Himes,Michael Goldstein,,DR,checked race by race,,New England
+CT-05,Connecticut,CT,52.01,46.42,5.59,3.54,10.75,Jahana Hayes,D,Jahana Hayes,D,running,Jahana Hayes,Chris Shea,,DR,checked race by race,,New England
+DE-AL,Delaware,DE,56.63,41.89,14.74,8.12,18.98,Sarah McBride,D,Sarah McBride,D,running,Sarah McBride,Joseph Arminio,,DR,checked race by race,,South Atlantic
+FL-01,Florida,FL,30.89,68.09,-37.2,-17.86,,Jimmy Patronis,R,Jimmy Patronis,R,running,Gay Valimont,Jimmy Patronis,,DR,checked race by race,,South Atlantic
+FL-02,Florida,FL,40.51,58.51,-18.0,-8.25,,Neal Dunn,R,,,open,Amanda Green,Austin Rogers,,DR,checked race by race,,South Atlantic
+FL-03,Florida,FL,38.97,60.09,-21.12,-9.81,,Kat Cammack,R,Kat Cammack,R,running,Seth Harp,Kat Cammack,,DR,checked race by race,,South Atlantic
+FL-04,Florida,FL,43.58,55.42,-11.84,-5.17,,Aaron Bean,R,Aaron Bean,R,running,LaShonda Holloway,Aaron Bean,,DR,checked race by race,,South Atlantic
+FL-05,Florida,FL,38.71,60.15,-21.43,-9.97,,John Rutherford,R,John Rutherford,R,running,Rachel Grage,John Rutherford,,DR,checked race by race,,South Atlantic
+FL-06,Florida,FL,34.59,64.68,-30.09,-14.3,,Randy Fine,R,Randy Fine,R,running,Eric Yonce,Randy Fine,,DR,checked race by race,,South Atlantic
+FL-07,Florida,FL,43.2,55.68,-12.48,-5.49,,Cory Mills,R,,,open,Bale Dalton,Ryan Elijah,,DR,checked race by race,,South Atlantic
+FL-08,Florida,FL,41.34,57.55,-16.21,-7.36,,Mike Haridopolos,R,Mike Haridopolos,R,running,Jennifer Jenkins,Mike Haridopolos,,DR,checked race by race,,South Atlantic
+FL-09,Florida,FL,40.67,58.44,-17.77,-8.14,,Darren Soto,D,Darren Soto,D,running,Darren Soto,Dan Green,,DR,checked race by race,,South Atlantic
+FL-10,Florida,FL,61.37,37.38,23.99,12.74,,Maxwell Frost,D,Maxwell Frost,D,running,Maxwell Frost,,,D_only,checked race by race,,South Atlantic
+FL-11,Florida,FL,41.68,57.37,-15.69,-7.1,,Daniel Webster,R,,,open,James Pericola,Joe Strada,,DR,checked race by race,,South Atlantic
+FL-12,Florida,FL,41.78,57.17,-15.39,-6.95,,Gus Bilirakis,R,Gus Bilirakis,R,running,Kimberly Overman,Gus Bilirakis,,DR,checked race by race,,South Atlantic
+FL-13,Florida,FL,42.85,56.17,-13.32,-5.91,,Anna Paulina Luna,R,Anna Paulina Luna,R,running,Leela Gray,Anna Paulina Luna,,DR,checked race by race,,South Atlantic
+FL-14,Florida,FL,44.22,54.73,-10.51,-4.51,,Kathy Castor,D,Kathy Castor,D,running,Kathy Castor,Mike Beltran,,DR,checked race by race,,South Atlantic
+FL-15,Florida,FL,39.47,59.32,-19.85,-9.18,,Laurel Lee,R,Laurel Lee,R,running,Robert People,Laurel Lee,,DR,checked race by race,,South Atlantic
+FL-16,Florida,FL,42.73,56.43,-13.7,-6.1,,Vern Buchanan,R,,,open,Kelly Kirschner,Sydney Gruters,,DR,checked race by race,,South Atlantic
+FL-17,Florida,FL,38.62,60.71,-22.09,-10.3,,Greg Steube,R,Greg Steube,R,running,Matthew Montavon,Greg Steube,,DR,checked race by race,,South Atlantic
+FL-18,Florida,FL,41.08,58.04,-16.95,-7.73,,Scott Franklin,R,Scott Franklin,R,running,Curtis Gibson,Scott Franklin,,DR,checked race by race,,South Atlantic
+FL-19,Florida,FL,34.57,64.78,-30.22,-14.36,,Byron Donalds,R,,,open,Victor Arias,Jim Schwartzel,,DR,checked race by race,,South Atlantic
+FL-20,Florida,FL,68.13,30.97,37.16,19.32,,VACANT (Cherfilus-McCormick),D,Debbie Wasserman Schultz,D,running,Debbie Wasserman Schultz,Brent Andersen,,DR,checked race by race,,South Atlantic
+FL-21,Florida,FL,41.5,57.79,-16.29,-7.4,,Brian Mast,R,Brian Mast,R,running,James Martin,Brian Mast,,DR,checked race by race,,South Atlantic
+FL-22,Florida,FL,44.41,54.68,-10.28,-4.39,,Lois Frankel,D,,,open,Pia Dandiya,Casey Askar,,DR,checked race by race,,South Atlantic
+FL-23,Florida,FL,56.41,42.68,13.73,7.61,,Jared Moskowitz,D,Lois Frankel,D,running,Lois Frankel,Deborah Adeimy,,DR,checked race by race,,South Atlantic
+FL-24,Florida,FL,68.91,30.2,38.7,20.1,,Frederica Wilson,D,,,open,Oliver Gilbert,Te Mayonna Brown,,DR,checked race by race,,South Atlantic
+FL-25,Florida,FL,45.03,54.17,-9.14,-3.82,,Debbie Wasserman Schultz,D,Jared Moskowitz,D,running,Jared Moskowitz,Scott Singer,,DR,checked race by race,,South Atlantic
+FL-26,Florida,FL,40.4,58.79,-18.39,-8.45,,Mario Diaz-Balart,R,Mario Diaz-Balart,R,running,Nicole Locklin,Mario Diaz-Balart,,DR,checked race by race,,South Atlantic
+FL-27,Florida,FL,42.32,56.9,-14.58,-6.54,,Maria Elvira Salazar,R,Maria Elvira Salazar,R,running,Eliott Rodriguez,Maria Elvira Salazar,,DR,checked race by race,,South Atlantic
+FL-28,Florida,FL,36.93,62.38,-25.45,-11.98,,Carlos Gimenez,R,Carlos Gimenez,R,running,Phil Ehr,Carlos Gimenez,,DR,checked race by race,,South Atlantic
+GA-01,Georgia,GA,41.82,57.63,-15.81,-7.16,-13.41,Buddy Carter,R,,,open,Amanda Hollowell,Jim Kingston,,DR,checked race by race,,South Atlantic
+GA-02,Georgia,GA,53.61,45.99,7.62,4.56,10.35,Sanford Bishop,D,Sanford Bishop,D,running,Sanford Bishop,Matt Day,,DR,checked race by race,,South Atlantic
+GA-03,Georgia,GA,34.85,64.55,-29.7,-14.1,-30.07,Brian Jack,R,Brian Jack,R,running,Maura Keller,Brian Jack,,DR,checked race by race,,South Atlantic
+GA-04,Georgia,GA,75.7,23.23,52.47,26.98,57.72,Hank Johnson,D,Hank Johnson,D,running,Hank Johnson,James Duffie,,DR,checked race by race,,South Atlantic
+GA-05,Georgia,GA,85.29,13.69,71.59,36.54,72.71,Nikema Williams,D,Nikema Williams,D,running,Nikema Williams,John Oscar Salvesen,,DR,checked race by race,,South Atlantic
+GA-06,Georgia,GA,74.56,24.63,49.94,25.71,49.46,Lucy McBath,D,Lucy McBath,D,running,Lucy McBath,Kevin Martin,,DR,checked race by race,,South Atlantic
+GA-07,Georgia,GA,38.42,60.47,-22.06,-10.28,-19.46,Rich McCormick,R,Rich McCormick,R,running,Tony Kozycki,Rich McCormick,,DR,checked race by race,,South Atlantic
+GA-08,Georgia,GA,34.5,65.09,-30.59,-14.55,-27.62,Austin Scott,R,Austin Scott,R,running,Kelly Esti,Austin Scott,,DR,checked race by race,,South Atlantic
+GA-09,Georgia,GA,32.59,66.66,-34.08,-16.29,-32.28,Andrew Clyde,R,Andrew Clyde,R,running,Caitlyn Gegen,Andrew Clyde,,DR,checked race by race,,South Atlantic
+GA-10,Georgia,GA,39.3,60.08,-20.78,-9.64,-21.24,Mike Collins,R,,,open,Pam Delancy,Houston Gaines,,DR,checked race by race,,South Atlantic
+GA-11,Georgia,GA,37.86,61.2,-23.34,-10.92,-21.93,Barry Loudermilk,R,,,open,Chris Harden,John Cowan,,DR,checked race by race,,South Atlantic
+GA-12,Georgia,GA,42.67,56.84,-14.16,-6.33,-10.15,Rick Allen,R,Rick Allen,R,running,Ceretta Smith,Rick Allen,,DR,checked race by race,,South Atlantic
+GA-13,Georgia,GA,70.71,28.38,42.33,21.91,40.57,Everton Blair,D,,,open,Jasmine Clark,Jonathan Chavez,,DR,checked race by race,,South Atlantic
+GA-14,Georgia,GA,31.29,68.07,-36.78,-17.64,-37.53,Clay Fuller,R,Clay Fuller,R,running,Shawn Harris,Clay Fuller,,DR,checked race by race,,South Atlantic
+HI-01,Hawaii,HI,61.5,36.77,24.73,13.11,29.43,Ed Case,D,Ed Case,D,running,Ed Case,Adriel Lam,,DR,checked race by race,,Pacific
+HI-02,Hawaii,HI,59.73,38.14,21.59,11.54,29.5,Jill Tokuda,D,Jill Tokuda,D,running,Jill Tokuda,Brenton Awa,,DR,checked race by race,,Pacific
+IA-01,Iowa,IA,45.04,53.5,-8.47,-3.49,-2.89,Mariannette Miller-Meeks,R,Mariannette Miller-Meeks,R,running,Christina Bohannan,Mariannette Miller-Meeks,,DR,holder + not-running list + 270toWin nominees,,West North Central
+IA-02,Iowa,IA,44.32,54.31,-9.99,-4.25,-4.4,Ashley Hinson,R,,,open,Lindsay James,Joe Mitchell,,DR,holder + not-running list + 270toWin nominees,,West North Central
+IA-03,Iowa,IA,47.15,51.55,-4.41,-1.46,-0.35,Zach Nunn,R,Zach Nunn,R,running,Sarah Trone Garriott,Zach Nunn,,DR,holder + not-running list + 270toWin nominees,,West North Central
+IA-04,Iowa,IA,33.6,65.08,-31.48,-14.99,-26.04,Randy Feenstra,R,,,open,Dave Dawson,Chris McGowan,,DR,holder + not-running list + 270toWin nominees,,West North Central
+ID-01,Idaho,ID,26.24,71.31,-45.07,-21.79,-38.17,Russ Fulcher,R,Russ Fulcher,R,running,Kaylee Peterson,Russ Fulcher,,DR,checked race by race,,Mountain
+ID-02,Idaho,ID,35.12,61.85,-26.73,-12.62,-22.94,Mike Simpson,R,Mike Simpson,R,running,Ellie Gilbreath,Mike Simpson,,DR,checked race by race,,Mountain
+IL-01,Illinois,IL,65.39,33.35,32.05,16.77,42.37,Jonathan Jackson,D,Jonathan Jackson,D,running,Jonathan Jackson,Christian Maxwell,,DR,checked race by race,,East North Central
+IL-02,Illinois,IL,65.87,32.76,33.12,17.3,40.02,Robin Kelly,D,,,open,Donna Miller,Michael Noack,,DR,checked race by race,,East North Central
+IL-03,Illinois,IL,65.0,33.61,31.39,16.44,41.42,Delia Ramirez,D,Delia Ramirez,D,running,Delia Ramirez,Angel Oakley,,DR,checked race by race,,East North Central
+IL-04,Illinois,IL,63.42,35.09,28.33,14.91,46.41,Chuy Garcia,D,,,open,Patty Garcia,Lupe Castillo,,DR,checked race by race,,East North Central
+IL-05,Illinois,IL,67.96,30.84,37.12,19.3,39.59,Mike Quigley,D,Mike Quigley,D,running,Mike Quigley,Tommy Hanson,,DR,checked race by race,,East North Central
+IL-06,Illinois,IL,52.0,46.51,5.49,3.49,10.88,Sean Casten,D,Sean Casten,D,running,Sean Casten,Niki Conforti,,DR,checked race by race,,East North Central
+IL-07,Illinois,IL,82.11,16.73,65.39,33.44,72.83,Danny Davis,D,,,open,La Shawn Ford,Chad Koppie,,DR,checked race by race,,East North Central
+IL-08,Illinois,IL,52.8,45.89,6.91,4.2,15.41,Raja Krishnamoorthi,D,,,open,Melissa Bean,Jennifer Davis,,DR,checked race by race,,East North Central
+IL-09,Illinois,IL,67.72,31.15,36.57,19.03,41.55,Jan Schakowsky,D,,,open,Daniel Biss,John Elleson,,DR,checked race by race,,East North Central
+IL-10,Illinois,IL,60.35,38.31,22.05,11.77,25.86,Brad Schneider,D,Brad Schneider,D,running,Brad Schneider,Carl Lambrecht,,DR,checked race by race,,East North Central
+IL-11,Illinois,IL,54.96,43.53,11.43,6.46,15.3,Bill Foster,D,Bill Foster,D,running,Bill Foster,Jeff Walter,,DR,checked race by race,,East North Central
+IL-12,Illinois,IL,27.54,70.96,-43.42,-20.96,-42.79,Mike Bost,R,Mike Bost,R,running,Julie Fortier,Mike Bost,,DR,checked race by race,,East North Central
+IL-13,Illinois,IL,54.38,43.91,10.47,5.98,11.21,Nikki Budzinski,D,Nikki Budzinski,D,running,Nikki Budzinski,Jeff Wilson,,DR,checked race by race,,East North Central
+IL-14,Illinois,IL,51.86,46.67,5.19,3.34,11.46,Lauren Underwood,D,Lauren Underwood,D,running,Lauren Underwood,James Marter,,DR,checked race by race,,East North Central
+IL-15,Illinois,IL,29.28,69.03,-39.75,-19.13,-38.74,Mary Miller,R,Mary Miller,R,running,Jennifer Todd,Mary Miller,,DR,checked race by race,,East North Central
+IL-16,Illinois,IL,37.85,60.53,-22.68,-10.59,-21.51,Darin LaHood,R,Darin LaHood,R,running,Paul Nolley,Darin LaHood,,DR,checked race by race,,East North Central
+IL-17,Illinois,IL,51.5,46.76,4.74,3.12,7.79,Eric Sorensen,D,Eric Sorensen,D,running,Eric Sorensen,Dillan Vancil,,DR,checked race by race,,East North Central
+IN-01,Indiana,IN,49.41,49.02,0.4,0.95,8.36,Frank Mrvan,D,Frank Mrvan,D,running,Frank Mrvan,Barb Regnitz,,DR,checked race by race,,East North Central
+IN-02,Indiana,IN,35.97,62.48,-26.5,-12.5,-22.57,Rudy Yakym,R,Rudy Yakym,R,running,Jamee Decio,Rudy Yakym,,DR,checked race by race,,East North Central
+IN-03,Indiana,IN,33.56,64.75,-31.19,-14.85,-29.9,Marlin Stutzman,R,Marlin Stutzman,R,running,Kelly Thompson,Marlin Stutzman,,DR,checked race by race,,East North Central
+IN-04,Indiana,IN,34.43,63.77,-29.34,-13.92,-29.14,Jim Baird,R,Jim Baird,R,running,Drew Cox,Jim Baird,,DR,checked race by race,,East North Central
+IN-05,Indiana,IN,40.66,57.47,-16.81,-7.66,-15.94,Victoria Spartz,R,Victoria Spartz,R,running,J. D. Ford,Victoria Spartz,,DR,checked race by race,,East North Central
+IN-06,Indiana,IN,32.86,65.39,-32.52,-15.52,-31.93,Jefferson Shreve,R,Jefferson Shreve,R,running,Cinde Wirth,Jefferson Shreve,,DR,checked race by race,,East North Central
+IN-07,Indiana,IN,69.89,28.44,41.46,21.48,42.37,Andre Carson,D,Andre Carson,D,running,Andre Carson,Patrick McAuley,,DR,checked race by race,,East North Central
+IN-08,Indiana,IN,31.22,67.1,-35.88,-17.2,-32.83,Mark Messmer,R,Mark Messmer,R,running,Mary Allen,Mark Messmer,,DR,checked race by race,,East North Central
+IN-09,Indiana,IN,34.23,64.12,-29.88,-14.19,-27.32,Erin Houchin,R,Erin Houchin,R,running,Brad Meyer,Erin Houchin,,DR,checked race by race,,East North Central
+KS-01,Kansas,KS,33.45,64.72,-31.27,-14.89,-29.63,Tracey Mann,R,Tracey Mann,R,running,Lauren Reinhold,Tracey Mann,,DR,holder + not-running list + 270toWin nominees,,West North Central
+KS-02,Kansas,KS,39.21,58.89,-19.67,-9.09,-16.29,Derek Schmidt,R,Derek Schmidt,R,running,Don Coover,Derek Schmidt,,DR,holder + not-running list + 270toWin nominees,,West North Central
+KS-03,Kansas,KS,51.16,47.06,4.1,2.8,4.45,Sharice Davids,D,Sharice Davids,D,running,Sharice Davids,Eric Jenkins,,DR,holder + not-running list + 270toWin nominees,,West North Central
+KS-04,Kansas,KS,37.5,60.79,-23.29,-10.9,-21.75,Ron Estes,R,Ron Estes,R,running,Katy Tyndell,Ron Estes,,DR,holder + not-running list + 270toWin nominees,,West North Central
+KY-01,Kentucky,KY,25.71,73.01,-47.3,-22.9,-42.74,James Comer,R,James Comer,R,running,John Williams,James Comer,,DR,holder + not-running list + 270toWin nominees,,East South Central
+KY-02,Kentucky,KY,28.62,69.95,-41.33,-19.92,-36.74,Brett Guthrie,R,Brett Guthrie,R,running,Megan Wingfield,Brett Guthrie,,DR,holder + not-running list + 270toWin nominees,,East South Central
+KY-03,Kentucky,KY,58.61,39.68,18.94,10.22,22.35,Morgan McGarvey,D,Morgan McGarvey,D,running,Morgan McGarvey,Maria Rodriguez,,DR,holder + not-running list + 270toWin nominees,,East South Central
+KY-04,Kentucky,KY,31.39,66.95,-35.56,-17.04,-32.52,Thomas Massie,R,,,open,Melissa Strange,Ed Gallrein,,DR,holder + not-running list + 270toWin nominees,,East South Central
+KY-05,Kentucky,KY,17.45,81.33,-63.88,-31.2,-59.37,Hal Rogers,R,Hal Rogers,R,running,Ned Pillersdorf,Hal Rogers,,DR,holder + not-running list + 270toWin nominees,,East South Central
+KY-06,Kentucky,KY,41.56,56.59,-15.03,-6.77,-10.99,Andy Barr,R,,,open,Zach Dembo,Ralph Alvarado,,DR,holder + not-running list + 270toWin nominees,,East South Central
+LA-01,Louisiana,LA,29.96,68.2,-38.23,-18.37,,Steve Scalise,R,Steve Scalise,R,running,Lauren Jewett,Steve Scalise,,DR,checked race by race,"Louisiana: all-party primary Nov 3, runoff Dec 12 if no majority (new 2026 map)",West South Central
+LA-02,Louisiana,LA,72.67,25.31,47.37,24.43,,Troy Carter,D,Troy Carter,D,running,Troy Carter,,,D_only,checked race by race,,West South Central
+LA-03,Louisiana,LA,31.33,67.32,-36.0,-17.25,,Clay Higgins,R,Clay Higgins,R,running,John Day,Clay Higgins,,DR,checked race by race,,West South Central
+LA-04,Louisiana,LA,32.27,66.5,-34.23,-16.37,,Mike Johnson,R,Mike Johnson,R,running,Conrad Cable,Mike Johnson,,DR,checked race by race,,West South Central
+LA-05,Louisiana,LA,32.37,66.41,-34.04,-16.27,,Julia Letlow,R,,,open,Dan McKay,Michael Echols,,DR,checked race by race,,West South Central
+LA-06,Louisiana,LA,34.08,64.17,-30.09,-14.3,,Cleo Fields,D,,,open,Chauna Banks,Blake Miguez,,DR,checked race by race,,West South Central
+MA-01,Massachusetts,MA,55.76,42.14,13.62,7.56,21.66,Richard Neal,D,Richard Neal,D,running,Richard Neal,,,D_only,holder + not-running list,,New England
+MA-02,Massachusetts,MA,60.58,36.9,23.68,12.59,30.83,Jim McGovern,D,Jim McGovern,D,running,Jim McGovern,,,D_only,holder + not-running list,,New England
+MA-03,Massachusetts,MA,58.43,39.45,18.98,10.24,27.41,Lori Trahan,D,Lori Trahan,D,running,Lori Trahan,,,DR,holder + not-running list,,New England
+MA-04,Massachusetts,MA,58.85,39.13,19.72,10.61,28.46,Jake Auchincloss,D,Jake Auchincloss,D,running,Jake Auchincloss,,,DR,holder + not-running list,,New England
+MA-05,Massachusetts,MA,71.31,26.14,45.17,23.33,51.15,Katherine Clark,D,Katherine Clark,D,running,Katherine Clark,,,D_only,holder + not-running list,,New England
+MA-06,Massachusetts,MA,59.38,38.7,20.68,11.09,27.61,Seth Moulton,D,,,open,,,,DR,holder + not-running list,,New England
+MA-07,Massachusetts,MA,79.98,16.88,63.1,32.3,72.45,Ayanna Pressley,D,Ayanna Pressley,D,running,Ayanna Pressley,,,D_only,holder + not-running list,,New England
+MA-08,Massachusetts,MA,62.15,35.74,26.42,13.96,35.47,Stephen Lynch,D,Stephen Lynch,D,running,Stephen Lynch,,,DR,holder + not-running list,,New England
+MA-09,Massachusetts,MA,54.57,43.8,10.76,6.13,18.18,Bill Keating,D,Bill Keating,D,running,Bill Keating,,,DR,holder + not-running list,,New England
+MD-01,Maryland,MD,40.41,57.32,-16.91,-7.71,-14.53,Andy Harris,R,Andy Harris,R,running,Dan Schwartz,Andy Harris,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-02,Maryland,MD,57.96,39.5,18.46,9.98,20.83,Johnny Olszewski,D,Johnny Olszewski,D,running,Johnny Olszewski,Dave Wallace,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-03,Maryland,MD,60.4,36.64,23.76,12.63,25.52,Sarah Elfreth,D,Sarah Elfreth,D,running,Sarah Elfreth,Berney Flowers,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-04,Maryland,MD,85.46,11.84,73.62,37.56,80.99,Glenn Ivey,D,Glenn Ivey,D,running,Glenn Ivey,George McDermott,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-05,Maryland,MD,65.53,32.24,33.29,17.39,36.48,Steny Hoyer,D,,,open,Adrian Boafo,Chris Chaffee,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-06,Maryland,MD,51.59,45.81,5.77,3.63,9.83,April McClain Delaney,D,April McClain Delaney,D,running,April McClain Delaney,Robin Ficker,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-07,Maryland,MD,78.18,19.24,58.94,30.21,63.49,Kweisi Mfume,D,Kweisi Mfume,D,running,Kweisi Mfume,Scott Collier,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+MD-08,Maryland,MD,76.85,20.39,56.45,28.97,62.6,Jamie Raskin,D,Jamie Raskin,D,running,Jamie Raskin,Cheryl Riley,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+ME-01,Maine,ME,59.73,38.12,21.61,11.55,22.8,Chellie Pingree,D,Chellie Pingree,D,running,Chellie Pingree,Ronald Russell,,DR,holder + not-running list + 270toWin nominees,,New England
+ME-02,Maine,ME,44.48,53.53,-9.05,-3.78,-6.1,Jared Golden,D,,,open,Matt Dunlap,Paul LePage,,DR,holder + not-running list + 270toWin nominees,,New England
+MI-01,Michigan,MI,38.67,59.88,-21.21,-9.86,-19.78,Jack Bergman,R,Jack Bergman,R,running,Callie Barr,Jack Bergman,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-02,Michigan,MI,34.22,64.3,-30.09,-14.3,-28.21,John Moolenaar,R,John Moolenaar,R,running,Ben Ambrose,John Moolenaar,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-03,Michigan,MI,53.08,45.25,7.84,4.67,8.49,Hillary Scholten,D,Hillary Scholten,D,running,Hillary Scholten,Terri DeBoer,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-04,Michigan,MI,46.47,52.01,-5.54,-2.02,-3.94,Bill Huizenga,R,Bill Huizenga,R,running,Sean McCann,Bill Huizenga,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-05,Michigan,MI,35.78,62.8,-27.02,-12.76,-24.16,Tim Walberg,R,Tim Walberg,R,running,Christian Vukasovich,Tim Walberg,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-06,Michigan,MI,60.36,37.06,23.31,12.4,26.67,Debbie Dingell,D,Debbie Dingell,D,running,Debbie Dingell,Heather Smiley,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-07,Michigan,MI,48.57,49.85,-1.28,0.11,0.52,Tom Barrett,R,Tom Barrett,R,running,William Lawrence,Tom Barrett,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-08,Michigan,MI,48.3,50.28,-1.98,-0.24,2.03,Kristen McDonald Rivet,D,Kristen McDonald Rivet,D,running,Kristen McDonald Rivet,Thomas Smith,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-09,Michigan,MI,33.16,65.49,-32.33,-15.42,-29.45,Lisa McClain,R,Lisa McClain,R,running,Ray Pooley,Lisa McClain,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-10,Michigan,MI,45.69,52.24,-6.55,-2.53,-0.98,John James,R,,,open,Christina Hines,Michael Bouchard,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-11,Michigan,MI,57.01,40.92,16.08,8.79,19.83,Haley Stevens,D,,,open,Jeremy Moss,Ethan Baker,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-12,Michigan,MI,66.56,28.6,37.96,19.73,48.54,Rashida Tlaib,D,Rashida Tlaib,D,running,Rashida Tlaib,James Hooper,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MI-13,Michigan,MI,69.42,28.36,41.06,21.28,49.56,Shri Thanedar,D,,,open,Donavan McKinney,T.P. Nykoriak,,DR,holder + not-running list + 270toWin nominees,,East North Central
+MN-01,Minnesota,MN,43.06,55.06,-12.0,-5.25,-9.2,Brad Finstad,R,Brad Finstad,R,running,Jake Johnson,Brad Finstad,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-02,Minnesota,MN,51.92,46.09,5.83,3.66,7.18,Angie Craig,D,,,open,Matt Little,Eric Pratt,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-03,Minnesota,MN,59.57,38.31,21.26,11.38,20.98,Kelly Morrison,D,Kelly Morrison,D,running,Kelly Morrison,Tyler Bass,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-04,Minnesota,MN,66.75,31.07,35.67,18.58,37.64,Betty McCollum,D,Betty McCollum,D,running,Betty McCollum,Paul Wikstrom,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-05,Minnesota,MN,79.61,17.75,61.87,31.68,63.12,Ilhan Omar,D,Ilhan Omar,D,running,Ilhan Omar,John Nagel,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-06,Minnesota,MN,39.18,58.85,-19.67,-9.09,-17.64,Tom Emmer,R,Tom Emmer,R,running,Doug Chapin,Tom Emmer,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-07,Minnesota,MN,30.93,67.41,-36.48,-17.49,-33.21,Michelle Fischbach,R,Michelle Fischbach,R,running,Erik Osberg,Michelle Fischbach,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MN-08,Minnesota,MN,42.03,56.32,-14.29,-6.4,-11.31,Pete Stauber,R,Pete Stauber,R,running,Trina Swanson,Pete Stauber,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-01,Missouri,MO,77.74,20.55,57.19,29.34,58.38,Wesley Bell,D,Wesley Bell,D,running,Wesley Bell,Paul Berry,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-02,Missouri,MO,45.22,53.13,-7.9,-3.2,-7.75,Ann Wagner,R,Ann Wagner,R,running,Fred Wellman,Ann Wagner,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-03,Missouri,MO,35.94,62.66,-26.72,-12.61,-26.31,Bob Onder,R,Bob Onder,R,running,Bethany Mann,Bob Onder,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-04,Missouri,MO,28.24,70.52,-42.28,-20.39,-39.35,Mark Alford,R,Mark Alford,R,running,Jordan Herrera,Mark Alford,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-05,Missouri,MO,60.72,37.61,23.12,12.31,26.3,Emanuel Cleaver,D,Emanuel Cleaver,D,running,Emanuel Cleaver,Rick Brattin,,DR,holder + not-running list + 270toWin nominees,Missouri uses the 2022 map in 2026 (new map blocked; Proposition A on the ballot),West North Central
+MO-06,Missouri,MO,29.98,68.84,-38.85,-18.68,-37.1,Sam Graves,R,,,open,Josh Smead,Chris Stigall,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-07,Missouri,MO,28.1,70.72,-42.62,-20.56,-41.39,Eric Burlison,R,Eric Burlison,R,running,Missi Hesketh,Eric Burlison,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MO-08,Missouri,MO,22.48,76.56,-54.08,-26.29,-51.35,Jason Smith,R,Jason Smith,R,running,Chris Reichard,Jason Smith,,DR,holder + not-running list + 270toWin nominees,,West North Central
+MS-01,Mississippi,MS,30.82,67.85,-37.03,-17.77,-31.69,Trent Kelly,R,Trent Kelly,R,running,,Trent Kelly,,DR,holder + not-running list,,East South Central
+MS-02,Mississippi,MS,59.67,39.3,20.36,10.93,26.09,Bennie Thompson,D,Bennie Thompson,D,running,Bennie Thompson,,,DR,holder + not-running list,,East South Central
+MS-03,Mississippi,MS,34.92,64.1,-29.18,-13.84,-24.33,Michael Guest,R,Michael Guest,R,running,,Michael Guest,,DR,holder + not-running list,,East South Central
+MS-04,Mississippi,MS,28.19,70.72,-42.53,-20.52,-37.98,Mike Ezell,R,Mike Ezell,R,running,,Mike Ezell,,DR,holder + not-running list,,East South Central
+MT-01,Montana,MT,42.66,54.21,-11.55,-5.03,-6.88,Ryan Zinke,R,,,open,Sam Forstag,Aaron Flint,,DR,holder + not-running list + 270toWin nominees,,Mountain
+MT-02,Montana,MT,33.64,63.18,-29.54,-14.02,-26.84,Troy Downing,R,Troy Downing,R,running,Brian Miller,Troy Downing,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NC-01,North Carolina,NC,43.82,55.37,-11.55,-5.03,,Don Davis,D,Don Davis,D,running,Don Davis,Laurie Buckhout,,DR,checked race by race,,South Atlantic
+NC-02,North Carolina,NC,66.08,32.23,33.85,17.67,,Deborah Ross,D,Deborah Ross,D,running,Deborah Ross,Eugene Douglass,,DR,checked race by race,,South Atlantic
+NC-03,North Carolina,NC,42.74,56.37,-13.63,-6.07,,Greg Murphy,R,Greg Murphy,R,running,Raymond Smith Jr.,Greg Murphy,,DR,checked race by race,,South Atlantic
+NC-04,North Carolina,NC,71.83,26.52,45.3,23.39,,Valerie Foushee,D,Valerie Foushee,D,running,Valerie Foushee,Max Ganorkar,,DR,checked race by race,,South Atlantic
+NC-05,North Carolina,NC,40.62,58.39,-17.78,-8.14,,Virginia Foxx,R,Virginia Foxx,R,running,Chuck Hubbard,Virginia Foxx,,DR,checked race by race,,South Atlantic
+NC-06,North Carolina,NC,40.82,57.98,-17.16,-7.83,,Addison McDowell,R,Addison McDowell,R,running,Cyril Jefferson,Addison McDowell,,DR,checked race by race,,South Atlantic
+NC-07,North Carolina,NC,42.63,56.46,-13.82,-6.16,,David Rouzer,R,David Rouzer,R,running,Kimberly Hardy,David Rouzer,,DR,checked race by race,,South Atlantic
+NC-08,North Carolina,NC,39.78,59.16,-19.38,-8.94,,Mark Harris,R,Mark Harris,R,running,Colby Watson,Mark Harris,,DR,checked race by race,,South Atlantic
+NC-09,North Carolina,NC,41.55,57.4,-15.84,-7.17,,Richard Hudson,R,Richard Hudson,R,running,Richard Ojeda,Richard Hudson,,DR,checked race by race,,South Atlantic
+NC-10,North Carolina,NC,40.64,58.36,-17.73,-8.12,,Pat Harrigan,R,Pat Harrigan,R,running,Ashley Bell,Pat Harrigan,,DR,checked race by race,,South Atlantic
+NC-11,North Carolina,NC,44.66,54.16,-9.5,-4.0,,Chuck Edwards,R,,,open,Jamie Ager,,,DR,checked race by race,"Chuck Edwards withdrew Aug 5, 2026; Republican replacement nominee",South Atlantic
+NC-12,North Carolina,NC,72.19,25.99,46.2,23.85,,Alma Adams,D,Alma Adams,D,running,Alma Adams,Jack Codiga,,DR,checked race by race,,South Atlantic
+NC-13,North Carolina,NC,41.21,57.68,-16.47,-7.49,,Brad Knott,R,Brad Knott,R,running,Paul Barringer,Brad Knott,,DR,checked race by race,,South Atlantic
+NC-14,North Carolina,NC,41.96,57.04,-15.08,-6.79,,Tim Moore,R,Tim Moore,R,running,LaKesha Womack,Tim Moore,,DR,checked race by race,,South Atlantic
+ND-AL,North Dakota,ND,30.77,67.52,-36.76,-17.63,-33.54,Julie Fedorchak,R,Julie Fedorchak,R,running,,Julie Fedorchak,,DR,holder + not-running list,,West North Central
+NE-01,Nebraska,NE,42.77,55.82,-13.04,-5.77,-11.06,Mike Flood,R,Mike Flood,R,running,Chris Backemeyer,Mike Flood,,DR,holder + not-running list + 270toWin nominees,,West North Central
+NE-02,Nebraska,NE,51.64,47.02,4.62,3.06,6.33,Don Bacon,R,,,open,Denise Powell,Brinker Harding,,DR,holder + not-running list + 270toWin nominees,,West North Central
+NE-03,Nebraska,NE,22.52,76.32,-53.8,-26.15,-51.83,Adrian Smith,R,Adrian Smith,R,running,Becky Stille,Adrian Smith,,DR,holder + not-running list + 270toWin nominees,,West North Central
+NH-01,New Hampshire,NH,50.54,48.53,2.0,1.75,5.93,Chris Pappas,D,,,open,Stefany Shaheen,Anthony DiLorenzo,,DR,holder + not-running list + 270toWin nominees,,New England
+NH-02,New Hampshire,NH,51.27,47.68,3.59,2.54,8.83,Maggie Goodlander,D,Maggie Goodlander,D,running,Maggie Goodlander,Lily Tang Williams,,DR,holder + not-running list + 270toWin nominees,,New England
+NJ-01,New Jersey,NJ,58.61,39.88,18.73,10.11,24.43,Donald Norcross,D,Donald Norcross,D,running,Donald Norcross,Damon Galdo,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-02,New Jersey,NJ,43.0,55.56,-12.55,-5.53,-4.92,Jeff Van Drew,R,Jeff Van Drew,R,running,Zack Mullock,Jeff Van Drew,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-03,New Jersey,NJ,53.36,45.0,8.36,4.93,14.0,Herb Conaway,D,Herb Conaway,D,running,Herb Conaway,Michael McGuire,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-04,New Jersey,NJ,34.26,64.37,-30.12,-14.31,-22.43,Chris Smith,R,Chris Smith,R,running,Rachel Peace,Chris Smith,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-05,New Jersey,NJ,49.8,48.29,1.51,1.5,12.4,Josh Gottheimer,D,Josh Gottheimer,D,running,Josh Gottheimer,Sean Kirrane,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-06,New Jersey,NJ,51.95,45.53,6.42,3.96,19.25,Frank Pallone,D,Frank Pallone,D,running,Frank Pallone,Hillary Herzig,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-07,New Jersey,NJ,48.45,49.63,-1.17,0.16,3.86,Tom Kean,R,Tom Kean,R,running,Rebecca Bennett,Tom Kean,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-08,New Jersey,NJ,60.83,36.65,24.19,12.84,45.33,Rob Menendez,D,Rob Menendez,D,running,Rob Menendez,Aristotle Eliopoulos,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-09,New Jersey,NJ,48.02,49.16,-1.14,0.18,18.9,Nellie Pou,D,Nellie Pou,D,running,Nellie Pou,Rosie Pino,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-10,New Jersey,NJ,74.52,23.75,50.77,26.13,62.04,LaMonica McIver,D,LaMonica McIver,D,running,LaMonica McIver,Carmen Bucco,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-11,New Jersey,NJ,53.33,44.62,8.71,5.1,16.93,Analilia Mejia,D,Analilia Mejia,D,running,Analilia Mejia,Joe Hathaway,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NJ-12,New Jersey,NJ,60.57,36.7,23.87,12.68,34.43,Bonnie Watson Coleman,D,,,open,Adam Hamawy,Gregg Mele,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NM-01,New Mexico,NM,55.06,42.39,12.66,7.08,14.44,Melanie Stansbury,D,Melanie Stansbury,D,running,Melanie Stansbury,Didi Okpareke,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NM-02,New Mexico,NM,48.05,49.86,-1.81,-0.16,5.88,Gabe Vasquez,D,Gabe Vasquez,D,running,Gabe Vasquez,Gregory Cunningham,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NM-03,New Mexico,NM,51.51,46.31,5.2,3.35,10.75,Teresa Leger Fernandez,D,Teresa Leger Fernandez,D,running,Teresa Leger Fernandez,Martin Zamora,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NV-01,Nevada,NV,50.24,47.98,2.26,1.88,8.53,Dina Titus,D,Dina Titus,D,running,Dina Titus,Carrie Buck,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NV-02,Nevada,NV,41.86,55.8,-13.94,-6.22,-11.02,Mark Amodei,R,,,open,Teresa Benitez-Thompson,David Flippo,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NV-03,Nevada,NV,48.81,49.54,-0.74,0.38,6.64,Susie Lee,D,Susie Lee,D,running,Susie Lee,Martin O'Donnell,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NV-04,Nevada,NV,50.24,47.92,2.32,1.91,8.27,Steven Horsford,D,Steven Horsford,D,running,Steven Horsford,Cody Whipple,,DR,holder + not-running list + 270toWin nominees,,Mountain
+NY-01,New York,NY,44.26,54.3,-10.04,-4.27,-1.75,Nick LaLota,R,Nick LaLota,R,running,Christopher Gallant,Nick LaLota,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-02,New York,NY,42.51,56.43,-13.93,-6.22,-2.44,Andrew Garbarino,R,Andrew Garbarino,R,running,Patrick Halpin,Andrew Garbarino,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-03,New York,NY,47.08,51.36,-4.28,-1.39,11.31,Tom Suozzi,D,Tom Suozzi,D,running,Tom Suozzi,Michael LiPetri,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-04,New York,NY,50.04,48.76,1.28,1.39,14.54,Laura Gillen,D,Laura Gillen,D,running,Laura Gillen,Jeanine Driscoll,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-05,New York,NY,70.33,28.17,42.16,21.82,62.37,Gregory Meeks,D,Gregory Meeks,D,running,Gregory Meeks,George Marsh,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-06,New York,NY,52.3,45.89,6.41,3.95,29.36,Grace Meng,D,Grace Meng,D,running,Grace Meng,Joseph Chou,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-07,New York,NY,71.56,25.68,45.89,23.69,60.52,Nydia Velazquez,D,,,open,Claire Valdez,Melvin Rivera,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-08,New York,NY,71.18,27.2,43.98,22.73,55.5,Hakeem Jeffries,D,Hakeem Jeffries,D,running,Hakeem Jeffries,Lewis Mizrahi,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-09,New York,NY,69.27,28.66,40.61,21.05,52.11,Yvette Clarke,D,Yvette Clarke,D,running,Yvette Clarke,Joel Azumah,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-10,New York,NY,79.05,18.61,60.44,30.96,70.76,Dan Goldman,D,,,open,Brad Lander,Jennifer Moore,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-11,New York,NY,36.9,61.27,-24.37,-11.44,-7.64,Nicole Malliotakis,R,Nicole Malliotakis,R,running,Mike DeCillis,Nicole Malliotakis,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-12,New York,NY,80.8,17.2,63.6,32.55,71.38,Jerry Nadler,D,,,open,Micah Lasher,Caroline Shinkle,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-13,New York,NY,78.82,19.54,59.28,30.39,77.04,Adriano Espaillat,D,,,open,Darializa Chevalier,Jomo Williams,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-14,New York,NY,64.93,33.17,31.75,16.62,55.19,Alexandria Ocasio-Cortez,D,Alexandria Ocasio-Cortez,D,running,Alexandria Ocasio-Cortez,Diamant Hysenaj,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-15,New York,NY,73.56,25.31,48.26,24.88,70.55,Ritchie Torres,D,Ritchie Torres,D,running,Ritchie Torres,Stylo Sapaskis,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-16,New York,NY,66.25,33.14,33.11,17.3,44.58,George Latimer,D,George Latimer,D,running,George Latimer,Joseph Cinquemani,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-17,New York,NY,49.91,49.35,0.56,1.03,10.07,Mike Lawler,R,Mike Lawler,R,running,Cait Conley,Mike Lawler,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-18,New York,NY,51.34,48.01,3.33,2.41,9.09,Pat Ryan,D,Pat Ryan,D,running,Pat Ryan,Jackie Auringer,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-19,New York,NY,50.44,48.66,1.78,1.64,4.47,Josh Riley,D,Josh Riley,D,running,Josh Riley,Peter Oberacker,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-20,New York,NY,56.48,42.33,14.15,7.82,19.15,Paul Tonko,D,Paul Tonko,D,running,Paul Tonko,Ralph Ambrosio,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-21,New York,NY,39.42,60.07,-20.65,-9.58,-15.66,Elise Stefanik,R,,,open,Blake Gendebien,Anthony Constantino,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-22,New York,NY,53.54,45.89,7.65,4.57,11.36,John Mannion,D,John Mannion,D,running,John Mannion,Kailee Buller,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-23,New York,NY,39.08,60.1,-21.01,-9.76,-18.18,Nick Langworthy,R,Nick Langworthy,R,running,Aaron Gies,Nick Langworthy,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-24,New York,NY,38.13,61.22,-23.09,-10.8,-20.26,Claudia Tenney,R,Claudia Tenney,R,running,Alissa Ellman,Claudia Tenney,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-25,New York,NY,58.66,40.22,18.44,9.97,20.64,Joe Morelle,D,Joe Morelle,D,running,Joe Morelle,Virginia McIntyre,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+NY-26,New York,NY,58.89,39.62,19.27,10.38,25.14,Tim Kennedy,D,Tim Kennedy,D,running,Tim Kennedy,Dennis Hannon,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+OH-01,Ohio,OH,48.23,50.83,-2.6,-0.55,,Greg Landsman,D,Greg Landsman,D,running,Greg Landsman,Eric Conroy,,DR,checked race by race,,East North Central
+OH-02,Ohio,OH,28.54,70.7,-42.16,-20.33,,David Taylor,R,David Taylor,R,running,Jennifer Mazzuckelli,David Taylor,,DR,checked race by race,,East North Central
+OH-03,Ohio,OH,69.61,29.37,40.24,20.87,,Joyce Beatty,D,Joyce Beatty,D,running,Joyce Beatty,Cleophus Dulaney,,DR,checked race by race,,East North Central
+OH-04,Ohio,OH,28.24,70.88,-42.64,-20.57,,Jim Jordan,R,Jim Jordan,R,running,Joshua Kolasinski,Jim Jordan,,DR,checked race by race,,East North Central
+OH-05,Ohio,OH,37.67,61.42,-23.75,-11.13,,Bob Latta,R,Bob Latta,R,running,Brian Shaver,Bob Latta,,DR,checked race by race,,East North Central
+OH-06,Ohio,OH,32.29,66.91,-34.62,-16.56,,Michael Rulli,R,Michael Rulli,R,running,Elizabeth Kirtley,Michael Rulli,,DR,checked race by race,,East North Central
+OH-07,Ohio,OH,44.05,55.11,-11.06,-4.78,,Max Miller,R,Max Miller,R,running,Brian Poindexter,Max Miller,,DR,checked race by race,,East North Central
+OH-08,Ohio,OH,41.71,57.34,-15.62,-7.06,,Warren Davidson,R,Warren Davidson,R,running,Vanessa Enoch,Warren Davidson,,DR,checked race by race,,East North Central
+OH-09,Ohio,OH,44.24,54.82,-10.58,-4.54,,Marcy Kaptur,D,Marcy Kaptur,D,running,Marcy Kaptur,Derek Merrin,,DR,checked race by race,,East North Central
+OH-10,Ohio,OH,45.62,53.41,-7.79,-3.15,,Mike Turner,R,Mike Turner,R,running,Kristina Knickerbocker,Mike Turner,,DR,checked race by race,,East North Central
+OH-11,Ohio,OH,77.18,22.11,55.07,28.28,,Shontel Brown,D,Shontel Brown,D,running,Shontel Brown,Mike Kirchner,,DR,checked race by race,,East North Central
+OH-12,Ohio,OH,34.52,64.62,-30.09,-14.3,,Troy Balderson,R,Troy Balderson,R,running,Jerrad Christian,Troy Balderson,,DR,checked race by race,,East North Central
+OH-13,Ohio,OH,51.19,47.9,3.29,2.39,,Emilia Sykes,D,Emilia Sykes,D,running,Emilia Sykes,Carey Coleman,,DR,checked race by race,,East North Central
+OH-14,Ohio,OH,39.4,59.77,-20.36,-9.43,,Dave Joyce,R,David Joyce,R,running,Maria Jukic,David Joyce,,DR,checked race by race,,East North Central
+OH-15,Ohio,OH,44.5,54.52,-10.02,-4.26,,Mike Carey,R,Mike Carey,R,running,Don Leonard,Mike Carey,,DR,checked race by race,,East North Central
+OK-01,Oklahoma,OK,38.18,59.71,-21.53,-10.02,-21.35,Kevin Hern,R,,,open,,,,DR,holder + not-running list,,West South Central
+OK-02,Oklahoma,OK,21.4,77.02,-55.62,-27.06,-53.38,Josh Brecheen,R,Josh Brecheen,R,running,,Josh Brecheen,,DR,holder + not-running list,,West South Central
+OK-03,Oklahoma,OK,26.28,71.83,-45.54,-22.02,-44.63,Frank Lucas,R,Frank Lucas,R,running,,Frank Lucas,,DR,holder + not-running list,,West South Central
+OK-04,Oklahoma,OK,32.42,65.66,-33.24,-15.88,-31.62,Tom Cole,R,Tom Cole,R,running,,Tom Cole,,DR,holder + not-running list,,West South Central
+OK-05,Oklahoma,OK,40.05,57.77,-17.72,-8.11,-16.88,Stephanie Bice,R,Stephanie Bice,R,running,,Stephanie Bice,,DR,holder + not-running list,,West South Central
+OR-01,Oregon,OR,67.21,29.42,37.79,19.64,39.32,Suzanne Bonamici,D,Suzanne Bonamici,D,running,Suzanne Bonamici,Barbara Kahl,,DR,holder + not-running list + 270toWin nominees,,Pacific
+OR-02,Oregon,OR,35.1,62.24,-27.14,-12.82,-24.44,Cliff Bentz,R,Cliff Bentz,R,running,Chris Beck,Cliff Bentz,,DR,holder + not-running list + 270toWin nominees,,Pacific
+OR-03,Oregon,OR,71.27,25.29,45.98,23.73,47.31,Maxine Dexter,D,Maxine Dexter,D,running,Maxine Dexter,Loran Ayles,,DR,holder + not-running list + 270toWin nominees,,Pacific
+OR-04,Oregon,OR,54.5,42.43,12.06,6.78,12.74,Val Hoyle,D,Val Hoyle,D,running,Val Hoyle,Monique DeSpain,,DR,holder + not-running list + 270toWin nominees,,Pacific
+OR-05,Oregon,OR,52.75,44.21,8.54,5.02,8.87,Janelle Bynum,D,Janelle Bynum,D,running,Janelle Bynum,Patti Adair,,DR,holder + not-running list + 270toWin nominees,,Pacific
+OR-06,Oregon,OR,54.13,42.75,11.38,6.44,13.18,Andrea Salinas,D,Andrea Salinas,D,running,Andrea Salinas,David Russ,,DR,holder + not-running list + 270toWin nominees,,Pacific
+PA-01,Pennsylvania,PA,49.67,49.35,0.32,0.91,4.64,Brian Fitzpatrick,R,Brian Fitzpatrick,R,running,Bob Harvie,Brian Fitzpatrick,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-02,Pennsylvania,PA,67.28,31.54,35.74,18.62,42.74,Brendan Boyle,D,Brendan Boyle,D,running,Brendan Boyle,Jessica Arriaga,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-03,Pennsylvania,PA,88.06,10.74,77.32,39.41,80.89,Dwight Evans,D,,,open,Chris Rabb,Dennis Mahoney,,D_only,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-04,Pennsylvania,PA,57.38,41.58,15.8,8.65,18.93,Madeleine Dean,D,Madeleine Dean,D,running,Madeleine Dean,Aurora Stuski,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-05,Pennsylvania,PA,63.79,35.16,28.63,15.06,32.28,Mary Gay Scanlon,D,Mary Gay Scanlon,D,running,Mary Gay Scanlon,Nick Manganaro,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-06,Pennsylvania,PA,55.19,43.79,11.41,6.45,14.71,Chrissy Houlahan,D,Chrissy Houlahan,D,running,Chrissy Houlahan,Marty Young,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-07,Pennsylvania,PA,47.86,51.07,-3.2,-0.85,0.62,Ryan Mackenzie,R,Ryan Mackenzie,R,running,Bob Brooks,Ryan Mackenzie,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-08,Pennsylvania,PA,45.35,53.85,-8.5,-3.5,-2.91,Rob Bresnahan,R,Rob Bresnahan,R,running,Paige Cognetti,Rob Bresnahan,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-09,Pennsylvania,PA,30.58,68.52,-37.94,-18.22,-36.53,Dan Meuser,R,Dan Meuser,R,running,Rachel Wallace,Dan Meuser,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-10,Pennsylvania,PA,46.81,52.04,-5.23,-1.87,-4.13,Scott Perry,R,Scott Perry,R,running,Janelle Stelson,Scott Perry,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-11,Pennsylvania,PA,38.83,60.19,-21.36,-9.93,-21.26,Lloyd Smucker,R,Lloyd Smucker,R,running,Nancy Mannion,Lloyd Smucker,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-12,Pennsylvania,PA,59.13,39.94,19.19,10.34,19.95,Summer Lee,D,Summer Lee,D,running,Summer Lee,James Hayes,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-13,Pennsylvania,PA,26.83,72.37,-45.54,-22.02,-45.22,John Joyce,R,John Joyce,R,running,Beth Farnham,John Joyce,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-14,Pennsylvania,PA,32.97,66.32,-33.36,-15.93,-31.5,Guy Reschenthaler,R,Guy Reschenthaler,R,running,Alan Bradstock,Guy Reschenthaler,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-15,Pennsylvania,PA,30.6,68.56,-37.96,-18.23,-37.02,Glenn Thompson,R,Glenn Thompson,R,running,Ray Bilger,Glenn Thompson,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-16,Pennsylvania,PA,38.19,60.96,-22.77,-10.64,-20.64,Mike Kelly,R,Mike Kelly,R,running,Justin Wagner,Mike Kelly,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+PA-17,Pennsylvania,PA,52.28,46.77,5.5,3.5,5.83,Chris Deluzio,D,Chris Deluzio,D,running,Chris Deluzio,Tony Guy,,DR,holder + not-running list + 270toWin nominees,,Middle Atlantic
+RI-01,Rhode Island,RI,59.97,37.81,22.16,11.83,29.09,Gabe Amo,D,Gabe Amo,D,running,Gabe Amo,,,DR,holder + not-running list,,New England
+RI-02,Rhode Island,RI,52.32,45.54,6.79,4.14,13.74,Seth Magaziner,D,Seth Magaziner,D,running,Seth Magaziner,,,DR,holder + not-running list,,New England
+SC-01,South Carolina,SC,42.74,55.75,-13.01,-5.76,-8.63,Nancy Mace,R,,,open,Nancy Lacore,Jenny Honeycutt,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-02,South Carolina,SC,42.3,56.21,-13.91,-6.21,-10.58,Joe Wilson,R,Joe Wilson,R,running,Zyon Khalifa,Joe Wilson,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-03,South Carolina,SC,27.83,70.9,-43.06,-20.79,-37.47,Sheri Biggs,R,Sheri Biggs,R,running,Eunice Lehmacher,Sheri Biggs,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-04,South Carolina,SC,37.4,60.98,-23.58,-11.04,-18.55,William Timmons,R,William Timmons,R,running,Courtney McClain,William Timmons,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-05,South Carolina,SC,37.93,60.71,-22.77,-10.64,-18.17,Ralph Norman,R,,,open,Mallory Dittmer,Wes Climer,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-06,South Carolina,SC,60.54,37.86,22.68,12.09,32.11,Jim Clyburn,D,Jim Clyburn,D,running,Jim Clyburn,John Peterson,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SC-07,South Carolina,SC,36.3,62.65,-26.34,-12.42,-18.66,Russell Fry,R,Russell Fry,R,running,John Vincent,Russell Fry,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+SD-AL,South Dakota,SD,34.24,63.43,-29.19,-13.85,-26.16,Dusty Johnson,R,,,open,,,,DR,holder + not-running list,,West North Central
+TN-01,Tennessee,TN,20.57,78.41,-57.84,-28.18,,Diana Harshbarger,R,Diana Harshbarger,R,running,Kristi Burke,Diana Harshbarger,,DR,checked race by race,,East South Central
+TN-02,Tennessee,TN,32.39,66.24,-33.85,-16.18,,Tim Burchett,R,Tim Burchett,R,running,Michaela Barnett,Tim Burchett,,DR,checked race by race,,East South Central
+TN-03,Tennessee,TN,31.48,67.21,-35.73,-17.12,,Chuck Fleischmann,R,Chuck Fleischmann,R,running,Anna Golladay,Chuck Fleischmann,,DR,checked race by race,,East South Central
+TN-04,Tennessee,TN,37.31,61.24,-23.92,-11.21,,Scott DesJarlais,R,Scott DesJarlais,R,running,Victoria Broderick,Scott DesJarlais,,DR,checked race by race,,East South Central
+TN-05,Tennessee,TN,37.79,60.87,-23.08,-10.79,,Andy Ogles,R,,,open,Chaz Molder,Charlie Hatcher,,DR,checked race by race,,East South Central
+TN-06,Tennessee,TN,36.08,62.59,-26.52,-12.51,,John Rose,R,,,open,Mike Croley,Johnny Garrett,,DR,checked race by race,,East South Central
+TN-07,Tennessee,TN,38.08,60.48,-22.4,-10.45,,Matt Van Epps,R,Matt Van Epps,R,running,Darden Copeland,Matt Van Epps,,DR,checked race by race,,East South Central
+TN-08,Tennessee,TN,39.22,59.36,-20.14,-9.32,,David Kustoff,R,David Kustoff,R,running,Heidi Kuhn,David Kustoff,,DR,checked race by race,,East South Central
+TN-09,Tennessee,TN,38.77,59.92,-21.14,-9.82,,Steve Cohen,D,,,open,Justin Pearson,Brent Taylor,,DR,checked race by race,Redrawn Memphis seat (R-leaning); Cohen not running,East South Central
+TX-01,Texas,TX,24.87,74.41,-49.54,-24.02,,Nathaniel Moran,R,Nathaniel Moran,R,running,Yolanda Prince,Nathaniel Moran,,DR,checked race by race,,West South Central
+TX-02,Texas,TX,37.95,60.8,-22.84,-10.67,,Dan Crenshaw,R,,,open,Shaun Finnie,Steve Toth,,DR,checked race by race,,West South Central
+TX-03,Texas,TX,37.13,60.56,-23.43,-10.97,,Keith Self,R,Keith Self,R,running,Evan Hunt,Keith Self,,DR,checked race by race,,West South Central
+TX-04,Texas,TX,36.76,61.47,-24.71,-11.61,,Pat Fallon,R,Pat Fallon,R,running,James Pearce,Pat Fallon,,DR,checked race by race,,West South Central
+TX-05,Texas,TX,38.68,60.3,-21.62,-10.06,,Lance Gooden,R,Lance Gooden,R,running,Chelsey Hockett,Lance Gooden,,DR,checked race by race,,West South Central
+TX-06,Texas,TX,37.8,60.73,-22.93,-10.72,,Jake Ellzey,R,Jake Ellzey,R,running,Danny Minton,Jake Ellzey,,DR,checked race by race,,West South Central
+TX-07,Texas,TX,60.34,36.91,23.43,12.46,,Lizzie Fletcher,D,Lizzie Fletcher,D,running,Lizzie Fletcher,Alexander Hale,,DR,checked race by race,,West South Central
+TX-08,Texas,TX,35.55,63.19,-27.64,-13.07,,Morgan Luttrell,R,,,open,Laura Jones,Jessica Steinmann,,DR,checked race by race,,West South Central
+TX-09,Texas,TX,39.67,59.46,-19.79,-9.15,,Al Green,D,,,open,Leticia Gutierrez,Alex Mealer,,DR,checked race by race,,West South Central
+TX-10,Texas,TX,38.04,60.69,-22.64,-10.57,,Michael McCaul,R,,,open,Caitlin Rourk,Chris Gober,,DR,checked race by race,,West South Central
+TX-11,Texas,TX,32.25,66.63,-34.39,-16.45,,August Pfluger,R,August Pfluger,R,running,Claire Reynolds,August Pfluger,,DR,checked race by race,,West South Central
+TX-12,Texas,TX,37.5,61.38,-23.88,-11.19,,Craig Goldman,R,Craig Goldman,R,running,Angela Prilliman,Craig Goldman,,DR,checked race by race,,West South Central
+TX-13,Texas,TX,26.4,72.6,-46.2,-22.36,,Ronny Jackson,R,Ronny Jackson,R,running,Mark Nair,Ronny Jackson,,DR,checked race by race,,West South Central
+TX-14,Texas,TX,37.29,61.59,-24.3,-11.4,,Randy Weber,R,Randy Weber,R,running,Thurman Bartie,Randy Weber,,DR,checked race by race,,West South Central
+TX-15,Texas,TX,40.66,58.53,-17.87,-8.19,,Monica De La Cruz,R,Monica De La Cruz,R,running,Bobby Pulido,Monica De La Cruz,,DR,checked race by race,,West South Central
+TX-16,Texas,TX,57.59,41.16,16.43,8.96,,Veronica Escobar,D,Veronica Escobar,D,running,Veronica Escobar,Adam Bauman,,DR,checked race by race,,West South Central
+TX-17,Texas,TX,38.51,60.17,-21.66,-10.08,,Pete Sessions,R,Pete Sessions,R,running,Casey Shepard,Pete Sessions,,DR,checked race by race,,West South Central
+TX-18,Texas,TX,76.82,21.84,54.97,28.23,,Christian Menefee,D,Christian Menefee,D,running,Christian Menefee,Ronald Whitfield,,DR,checked race by race,,West South Central
+TX-19,Texas,TX,23.7,75.39,-51.69,-25.1,,Jodey Arrington,R,,,open,Kyle Rable,Tom Sell,,DR,checked race by race,,West South Central
+TX-20,Texas,TX,63.67,35.13,28.53,15.01,,Joaquin Castro,D,Joaquin Castro,D,running,Joaquin Castro,Edgardo Baez,,DR,checked race by race,,West South Central
+TX-21,Texas,TX,38.53,60.37,-21.84,-10.17,,Chip Roy,R,,,open,Kristin Hook,Mark Teixeira,,DR,checked race by race,,West South Central
+TX-22,Texas,TX,37.86,60.13,-22.27,-10.39,,Troy Nehls,R,,,open,Marquette Greene-Scott,Trever Nehls,,DR,checked race by race,,West South Central
+TX-23,Texas,TX,42.1,56.92,-14.83,-6.67,,VACANT (Gonzales),R,,,open,Katy Padilla Stout,Brandon Herrera,,DR,checked race by race,,West South Central
+TX-24,Texas,TX,41.16,57.3,-16.13,-7.32,,Beth Van Duyne,R,Beth Van Duyne,R,running,Kevin Burge,Beth Van Duyne,,DR,checked race by race,,West South Central
+TX-25,Texas,TX,37.42,61.5,-24.08,-11.29,,Roger Williams,R,Roger Williams,R,running,Dione Sims,Roger Williams,,DR,checked race by race,,West South Central
+TX-26,Texas,TX,37.43,61.26,-23.83,-11.17,,Brandon Gill,R,Brandon Gill,R,running,Steven Shook,Brandon Gill,,DR,checked race by race,,West South Central
+TX-27,Texas,TX,38.86,60.09,-21.23,-9.87,,Michael Cloud,R,Michael Cloud,R,running,Tanya Lloyd,Michael Cloud,,DR,checked race by race,,West South Central
+TX-28,Texas,TX,44.45,54.84,-10.38,-4.44,,Henry Cuellar,D,Henry Cuellar,D,running,Henry Cuellar,Tano Tijerina,,DR,checked race by race,,West South Central
+TX-29,Texas,TX,64.58,34.13,30.45,15.97,,Sylvia Garcia,D,Sylvia Garcia,D,running,Sylvia Garcia,Martha Fierro,,DR,checked race by race,,West South Central
+TX-30,Texas,TX,72.91,25.75,47.17,24.33,,Jasmine Crockett,D,,,open,Frederick Haynes,Everett Jackson,,DR,checked race by race,,West South Central
+TX-31,Texas,TX,38.46,60.34,-21.88,-10.19,,John Carter,R,John Carter,R,running,Justin Early,John Carter,,DR,checked race by race,,West South Central
+TX-32,Texas,TX,40.2,57.99,-17.79,-8.15,,Julie Johnson,D,,,open,Dan Barrios,Jace Yarbrough,,DR,checked race by race,,West South Central
+TX-33,Texas,TX,65.49,32.74,32.75,17.12,,Marc Veasey,D,,,open,Colin Allred,Patrick Gillespie,,DR,checked race by race,,West South Central
+TX-34,Texas,TX,44.52,54.66,-10.14,-4.32,,Vicente Gonzalez,D,Vicente Gonzalez,D,running,Vicente Gonzalez,Eric Flores,,DR,checked race by race,,West South Central
+TX-35,Texas,TX,44.29,54.75,-10.46,-4.48,,Greg Casar,D,,,open,Johnny Garcia,Carlos De La Cruz,,DR,checked race by race,,West South Central
+TX-36,Texas,TX,36.87,61.86,-24.99,-11.75,,Brian Babin,R,Brian Babin,R,running,Rhonda Hart,Brian Babin,,DR,checked race by race,,West South Central
+TX-37,Texas,TX,77.36,20.75,56.61,29.05,,Lloyd Doggett,D,Greg Casar,D,running,Greg Casar,Lauren Pena,,DR,checked race by race,,West South Central
+TX-38,Texas,TX,38.65,59.57,-20.92,-9.71,,Wesley Hunt,R,,,open,Melissa McDonough,Jon Bonck,,DR,checked race by race,,West South Central
+UT-01,Utah,UT,60.37,36.75,23.63,12.56,,Blake Moore,R,,,open,Ben McAdams,Riley Owen,,DR,checked race by race,,Mountain
+UT-02,Utah,UT,33.96,62.96,-29.0,-13.75,,Celeste Maloy,R,Blake Moore,R,running,Peter Crosby,Blake Moore,,DR,checked race by race,,Mountain
+UT-03,Utah,UT,28.09,69.47,-41.38,-19.95,,Mike Kennedy,R,Celeste Maloy,R,running,Kent Udell,Celeste Maloy,,DR,checked race by race,,Mountain
+UT-04,Utah,UT,32.35,64.86,-32.51,-15.51,,Burgess Owens,R,Mike Kennedy,R,running,Jonny Larsen,Mike Kennedy,,DR,checked race by race,,Mountain
+VA-01,Virginia,VA,46.9,51.84,-4.94,-1.72,-6.18,Rob Wittman,R,Rob Wittman,R,running,Shannon Taylor,Rob Wittman,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-02,Virginia,VA,49.27,49.52,-0.25,0.62,1.92,Jen Kiggans,R,Jen Kiggans,R,running,Elaine Luria,Jen Kiggans,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-03,Virginia,VA,66.62,31.95,34.67,18.08,38.36,Bobby Scott,D,Bobby Scott,D,running,Bobby Scott,Edwin Rivera,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-04,Virginia,VA,65.63,32.93,32.7,17.1,35.69,Jennifer McClellan,D,Jennifer McClellan,D,running,Jennifer McClellan,Robert Murray,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-05,Virginia,VA,43.36,55.64,-12.28,-5.39,-8.27,John McGuire,R,John McGuire,R,running,Tom Perriello,John McGuire,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-06,Virginia,VA,37.49,61.37,-23.88,-11.19,-21.51,Ben Cline,R,Ben Cline,R,running,Beth Macy,Ben Cline,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-07,Virginia,VA,50.52,47.66,2.86,2.18,6.8,Eugene Vindman,D,Eugene Vindman,D,running,Eugene Vindman,Doug Ollivant,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-08,Virginia,VA,73.74,23.99,49.75,25.62,56.02,Don Beyer,D,Don Beyer,D,running,Don Beyer,Tony Sabio,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-09,Virginia,VA,27.56,71.62,-44.06,-21.29,-41.87,Morgan Griffith,R,Morgan Griffith,R,running,Joy Powers,Morgan Griffith,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-10,Virginia,VA,52.91,44.55,8.36,4.93,18.06,Suhas Subramanyam,D,Suhas Subramanyam,D,running,Suhas Subramanyam,Dave Beckwith,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VA-11,Virginia,VA,65.72,31.43,34.29,17.89,41.29,James Walkinshaw,D,James Walkinshaw,D,running,James Walkinshaw,Arthur Purves,,DR,holder + not-running list + 270toWin nominees,,South Atlantic
+VT-AL,Vermont,VT,64.36,32.59,31.77,16.63,35.6,Becca Balint,D,Becca Balint,D,running,Becca Balint,,,DR,holder + not-running list,,New England
+WA-01,Washington,WA,62.63,33.93,28.69,15.09,30.63,Suzan DelBene,D,Suzan DelBene,D,running,Suzan DelBene,Mary Silva,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-02,Washington,WA,60.23,36.57,23.67,12.58,22.93,Rick Larsen,D,Rick Larsen,D,running,Rick Larsen,Edwin Feller,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-03,Washington,WA,46.95,50.25,-3.3,-0.9,-4.2,Marie Gluesenkamp Perez,D,Marie Gluesenkamp Perez,D,running,Marie Gluesenkamp Perez,John Braun,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-04,Washington,WA,38.34,59.01,-20.67,-9.59,-16.95,Dan Newhouse,R,,,open,John Duresky,Amanda McKinney,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-05,Washington,WA,43.16,53.95,-10.79,-4.65,-9.97,Michael Baumgartner,R,Michael Baumgartner,R,running,Carmela Conroy,Michael Baumgartner,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-06,Washington,WA,58.07,38.8,19.27,10.38,17.21,Emily Randall,D,Emily Randall,D,running,Emily Randall,Teresa Fox,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-07,Washington,WA,85.84,10.85,74.99,38.24,75.51,Pramila Jayapal,D,Pramila Jayapal,D,running,Pramila Jayapal,Nirav Sheth,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-08,Washington,WA,51.3,45.52,5.78,3.64,6.72,Kim Schrier,D,Kim Schrier,D,running,Kim Schrier,Spencer Meline,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-09,Washington,WA,68.86,27.65,41.21,21.35,45.2,Adam Smith,D,Adam Smith,D,running,Adam Smith,Doug Basler,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WA-10,Washington,WA,57.39,39.39,18.0,9.75,17.7,Marilyn Strickland,D,Marilyn Strickland,D,running,Marilyn Strickland,Chris Chung,,DR,holder + not-running list + 270toWin nominees,,Pacific
+WI-01,Wisconsin,WI,47.01,51.52,-4.51,-1.51,-2.01,Bryan Steil,R,Bryan Steil,R,running,Mitchell Berman,Bryan Steil,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-02,Wisconsin,WI,69.34,29.19,40.15,20.82,41.75,Mark Pocan,D,Mark Pocan,D,running,Mark Pocan,,,D_only,holder + not-running list,,East North Central
+WI-03,Wisconsin,WI,45.53,52.93,-7.4,-2.95,-4.68,Derrick Van Orden,R,Derrick Van Orden,R,running,Rebecca Cooke,Derrick Van Orden,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-04,Wisconsin,WI,74.9,23.35,51.55,26.52,53.07,Gwen Moore,D,Gwen Moore,D,running,Gwen Moore,Tim Rogers,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-05,Wisconsin,WI,38.26,60.41,-22.15,-10.33,-22.89,Scott Fitzgerald,R,Scott Fitzgerald,R,running,Andrew Beck,Scott Fitzgerald,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-06,Wisconsin,WI,41.1,57.58,-16.48,-7.49,-15.67,Glenn Grothman,R,Glenn Grothman,R,running,Brad Smith,Glenn Grothman,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-07,Wisconsin,WI,38.0,60.5,-22.5,-10.5,-19.96,Tom Tiffany,R,,,open,Fred Clark,Michael Alfonso,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WI-08,Wisconsin,WI,41.24,57.49,-16.26,-7.38,-15.49,Tony Wied,R,Tony Wied,R,running,Rick Crosson,Tony Wied,,DR,holder + not-running list + 270toWin nominees,,East North Central
+WV-01,West Virginia,WV,26.89,71.25,-44.36,-21.43,-40.9,Carol Miller,R,Carol Miller,R,running,,Carol Miller,,DR,holder + not-running list,,South Atlantic
+WV-02,West Virginia,WV,29.23,68.82,-39.6,-19.05,-37.01,Riley Moore,R,Riley Moore,R,running,,Riley Moore,,DR,holder + not-running list,,South Atlantic
+WY-AL,Wyoming,WY,26.1,72.32,-46.22,-22.36,-43.66,Harriet Hageman,R,,,open,,,,DR,holder + not-running list,,Mountain

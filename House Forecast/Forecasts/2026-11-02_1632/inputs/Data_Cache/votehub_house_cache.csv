@@ -1,0 +1,192 @@
+id,end_date,created_at,district,pollster,sample_size,population,partisan,internal,answers
+us-202pubbb8b4b1e,2026-02-12,2026-04-27,AK-AL,Public Policy Polling,600.0,lv,DEM,False,Nick Begich III=46.0|Matt Schultz=39.0
+us-202datdf44d5f6,2025-10-23,2026-04-27,AK-AL,Data for Progress,823.0,rv,DEM,False,Nick Begich III=48.0|Matt Schultz=37.0
+us-202pub88aa45c1,2026-02-12,2026-04-27,AK-AL,Public Policy Polling,600.0,lv,DEM,False,Nick Begich III=41.0|Bill Hill=37.0
+us-202pubc9e98776,2025-10-15,2026-04-27,AZ-06,Public Policy Polling,581.0,lv,DEM,False,Juan Ciscomani=41.0|JoAnna Mendoza=42.0
+us-202pubd70ec8a7,2025-08-08,2026-04-27,CA-22,Public Policy Polling,547.0,a,DEM,False,David Valadao=42.0|Jasmeet Bains=42.0
+us-202expe9bb28f8,2026-01-12,2026-04-27,CO-03,Expedition Strategies,400.0,lv,DEM,False,Jeff Hurd=48.0|Alex Kelloff=39.0
+us-202kap5c7b111b,2025-07-01,2026-04-27,FL-27,Kaplan Strategies,804.0,lv,,False,María Elvira Salazar=45.0|Alex Fornino=35.0
+us-202blu35c04618,2026-03-08,2026-04-27,FL-27,Blueprint Polling,451.0,rv,DEM,False,María Elvira Salazar=47.0|Robin Peguero=40.0
+us-202blud3c43130,2026-03-08,2026-04-27,FL-27,Blueprint Polling,451.0,rv,DEM,False,María Elvira Salazar=46.0|Eliott Rodriguez=43.0
+us-202pub4897124c,2025-06-19,2026-04-27,IA-01,Public Policy Polling,555.0,a,DEM,False,Mariannette Miller-Meeks=39.0|Christina Bohannan=43.0
+us-202uni1e77eaee,2025-02-16,2026-04-27,ME-02,University of New Hampshire,520.0,lv,,False,Joe Baldacci=47.0|Paul LePage=48.0
+us-202pane2511ac9,2025-12-07,2026-04-27,ME-02,Pan Atlantic Research,387.0,lv,DEM,False,Joe Baldacci=43.0|Paul LePage=44.0
+us-202unia4e0a246,2026-02-16,2026-04-27,ME-02,University of New Hampshire,521.0,lv,,False,Matt Dunlap=46.0|Paul LePage=47.0
+us-202unifa33b54f,2026-02-16,2026-04-27,ME-02,University of New Hampshire,521.0,lv,,False,Jordan Wood=44.0|Paul LePage=48.0
+us-202pubb4a5637d,2025-11-21,2026-04-27,MI-04,Public Policy Polling,559.0,rv,DEM,False,Bill Huizenga=44.0|Sean McCann=42.0
+us-202pub34b08a80,2025-10-28,2026-04-27,MI-07,Public Policy Polling,557.0,rv,DEM,False,Tom Barrett=41.0|Bridget Brink=45.0
+us-202pub328ef142,2025-10-28,2026-04-27,MI-07,Public Policy Polling,557.0,rv,DEM,False,Tom Barrett=39.0|Matt Maasdam=43.0
+us-202pub8f0230b7,2025-12-11,2026-04-27,NY-01,Public Policy Polling,579.0,a,DEM,False,Nick LaLota=41.0|Chris Gallant=38.0
+us-202pub2bbbcb0d,2025-11-19,2026-04-27,PA-10,Public Policy Polling,549.0,rv,DEM,False,Scott Perry=44.0|Janelle Stelson=48.0
+us-202pubb2f82ff6,2025-07-11,2026-04-27,PA-10,Public Policy Polling,559.0,a,DEM,False,Scott Perry=43.0|Janelle Stelson=46.0
+us-202pubf37f0aa3,2025-09-11,2026-04-27,TX-15,Public Policy Polling,533.0,lv,DEM,False,Monica De La Cruz=41.0|Bobby Pulido=38.0
+us-202pub358c46e4,2026-03-11,2026-04-27,TX-23,Public Policy Polling,521.0,a,DEM,False,Brandon Herrera=42.0|Katy Padilla Stout=40.0
+us-202pub57d326b1,2025-08-09,2026-04-27,VA-01,Public Policy Polling,541.0,rv,DEM,False,Shannon Taylor=40.0|Rob Wittman=41.0
+us-202vot41d1f9d5,2025-08-01,2026-04-27,WA-03,Voter Sciences,0.0,rv,REP,False,Marie Gluesenkamp Perez=41.29|John Braun=47.55
+us-202pubc2e16fe9,2025-10-15,2026-04-27,WI-03,Public Policy Polling,609.0,lv,DEM,False,Derrick Van Orden=42.0|Rebecca Cooke=44.0
+us-202ups0e7ad4b1,2026-05-05,2026-05-22,MT-01,Upswing Research,401.0,lv,DEM,False,Matt Rains=43.0|Aaron Flint=47.0
+us-202ups539345cf,2026-05-05,2026-05-22,MT-01,Upswing Research,401.0,lv,DEM,False,Sam Forstag=43.0|Aaron Flint=48.0
+us-202pub59f4c740,2026-03-11,2026-05-22,TX-23,Public Policy Polling,521.0,rv,DEM,False,Brandon Herrera=42.0|Katy Padilla Stout=40.0
+us-202impfabbd7e2,2026-02-17,2026-05-22,NY-04,Impact Research,500.0,lv,,False,Rep=41.0|Dem=46.0
+us-202zen7a736ece,2026-05-11,2026-05-22,NE-01,Zenith Research,371.0,lv,,False,Mike Flood=45.0|Chris Backemeyer=38.0
+us-202nor9904baf8,2026-04-23,2026-05-28,PA-10,Normington Petts & Associates,400.0,rv,DEM,False,Janelle Stetson=51.0|Scott Perry=45.0
+us-202tav5bb85ce1,2026-05-19,2026-05-28,NE-01,Tavern Research,1079.0,lv,,False,Mike Flood=45.0|Chris Backemeyer=43.0
+us-202rag5df93f4a,2026-03-14,2026-06-11,AZ-06,Ragnar Research Partners,400.0,lv,REP,False,JoAnna Mendoza=47.0|Juan Ciscomani=44.0
+us-202mdwdd432a7f,2026-03-07,2026-06-11,FL-28,MDW Communications,514.0,lv,,False,Carlos Giménez=46.0|Hector Mujica=40.0
+us-202z ta9b4f919,2026-05-26,2026-06-11,NJ-07,Z to A Research,430.0,lv,DEM,False,Rebecca Bennett=47.0|Tom Kean Jr.=43.0
+us-202ragce672c6a,2026-03-14,2026-06-11,AZ-06,Ragnar Research Partners,400.0,lv,REP,False,Rep=42.0|Dem=43.0
+us-202mdw7112002f,2026-03-07,2026-06-11,FL-28,MDW Communications,514.0,lv,,False,Rep=45.0|Dem=41.0
+us-202rag31cefeac,2026-03-14,2026-06-11,MI-04,Ragnar Research Partners,400.0,lv,REP,False,Rep=43.0|Dem=42.0
+us-202imp36a5f870,2026-02-17,2026-06-11,NY-17,Impact Research,500.0,lv,DEM,False,Rep=39.0|Dem=44.0
+us-202imp51a744df,2026-02-17,2026-06-11,NY-18,Impact Research,500.0,lv,DEM,False,Rep=35.0|Dem=42.0
+us-202pub97e481be,2026-03-11,2026-06-11,TX-23,Public Policy Polling,521.0,rv,DEM,False,Rep=47.0|Dem=45.0
+us-202pub781e29d3,2025-08-09,2026-06-11,VA-01,Public Policy Polling,541.0,rv,DEM,False,Rep=47.0|Dem=47.0
+us-202rage144569e,2026-03-12,2026-06-11,VA-01,Ragnar Research Partners,400.0,lv,REP,False,Rep=42.0|Dem=44.0
+us-202co/80d6fc29,2026-04-29,2026-06-19,ME-02,co/efficient,918.0,lv,REP,False,Matt Dunlap=40.0|Paul LePage=50.0
+us-202uni5cb95e03,2026-02-16,2026-06-19,ME-02,University of New Hampshire,522.0,lv,,False,Matt Dunlap=46.0|Paul LePage=47.0
+us-202nor8d5759fc,2026-06-11,2026-06-22,AZ-06,"Normington, Petts & Associates",500.0,lv,DEM,False,JoAnna Mendoza=47.0|Juan Ciscomani=45.0
+us-202lakb27dfb16,2026-06-23,2026-06-26,PA-08,Lake Research Partners,400.0,lv,DEM,False,Paige Cognetti=47.0|Rob Bresnahan=45.0
+us-202thef47fdc98,2026-06-29,2026-07-01,AK-AL,The New York Times/Siena University,593.0,lv,,False,Nick Begich=51.0|Matt Schultz=39.0
+us-202saia8db86bb,2026-06-25,2026-07-01,NH-02,Saint Anselm,1614.0,rv,,False,Maggie Goodlander=50.0|Lily Tang Williams=31.0
+us-202unib917f6dd,2026-06-23,2026-07-01,VT-AL,University of New Hampshire,237.0,lv,,False,Becca Balint=57.0|Gerald Malloy=26.0
+us-202fm396e2170a,2026-06-25,2026-07-06,WI-03,FM3 Research,535.0,lv,DEM,False,Derrick Van Orden=46.0|Rebecca Cooke=50.0
+us-202app872e2e5f,2026-05-25,2026-07-07,TX-15,Applecart,802.0,lv,DEM,False,Bobby Pulido=48.0|Monica De La Cruz=46.0
+us-202har2b87ea23,2026-06-25,2026-07-07,OH-15,Hart Research Associates,550.0,lv,DEM,False,Mike Carey=45.0|Don Leonard=40.0|Brennan Barrington=3.0
+us-202fm3b695b2b8,2026-07-01,2026-07-08,NY-17,FM3 Research,509.0,lv,DEM,False,Cait Conley=51.0|Mike Lawler=45.0
+us-202gba3330ad74,2026-07-02,2026-07-09,PA-07,GBAO Strategies,550.0,lv,DEM,False,Ryan Mackenzie=43.0|Bob Brooks=47.0
+us-202emeae4416eb,2026-07-10,2026-07-14,WA-03,Emerson College,500.0,lv,DEM,False,Marie Gluesenkamp Perez=44.0|John Braun=45.0
+us-202tul5fdc419c,2026-06-21,2026-07-21,CA-22,Tulchin Research,800.0,lv,DEM,False,Randy Villegas=48.0|David Valadao=44.0
+us-202co/cc143c95,2026-07-22,2026-07-24,NY-17,co/efficient,1292.0,lv,,False,Cait Conley=45.0|Mike Lawler=50.0
+us-202tul81b19549,2026-07-13,2026-07-24,VA-02,Tulchin Research,700.0,lv,DEM,False,Elaine Luria=47.0|Jen Kiggans=47.0
+us-202unibd16a6bb,2026-07-20,2026-07-27,VT-AL,University of New Hampshire,954.0,lv,,False,Becca Balint=63.0|Gerald Malloy=25.0|Adam Ortiz=2.0
+us-202the9b589743,2026-07-16,2026-07-28,AK-AL,The Bullfinch Group,546.0,lv,,False,Matt Schultz=32.0|Bill Hill=20.0|Nick Begich III=46.0
+us-202thed03f59fe,2026-07-16,2026-07-28,CA-06,The Bullfinch Group,741.0,lv,,False,Richard Pan=39.0|Kevin Kiley=35.0
+us-202the20e70677,2026-07-16,2026-07-28,IA-01,The Bullfinch Group,705.0,lv,,False,Mariannette Miller-Meeks=35.0|Christina Bohannan=40.0|Michael Bridgford=11.0
+us-202unke3b76dc0,2026-07-30,2026-08-02,OH-07,Unknown (Reported by NOTUS),,,REP,False,Max Miller=39.0|Brian Poindexter=44.0
+us-202gqrffccbb42,2026-07-22,2026-08-03,SC-01,GQR,400.0,lv,DEM,False,Jenny Honeycutt=50.0|Nancy Lacore=48.0
+us-202glob1380568,2026-07-19,2026-08-06,IA-02,Global Strategy Group,,lv,DEM,False,Joe Mitchell=45.0|Lindsay James=46.0
+us-202the26d4530e,2026-08-04,2026-08-10,IL-04,The Bullfinch Group,653.0,rv,,False,Patty Garcia=34.0|Lupe Castillo=15.0|Chris Getty=9.0|Ed Hershey=4.0
+us-202tavd2d23773,2026-08-05,2026-08-10,OH-07,Tavern Research,560.0,lv,,False,Max Miller=46.0|Brian Poindexter=54.0
+us-202beda3a16f8f,2026-08-10,2026-08-13,OH-07,Bedrock Polling,866.0,lv,DEM,False,Max Miller=35.0|Brian Poindexter=43.0
+us-202sur34bdca99,2026-08-08,2026-08-14,NY-21,SurveyUSA,800.0,a,,False,Anthony Constantino=39.0|Blake Gendebien=43.0|Chris Schmidt=5.0
+us-202alae739036c,2026-08-05,2026-08-15,AK-AL,Alaska Survey Research,1371.0,lv,,False,Eric Hafner=14.7|Bill Hill=33.2|Clay Strickland=4.2|Nick Begich III=47.9
+us-202alafabca8f1,2026-08-05,2026-08-15,AK-AL,Alaska Survey Research,1371.0,lv,,False,Bill Hill=34.4|Eric Hafner=15.2|Nick Begich III=50.4
+us-202ala8a6a82c0,2026-08-05,2026-08-15,AK-AL,Alaska Survey Research,1371.0,lv,,False,Bill Hill=46.5|Nick Begich III=53.5
+us-202fab5f214a8b,2026-07-22,2026-08-15,FL-13,"Fabrizio, Lee & Associates",400.0,lv,,False,Anna Paulina Luna=49.0|Leela Gray=41.0
+us-202j.lcde5bf32,2026-08-17,2026-08-20,NY-21,J.L. Partners,500.0,lv,,False,Anthony Constantino=53.0|Blake Gendebien=40.0
+us-202glo69af5ff3,2026-08-13,2026-08-20,MI-07,Global Strategy Group,500.0,lv,DEM,False,William Lawrence=49.0|Tom Barrett=47.0
+us-202tav1ccea6ab,2026-08-12,2026-08-20,FL-22,Tavern Research,551.0,lv,,False,Casey Askar=50.0|Pia Dandiya=50.0
+us-202saibb1156ba,2026-08-18,2026-08-26,NH-02,Saint Anselm College Survey Center,701.0,lv,,False,Maggie Goodlander=50.0|Lily Tang Williams=35.0
+us-202hen3c891586,2026-08-13,2026-08-26,AR-02,Hendrix College,1112.0,lv,,False,Chris Jones=48.0|French Hill=44.0
+us-202tex35ec19da,2026-07-30,2026-08-26,TX-28,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,600.0,lv,,False,Henry Cuellar=45.0|Tano Tijerina=34.0|Marlón Durán=6.0
+us-202tex909ea2d7,2026-07-30,2026-08-26,TX-34,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,700.0,lv,,False,Vicente Gonzalez=45.0|Eric Flores=42.0|Eddie Espinoza=3.0|Chris Royal=2.0
+us-202texe83b516f,2026-07-30,2026-08-26,TX-15,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,700.0,lv,,False,Bobby Pulido=50.0|Monica De La Cruz=45.0
+us-202quad5474d87,2026-08-24,2026-08-27,OH-01,Quantus Insights,509.0,lv,,False,Greg Landsman=47.9|Eric Conroy=44.6
+us-202ala08564c87,2026-08-23,2026-08-29,AK-AL,Alaska Survey Research,1872.0,lv,,False,Nick Begich=50.6|Bill Hill=39.1|Eric Hafner=4.6|John Williams=5.7
+us-202glo6fc3cf65,2026-08-13,2026-08-31,MI-10,Global Strategy Group,600.0,lv,DEM,False,Christina Hines=45.0|Michael Bouchard=45.0
+us-202gqr8c1f3d93,2026-08-23,2026-08-31,PA-01,GQR,400.0,lv,DEM,False,Bob Harvie=48.0|Brian Fitzpatrick=49.0
+us-202har548dbd3f,2026-08-27,2026-09-01,FL-13,Hart Research Associates,500.0,lv,DEM,False,Anna Paulina Luna=43.0|Leela Gray=44.0|Tony D'Arrigo=7.0
+us-202norf7bc03a2,2026-08-31,2026-09-02,TX-35,"Normington, Petts & Associates",500.0,lv,DEM,False,Johnny Garcia=44.0|Carlos De La Cruz=45.0
+us-202sur44bc5f16,2026-09-02,2026-09-04,NM-02,SurveyUSA,554.0,lv,,False,Gabe Vasquez=46.0|Greg Cunningham=43.0
+us-202surf8843a2d,2026-09-01,2026-09-04,CA-48,SurveyUSA,522.0,lv,,False,Marni von Wilpert=45.0|Jim Desmond=42.0
+us-202ame0ab6dda0,2026-07-12,2026-09-10,CA-40,American Viewpoint,400.0,lv,REP,False,Ken Calvert=33.0|Young Kim=32.0
+us-202harc3982bab,2026-09-03,2026-09-10,TN-09,Hart Research Associates,400.0,lv,DEM,False,Justin Pearson=44.0|Brent Taylor=48.0
+us-202sur23f1946c,2026-09-13,2026-09-15,NE-02,SurveyUSA,182.0,lv,,False,Denise Powell=46.0|Brinker Harding=42.0
+us-202glo80ac6525,2026-09-03,2026-09-17,NE-01,Global Strategy Group,600.0,lv,DEM,False,Mike Flood=45.0|Chris Backemeyer=49.0
+us-202gra1f1faac3,2026-09-09,2026-09-17,CA-40,Grassroots Targeting,800.0,lv,REP,False,Ken Calvert=34.0|Young Kim=43.0
+us-202fab0388654c,2026-09-11,2026-09-17,AK-AL,"Fabrizio, Lee & Associates/Impact Research",800.0,lv,,False,Nick Begich=57.0|Bill Hill=43.0
+us-202tulc2e2b734,2026-09-13,2026-09-18,FL-27,Tulchin Research,600.0,lv,DEM,False,Maria Elvira Salazar=47.0|Eliott Rodriguez=46.0
+us-202fraa24d50e1,2026-09-20,2026-09-24,PA-07,Franklin & Marshall College,357.0,rv,,False,Ryan Mackenzie=40.0|Bob Brooks=45.0
+us-202frae23de26f,2026-09-20,2026-09-24,PA-10,Franklin & Marshall College,390.0,rv,,False,Janelle Stelson=47.0|Scott Perry=44.0
+us-202gba03b575d0,2026-09-21,2026-09-25,MN-01,GBAO Strategies,500.0,lv,DEM,False,Brad Finstad=46.0|Jake Johnson=47.0
+us-202unic08cf0d0,2026-09-21,2026-09-25,NH-01,University of New Hampshire,711.0,lv,,False,Stephany Shaheen=46.0|Anthony DiLorenzo=42.0
+us-202unie2f0d260,2026-09-21,2026-09-25,NH-02,University of New Hampshire,702.0,lv,,False,Maggie Goodlander=56.0|Lily Tang Williams=35.0|Robbie Mahrou=3.0
+us-202uni97eb1c51,2026-09-21,2026-09-25,VT-AL,University of New Hampshire,835.0,lv,,False,Becca Balint=66.0|Gerald Malloy=30.0|Adam Ortiz=0.0|Phoenix Altair=0.0|Suzanne Seymour=1.0|Ryan Walton=0.0
+us-202rem24458257,2026-09-15,2026-09-25,MO-02,Remington Research Group,565.0,lv,,False,Ann Wagner=43.0|Fred Wellman=42.0
+us-202har67e7828b,2026-09-24,2026-09-29,OH-15,Hart Research Associates,500.0,lv,DEM,False,Mike Carey=45.0|Don Leonard=46.0
+us-202ame9bedbaa8,2026-09-24,2026-09-29,MT-01,American Pulse Research & Polling,314.0,lv,,False,Aaron Flint=45.9|Sam Forstag=45.4|Nick Sheedy=5.4
+us-202dcc0662cb55,2026-09-23,2026-09-29,OH-09,DCCC Targeting and Analytics Department,481.0,lv,DEM,False,Marcy Kaptur=48.0|Derek Merrin=48.0
+us-202dcc0d4b0ded,2026-09-23,2026-09-29,WI-01,DCCC Targeting and Analytics Department,495.0,lv,DEM,False,Brian Steil=48.0|Mitchell Berman=48.0
+us-202the1da56e0f,2026-07-16,2026-10-01,AK-AL,The Bullfinch Group,546.0,lv,,False,Nick Begich=52.0|Bill Hill=48.0
+us-202emefa6f3e99,2026-09-29,2026-10-01,NY-17,Emerson College,400.0,lv,,False,Cait Conley=48.0|Mike Lawler=46.0
+us-202the7176ba8a,2026-09-28,2026-10-01,VA-01,The Washington Post/George Mason University Schar School of Policy and Government,609.0,lv,,False,Rob Wittman=46.0|Shannon Taylor=50.0
+us-202thec3b2cee5,2026-09-28,2026-10-01,VA-05,The Washington Post/George Mason University Schar School of Policy and Government,600.0,lv,,False,John McGuire=51.0|Tom Perriello=46.0
+us-202lig9eec2508,2026-09-10,2026-10-01,UT-01,Lighthouse Research,515.0,lv,,False,Ben McAdams=62.7|Riley Owen=21.2|Jesse West=4.7|Elias Henry Montgomery=3.3
+us-202ligf6b1dc1d,2026-09-24,2026-10-01,UT-02,Lighthouse Research,515.0,lv,,False,Blake Moore=39.0|Peter Crosby=34.0|Carlton E. Bowen=4.1|Daniel Cottam=4.9|Robert M. Moesinger=4.9
+us-202lig83acfc3f,2026-09-15,2026-10-01,UT-03,Lighthouse Research,508.0,lv,,False,Celeste Maloy=44.5|Kent S. Udell=26.4|Cassie Easley=2.6|Adonis Hooslyn=0.2|Michael R. Stoddard=6.5|Ayden Scott=2.8
+us-202lig0c801987,2026-09-17,2026-10-01,UT-04,Lighthouse Research,513.0,lv,,False,Mike Kennedy=41.7|Jonny Larsen=32.9|Taylor Wright=5.3|Steven Burt=5.7
+us-202nor348bad95,2026-09-28,2026-10-01,TX-15,"Normington, Petts & Associates",400.0,lv,DEM,False,Bobby Pulido=54.0|Monica De La Cruz=41.0
+us-202dhmdd00a623,2026-09-27,2026-10-02,WA-03,DHM Research,543.0,lv,,False,Marie Gluesenkamp Perez=47.0|John Braun=48.0
+us-202tav5e39c6e6,2026-09-17,2026-10-02,CA-11,Tavern Research,658.0,lv,DEM,False,Scott Wiener=45.0|Connie Chan=34.0
+us-202the4bdf33e1,2026-09-06,2026-10-02,AK-AL,The Bullfinch Group,820.0,lv,,False,Nick Begich=50.3|Bill Hill=46.5
+us-202impbb787ecf,2026-10-01,2026-10-04,WI-01,Impact Research,500.0,lv,DEM,False,Bryan Steil=47.0|Mitchell Berman=48.0
+us-202firaf458383,2026-10-01,2026-10-06,AZ-01,FirstStrategic,400.0,lv,,False,Amish Shah=44.4|Jay Feely=41.6
+us-202pub0bd895c4,2026-10-02,2026-10-06,FL-16,Public Policy Polling,530.0,rv,DEM,False,Kelly Kirschner=39.0|Sydney Gruters=43.0
+us-202nei29757f09,2026-10-06,2026-10-08,NC-01,Neighborhood Research and Media,303.0,lv,,False,Don Davis=51.0|Laurie Buckhout=41.0
+us-202chaf9f0bd63,2026-10-05,2026-10-09,KY-06,Change Research,524.0,lv,DEM,False,Zach Dembo=47.0|Ralph Alvarado=38.0
+us-202lak666b349e,2026-10-04,2026-10-09,KY-06,Lake Research Partners,400.0,lv,DEM,False,Zach Dembo=48.0|Ralph Alvarado=45.0
+us-202lakf2e14284,2026-10-04,2026-10-09,KY-06,Lake Research Partners,400.0,lv,DEM,False,Zach Dembo=46.0|Ralph Alvarado=40.0|Jay Bowman=3.0|Pete Lynch=1.0
+us-202res39c7cfc1,2026-10-09,2026-10-16,NM-01,Research & Polling Inc.,380.0,lv,,False,Melanie Stansbury=53.0|Ndidiamaka Okpareke=35.0
+us-202sur70c7e750,2026-10-07,2026-10-09,CA-48,SurveyUSA,518.0,lv,,False,Marni von Wilpert=47.0|Jim Desmond=38.0
+us-202sie2af2e738,2026-10-06,2026-10-09,NY-21,Siena University,496.0,lv,,False,Blake Gendebien=46.0|Anthony Constantino=42.0|Christopher Schmidt=5.0
+us-202imp2dbaf42c,2026-09-24,2026-10-09,CO-04,Impact Research,403.0,lv,,False,Eileen Laubacher=40.0|Lauren Boebert=45.0|Douglas Mangeris=9.0
+us-202natda50e477,2026-10-05,2026-10-13,NE-02,National Public Affairs,377.0,lv,,False,Denise Powell=50.0|Brinker Harding=38.0|Eric Michael Foreman=6.0
+us-202sur83d49b6b,2026-10-09,2026-10-13,MN-01,SurveyUSA,565.0,lv,,False,Brad Finstad=44.0|Jake Johnson=46.0
+us-202resc0457a03,2026-10-09,2026-10-16,NM-03,Research & Polling Inc.,362.0,lv,,False,Teresa Leger Fernandez=53.0|Martin Zamora=39.0
+us-202embaff582ba,2026-10-08,2026-10-20,RI-02,Embold Research,417.0,lv,,False,Seth Magaziner=52.0|Victor Mellor=39.0
+us-202emb6d7ed09a,2026-10-08,2026-10-20,RI-01,Embold Research,363.0,lv,,False,Gabe Amo=52.0|Kellie Keenan=33.0|Pedro Soares DeSouza=4.0
+us-202dccf9796e58,2026-10-13,2026-10-20,OH-10,DCCC Targeting and Analytics Department,535.0,lv,DEM,False,Mike Turner=44.0|Kristina Knickerbocker=47.0|Thomas McMasters=4.0
+us-202dccdf4a1055,2026-10-19,2026-10-20,FL-07,DCCC Targeting and Analytics Department,414.0,lv,DEM,False,Bale Dalton=45.0|Ryan Elijah=45.0
+us-202dccab8a9d73,2026-10-13,2026-10-21,TX-28,DCCC Targeting and Analytics Department,563.0,lv,DEM,False,Henry Cuellar=54.0|Tano Tijerina=34.0
+us-202dat9dd2bb5f,2026-10-16,2026-10-21,AK-AL,Data for Progress,659.0,lv,,False,Nick Begich=51.0|Bill Hill=49.0
+us-202pub64d2c386,2026-10-20,2026-10-21,MO-02,Public Policy Polling,631.0,lv,DEM,False,Ann Wagner=45.0|Fred Wellman=46.0
+us-202pub0883c101,2026-10-15,2026-10-21,FL-13,Public Policy Polling,603.0,lv,DEM,False,Anna Paulina Luna=46.0|Leela Gray=47.0
+us-202exp61baa04f,2026-10-04,2026-10-21,IN-05,Expedition Strategies,600.0,lv,DEM,False,Victoria Spartz=48.0|JD Ford=47.0
+us-202pubb12b26d8,2026-10-20,2026-10-21,KY-06,Public Policy Polling,572.0,lv,DEM,False,Ralph Alvarado=41.0|Zach Dembo=47.0
+us-202pube424dda1,2026-10-14,2026-10-21,MN-01,Public Policy Polling,588.0,lv,DEM,False,Brad Finstad=43.0|Jake Johnson=43.0
+us-202pubba1dafd6,2026-10-14,2026-10-21,MT-01,Public Policy Polling,541.0,lv,DEM,False,Aaron Flint=45.0|Sam Forstag=48.0
+us-202pub0782eb1a,2026-10-20,2026-10-21,NC-09,Public Policy Polling,526.0,lv,DEM,False,Richard Hudson=46.0|Richard Ojeda=42.0
+us-202pubd24128e3,2026-10-13,2026-10-21,NV-02,Public Policy Polling,560.0,lv,DEM,False,Teresa Benitez-Thompson=44.0|David Flippo=46.0
+us-202pubb040dd5f,2026-10-20,2026-10-21,NE-01,Public Policy Polling,536.0,lv,DEM,False,Mike Flood=46.0|Chris Backemeyer=45.0
+us-202pube3646207,2026-10-13,2026-10-21,NY-21,Public Policy Polling,613.0,lv,DEM,False,Anthony Constantino=46.0|Blake Gendebien=44.0
+us-202har6cfd60c5,2026-10-12,2026-10-21,OH-15,Hart Research Associates,503.0,lv,DEM,False,Mike Carey=45.0|Don Leonard=48.0
+us-202nord8a4b596,2026-10-14,2026-10-21,TX-35,"Normington, Petts & Associates",400.0,lv,DEM,False,Johnny Garcia=47.0|Carlos De La Cruz=45.0
+us-202norac2aeeac,2026-10-07,2026-10-21,TX-23,"Normington, Petts & Associates",400.0,lv,DEM,False,Brandon Herrera=46.0|Katy Padilla Stout=46.0
+us-202tex58503fef,2026-10-16,2026-10-21,TX-15,Texas Southern University Barbara Jordan Public Policy Research and Survey Center,,lv,,False,Bobby Pulido=51.0|Monica De La Cruz=44.0
+us-202mas4a1e1960,2026-10-14,2026-10-21,SD-AL,Mason-Dixon,500.0,lv,,False,Marty Jackley=60.0|Nikki Gronli=32.0
+us-202eme2c268367,2026-10-14,2026-10-22,MI-07,Emerson College,314.0,lv,,False,William Lawrence=53.0|Tom Barrett=45.0
+us-202eme59eee485,2026-10-14,2026-10-22,IA-02,Emerson College,344.0,lv,,False,Joe Mitchell=47.0|Lindsay James=50.0
+us-202emea36e3a37,2026-10-14,2026-10-22,PA-08,Emerson College,396.0,lv,,False,Paige Cognetti=52.0|Rob Bresnahan=48.0
+us-202emec9ad5ca5,2026-10-14,2026-10-22,TX-35,Emerson College,417.0,lv,,False,Johnny Garcia=51.0|Carlos De La Cruz=49.0
+us-202eme63310cee,2026-10-14,2026-10-22,FL-14,Emerson College,315.0,lv,,False,Kathy Castor=48.0|Mike Beltran=43.0
+us-202eme08dc10c3,2026-10-14,2026-10-22,MT-01,Emerson College,329.0,lv,,False,Aaron Flint=46.0|Sam Forstag=50.0
+us-202emeae9d8cb2,2026-10-14,2026-10-22,MO-02,Emerson College,401.0,lv,,False,Ann Wagner=46.0|Fred Wellman=51.0
+us-202emef6848322,2026-10-14,2026-10-22,AR-02,Emerson College,383.0,lv,,False,French Hill=52.0|Chris Jones=48.0
+us-202eme1c60a2fd,2026-10-14,2026-10-22,NC-11,Emerson College,388.0,lv,,False,Jamie Ager=56.0|Jennifer Balkcom=43.0
+us-202emecd4e9339,2026-10-14,2026-10-22,AZ-02,Emerson College,345.0,lv,,False,Eli Crane=48.0|Jonathan Nez=50.0
+us-202uni65dc5b39,2026-10-19,2026-10-22,CA-11,University of Southern California Democracy and Fair Elections Lab,454.0,lv,,False,Scott Wiener=51.0|Connie Chan=44.0
+us-202cha630f1158,2026-10-21,2026-10-22,WA-03,Change Research,551.0,lv,DEM,False,Marie Gluesenkamp Perez=45.0|John Braun=44.0
+us-202pub4033cfe3,2026-10-22,2026-10-23,FL-25,Public Policy Polling,592.0,lv,DEM,False,Jared Moskowitz=47.0|Scott Singer=42.0
+us-202saicadce4c4,2026-10-20,2026-10-23,NH-02,Saint Anselm,861.0,lv,,False,Maggie Goodlander=54.0|Lily Tang Williams=38.0
+us-202saidc0150bf,2026-10-20,2026-10-23,NH-01,Saint Anselm,861.0,lv,,False,Stefany Shaheen=46.0|Anthony DiLorenzo=42.0
+us-202imp8a687cb1,2026-10-10,2026-10-23,NJ-02,Impact Research,,lv,DEM,False,Jeff Van Drew=50.0|Zach Mullock=40.0
+us-202theaa4f5a76,2026-10-19,2026-10-23,TX-34,The Washington Post/George Mason University Schar School of Policy and Government,626.0,lv,,False,Vicente Gonzalez=50.0|Eric Flores=43.0|Eddie Espinoza=2.0|Chris Royal=1.0
+us-202pubf344107a,2026-10-22,2026-10-23,VA-01,Public Policy Polling,570.0,lv,DEM,False,Rob Wittman=46.0|Shannon Taylor=47.0
+us-202pubd9e6a1c9,2026-10-22,2026-10-23,SC-01,Public Policy Polling,770.0,lv,DEM,False,Jenny Honeycutt=45.0|Nancy Lacore=47.0
+us-202dcc52565cb3,2026-10-21,2026-10-23,CO-03,DCCC Targeting and Analytics Department,402.0,lv,DEM,False,Jeff Hurd=46.0|Dwayne Romero=47.0
+us-202uni0b5ba8c8,2026-10-24,2026-10-27,CA-34,University of Southern California Democracy and Fair Elections Lab,423.0,lv,,False,Angela Gonzales-Torres=51.0|Jimmy Gomez=45.0
+us-202qua75e251d2,2026-10-22,2026-10-27,IN-05,Quantus Insights,601.0,lv,,False,Victoria Spartz=47.4|JD Ford=44.6
+us-202remdfdb864e,2026-10-25,2026-10-29,AL-02,Remington Research Group,642.0,lv,,False,Rhett Marques=48.0|Shomari Figures=46.0
+us-202muhc58c523b,2026-10-15,2026-10-29,PA-07,Muhlenberg College Institute of Public Opinion,529.0,lv,,False,Ryan Mackenzie=43.0|Bob Brooks=49.0
+us-202mon8f4b97ae,2026-10-21,2026-10-30,MT-01,Montana State University Billings,287.0,a,,False,Aaron Flint=32.0|Sam Forstag=49.0|Nick Sheedy=4.0
+us-202mon85d47fca,2026-10-21,2026-10-30,MT-02,Montana State University Billings,350.0,a,,False,Troy Downing=29.0|Brian Miller=18.0|Patrick McCracken=15.0|Michael Eisenhauer=2.0
+us-202keacab04b63,2026-10-28,2026-10-30,AZ-01,Keating Research,500.0,lv,,False,Amish Shah=49.0|Jay Feely=45.0
+us-ca-uni0e552a49,2026-10-28,2026-10-30,CA-01,University of Southern California Democracy and Fair Elections Lab/University of Southern California Dornsife Center for Economic and Social Research,439.0,lv,,False,Mike McGuire=54.0|James Gallagher=40.0
+us-202uni3d74de24,2026-10-28,2026-10-30,CA-06,University of Southern California Democracy and Fair Elections Lab/University of Southern California Dornsife Center for Economic and Social Research,439.0,lv,,False,Richard Pan=55.0|Kevin Kiley=43.0
+us-202unia6d17909,2026-10-28,2026-10-30,CA-22,University of Southern California Democracy and Fair Elections Lab/University of Southern California Dornsife Center for Economic and Social Research,356.0,lv,,False,Randy Villegas=54.0|David Valadao=44.0
+us-202unide272ca0,2026-10-28,2026-10-30,CA-48,University of Southern California Democracy and Fair Elections Lab,474.0,lv,,False,Marni von Wilpert=52.0|Jim Desmond=44.0
+us-202the4a3fa27d,2026-10-30,2026-11-02,AK-AL,The New York Times/Siena University,610.0,lv,,False,Nick Begich=52.0|Bill Hill=48.0
+us-202unif176090d,2026-10-31,2026-11-02,ME-01,University of New Hampshire,843.0,lv,,False,Chellie Pingree=65.0|Ron Russell=32.0
+us-202unia06f3a9e,2026-10-31,2026-11-02,ME-02,University of New Hampshire,802.0,lv,,False,Paul LePage=52.0|Matt Dunlap=47.0
+us-202uni93211609,2026-10-31,2026-11-02,NH-01,University of New Hampshire,1032.0,lv,,False,Stefany Shaheen=56.0|Anthony DiLorenzo=43.0
+us-202uni750d2ff8,2026-10-31,2026-11-02,NH-02,University of New Hampshire,1005.0,lv,,False,Maggie Goodlander=56.0|Lily Tang Williams=41.0|Robbie Mahrou=2.0
