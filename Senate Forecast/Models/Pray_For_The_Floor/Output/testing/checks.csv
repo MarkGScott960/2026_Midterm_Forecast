@@ -9,7 +9,7 @@ A,newest generic ballot poll (VoteHub),PASS,2026-11-02 (0 days old)
 A,newest approval poll (VoteHub),WARN,2026-10-06 (27 days old) - Kalshi averages fill the gap
 A,Kalshi race prices date,PASS,fetched 2026-11-02
 A,Kalshi races found,PASS,35/35
-A,Kalshi races found by title search,WARN,"used the fallback table for ['Delaware', 'Illinois', 'Montana', 'Nebraska', 'New Hampshire', 'New Mexico', 'Ohio', 'South Carolina', 'Texas', 'Virginia', 'West Virginia']"
+A,Kalshi races found by title search,WARN,"used the fallback table for ['Arkansas', 'Delaware', 'Idaho', 'Iowa', 'Louisiana', 'New Hampshire', 'Ohio', 'Oregon', 'South Carolina', 'South Dakota', 'Tennessee', 'Wyoming']"
 A,Kalshi search agrees with fallback table,PASS,all agree
 A,nominees agree with fallback table,PASS,all 35 agree
 A,nominees from Kalshi names,PASS,34/35 from Kalshi; fallback table used for ['Alaska']
@@ -23,14 +23,14 @@ B,source shares add to 100%,PASS,max error 2.2e-16
 B,no missing race margins,PASS,post_mean / post_sd
 B,seat counts possible,PASS,range 35-69 (possible 33-69)
 B,mean seats = sum of race probabilities,PASS,51.77 vs 51.77
-B,independent vs correlated simulations agree,PASS,largest race gap 1.0%
+B,independent vs correlated simulations agree,PASS,largest race gap 0.9%
 B,simulation noise on P(51+),PASS,"+/-0.9% (95% range) with 10,000 simulations"
 B,Kalshi share of the final margin,PASS,"median 7%, max 16% (Delaware)"
 C,coverage: Louisiana,WARN,"0 polls (effective 0.0), Kalshi 15%"
 C,coverage: Mississippi,WARN,"3 polls (effective 1.4), Kalshi 17%"
-D,model vs Kalshi: Alaska,WARN,"model 42% vs Kalshi 70% (prior R+6.3, polls D+1.2)"
+D,model vs Kalshi: Alaska,WARN,"model 41% vs Kalshi 70% (prior R+6.3, polls D+1.2)"
 E,most influential settings,PASS,PRIOR_SD: 36%-76%; POLL_PRECISION_MULT: 57%-91%; SYSTEMATIC_POLL_ERROR_SD: 56%-83%
-E,toggle combinations agree,PASS,P(51+) spread 1.9% across the 4 combinations
+E,toggle combinations agree,PASS,P(51+) spread 2.0% across the 4 combinations
 E,random vs fixed grades,PASS,P(51+) 66.2% vs 65.5%; 9 races move by more than 0.5 pts
 E,stable across random seeds,PASS,"P(51+) range 1.5% over 5 seeds at 10,000 simulations"
 F,week-to-week stability,PASS,largest weekly move 10%

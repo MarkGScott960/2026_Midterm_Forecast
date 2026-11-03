@@ -13,7 +13,7 @@ and let it fret about the Senate every few hours so we don't have to.
         running script first (Ctrl+C)
 
 Every scheduled run executes Model Testing.ipynb and then Most_Magnificent_Model.ipynb (both at N_SIMS), saves everything in
-Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html + dashboard.pdf, figures/*.html + *.png, data, inputs/ = every input file the run used),
+Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html + dashboard.pdf, figures/*.html + *.png + *.jpg, data, inputs/ = every input file the run used),
 appends to Forecasts/history.csv and
 race_history.csv, and copies the dashboard to Forecasts/latest.html and latest.pdf. PDFs are printed by headless
 Microsoft Edge (or Chrome); if neither is found the run still finishes, just without the PDF.
@@ -382,6 +382,19 @@ def margin_label(m):
     return "-" if pd.isna(m) else (f"D+{m:.1f}" if m >= 0 else f"R+{-m:.1f}")
 
 
+def seat_curve(seats, bw=0.7, step=0.05):
+    """Every seat count from the fewest to the most any simulation produced (gaps filled with 0), plus a smoothed curve
+    over them: each seat count's share spread as a small normal bump (SD = bw seats) and summed. The bars are the real
+    distribution; the curve only traces its shape, so the tails and the lumps are easier to see."""
+    s = seats[seats["share"] > 0].sort_values("dem_seats")
+    full = pd.DataFrame({"dem_seats": np.arange(int(s["dem_seats"].min()), int(s["dem_seats"].max()) + 1)})
+    full = full.merge(s, on="dem_seats", how="left").fillna({"share": 0.0})
+    x = np.arange(full["dem_seats"].min() - 1, full["dem_seats"].max() + 1 + step, step)
+    k, p = full["dem_seats"].to_numpy(float), full["share"].to_numpy(float)
+    y = (p[None, :] * np.exp(-0.5 * ((x[:, None] - k[None, :]) / bw) ** 2) / (bw * np.sqrt(2 * np.pi))).sum(axis=1)
+    return full, x, 100 * y  # y in "% of simulations" per seat, the same scale as the bars
+
+
 def plotly_figs(res, hist):
     import plotly.graph_objects as go
     row, races, seats = res["row"], res["races"].copy(), res["seats"]
@@ -390,9 +403,10 @@ def plotly_figs(res, hist):
     figs = {}
 
     # 1. seat distribution
-    s = seats.sort_values("dem_seats")
+    s, cx, cy = seat_curve(seats)
     f = go.Figure(go.Bar(x=s["dem_seats"], y=100 * s["share"], marker_color=np.where(s["dem_seats"] >= CONTROL_SEATS, D_BLUE, R_RED),
-                         hovertemplate="%{x} D seats: %{y:.2f}% of simulations<extra></extra>", name="Most_Magnificent_Model"))
+                         hovertemplate="%{x} D seats: %{y:.3f}% of simulations<extra></extra>", name="Most_Magnificent_Model"))
+    f.add_trace(go.Scatter(x=cx, y=cy, mode="lines", line=dict(color=INK, width=2), hoverinfo="skip", name="Smoothed"))
     f.add_vline(x=CONTROL_SEATS - 0.5, line=dict(color=INK, width=1.5))
     left_first = row["kalshi_seats"] is None or row["mean_seats"] <= row["kalshi_seats"]
     f.add_vline(x=row["mean_seats"], line=dict(color=D_BLUE, width=2, dash="dot"),
@@ -409,8 +423,7 @@ def plotly_figs(res, hist):
                     xaxis_title="Democratic seats (incl. caucusing independents)", yaxis_title="% of simulations",
                     showlegend=False, bargap=0.1, height=450)
     f.update_layout(margin=dict(l=60, r=30, t=80, b=50))
-    f.update_xaxes(range=[s.loc[s["share"].cumsum() > 0.001, "dem_seats"].min() - 1.5,
-                          s.loc[s["share"].cumsum() < 0.999, "dem_seats"].max() + 1.5])
+    f.update_xaxes(range=[s["dem_seats"].min() - 1.5, s["dem_seats"].max() + 1.5])  # every seat count any simulation hit
     figs["seat_distribution"] = f
 
     # 2. races: Model vs Kalshi
@@ -501,16 +514,17 @@ def png_figs(res, hist, folder):
     import matplotlib.patches  # noqa: F401  (map tiles)
     import matplotlib.ticker  # noqa: F401
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
-    row, races, seats = res["row"], res["races"], res["seats"].sort_values("dem_seats")
+    row, races = res["row"], res["races"]
+    seats, cx, cy = seat_curve(res["seats"])
     paths = {}
     fig, ax = plt.subplots(figsize=(10, 4.6))
     ax.bar(seats["dem_seats"], 100 * seats["share"], color=np.where(seats["dem_seats"] >= CONTROL_SEATS, D_BLUE, R_RED), width=0.85)
+    ax.plot(cx, cy, color=INK, lw=1.8, label="Smoothed")
     ax.axvline(CONTROL_SEATS - 0.5, color=INK, lw=1.5)
     ax.axvline(row["mean_seats"], color=D_BLUE, ls=":", lw=2, label=f"Model mean {row['mean_seats']:.1f}")
     if row["kalshi_seats"] is not None:
         ax.axvline(row["kalshi_seats"], color=K_GRAY, ls="--", lw=2, label=f"Kalshi {row['kalshi_seats']:.1f}")
-    keep = seats[(seats["share"].cumsum() > 0.001) & (seats["share"].cumsum() < 0.999)]["dem_seats"]
-    ax.set_xlim(keep.min() - 1.5, keep.max() + 1.5)
+    ax.set_xlim(seats["dem_seats"].min() - 1.5, seats["dem_seats"].max() + 1.5)  # every seat count any simulation hit
     ax.set_xlabel("Democratic seats (incl. caucusing independents)"); ax.set_ylabel("% of simulations")
     kc = row["kalshi_p_control"]
     ax.set_title(f"P(D >= {CONTROL_SEATS}): Model {row['p_d_51']:.1%}" + (f" | Kalshi {kc:.1%}" if kc is not None else ""), loc="left", fontweight="bold")
@@ -814,6 +828,23 @@ def save_figures(figs, res, hist, folder):
         png_figs(res, hist, folder)
     except Exception as e:
         say(f"PNG export failed ({type(e).__name__}: {e}); HTML figures were saved")
+        return
+    try:
+        jpeg_copies(folder)
+    except Exception as e:
+        say(f"JPEG export failed ({type(e).__name__}: {e}); HTML and PNG figures were saved")
+
+
+def jpeg_copies(folder):
+    """A .jpg twin of every .png chart (same size and resolution), for anywhere that wants JPEGs. JPEG has no
+    transparency, so any see-through bits are laid on white first."""
+    from PIL import Image  # ships with matplotlib
+    for png in sorted(folder.glob("*.png")):
+        with Image.open(png) as im:
+            im = im.convert("RGBA")
+            flat = Image.new("RGB", im.size, (255, 255, 255))
+            flat.paste(im, mask=im.getchannel("A"))
+            flat.save(png.with_suffix(".jpg"), "JPEG", quality=95, subsampling=0, dpi=im.info.get("dpi", (200, 200)))
 
 
 # ------------------------------------------------------------------ PDF copy of each dashboard
