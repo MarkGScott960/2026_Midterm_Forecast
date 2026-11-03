@@ -1,0 +1,66 @@
+---
+title: "Team 5 2026 Senate Forecast: Methodology"
+author: "Team 5: Elizabeth Miller, Mark Scott, Ethan Verrone, Boaz Alkalay, Leo Westebbe"
+date: "November 3, 2026"
+format:
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    colorlinks: true
+    number-sections: false
+  docx:
+    toc: false
+    number-sections: false
+---
+
+## Our Forecast
+
+Our election model predicts that Democrats will win at least 51 Senate seats in 84.8% of simulations, with a precision of $\pm 0.2$ points. The model also predicts that Democrats will win 52.9 seats on average (80% range 50 to 56). All figures are from our final run at 9:00 AM on Nov 3.
+
+## Process
+
+We went through a series of models, ranging from Professor Adler's base model with some sample assumption values, models with different amounts of parameters, and more, which eventually led us to our final model. As a group we discussed which factors were the most important to include in the construction of an election prediction model and to ultimately decide which of our many constructed models was best.
+
+We all felt it was important to emphasize the distinction between likely vs. registered voters (LVs v. RVs), as well as the partisan lean of each state. We felt the distinction between LV and RV was important, because LVs are generally a more reliable metric for predicting vote outcome because of their propensity to vote, and the distinction matters even more for a midterm election, which generally sees less turnout and has a higher concentration of LVs. The partisan lean, based on recent presidential results including the 2024 General Election, was used as a way to capture the general political attitude of a state. We captured how many points more Democratic or Republican each state votes than the nation, and weighted LVs more heavily in our model than RVs to account for both the reliability of LVs, the fact that many of them likely voted in the 2024 general election, and the nature of midterm elections having typically lower turnout than the General every four years.
+
+We tested having more parameters vs. less, and giving those parameters specific values vs. having the model utilize a random value from a specified range. This was most prominently used to fill in quality scores for pollsters that were missing grades. Some of our models also included events or Kalshi data, which can capture effects like both events and candidate quality. Much of the decisions our group made pertained to how much we wanted to weigh our parameters and sources such as Kalshi.
+
+## How we collected and interpreted polls
+
+Our final model makes use of what we learned from our previous attempts to make its predictions, utilizing poll data, fundamentals, and data from the Kalshi prediction market to simulate the election 100,000 times. The model ran every three hours through the final 9:00 AM forecast and is tracked on a dashboard stored in a .html file accessible via GitHub. Poll data is sourced from the VoteHub API, which we opted for over the initial dataset available to all project groups, in large part because of how their polls are selected and reported, and because VoteHub kept adding polls after the course spreadsheet stopped in mid-October.
+
+Each poll becomes a Democratic (or credible independent) minus Republican margin, with undecideds split in proportion to the decided vote. When a survey reports LV and RV versions, only the LV version is kept, and RV polls are shifted by the LV-RV gap measured this year (+0.9 points).
+
+## Weights and why
+
+Our model weights more recent polls more heavily, as well as polls from pollsters with stronger track records. Pollster quality is tracked via VoteHub's "Pollster Scorecard" system, which places more value upon pollsters that have a reputation for being better performing, while the model also down-weights sources which release multiple polls for the same race, to keep any particular methodology from over-influencing the model. Partisan lean for pollsters is also tracked over time to help manage any effects related to a swell in published partisan polls. Also importantly, a sample of likely voters is weighted more than one of registered voters. This assumption, reached via consensus, is the core decision on which we chose to base our model. Each poll's weight is the product of:
+
+- **Recency:** halves every 7 days. **Sample size:** $\sqrt{n/800}$, capped at $n$ = 2,500.
+- **Voter type:** LV 1.0, RV 0.85, adults 0.7. **Partisan sponsor:** 0.6, margin moved 3 points against the sponsor.
+- **Pollster quality:** 0.5 (grade D) to 1.0 (A+), times past accuracy (0.5 to 2). Ungraded pollsters get a randomly drawn graded firm's profile in every simulation.
+- **Flooding:** $1/\sqrt{k}$ per poll for a firm with $k$ polls of a race.
+
+## Other assumptions and how it all combines
+
+**Fundamentals:** twice the state's partisan lean, plus the national environment (75% generic ballot, 25% Trump approval at 0.35 points per point of net approval; D+9.1), plus incumbency (3.8 points), plus 30% of each nominee's past over- or under-performance statewide. **Kalshi:** each race's price, corrected for longshot bias and converted to a margin; prices below 6% or above 94% are ignored. Its weight is kept modest because the market already aggregates the polls we use.
+
+**Combining.** Polls have a half-life of 7 days and are incorporated into the model utilizing Bayesian precision. This helps to give new polls more influence over the overall model while still keeping a handle on the relative error between polls. The three sources combine as:
+
+$$
+\text{margin} = \frac{\pi_F \cdot \text{fundamentals} + \pi_P \cdot \text{polls} + \pi_K \cdot \text{Kalshi}}{\pi_F + \pi_P + \pi_K}, \qquad \pi = \frac{1}{\text{SD}^2}
+$$
+
+**Simulations.** Each simulated election draws one national polling error (2.5 points), one per Census region (1.5) and one per state, so states miss together. These sizes, incumbency and the candidate weight were calibrated on 1998-2022 Senate races. We do not correct for past polling bias, since its direction could not be predicted from earlier cycles. Democrats need 51 seats (the vice president breaks ties); Osborn (Nebraska) counts as a Democratic seat in 80% of the simulations he wins.
+
+## Results
+
+Currently, our final model has a higher expectancy for Democratic Senate control than Kalshi, with 84.8% and 76.5% respectively. Our model only marks Iowa (47%) and Alaska (59.6%) as true toss-ups, but notes three other states as only leaning either Republican or Democrat: Kansas toward Democrats, and South Carolina and Nebraska toward Republicans. Interestingly, Kansas, which was purple and sitting with Iowa and Alaska when our final forecasts began on Oct 29, is now inside that Lean Democrat group, and approaching Likely Democrat (according to our model) at 72%.
+
+## Sources
+
+- [VoteHub polls API](https://api.votehub.com/polls) and pollster scorecard: Senate, generic-ballot and approval polls
+- [Kalshi elections API](https://api.elections.kalshi.com/trade-api/v2): race, Senate-control and polling-average markets
+- [FiveThirtyEight raw_polls.csv](https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/raw_polls.csv): 1998-2022 polls and results, for calibration
+- [Cook Partisan Voting Index](https://en.wikipedia.org/wiki/Cook_Partisan_Voting_Index): state partisan lean
+- [Team 5 GitHub repository](https://github.com/MarkGScott960/2026_Midterm_Forecast): model, data and every run's dashboard
