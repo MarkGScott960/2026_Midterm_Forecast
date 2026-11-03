@@ -1,15 +1,16 @@
 """
-final_forecast.py - scheduled Most_Magnificent_Model forecasts + dashboard (Team 5, 2026 Senate)
+final_forecast.py - scheduled Most_Magnificent_Model forecasts + dashboard (Team 5, 2026 Senate). Set it, forget it,
+and let it fret about the Senate every few hours so we don't have to.
 
-    python final_forecast.py            start (or resume) the schedule: a run now, then every 6 hours, then one final
-                                        run at 9:00 AM on Nov 3, then stop for good
-    python final_forecast.py --test     one quick run (1,000 simulations) -> Forecasts/test_<datetime>.html, to tune the
-                                        dashboard's look. Doesn't touch the schedule, the history or Most_Magnificent_Model/Output
-    python final_forecast.py --status   show the schedule and what has run, then exit
-    python final_forecast.py --report   rebuild every saved run's dashboard + figures and latest.html with the current code
-                                        (no model run; use after editing the dashboard code, with the schedule stopped)
-    python final_forecast.py --reset    DELETE the schedule + history + run folders (tests kept) and start fresh; stop the
-                                        running script first (Ctrl+C)
+    python final_forecast.py  start (or resume) the schedule: a run now, then every 3 hours, then one final
+        run at 9:00 AM on Nov 3, then stop for good
+    python final_forecast.py --test  one quick run (1,000 simulations) -> Forecasts/test_<datetime>.html, to tune the
+        dashboard's look. Doesn't touch the schedule, the history or Most_Magnificent_Model/Output
+    python final_forecast.py --status  show the schedule and what has run, then exit
+    python final_forecast.py --report  rebuild every saved run's dashboard + figures and latest.html with the current code
+        (no model run; use after editing the dashboard code, with the schedule stopped)
+    python final_forecast.py --reset  DELETE the schedule + history + run folders (tests kept) and start fresh; stop the
+        running script first (Ctrl+C)
 
 Every scheduled run executes Model Testing.ipynb and then Most_Magnificent_Model.ipynb (both at N_SIMS), saves everything in
 Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html + dashboard.pdf, figures/*.html + *.png, data, inputs/ = every input file the run used),
@@ -18,7 +19,7 @@ race_history.csv, and copies the dashboard to Forecasts/latest.html and latest.p
 Microsoft Edge (or Chrome); if neither is found the run still finishes, just without the PDF.
 
 Schedule rules
-- Run times are fixed when the schedule starts (start, +6 h, +12 h, ...), up to the last one at least
+- Run times are fixed when the schedule starts (start, +3 h, +6 h, ...), up to the last one at least
   FINAL_BUFFER_HOURS before the final run, plus FINAL_RUN (9:00 AM Nov 3). A long run never shifts later run times.
 - Runs never overlap. If a run is still going when the next one is due, that run finishes and saves; the next starts
   right after. Several missed run times (e.g. the script was closed) are made up with ONE run, immediately.
@@ -38,23 +39,25 @@ import warnings
 from pathlib import Path
 
 # ============================== SETTINGS ==============================
-N_SIMS = 100_000              # simulations per scheduled run (forecast AND Model Testing)
-TEST_N_SIMS = 1_000           # simulations for --test
-INTERVAL_HOURS = 3            # time between scheduled runs
-FINAL_RUN = dt.datetime(2026, 11, 3, 9, 0)   # last run, local time; nothing runs after it
-FINAL_BUFFER_HOURS = 1        # no regular run starts in the 1 h before FINAL_RUN, so the final run isn't delayed by one
+N_SIMS = 100_000 # simulations per scheduled run (forecast AND Model Testing)
+TEST_N_SIMS = 1_000  # simulations for --test
+INTERVAL_HOURS = 3 # time between scheduled runs
+FINAL_RUN = dt.datetime(2026, 11, 3, 9, 0)  # last run, local time; nothing runs after it
+FINAL_BUFFER_HOURS = 1 # no regular run starts in the 1 h before FINAL_RUN, so the final run isn't delayed by one
 PLANNED_MINUTES = (120, 240)  # expected length of one full run, shown until a real run has been timed
-SEAT_INTERVALS = (80, 95)     # seat ranges shown on the dashboard (%)
-P_INTERVAL = 95               # simulation-precision interval on P(D >= 51) (%)
-CONTROL_SEATS = 51            # Democrats need 51 (Republican VP)
-CELL_TIMEOUT = 4 * 3600       # max seconds for one notebook cell
-STATUS_EVERY_S = 60           # how often the console status line updates
+SEAT_INTERVALS = (80, 95)  # seat ranges shown on the dashboard (%)
+P_INTERVAL = 95  # simulation-precision interval on P(D >= 51) (%)
+CONTROL_SEATS = 51 # Democrats need 51 (Republican VP)
+CELL_TIMEOUT = 4 * 3600  # max seconds for one notebook cell
+STATUS_EVERY_S = 60  # how often the console status line updates
 # =======================================================================
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 TEAM = ["Elizabeth Miller", "Mark Scott", "Ethan Verrone", "Boaz Alkalay", "Leo Westebbe"]  # shown on every dashboard
-MODEL_NAME = "Most_Magnificent_Model"   # Team 5's final model (folder, notebook and display name)
+REPO_URL = "https://github.com/MarkGScott960/2026_Midterm_Forecast"
+CODE_URL = REPO_URL + "/tree/main/Senate%20Forecast/Final%20Model"  # this model's folder on GitHub
+MODEL_NAME = "Most_Magnificent_Model"  # Team 5's final model (folder, notebook and display name)
 MODEL_DIR = REPO / "Models" / MODEL_NAME
 MODEL_NB = MODEL_DIR / f"{MODEL_NAME}.ipynb"
 TEST_NB = MODEL_DIR / "Model Testing.ipynb"
@@ -220,7 +223,7 @@ def run_notebook(path, env, label, expected_s, save=True, run_t0=None, plan_s=No
         client.execute()
     except CellExecutionError as e:
         err = f"{getattr(e, 'ename', 'Error')}: {getattr(e, 'evalue', str(e))}"[:500]
-    except Exception as e:  # kernel died, timeout, ...
+    except Exception as e:  # kernel died, timed out, or otherwise threw a tantrum
         err = f"{type(e).__name__}: {e}"[:500]
     finally:
         prog.stop()
@@ -567,7 +570,7 @@ def png_figs(res, hist, folder):
 # ------------------------------------------------------------------ dashboard
 CSS = """
 :root{--ink:#2B2B2B;--muted:#6B6B6B;--line:#E6E6E6;--blue:#1A6FB0;--red:#C8312B;--bg:#FFFFFF;--card:#F7F8FA}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+a{color:var(--blue)} .links{margin:10px 0 2px;padding:8px 12px;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:6px;background:var(--card);font-size:14px} .links a{font-weight:600} .links .url{color:var(--muted);font-size:12px} *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
 main{max-width:1150px;margin:0 auto;padding:24px 16px 60px} h1{font-size:22px;margin:0 0 4px} h2{font-size:16px;margin:34px 0 10px}
 .sub{color:var(--muted);font-size:13px} .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px} .tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
@@ -584,7 +587,9 @@ th{cursor:pointer;background:var(--card);position:sticky;top:0} th:first-child,t
 @media print{
  :root{--ink:#2B2B2B;--muted:#6B6B6B;--line:#E6E6E6;--bg:#FFFFFF;--card:#F7F8FA}
  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
- main{max-width:none;padding:0} h2{break-before:page;margin-top:0} h2.keep{break-before:auto;margin-top:24px}
+ main{max-width:none;padding:0} h2,h2.keep{break-before:auto;break-after:avoid;margin-top:22px}
+ .js-plotly-plot,.plot-container{break-inside:avoid}
+ th,td{white-space:normal;padding:3px 5px;font-size:10px} table{width:100%}
  .tile,.eq,tr,.js-plotly-plot,.kv{break-inside:avoid} th{position:static} .wrap,.eqf{overflow:visible}
  .modebar-container{display:none!important}
 }
@@ -762,7 +767,7 @@ def build_dashboard(res, hist, figs, title_tag, path):
         notes.append(f"Model run FAILED: {stt['model']['error']}")
     notes_html = "<ul class='notes'>" + "".join(f"<li>{n}</li>" for n in notes) + "</ul>"
     fig_html = {k: f.to_html(full_html=False, include_plotlyjs=False, config={"displaylogo": False, "responsive": True}) for k, f in figs.items()}
-    body = f"""<h1>2026 Senate forecast - Most_Magnificent_Model {badge}</h1><div class='sub'>Team 5: {', '.join(TEAM)}</div><div class='sub'>{title_tag}</div>
+    body = f"""<h1>2026 Senate forecast - Most_Magnificent_Model {badge}</h1><div class='sub'>Team 5: {', '.join(TEAM)}</div><div class='links'><b>Code and data:</b> <a href='{REPO_URL}'>GitHub repository</a> <span class='url'>({REPO_URL})</span> &nbsp;|&nbsp; <a href='{CODE_URL}'>This model's folder</a> <span class='url'>({CODE_URL})</span></div><div class='sub'>{title_tag}</div>
 {tiles}
 <h2 class='keep'>Seat distribution</h2>{fig_html['seat_distribution']}
 <h2>Map</h2>{fig_html['race_map']}
@@ -862,11 +867,21 @@ def _pdf_playwright(html_path, out):
             page.evaluate("() => (window.MathJax && MathJax.startup && MathJax.startup.promise) ? MathJax.startup.promise.then(() => true) : true")
             page.wait_for_function("() => [...document.querySelectorAll('.js-plotly-plot')].every(d => d.querySelector('.main-svg'))",
                                    timeout=60_000)
-            # charts taller than a printed page (the race-by-race chart) are scaled down as a whole, labels included,
-            # so they fit under their heading instead of leaving it alone on a page
-            page.evaluate(f"() => document.querySelectorAll('.js-plotly-plot').forEach(d => {{"
-                          f" if (d.offsetHeight > {PDF_MAX_CHART_PX}) d.parentElement.style.zoom = {PDF_MAX_CHART_PX} / d.offsetHeight; }})")
-            page.wait_for_timeout(500)
+            # charts are redrawn at the printed page's width; charts taller than a page get the page height
+            # (labels shrink to fit) instead of being zoomed down, which made them thin strips
+            page.evaluate(f"""() => {{
+                const W = document.querySelector('main').clientWidth, H = {PDF_MAX_CHART_PX};
+                return Promise.all([...document.querySelectorAll('.js-plotly-plot')].map(d => {{
+                    const h0 = d.layout.height || 450, upd = {{width: W}};
+                    if (h0 > H) {{
+                        upd.height = H;
+                        const rows = Math.max(1, (h0 - 120) / 20);
+                        upd['yaxis.tickfont.size'] = Math.max(5, Math.min(11, Math.floor((H - 120) / rows * 0.85)));
+                    }}
+                    return Plotly.relayout(d, upd);
+                }}));
+            }}""")
+            page.wait_for_timeout(800)
             page.pdf(path=str(out), prefer_css_page_size=True, print_background=True)
         finally:
             browser.close()
@@ -908,7 +923,7 @@ def write_pdf(html_path, pdf_path):
         return False
     try:
         os.replace(tmp, pdf_path)
-    except PermissionError:  # the old PDF is open in a viewer
+    except PermissionError:  # the old PDF is open in a viewer, held hostage
         alt = pdf_path.with_name(pdf_path.stem + f"_{now().strftime('%H%M%S')}.pdf")
         os.replace(tmp, alt)
         say(f"{pdf_path.name} is open in another program, so this PDF was saved as {alt.name}")
@@ -966,7 +981,7 @@ def do_run(kind, slot, n_sims, test=False):
     durations = st.get("durations", {})
     env = {"FORECAST_N_SIMS": n_sims}
     model_out = MODEL_DIR / "Output"
-    if test:  # keep Most_Magnificent_Model/Output untouched
+    if test:  # keep Most_Magnificent_Model/Output pristine
         model_out = folder / "model_output"
         env["FORECAST_OUT_DIR"] = model_out
     statuses, t0 = {}, time.time()
@@ -1156,7 +1171,7 @@ def main():
             slot = due[-1].isoformat()
             try:
                 do_run(kind, slot, N_SIMS)
-            except Exception as e:  # never let one bad run kill the schedule
+            except Exception as e:  # one bad apple (run) never spoils the whole schedule
                 say(f"RUN ERROR ({type(e).__name__}: {e}); the schedule continues.")
             st = load_state()
             st["done_slots"] = sorted(set(st["done_slots"]) | {t.isoformat() for t in due})

@@ -1,5 +1,5 @@
 """
-house_calibration.py - measures the House model's uncertainty settings from past House elections and writes
+house_calibration.py - measures (rather than guesstimates) the House model's uncertainty settings from past House elections and writes
 house_calibration.json (read by house_model.py when USE_CALIBRATION = True).
 
     python house_calibration.py
@@ -18,11 +18,11 @@ What it measures (every number is printed and saved with the data it came from):
 Not re-measured (taken from the Senate calibration; no House-specific history in the files): DAILY_DRIFT_SD,
 RECENCY_HALF_LIFE_DAYS, HOUSE_EFFECT_K, CANDIDATE effects (none for the House).
 
-Inputs (all saved in this folder, so it runs offline):
-  ../Final Model/Data_Cache/raw_polls.csv                (FiveThirtyEight, cached by the Senate calibration)
-  Data/calibration/house_results_midterms_538.csv        (FiveThirtyEight election-results repo, House 2014/18/22)
-  Data/calibration/pres_by_district_midterm_maps.csv     (Daily Kos Elections / The Downballot district pres. results)
-  ../Data/leans_and_regions.csv                          (Census region per state)
+Inputs (all saved in the repo, so it runs offline, even from a cabin in the woods):
+  ../Senate Forecast/Final Model/Data_Cache/raw_polls.csv  (FiveThirtyEight, cached by the Senate calibration)
+  Data/calibration/house_results_midterms_538.csv  (FiveThirtyEight election-results repo, House 2014/18/22)
+  Data/calibration/pres_by_district_midterm_maps.csv  (Daily Kos Elections / The Downballot district pres. results)
+  ../Senate Forecast/Data/leans_and_regions.csv  (Census region per state)
 """
 import json
 import re
@@ -48,12 +48,12 @@ NATIONAL_PRES = {2012: 51.06 - 47.20, 2016: 48.18 - 46.09, 2020: 51.31 - 46.85} 
 PRIOR_CYCLES = [2018, 2022]  # midterms used for the fundamentals fit. 2014 is measured and reported but left out: its
                              #   2012 presidential baseline predates the 2016 realignment, so its misses (10 pts) and
                              #   incumbency estimate (11 pts) are far from 2018/2022's (5.7-5.8 and 4.4-4.7)
-COMPETITIVE_LIMIT = 15      # prior misses measured on districts whose expected margin is within +/- this (pts)
-FIT_LIMIT = 30              # slope/incumbency fitted on districts within +/- this
-MAX_THIRD_PARTY = 15        # skip races where non-D/R candidates took more than this share (pts)
-FINAL_WINDOW_DAYS = 21      # polls in the final 3 weeks
-HALF_LIFE_DAYS = 7          # same recency as the Senate model
-PARTISAN_SHIFT = 3.0        # pts against the sponsor (Senate model)
+COMPETITIVE_LIMIT = 15 # prior misses measured on districts whose expected margin is within +/- this (pts)
+FIT_LIMIT = 30 # slope/incumbency fitted on districts within +/- this
+MAX_THIRD_PARTY = 15 # skip races where non-D/R candidates took more than this share (pts)
+FINAL_WINDOW_DAYS = 21 # polls in the final 3 weeks
+HALF_LIFE_DAYS = 7 # same recency as the Senate model
+PARTISAN_SHIFT = 3.0 # pts against the sponsor (Senate model)
 SINGLE_POLL_FLOOR = 1.25 * 4.0  # model: a poll's SD is at least MAE_TO_SD x DEFAULT_TYPICAL_ERROR
 POLL_START_CYCLE = 1998
 

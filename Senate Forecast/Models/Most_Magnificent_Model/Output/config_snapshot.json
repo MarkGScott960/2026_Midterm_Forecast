@@ -8,8 +8,8 @@
   "USE_CALIBRATION": true,
   "CALIBRATION_FILE": "C:\\Users\\markg\\OneDrive\\Desktop\\DACCS\\2026_Midterm_Forecast\\Senate Forecast\\Models\\Most_Magnificent_Model\\calibration.json",
   "ELECTION_DAY": "2026-11-03",
-  "AS_OF_DATE": null,
-  "N_SIMS": 100000,
+  "AS_OF_DATE": "2026-11-02",
+  "N_SIMS": 10000,
   "SEED": 2026,
   "SEATS_UP": {
     "Alabama": "R",

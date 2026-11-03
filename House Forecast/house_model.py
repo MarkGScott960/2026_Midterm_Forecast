@@ -1,7 +1,8 @@
 """
-house_model.py - Team 5's 2026 House forecast model (the House version of Most_Magnificent_Model).
+house_model.py - Team 5's 2026 House forecast model (the House version of Most_Magnificent_Model; Most_Magnificent's
+more modest, more numerous cousin).
 
-    python house_model.py              one run with CONFIG as written (10,000 simulations) -> Output/
+    python house_model.py  one run with CONFIG as written (10,000 simulations) -> Output/
     (house_forecasts.py imports this file, runs it on a schedule and builds the dashboard)
 
 Same assumptions and data sources as Most_Magnificent_Model (Senate), applied to all 435 districts:
@@ -42,22 +43,22 @@ SENATE = REPO / "Senate Forecast" if (REPO / "Senate Forecast").is_dir() else RE
 # =====================================================================================================================
 CONFIG = {
     # ---------------- Files & run settings ----------------
-    "DATA_DIR": SENATE / "Data",                         # shared repo data (pollster scorecards, regions)
+    "DATA_DIR": SENATE / "Data",  # shared repo data (pollster scorecards, regions)
     "DISTRICT_FILE": HERE / "Data" / "house_districts_2026.csv",  # one row per district (built by Data/build_house_districts.py)
     "SCORECARD_FILE": "votehub_pollster_scorecards.csv",
     "OUT_DIR": HERE / "Output",
-    "CACHE_DIR": HERE / "Data_Cache",                  # last good download of every source, used if a website is down
-    "USE_CALIBRATION": True,                           # True = house_calibration.json replaces the [cal] values below
+    "CACHE_DIR": HERE / "Data_Cache", # last good download of every source, used if a website is down
+    "USE_CALIBRATION": True,  # True = house_calibration.json replaces the [cal] values below
     "CALIBRATION_FILE": HERE / "house_calibration.json",
     "ELECTION_DAY": "2026-11-03",
-    "AS_OF_DATE": None,                                # None = today
+    "AS_OF_DATE": None, # None = today
     "N_SIMS": 10_000,
-    "SIM_CHUNK": 5_000,                                # simulations processed at a time (memory: 435 districts x chunk)
+    "SIM_CHUNK": 5_000, # simulations processed at a time (memory: 435 districts x chunk)
     "SEED": 2026,
 
     # ---------------- House rules ----------------
     "TOTAL_SEATS": 435,
-    "D_SEATS_FOR_CONTROL": 218,                        # a majority of 435
+    "D_SEATS_FOR_CONTROL": 218, # a majority of 435
     # Races without a D-vs-R contest (race_type in the district file): "D_only" and "DD" = certain D seat, "RR" = certain
     # R seat. "IND" = a race whose main challenger is an independent, listed here:
     #   side "D": the independent takes the Democrat's place against the Republican (like Osborn in the Senate model).
@@ -65,13 +66,13 @@ CONFIG = {
     #     for Democrats with probability caucus_prob_d, drawn in every simulation.
     #   side "R": the independent is the non-Democratic finalist; a win by him is not a Democratic seat.
     "INDEPENDENTS": {
-        "AK-AL": {"name": "Bill Hill", "side": "D", "caucus_prob_d": 0.8},   # Hill (I) vs Begich (R); the Democrat (Hafner,
-                                                                           #   3.8% in the primary) is still on the ballot.
-                                                                           #   0.8 = the Senate model's figure for Osborn;
-                                                                           #   Hill hasn't said whom he'd caucus with
+        "AK-AL": {"name": "Bill Hill", "side": "D", "caucus_prob_d": 0.8},  # Hill (I) vs Begich (R); the Democrat (Hafner,
+                                                                          #   3.8% in the primary) is still on the ballot.
+                                                                          #   0.8 = the Senate model's figure for Osborn;
+                                                                          #   Hill hasn't said whom he'd caucus with
         "CA-06": {"name": "Kevin Kiley", "side": "R", "caucus_prob_d": 0.0},  # Pan (D) vs Kiley (I, ex-Republican)
     },
-    "INDEPENDENT_PRIOR_SD_MULT": 1.3,                  # lean says less about a race with an independent (Senate value)
+    "INDEPENDENT_PRIOR_SD_MULT": 1.3, # lean says less about a race with an independent (Senate value)
     # Louisiana: Nov 3 is an all-party primary (runoff Dec 12). Modelled as D vs R by the district's lean, like every seat.
 
     # ---------------- Data cleaning (Senate values) ----------------
@@ -92,12 +93,12 @@ CONFIG = {
     "UNDECIDED_SPLIT_SD": 0.15,
 
     # ---------------- Poll weights (Senate values) ----------------
-    "RECENCY_HALF_LIFE_DAYS": 7,                       # [cal] Senate calibration (no House-specific test)
+    "RECENCY_HALF_LIFE_DAYS": 7,  # [cal] Senate calibration (no House-specific test)
     "REFERENCE_SAMPLE": 800,
     "SAMPLE_SIZE_EXPONENT": 0.5,
     "SAMPLE_SIZE_CAP": 2500,
     "POPULATION_WEIGHTS": {"LV": 1.0, "RV": 0.85, "A": 0.7},
-    "RV_MARGIN_SHIFT": "estimate",                     # measured from 2026 LV/RV pairs (House district + generic ballot)
+    "RV_MARGIN_SHIFT": "estimate",  # measured from 2026 LV/RV pairs (House district + generic ballot)
     "RV_SHIFT_PRIOR_PAIRS": 5,
     "RV_SHIFT_CLIP": (-3.0, 3.0),
     "PARTISAN_WEIGHTS": {"Republican": 0.6, "Democrat": 0.6},
@@ -108,17 +109,17 @@ CONFIG = {
     "QUALITY_SCORE_MIN": 5,
     "QUALITY_SCORE_MAX": 10,
     "MIN_QUALITY_WEIGHT": 0.5,
-    "UNRATED_POLLSTERS": "random",                     # ungraded firms get a random graded firm's grade, error and lean in every simulation
+    "UNRATED_POLLSTERS": "random",  # ungraded firms get a random graded firm's grade, error and lean in every simulation
     "UNRANKED_SCORE": 5,
     "DEFAULT_TYPICAL_ERROR": 4.0,
     "MAE_TO_SD": 1.25,
     "ACCURACY_WEIGHT_CLIP": (0.5, 2.0),
     "FLOOD_EXPONENT": 0.5,
-    "SYSTEMATIC_POLL_ERROR_SD": 5.6,                   # [cal] House polls miss more than Senate polls (Senate: 3.87)
+    "SYSTEMATIC_POLL_ERROR_SD": 5.6,  # [cal] House polls miss more than Senate polls (Senate: 3.87)
 
     # ---------------- House effects (Senate values) ----------------
     "SCORECARD_HOUSE_EFFECTS": True,
-    "HOUSE_EFFECT_K": 5,                               # [cal] Senate calibration
+    "HOUSE_EFFECT_K": 5,  # [cal] Senate calibration
     "HOUSE_EFFECT_ITERS": 3,
     "HOUSE_EFFECT_WINDOW_DAYS": 60,
 
@@ -129,7 +130,7 @@ CONFIG = {
     "NAT_POPULATION_WEIGHTS": {"LV": 1.0, "RV": 1.0, "Adults": 0.8},
     "NAT_PARTISAN_WEIGHT": 0.6,
     "NAT_USE_QUALITY": True,
-    "ENV_SLOPE": 0.35,                                 # pts of margin per pt of net approval (judgment call, as in the Senate)
+    "ENV_SLOPE": 0.35,  # pts of margin per pt of net approval (judgment call, as in the Senate)
     "APPROVAL_NEUTRAL_NET": 0.0,
     "MIDTERM_PENALTY": 0.0,
     "GENERIC_BALLOT_BLEND": 0.75,
@@ -146,31 +147,31 @@ CONFIG = {
     "ENV_OVERRIDE": None,
 
     # ---------------- Fundamentals prior ----------------
-    "PVI_TO_MARGIN": 1.78,                             # [cal] House: 2 x 0.89. A district's House margin moves 0.89 pt per pt
-                                                       #   of presidential margin (2018/2022); Senate uses the full 2.0
+    "PVI_TO_MARGIN": 1.78,  # [cal] House: 2 x 0.89. A district's House margin moves 0.89 pt per pt
+                            #   of presidential margin (2018/2022); Senate uses the full 2.0
     "ENV_ELASTICITY_DEFAULT": 1.0,
-    "INCUMBENCY_ADVANTAGE": 4.5,                       # [cal] pts for an incumbent running in the district (2018/2022)
-    "DISTRICT_PRIOR_ADJUSTMENTS": {},                  # manual pts added to a district's prior, e.g. {"NE-02": +2}
-    "PRIOR_SD": 6.6,                                   # [cal] district miss incl. the national-environment miss
+    "INCUMBENCY_ADVANTAGE": 4.5,  # [cal] pts for an incumbent running in the district (2018/2022)
+    "DISTRICT_PRIOR_ADJUSTMENTS": {}, # manual pts added to a district's prior, e.g. {"NE-02": +2}
+    "PRIOR_SD": 6.6,  # [cal] district miss incl. the national-environment miss
 
     # ---------------- Bayesian update (Senate values) ----------------
     "POLL_PRECISION_MULT": 1.0,
     "KALSHI_SD": 8.0,
-    "KALSHI_CONVERT_SD": 7.3,                          # [cal] historical RMSE of a final House polling average
+    "KALSHI_CONVERT_SD": 7.3, # [cal] historical RMSE of a final House polling average
     "KALSHI_LONGSHOT_SLOPE": 1.15,
     "KALSHI_USE_RANGE": (0.06, 0.94),
     "CORRELATED_ERRORS": True,
     "SOURCE_ERROR_CORR": 0.3,
-    "DAILY_DRIFT_SD": 0.762,                           # [cal] Senate calibration
+    "DAILY_DRIFT_SD": 0.762,  # [cal] Senate calibration
 
     # ---------------- Simulation errors (in points) ----------------
-    "NATIONAL_ERROR_SD": 3.35,                         # [cal] generic-ballot miss, 1998-2022
+    "NATIONAL_ERROR_SD": 3.35,  # [cal] generic-ballot miss, 1998-2022
     "NATIONAL_T_DF": 8,
-    "REGIONAL_ERROR_SD": 2.7,                          # [cal] shared within a Census region (2018/2022 House misses)
-    "STATE_ERROR_SD": 2.4,                             # [cal] NEW for the House: shared by districts of one state
+    "REGIONAL_ERROR_SD": 2.7, # [cal] shared within a Census region (2018/2022 House misses)
+    "STATE_ERROR_SD": 2.4,  # [cal] NEW for the House: shared by districts of one state
     "LEAN_FACTOR_ERROR_SD": 1.0,
     "LEAN_FACTOR_SCALE": 10,
-    "STATE_T_DF": 10.9,                                # [cal] tails of the district-only miss
+    "STATE_T_DF": 10.9, # [cal] tails of the district-only miss
     "MIN_DISTRICT_ERROR_SD": 1.0,
 
     # ---------------- Race ratings ----------------
@@ -1117,7 +1118,7 @@ def run_simulations(races, polls, cfg, data, today, n_sims, rng):
         seats[s0:s0 + n] = fixed_d + dseat.sum(axis=1)
         wins_ind += (simulate_chunk(mu, sd, pieces, cfg, rng, n, independent=True) > 0).sum(axis=0)
         if 0 < need_model <= m.shape[1]:
-            order = np.argpartition(-m, need_model - 1, axis=1)[:, need_model - 1]  # the district that gives seat 218
+            order = np.argpartition(-m, need_model - 1, axis=1)[:, need_model - 1]  # the district that hands over seat 218, aka the kingmaker
             pivot += np.bincount(order, minlength=m.shape[1])
             tip_margin.append(m[np.arange(n), order])
     p = pd.Series(np.nan, index=races.index)

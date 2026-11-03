@@ -1,6 +1,6 @@
-# Model 3: DadBod — Swing vs Literal
+# Model 3: DadBod - Swing vs Literal
 
-DadBod is the third forecast model. It is as slim as Ozempic, with a short list of team-set weights at the top, but it adds safeguards:
+DadBod is the third forecast model. It is as slim as Ozempic, with a short list of team-set weights at the top, but it's carrying a little extra: safeguards, and plenty of them.
 
 - it trusts a race's polls more when the race has more of them
 - it penalizes one pollster flooding a race
@@ -20,8 +20,8 @@ Like Ozempic, DadBod comes in two variants that are **identical except for the "
 | | DadBod_Swing | DadBod_Literal |
 |---|---|---|
 | Fundamentals | 2024 state result **+ national swing since 2024** | **Weighted average** of 2024 state result, generic ballot and approval (8 : 4 : 1) |
-| **P(D ≥ 51)** | **58.3%** | **46.6%** |
-| **Predicted D seats** | **51.2** (median 51, 80% range 48–55) | **50.3** (median 50, 80% range 46–54) |
+| **P(D $\geq$ 51)** | **58.3%** | **46.6%** |
+| **Predicted D seats** | **51.2** (median 51, 80% range 48-55) | **50.3** (median 50, 80% range 46-54) |
 | Same model, Kalshi weight 0 | 57.3%, 51.2 seats | 45.1%, 50.2 seats |
 | Kalshi on its own | 63.5% (control market), 51.7 seats (sum of race odds) | same |
 
@@ -47,19 +47,19 @@ Like Ozempic, DadBod comes in two variants that are **identical except for the "
 
 ```
 Models/DadBod_Model/
-├── README.md                         <- this file
-├── Data_Cache/                       <- last good download of every source (shared by both variants)
-│   ├── votehub_senate_cache.csv          state Senate polls
-│   ├── votehub_generic_ballot_cache.csv  generic-ballot polls
-│   ├── votehub_approval_cache.csv        Trump approval polls
-│   ├── kalshi_races_cache.csv            every race's Kalshi markets (names + prices) + Senate-control market
-│   ├── kalshi_national_cache.csv         Kalshi's approval / generic-ballot polling-average markets
-│   └── kalshi_history_cache.csv          daily Kalshi closes (only pulled for backtests)
-├── DadBod_Swing/
-│   ├── dadbod_swing.ipynb            the model
-│   ├── Model Testing.ipynb           checks, diagnostics, stress tests, trajectory
-│   └── Output/                       results (+ Output/testing/ from Model Testing)
-└── DadBod_Literal/  (same three items)
+|-- README.md  <- this file
+|-- Data_Cache/  <- last good download of every source (shared by both variants)
+|   |-- votehub_senate_cache.csv          state Senate polls
+|   |-- votehub_generic_ballot_cache.csv  generic-ballot polls
+|   |-- votehub_approval_cache.csv        Trump approval polls
+|   |-- kalshi_races_cache.csv            every race's Kalshi markets (names + prices) + Senate-control market
+|   |-- kalshi_national_cache.csv         Kalshi's approval / generic-ballot polling-average markets
+|   `-- kalshi_history_cache.csv          daily Kalshi closes (only pulled for backtests)
+|-- DadBod_Swing/
+|   |-- dadbod_swing.ipynb            the model
+|   |-- Model Testing.ipynb           checks, diagnostics, stress tests, trajectory
+|   `-- Output/                       results (+ Output/testing/ from Model Testing)
+`-- DadBod_Literal/  (same three items)
 ```
 
 **To run:**
@@ -117,13 +117,13 @@ Every step in the notebook starts with a plain-English explanation, and there is
 All of these are in the **CONFIG** cell at the top of each model notebook. **Weights are relative:** 10 / 5 / 1 means the same as 20 / 10 / 2.
 
 ### Run
-| Setting | Default | What it means | Raise it → | Lower it → |
+| Setting | Default | What it means | Raise it -> | Lower it -> |
 |---|---|---|---|---|
-| `AS_OF_DATE` | `None` (today) | Run the model as if it were an earlier date (backtest) | — | — |
-| `N_SIMS` | 10,000 | Number of simulated elections | Smoother numbers, slower (10k ≈ ±0.5 pt on P(51+)) | Faster, noisier |
+| `AS_OF_DATE` | `None` (today) | Run the model as if it were an earlier date (backtest) | - | - |
+| `N_SIMS` | 10,000 | Number of simulated elections | Smoother numbers, slower (10k $\approx$ $\pm$0.5 pt on P(51+)) | Faster, noisier |
 
 ### The blend
-| Setting | Default | What it means | Raise it → | Lower it → |
+| Setting | Default | What it means | Raise it -> | Lower it -> |
 |---|---|---|---|---|
 | `W_POLLS` | 10 | Trust in each race's own polls | Polls dominate | Fundamentals and Kalshi matter more |
 | `W_FUNDAMENTALS` | 5 | Trust in the "no polls" expectation | Results pulled toward 2024 + national mood | Polls matter more |
@@ -141,10 +141,10 @@ All of these are in the **CONFIG** cell at the top of each model notebook. **Wei
 |---|---|---|
 | `POPULATION_WEIGHTS` | LV 1.0 : RV 0.9 : A 0.8 | Likely voters : registered voters : all adults. All adults is lowest because many adults don't vote. |
 | `REFERENCE_SAMPLE` | 800 | A poll this size gets sample-size weight 1.0. Only rescales every poll by the same factor; doesn't change which polls count more. |
-| `SAMPLE_SIZE_EXPONENT` | 0.5 | Sample-size weight = (n ÷ 800)^0.5. 0.5 (square root) is the statistics default, since poll error shrinks with √n, so a 3,200-person poll counts 2×, not 4×, an 800-person poll. 0 = ignore size; 1 = proportional to size. |
+| `SAMPLE_SIZE_EXPONENT` | 0.5 | Sample-size weight = (n $\div$ 800)^0.5. 0.5 (square root) is the statistics default, since poll error shrinks with $\sqrt{n}$, so a 3,200-person poll counts 2$\times$, not 4$\times$, an 800-person poll. 0 = ignore size; 1 = proportional to size. |
 | `SAMPLE_SIZE_CAP` | 2,500 | Bigger polls count as 2,500, so huge online panels can't dominate |
 | `MISSING_SAMPLE_SIZE` | 600 | Size assumed when a poll doesn't report one |
-| `FLOOD_EXPONENT` | 0.5 | A pollster with k polls of the same race gets 1/k^0.5 per poll, so together they count like √k polls. 0 = no penalty; 1 = the pollster counts once in total. Every poll still counts (the Alaska point from the meeting); a repeat pollster just can't drown out the others. |
+| `FLOOD_EXPONENT` | 0.5 | A pollster with k polls of the same race gets 1/k^0.5 per poll, so together they count like $\sqrt{k}$ polls. 0 = no penalty; 1 = the pollster counts once in total. Every poll still counts (the Alaska point from the meeting); a repeat pollster just can't drown out the others. |
 | `PARTISAN_SHIFT` | 3.0 | Points moved against the sponsor of a party/campaign poll |
 | `UNRATED_POLLSTERS` | `"random"` | How pollsters VoteHub hasn't graded are treated (section 4) |
 | `HOUSE_EFFECTS` | `True` | Subtract each graded pollster's known lean (section 4) |
@@ -177,15 +177,15 @@ Fixed constants live in **SETTINGS**: error sizes carried over from Model 1, the
 ## 4. Notes on specific features
 
 ### Poll reliability (`POLL_RELIABILITY`)
-A race with one poll shouldn't trust it as much as a race with fifteen. Each race's poll weight is `W_POLLS × r`.
+A race with one poll shouldn't trust it as much as a race with fifteen. Each race's poll weight is `W_POLLS x r`.
 
 | Setting | Formula | 1 poll | 3 polls | 9 polls | When to use |
 |---|---|---|---|---|---|
-| `"auto"` (default) | r = 4.5² / (5² ÷ n_eff + 4.5²) | 45% | 71% | 88% | **Best practice.** Comes from the model's own error sizes: one poll misses by about 5 points, and all of a state's polls share a 4.5-point error that never averages away. So more polls help, with diminishing returns. Same logic as Model 1's Bayesian weighting. |
+| `"auto"` (default) | r = $4.5^2$ / ($5^2$ $\div$ n_eff + $4.5^2$) | 45% | 71% | 88% | **Best practice.** Comes from the model's own error sizes: one poll misses by about 5 points, and all of a state's polls share a 4.5-point error that never averages away. So more polls help, with diminishing returns. Same logic as Model 1's Bayesian weighting. |
 | a number k, e.g. `3` | r = n_eff / (n_eff + k) | 25% | 50% | 75% | A simpler rule of thumb: "half trust at k polls". Higher k is stricter. |
 | `0` | r = 1 | 100% | 100% | 100% | Off: any polling gets the full weight (Ozempic's behavior) |
 
-`n_eff` is the **effective** number of polls: 3 equally weighted polls = 3, while 1 heavy poll plus 2 light ones ≈ 1.5. The sweep shows this setting moves P(51+) between 53% and 61% (Swing).
+`n_eff` is the **effective** number of polls: 3 equally weighted polls = 3, while 1 heavy poll plus 2 light ones $\approx$ 1.5. The sweep shows this setting moves P(51+) between 53% and 61% (Swing).
 
 ### Ungraded pollsters get a random grade, redrawn in every simulation
 VoteHub grades only 42 pollsters. In the current window **31 firms (49 of 89 polls) are ungraded**, including PPP, Mason-Dixon, Elon/YouGov, co/efficient and ActiVote. With `UNRATED_POLLSTERS = "random"`:
@@ -197,15 +197,15 @@ VoteHub grades only 42 pollsters. In the current window **31 firms (49 of 89 pol
 - **Assumption:** ungraded firms are assumed to look like graded ones. `"fixed"` gives them the lowest grade instead (Model 1's behavior). The sweep shows the choice moves P(51+) by about 1 point.
 
 ### House effects (`HOUSE_EFFECTS`)
-VoteHub's scorecard lists each graded pollster's typical lean (SurveyUSA D+2.3, Trafalgar R+1.4, Quantus R+1.0, Change Research D+1.3, …). With this on, that lean is subtracted from the firm's polls. Partisan-sponsored polls are skipped, since they already get `PARTISAN_SHIFT`. Ungraded firms get the lean of their random draw. **Effect today:** margins move by 0.5 points at most, and P(51+) moves by under 1 point.
+VoteHub's scorecard lists each graded pollster's typical lean (SurveyUSA D+2.3, Trafalgar R+1.4, Quantus R+1.0, Change Research D+1.3, ...). With this on, that lean is subtracted from the firm's polls. Partisan-sponsored polls are skipped, since they already get `PARTISAN_SHIFT`. Ungraded firms get the lean of their random draw. **Effect today:** margins move by 0.5 points at most, and P(51+) moves by under 1 point.
 
 ### Correlated errors (`CORRELATED_ERRORS`, `SOURCE_ERROR_CORR`)
-When the polls miss, Kalshi traders, who read the same polls, and the fundamentals usually miss the same way. Treating the three as independent makes the model **overconfident**. With this on (ρ = 0.3), each race's range is about 15% wider: the average race SD goes from 5.1 to 5.7 points. **Effect today:** close races move toward 50-50 (Maine 94% → 92% in Swing), and P(51+) barely moves, because the extra uncertainty pushes in both directions.
+When the polls miss, Kalshi traders, who read the same polls, and the fundamentals usually miss the same way. Treating the three as independent makes the model **overconfident**. With this on ($\rho$ = 0.3), each race's range is about 15% wider: the average race SD goes from 5.1 to 5.7 points. **Effect today:** close races move toward 50-50 (Maine 94% -> 92% in Swing), and P(51+) barely moves, because the extra uncertainty pushes in both directions.
 
 ### The two toggles together
 `HOUSE_EFFECTS` changes each poll's **margin**; `CORRELATED_ERRORS` changes each race's **uncertainty**. They don't interact, so **both, either, or neither can be on**:
 
-| HOUSE_EFFECTS | CORRELATED_ERRORS | Meaning | P(D ≥ 51), Swing | P(D ≥ 51), Literal |
+| HOUSE_EFFECTS | CORRELATED_ERRORS | Meaning | P(D $\geq$ 51), Swing | P(D $\geq$ 51), Literal |
 |---|---|---|---|---|
 | off | off | Raw polls, sources treated as independent | 57.4% | 44.9% |
 | off | on | Raw polls, honest (wider) uncertainty | 57.2% | 46.0% |
@@ -215,7 +215,7 @@ When the polls miss, Kalshi traders, who read the same polls, and the fundamenta
 *(3,000-simulation runs from Model Testing, section E2.)*
 
 ### National signals: Kalshi averages as an additional source (`NAT_KALSHI_POLL_EQUIV`)
-The generic ballot and approval feed the fundamentals. VoteHub's feed of national polls nearly dried up after June: approval went from about 61 polls a month to 0–7, and the generic ballot from about 49 to 1–5. So DadBod adds **Kalshi's polling-average markets as a second, always-on source**:
+The generic ballot and approval feed the fundamentals. VoteHub's feed of national polls nearly dried up after June: approval went from about 61 polls a month to 0-7, and the generic ballot from about 49 to 1-5. So DadBod adds **Kalshi's polling-average markets as a second, always-on source**:
 - RCP approval (`KXTRUMPAPPROVE`)
 - VoteHub approval (`KXTRUMPVH`)
 - VoteHub generic ballot (`KXGENERICBALLOTVOTEHUB`)
@@ -229,21 +229,21 @@ $$\text{signal} = \frac{n_{\text{polls}} \cdot \text{VoteHub poll average} + K \
 - n_polls is the effective number of VoteHub polls used.
 - **K = `NAT_KALSHI_POLL_EQUIV` (default 5)**: the Kalshi average counts as much as 5 polls.
 
-**To change it:** set `NAT_KALSHI_POLL_EQUIV` in CONFIG. Higher (e.g. 20) leans mostly on the market averages; `0` ignores them and uses VoteHub polls only. Today, polls say D+9.2 on the generic ballot and Kalshi says D+10.1, giving a combined D+9.7. Net approval is −22.3 from polls and −21.4 from Kalshi, giving −21.8. The sweep shows K moves P(51+) by under 2 points.
+**To change it:** set `NAT_KALSHI_POLL_EQUIV` in CONFIG. Higher (e.g. 20) leans mostly on the market averages; `0` ignores them and uses VoteHub polls only. Today, polls say D+9.2 on the generic ballot and Kalshi says D+10.1, giving a combined D+9.7. Net approval is -22.3 from polls and -21.4 from Kalshi, giving -21.8. The sweep shows K moves P(51+) by under 2 points.
 
 **RCP and VoteHub approval are combined *before* Kalshi is blended with the polls.** Both are Kalshi markets tracking mostly the same polls, so they're averaged into one "Kalshi approval" number first. That single number is then blended with VoteHub's approval polls at weight K.
 
 **Reading a value out of a Kalshi market:**
-- *Bucket markets* (RCP: "38.2%? 38.3%? …"): the probability-weighted middle of the buckets.
-- *Weekly "above X%?" markets* (VoteHub): X + Φ⁻¹(price) × 0.5 pts. A price of 0.50 means the average is at X; 0.62 means a little above. The 0.5 is `KALSHI_UPDOWN_SD`, a typical week's move.
+- *Bucket markets* (RCP: "38.2%? 38.3%? ..."): the probability-weighted middle of the buckets.
+- *Weekly "above X%?" markets* (VoteHub): X + $\Phi^{-1}$(price) $\times$ 0.5 pts. A price of 0.50 means the average is at X; 0.62 means a little above. The 0.5 is `KALSHI_UPDOWN_SD`, a typical week's move.
 
-**How approve % becomes net approval:** the Kalshi approval markets give only **approve %**, but the model uses **net approval** (approve − disapprove). Disapprove is estimated from the share of people who answer neither:
+**How approve % becomes net approval:** the Kalshi approval markets give only **approve %**, but the model uses **net approval** (approve - disapprove). Disapprove is estimated from the share of people who answer neither:
 
 $$\text{disapprove} = 100 - \text{approve} - U, \qquad \text{net} = 2 \times \text{approve} - 100 + U$$
 
-**U** is the average of (100 − approve − disapprove) in VoteHub's approval polls from the last 90 days, or the last 10 polls if there are fewer. It's measured fresh each run (3.3 points today). Example: Kalshi approve 37.6% → disapprove 100 − 37.6 − 3.3 = 59.1% → net −21.5.
+**U** is the average of (100 - approve - disapprove) in VoteHub's approval polls from the last 90 days, or the last 10 polls if there are fewer. It's measured fresh each run (3.3 points today). Example: Kalshi approve 37.6% -> disapprove 100 - 37.6 - 3.3 = 59.1% -> net -21.5.
 
-**Generic ballot conversion:** VoteHub's average is the raw D − R gap. The model uses the two-party gap, so the raw gap is scaled by 100 ÷ (D% + R%), with D% + R% averaged over recent VoteHub generic-ballot polls (about 90).
+**Generic ballot conversion:** VoteHub's average is the raw D - R gap. The model uses the two-party gap, so the raw gap is scaled by 100 $\div$ (D% + R%), with D% + R% averaged over recent VoteHub generic-ballot polls (about 90).
 
 **Backtests** skip the Kalshi national averages and use polls only (agreed). Kalshi doesn't keep reliable history for these short-lived weekly markets.
 
@@ -278,7 +278,7 @@ $$\text{fund} = \frac{8 \cdot \text{2024 state margin} + 4 \cdot \text{generic b
 | Texas (R+13.7, open) | R+3.2 | R+4.9 |
 | Wyoming (R+45.8, open) | R+35.3 | R+24.6 |
 
-**Why they disagree.** Literal treats two *national* numbers as if they were state results. In effect it (a) keeps only 8/13 ≈ 62% of each state's own lean and (b) passes through only 38% of today's national mood. The two formulas give the same answer for a state that voted about **R+17.5** in 2024:
+**Why they disagree.** Literal treats two *national* numbers as if they were state results. In effect it (a) keeps only 8/13 $\approx$ 62% of each state's own lean and (b) passes through only 38% of today's national mood. The two formulas give the same answer for a state that voted about **R+17.5** in 2024:
 - **Bluer than that** (every competitive race this year): Literal is more Republican.
 - **Redder than that** (all Safe R): Literal is more Democratic, which wins nothing.
 
@@ -286,7 +286,7 @@ That's the whole ~12-point gap in P(51+).
 
 | | **Swing** | **Literal** |
 |---|---|---|
-| **Pros** | Standard method in forecasting (uniform national swing). Units are consistent: a state margin plus a change in national margin is still a state margin. Matches the meeting priorities: 2024 margin "heavily" as the full baseline, generic ballot "heavily", sentiment "less". Few weights, and they're insensitive (generic ballot vs approval moves P(51+) only 52–59%), because both national signals agree. | Exactly the blackboard formula, easy to present. Partly "forgets" 2024, a crude regression to the mean: 2024 was one candidate-specific election, and Senate candidates (Collins, Osborn, Peltola, Brown) often run ahead of their party. Leans less on the national mood, so it's hurt less if the generic ballot is overstating Democrats. |
+| **Pros** | Standard method in forecasting (uniform national swing). Units are consistent: a state margin plus a change in national margin is still a state margin. Matches the meeting priorities: 2024 margin "heavily" as the full baseline, generic ballot "heavily", sentiment "less". Few weights, and they're insensitive (generic ballot vs approval moves P(51+) only 52-59%), because both national signals agree. | Exactly the blackboard formula, easy to present. Partly "forgets" 2024, a crude regression to the mean: 2024 was one candidate-specific election, and Senate candidates (Collins, Osborn, Peltola, Brown) often run ahead of their party. Leans less on the national mood, so it's hurt less if the generic ballot is overstating Democrats. |
 | **Cons** | Assumes every state moves by the same amount; real swings vary by state. Relies fully on the national mood being measured correctly (the thinnest data we have; section 10). | Mixes state and national numbers, so safe states drift toward 50-50 (a neutral year would put Wyoming at R+28 and Massachusetts at D+15). Systematically more Republican in exactly the competitive races. **Very sensitive to its own weights:** the 2024 and generic-ballot weights each move P(51+) between about 25% and 60%. |
 | **Today** | 58.3%, 51.2 seats | 46.6%, 50.3 seats |
 | **Closest to Kalshi (63.5%)?** | Yes, about 5 points below | About 17 points below |
@@ -316,7 +316,7 @@ That's the whole ~12-point gap in P(51+).
 What stands out:
 - **Poll reliability at work:** Kansas and South Carolina have one poll each. Both polls are nearly tied, but at r = 45% the fundamentals (R+9 to R+10) pull them to Likely R.
 - **Alaska** is the biggest model-vs-market gap: polls tied, fundamentals R+6 to R+8, Kalshi 75% for Peltola. **Maine** is the other one, where Swing (93%) is far more confident than Kalshi (60%). Both are flagged in Model Testing.
-- **Maine and Michigan** account for most of the Swing–Literal gap.
+- **Maine and Michigan** account for most of the Swing-Literal gap.
 
 ---
 
@@ -328,10 +328,10 @@ Each variant has its own `Model Testing.ipynb`. It runs the model notebook first
 |---|---|
 | **A. Data checks** | Was each source downloaded live or read from a saved copy? How old are the newest state and national polls? Did the Kalshi search find all 35 races, and does it agree with the hand table? Are nominees from Kalshi? How many polls were dropped for missing nominees? How much weight comes from ungraded pollsters? How much data is behind each national signal? |
 | **B. Model sanity checks** | Probabilities between 0 and 1, source shares add to 100%, possible seat counts, mean seats = sum of race probabilities, simulation noise on P(51+) |
-| **C. Coverage by race** | Polls, effective polls, reliability and newest poll for every race. Flags contested races (Kalshi 15–85%) with under 3 effective polls or nothing in 14 days. |
+| **C. Coverage by race** | Polls, effective polls, reliability and newest poll for every race. Flags contested races (Kalshi 15-85%) with under 3 effective polls or nothing in 14 days. |
 | **D. Disagreements with Kalshi** | Races where model and market differ by over 25 points |
 | **E1. Sensitivity sweep** | Every setting varied one at a time, with a tornado chart |
-| **E2. Toggles** | All four HOUSE_EFFECTS × CORRELATED_ERRORS combinations |
+| **E2. Toggles** | All four HOUSE_EFFECTS $\times$ CORRELATED_ERRORS combinations |
 | **E3. Seeds** | The full model re-run with 5 random seeds, to show simulation noise |
 | **F. Trajectory** | Weekly backtests since Sep 7, each using only the polls released by then and that day's Kalshi race prices, charted against Kalshi's own control odds |
 | **G. Summary** | Every check as PASS / WARN / FAIL, saved to `Output/testing/checks.csv` |
@@ -340,10 +340,10 @@ Each variant has its own `Model Testing.ipynb`. It runs the model notebook first
 - **Expected in my workspace:** saved copies used because I can't reach the APIs, and a VoteHub generic-ballot poll 22 days old.
 - **Real flags:** thin polling in Alaska, Kansas, Minnesota, Nebraska and South Carolina; and the Alaska (and in Swing, Maine) disagreements with Kalshi.
 
-**Most influential settings (Swing):** `W_FUNDAMENTALS` (49–68%), `W_POLLS` (50–64%), `INCUMBENCY_PTS` (54–64%), `POLL_RELIABILITY` (53–61%).
-**For Literal:** `W_GENERIC_BALLOT` and `W_STATE_2024` (each about 24–61%), then `W_FUNDAMENTALS` (36–68%).
+**Most influential settings (Swing):** `W_FUNDAMENTALS` (49-68%), `W_POLLS` (50-64%), `INCUMBENCY_PTS` (54-64%), `POLL_RELIABILITY` (53-61%).
+**For Literal:** `W_GENERIC_BALLOT` and `W_STATE_2024` (each about 24-61%), then `W_FUNDAMENTALS` (36-68%).
 
-**Trajectory (Swing):** 19% on Sep 7 → 42% on Sep 28 → 55% on Oct 5 → 58% now. Kalshi went from 55% to 64% over the same period. The early weeks run on fundamentals alone in the snapshot data, which only holds polls from Sep 24; a live run has the full poll history.
+**Trajectory (Swing):** 19% on Sep 7 -> 42% on Sep 28 -> 55% on Oct 5 -> 58% now. Kalshi went from 55% to 64% over the same period. The early weeks run on fundamentals alone in the snapshot data, which only holds polls from Sep 24; a live run has the full poll history.
 
 ---
 
@@ -353,16 +353,16 @@ Each variant has its own `Model Testing.ipynb`. It runs the model notebook first
 |---|---|---|---|
 | State polls | Adler spreadsheet | VoteHub API | VoteHub API |
 | Poll window | all, 21-day half-life | 28 days, linear fade | 28 days, linear fade (configurable) |
-| Polls vs fundamentals | Bayesian precision | fixed 10 : 5 : 1 | 10 : 5 : 1 **× poll reliability** |
-| Sample-size weight | √(n/800), cap 2,500 | same, fixed | same, **every piece configurable** |
-| Flooding penalty | 1/√k | none | **1/k^0.5, configurable** |
+| Polls vs fundamentals | Bayesian precision | fixed 10 : 5 : 1 | 10 : 5 : 1 **$\times$ poll reliability** |
+| Sample-size weight | sqrt(n/800), cap 2,500 | same, fixed | same, **every piece configurable** |
+| Flooding penalty | 1/$\sqrt{k}$ | none | **1/k^0.5, configurable** |
 | House effects | off (estimated, optional) | none | **VoteHub scorecard leans, on/off** |
 | Ungraded pollsters | lowest grade | random grade per simulation | random grade **+ lean** per simulation |
 | National signals | spreadsheet approval + VoteHub generic ballot | VoteHub polls only | VoteHub polls **+ Kalshi averages (K = 5)** |
-| Kalshi races | — | input + comparison, hand-coded tickers | input + comparison, **found automatically** |
-| Source errors | — | independent | **correlated (on/off)** |
+| Kalshi races | - | input + comparison, hand-coded tickers | input + comparison, **found automatically** |
+| Source errors | - | independent | **correlated (on/off)** |
 | Testing | in-notebook sweep | in-notebook sweep | **separate Model Testing notebook** |
-| P(D ≥ 51) today | 64.6% | 58.5% / 48.2% | 58.3% / 46.6% |
+| P(D $\geq$ 51) today | 64.6% | 58.5% / 48.2% | 58.3% / 46.6% |
 
 ---
 
@@ -375,7 +375,7 @@ The models will be re-run repeatedly, with the final run at **9 AM on Nov 3**.
 - **Each run overwrites `Output/`.** To keep the published 9 AM numbers, copy `Output/` somewhere, or use the `run_all` script we'll build next.
 - **Scheduled run (not set up; noted for later).** To fire automatically at 9 AM you'd need:
   1. A small script that executes the notebooks (the planned `run_all.py`).
-  2. A Windows Task Scheduler task that runs it with the same Python Jupyter uses (e.g. `C:\...\python.exe run_all.py`), starting in the repo folder.
+  2. A Windows Task Scheduler task that runs it with the same Python Jupyter uses (e.g. `C:\...\python.exe run_all.py`), starting in the `Senate Forecast` folder.
   3. The computer awake and online at 9 AM ("wake the computer to run this task" turned on).
   4. Ideally, a timestamped copy of each run's outputs so the 9 AM result is preserved.
 
@@ -394,4 +394,4 @@ Ranked by how much they could move the answer.
 7. **Kalshi's national-average values are approximations.** The "above X%?" markets reveal the average only roughly (X plus a nudge), and RCP's buckets have open-ended ends. Both are close enough at K = 5 polls.
 8. **Backtests aren't perfectly blind.** Pollster grades, nominee lists and 2024 results are today's versions, and national Kalshi averages are skipped in backtests.
 9. **Independents other than Osborn** (Bodnar, Bengs, Achilles) count as Democratic seats if they win. All are below 10% on Kalshi.
-10. **Simulation noise.** At 10,000 simulations P(51+) is accurate to about ±1 point (Model Testing E3). Raise `N_SIMS` if you need more precision.
+10. **Simulation noise.** At 10,000 simulations P(51+) is accurate to about $\pm$1 point (Model Testing E3). Raise `N_SIMS` if you need more precision.

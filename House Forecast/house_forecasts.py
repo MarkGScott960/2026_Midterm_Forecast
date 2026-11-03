@@ -1,15 +1,15 @@
 """
 house_forecasts.py - scheduled House_Model forecasts + dashboard (Team 5, 2026 House). The House twin of
-Final Model/final_forecast.py.
+Senate Forecast/Final Model/final_forecast.py: same schedule, same dashboard, 400 more seats to sweat over.
 
-    python house_forecasts.py            start (or resume) the schedule: a run now, then every 3 hours, then one final
-                                         run at 9:00 AM on Nov 3, then stop for good
-    python house_forecasts.py --once     one full run now (100,000 simulations), saved to the history like a scheduled run
-    python house_forecasts.py --test     one quick run (1,000 simulations) -> Forecasts/test_<datetime>.html; doesn't touch
-                                         the schedule, the history or Output/
-    python house_forecasts.py --status   show the schedule and what has run, then exit
-    python house_forecasts.py --report   rebuild every saved run's dashboard + figures and latest.html with the current code
-    python house_forecasts.py --reset    DELETE the schedule + history + run folders (tests kept) and start fresh
+    python house_forecasts.py  start (or resume) the schedule: a run now, then every 3 hours, then one final
+        run at 9:00 AM on Nov 3, then stop for good
+    python house_forecasts.py --once  one full run now (100,000 simulations), saved to the history like a scheduled run
+    python house_forecasts.py --test  one quick run (1,000 simulations) -> Forecasts/test_<datetime>.html; doesn't touch
+        the schedule, the history or Output/
+    python house_forecasts.py --status  show the schedule and what has run, then exit
+    python house_forecasts.py --report  rebuild every saved run's dashboard + figures and latest.html with the current code
+    python house_forecasts.py --reset  DELETE the schedule + history + run folders (tests kept) and start fresh
 
 Each run executes house_model.run() (model + checks), saves everything in Forecasts/<YYYY-MM-DD_HHMM>/ (dashboard.html +
 dashboard.pdf, figures/*.html + *.png, data/, inputs/), appends to Forecasts/history.csv and race_history.csv, logs every
@@ -45,6 +45,8 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 SENATE = REPO / "Senate Forecast" if (REPO / "Senate Forecast").is_dir() else REPO  # Senate model, Data/, Final Model/
 TEAM = ["Elizabeth Miller", "Mark Scott", "Ethan Verrone", "Boaz Alkalay", "Leo Westebbe"]
+REPO_URL = "https://github.com/MarkGScott960/2026_Midterm_Forecast"
+CODE_URL = REPO_URL + "/tree/main/House%20Forecast"  # this model's folder on GitHub
 MODEL_NAME = "House_Model"
 MODEL_OUT = HERE / "Output"
 OUT = HERE / "Forecasts"
@@ -316,7 +318,7 @@ def plotly_figs(res, hist):
                           s.loc[s["share"].cumsum() < 0.999, "dem_seats"].max() + 1.5])
     figs["seat_distribution"] = f
 
-    # 2. all 435 seats, safest D to safest R (one square per district)
+    # 2. all 435 seats, safest D to safest R (one square per district, a quilt of 435 patches)
     w = waffle_frame(res)
     f = go.Figure()
     for call in CALL_ORDER:
@@ -559,7 +561,7 @@ def png_figs(res, hist, folder):
 # ------------------------------------------------------------------ dashboard
 CSS = """
 :root{--ink:#2B2B2B;--muted:#6B6B6B;--line:#E6E6E6;--blue:#1A6FB0;--red:#C8312B;--bg:#FFFFFF;--card:#F7F8FA}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
+a{color:var(--blue)} .links{margin:10px 0 2px;padding:8px 12px;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:6px;background:var(--card);font-size:14px} .links a{font-weight:600} .links .url{color:var(--muted);font-size:12px} *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif}
 main{max-width:1150px;margin:0 auto;padding:24px 16px 60px} h1{font-size:22px;margin:0 0 4px} h2{font-size:16px;margin:34px 0 10px}
 .sub{color:var(--muted);font-size:13px} .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px} .tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
@@ -578,7 +580,9 @@ input.filter{padding:6px 10px;border:1px solid var(--line);border-radius:6px;mar
 @media print{
  :root{--ink:#2B2B2B;--muted:#6B6B6B;--line:#E6E6E6;--bg:#FFFFFF;--card:#F7F8FA}
  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
- main{max-width:none;padding:0} h2{break-before:page;margin-top:0} h2.keep{break-before:auto;margin-top:24px}
+ main{max-width:none;padding:0} h2,h2.keep{break-before:auto;break-after:avoid;margin-top:22px}
+ .js-plotly-plot,.plot-container{break-inside:avoid}
+ th,td{white-space:normal;padding:3px 5px;font-size:10px} table{width:100%}
  .tile,.eq,tr,.js-plotly-plot,.kv{break-inside:avoid} th{position:static} .wrap,.eqf{overflow:visible}
  .modebar-container{display:none!important} details.all, input.filter{display:none}
 }
@@ -752,7 +756,7 @@ def build_dashboard(res, hist, figs, title_tag, path):
                  "Democratic seat. Missouri uses its 2022 map.")
     notes_html = "<ul class='notes'>" + "".join(f"<li>{n}</li>" for n in notes) + "</ul>"
     fig_html = {k: f.to_html(full_html=False, include_plotlyjs=False, config={"displaylogo": False, "responsive": True}) for k, f in figs.items()}
-    body = f"""<h1>2026 House forecast - {MODEL_NAME} {badge}</h1><div class='sub'>Team 5: {', '.join(TEAM)}</div><div class='sub'>{title_tag}</div>
+    body = f"""<h1>2026 House forecast - {MODEL_NAME} {badge}</h1><div class='sub'>Team 5: {', '.join(TEAM)}</div><div class='links'><b>Code and data:</b> <a href='{REPO_URL}'>GitHub repository</a> <span class='url'>({REPO_URL})</span> &nbsp;|&nbsp; <a href='{CODE_URL}'>This model's folder</a> <span class='url'>({CODE_URL})</span></div><div class='sub'>{title_tag}</div>
 {tiles}
 <h2 class='keep'>Seat distribution</h2>{fig_html['seat_distribution']}
 <h2>All 435 seats</h2>{fig_html['seat_chart']}
@@ -835,9 +839,21 @@ def _pdf_playwright(html_path, out):
             page.goto(Path(html_path).resolve().as_uri(), wait_until="load", timeout=120_000)
             page.evaluate("() => (window.MathJax && MathJax.startup && MathJax.startup.promise) ? MathJax.startup.promise.then(() => true) : true")
             page.wait_for_function("() => [...document.querySelectorAll('.js-plotly-plot')].every(d => d.querySelector('.main-svg'))", timeout=60_000)
-            page.evaluate(f"() => document.querySelectorAll('.js-plotly-plot').forEach(d => {{"
-                          f" if (d.offsetHeight > {PDF_MAX_CHART_PX}) d.parentElement.style.zoom = {PDF_MAX_CHART_PX} / d.offsetHeight; }})")
-            page.wait_for_timeout(500)
+            # charts are redrawn at the printed page's width; charts taller than a page get the page height
+            # (labels shrink to fit) instead of being zoomed down, which made them thin strips
+            page.evaluate(f"""() => {{
+                const W = document.querySelector('main').clientWidth, H = {PDF_MAX_CHART_PX};
+                return Promise.all([...document.querySelectorAll('.js-plotly-plot')].map(d => {{
+                    const h0 = d.layout.height || 450, upd = {{width: W}};
+                    if (h0 > H) {{
+                        upd.height = H;
+                        const rows = Math.max(1, (h0 - 120) / 20);
+                        upd['yaxis.tickfont.size'] = Math.max(5, Math.min(11, Math.floor((H - 120) / rows * 0.85)));
+                    }}
+                    return Plotly.relayout(d, upd);
+                }}));
+            }}""")
+            page.wait_for_timeout(800)
             page.pdf(path=str(out), prefer_css_page_size=True, print_background=True)
         finally:
             browser.close()

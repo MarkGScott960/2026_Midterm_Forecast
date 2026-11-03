@@ -1,6 +1,6 @@
 # Final Model - calibration
 
-`calibration.ipynb` fine-tunes **any** model in `Models/` on past Senate elections.
+`calibration.ipynb` fine-tunes **any** model in `Models/` on past Senate elections, so our guesses get graded against history instead of against our gut.
 
 1. Open `calibration.ipynb` and set `MODEL_FOLDER` in the first code cell (default `Models/Marks_Final`).
 2. *Run All* (about a minute, plus one model run).
@@ -34,12 +34,12 @@ A model only gets the settings it actually has (matched by name). `Marks_Final` 
 
 # Final forecast: `final_forecast.py`
 
-Runs Most_Magnificent_Model (Team 5's final model) on a schedule and builds a dashboard after every run.
+Runs Most_Magnificent_Model (Team 5's final model) on a schedule and builds a dashboard after every run. It is the night shift: it keeps forecasting while we sleep.
 
 ```
-python final_forecast.py            # start (or resume) the schedule; leave the window open
-python final_forecast.py --test     # one quick 1,000-simulation run -> Forecasts/test_<datetime>.html (to tune the look)
-python final_forecast.py --status   # show the schedule and what has run
+python final_forecast.py # start (or resume) the schedule; leave the window open
+python final_forecast.py --test  # one quick 1,000-simulation run -> Forecasts/test_<datetime>.html (to tune the look)
+python final_forecast.py --status  # show the schedule and what has run
 ```
 
 - **Schedule:** a run when you start it, then every 3 hours on fixed clock times, then a final run at **9:00 AM Tue Nov 3**, then it stops for good. No regular run starts in the hour before the final one, so the final run starts on time. A long run never shifts later run times; runs never overlap (an overrunning run finishes and saves, and the next starts right after); missed runs are made up with one run.

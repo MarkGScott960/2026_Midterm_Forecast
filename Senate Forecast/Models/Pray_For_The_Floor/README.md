@@ -1,6 +1,6 @@
-# Pray_For_The_Floor — Model 4
+# Pray_For_The_Floor - Model 4
 
-**Model 1's Bayesian backbone, rebuilt on live data, with the strongest pieces of Ozempic and DadBod added.**
+**Model 1's Bayesian backbone, rebuilt on live data, with the strongest pieces of Ozempic and DadBod bolted on. Built to raise the floor, then pray it holds.**
 
 | File | What it is |
 |---|---|
@@ -19,8 +19,8 @@ Outputs: **P(Democrats hold at least 51 seats)** and **the predicted number of D
 1. **Download** VoteHub's Senate, generic-ballot and approval polls, Kalshi's race markets, and Kalshi's polling-average markets. Kalshi markets are found automatically by title, and candidate names come from Kalshi.
 2. **Clean and weight the polls** exactly as Model 1 does: recency, sample size, LV/RV/adults, partisan sponsor, generic ballot, full field, pollster quality, past accuracy, flooding, and survey versions. The one difference is that pollster quality, accuracy and lean now come from **VoteHub's scorecard**.
 3. **Measure the national mood** from the generic ballot and approval, as in Model 1. Each signal now blends VoteHub's polls with **Kalshi's polling averages** (counted as 5 polls).
-4. **Build each race's prior** (Model 1): 2 × partisan lean + national environment ± incumbency.
-5. **Bayesian update with three sources.** The prior, the polls, and **Kalshi's implied margin** are combined by precision (1 ÷ uncertainty²). The most certain source counts most, and Kalshi is deliberately given low precision.
+4. **Build each race's prior** (Model 1): 2 $\times$ partisan lean + national environment $\pm$ incumbency.
+5. **Bayesian update with three sources.** The prior, the polls, and **Kalshi's implied margin** are combined by precision (1 $\div$ $\text{uncertainty}^2$). The most certain source counts most, and Kalshi is deliberately given low precision.
 6. **Simulate 10,000 elections** with Model 1's correlated, fat-tailed draws. In **every** simulation, each pollster VoteHub hasn't graded gets the grade, past error and lean of a randomly drawn graded pollster, and the state's poll average and Bayesian estimate are recomputed before the race is drawn.
 7. **Count seats** in each simulation to get P(51+) and the average.
 
@@ -30,18 +30,18 @@ Outputs: **P(Democrats hold at least 51 seats)** and **the predicted number of D
 |---|---|---|---|
 | State polls | Adler's spreadsheet (last poll Oct 14; no longer updated) | **VoteHub API**, refreshed every run | Ozempic/DadBod |
 | Approval polls | Spreadsheet | **VoteHub API** | Ozempic/DadBod |
-| Generic ballot | VoteHub | VoteHub | — |
+| Generic ballot | VoteHub | VoteHub | - |
 | National signals | polls only | polls **+ Kalshi averages** (RCP + VoteHub approval, VoteHub generic ballot), `NAT_KALSHI_POLL_EQUIV = 5` | DadBod |
-| Pollster quality | spreadsheet rank column | **VoteHub grade** → Model 1's 5–10 scale | DadBod |
-| Pollster accuracy | column blank → everyone 4.0 | **VoteHub past error**; weight clipped to 0.5–2× | DadBod (clip) |
+| Pollster quality | spreadsheet rank column | **VoteHub grade** -> Model 1's 5-10 scale | DadBod |
+| Pollster accuracy | column blank -> everyone 4.0 | **VoteHub past error**; weight clipped to 0.5-2$\times$ | DadBod (clip) |
 | Pollster lean | partisan sponsors only (+ optional estimate) | + **scorecard lean** (`SCORECARD_HOUSE_EFFECTS`, on) | DadBod |
 | Ungraded pollsters | rank 5 + 4.0 error, fixed | **random graded pollster, redrawn every simulation** (`UNRATED_POLLSTERS = "random"`) | Ozempic/DadBod, extended |
 | Full field / generic | spreadsheet columns | detected from VoteHub's answers (3+ candidates; party names instead of people) | new |
 | Recency | half-life 21 days | same by default; `RECENCY_MODE = "window"` for the 28-day linear window | Ozempic/DadBod |
-| Prior | PVI × 2 + environment ± incumbency, SD 7.5 | unchanged | Model 1 |
+| Prior | PVI $\times$ 2 + environment $\pm$ incumbency, SD 7.5 | unchanged | Model 1 |
 | Combination | Bayesian: prior + polls | Bayesian: prior + polls **+ Kalshi** (`KALSHI_SD = 17`) | new |
 | Thin races | Bayesian precision | same by default; `POLL_RELIABILITY = k` adds DadBod's extra discount | DadBod |
-| Source errors | independent | **correlated** (ρ = 0.3, `CORRELATED_ERRORS`): same weights, wider ranges | DadBod |
+| Source errors | independent | **correlated** ($\rho$ = 0.3, `CORRELATED_ERRORS`): same weights, wider ranges | DadBod |
 | Kalshi races | not used | **input + comparison**, found automatically by title | DadBod |
 | Simulation | correlated Student-t, shared tail | unchanged | Model 1 |
 | Checks & sweep | bottom of the notebook | separate **Model Testing** notebook (Model 1's sweep + the new settings) | DadBod |
@@ -61,19 +61,19 @@ The Model Testing sweep includes all four, so you can see how much each one matt
 
 ## 3. How Kalshi enters
 
-**Race markets.** Kalshi's probability is turned into a margin using the race's own prior + polls uncertainty σ: margin = Φ⁻¹(P) × σ. Example: 75% with σ = 5 → D+3.4. That margin is a third Bayesian input with precision 1 ÷ `KALSHI_SD`²:
+**Race markets.** Kalshi's probability is turned into a margin using the race's own prior + polls uncertainty $\sigma$: margin = $\Phi^{-1}$(P) $\times$ $\sigma$. Example: 75% with $\sigma$ = 5 -> D+3.4. That margin is a third Bayesian input with precision 1 $\div$ `KALSHI_SD`$^2$:
 
 | `KALSHI_SD` | Kalshi's share of the final margin (test run) | Meaning |
 |---|---|---|
 | `None` or `0` | 0% | Comparison only |
-| 25 | ~3–4% polled / 8% unpolled | Very light |
-| **17 (default)** | **~5–9% polled / 16% unpolled** | About 1/5 of the prior's precision: the team's "fundamentals 5 : Kalshi 1" |
-| 12 | ~10–16% polled / 28% unpolled | Moderate |
-| 8 | ~20–30% polled / 47% unpolled | Heavy |
+| 25 | ~3-4% polled / 8% unpolled | Very light |
+| **17 (default)** | **~5-9% polled / 16% unpolled** | About 1/5 of the prior's precision: the team's "fundamentals 5 : Kalshi 1" |
+| 12 | ~10-16% polled / 28% unpolled | Moderate |
+| 8 | ~20-30% polled / 47% unpolled | Heavy |
 
 (Approximate; the race table's `share_kalshi` column shows each race's actual share.)
 
-**National markets.** RCP and VoteHub approval averages are averaged together first, converted from approve % to net approval (net = 2 × approve − 100 + U, where U is the share answering neither in recent VoteHub polls), then blended with the VoteHub approval polls as if they were 5 polls. The VoteHub generic-ballot market is converted to the two-party basis and blended the same way.
+**National markets.** RCP and VoteHub approval averages are averaged together first, converted from approve % to net approval (net = 2 $\times$ approve - 100 + U, where U is the share answering neither in recent VoteHub polls), then blended with the VoteHub approval polls as if they were 5 polls. The VoteHub generic-ballot market is converted to the two-party basis and blended the same way.
 
 **Backtests** use each race market's closing price on that day. The national markets are skipped (polls only), because their history isn't reliably available.
 
@@ -88,9 +88,9 @@ About half the polls come from firms VoteHub hasn't graded. Model 1 gave them th
 
 ## 5. Poll reliability
 
-Model 1's Bayesian precision already trusts thin races less. A state's poll uncertainty is √(single-poll SD² ÷ n_eff + 4.5² + undecided SD²), so one poll gives about 6.7 points of uncertainty and nine polls about 4.8. That is the default (`POLL_RELIABILITY = "bayesian"`).
+Model 1's Bayesian precision already trusts thin races less. A state's poll uncertainty is sqrt(single-poll $\text{SD}^2$ $\div$ n_eff + $4.5^2$ + undecided $\text{SD}^2$), so one poll gives about 6.7 points of uncertainty and nine polls about 4.8. That is the default (`POLL_RELIABILITY = "bayesian"`).
 
-Setting a number k additionally multiplies poll precision by n_eff ÷ (n_eff + k) (DadBod's rule: half weight at k effective polls). This leans harder on the prior and Kalshi in thinly polled races. It isn't on by default because it would discount thin races twice.
+Setting a number k additionally multiplies poll precision by n_eff $\div$ (n_eff + k) (DadBod's rule: half weight at k effective polls). This leans harder on the prior and Kalshi in thinly polled races. It isn't on by default because it would discount thin races twice.
 
 ## 6. On/off toggles
 
@@ -107,7 +107,7 @@ Any combination is valid. Model Testing E3 shows all four combinations of the ho
 ## 7. Running it
 
 - **On its own:** open `pray_for_the_floor.ipynb`, run the install cell once, then *Run All*. Then open `Model Testing.ipynb` and *Run All* (about 30 seconds to a few minutes).
-- **With the other models:** `python run_all.py` from the repo root runs it automatically through `model.json`. `python run_all.py --only pray_for_the_floor` runs just this one; the report still shows all models.
+- **With the other models:** `python run_all.py` from the `Senate Forecast` folder runs it automatically through `model.json`. `python run_all.py --only pray_for_the_floor` runs just this one; the report still shows all models.
 - **Backtest:** set `AS_OF_DATE = "2026-10-15"`. The first backtest downloads Kalshi's daily price history (about 30 seconds) and saves it to `Data_Cache/`.
 
 ## 8. Settings that matter most (test run)
@@ -116,19 +116,19 @@ From the Model Testing sweep, P(51+) ranged:
 
 | Setting | Range of P(51+) |
 |---|---|
-| `PRIOR_SD` (4 → 14) | 36% – 65% |
-| `ENV_SLOPE` (0 → 0.7) | 45% – 71% |
-| `POLL_PRECISION_MULT` (0.5 → 4) | 53% – 75% |
-| `SYSTEMATIC_POLL_ERROR_SD` (2.5 → 7) | 52% – 70% |
-| `POLL_RELIABILITY` | 53% – 60% |
-| `KALSHI_SD` (off → 8) | 59% – 61% |
+| `PRIOR_SD` (4 -> 14) | 36% - 65% |
+| `ENV_SLOPE` (0 -> 0.7) | 45% - 71% |
+| `POLL_PRECISION_MULT` (0.5 -> 4) | 53% - 75% |
+| `SYSTEMATIC_POLL_ERROR_SD` (2.5 -> 7) | 52% - 70% |
+| `POLL_RELIABILITY` | 53% - 60% |
+| `KALSHI_SD` (off -> 8) | 59% - 61% |
 
 These are from a test run on saved data with fewer polls than the live feed. Re-run Model Testing on live data before relying on them.
 
 ## 9. Weaknesses and open issues
 
 1. **Kalshi is partly double-counted.** Kalshi traders read the same polls. `CORRELATED_ERRORS` widens the ranges to reflect this but doesn't lower Kalshi's weight; the low default precision is what keeps the effect small.
-2. **Kalshi's implied margin is scaled by this model's own uncertainty,** and probabilities are clipped at 1–99%. In lopsided races (Wyoming, Massachusetts), this pulls the final margin a few points toward the middle. It doesn't change who's favored.
+2. **Kalshi's implied margin is scaled by this model's own uncertainty,** and probabilities are clipped at 1-99%. In lopsided races (Wyoming, Massachusetts), this pulls the final margin a few points toward the middle. It doesn't change who's favored.
 3. **Random grades are drawn from graded firms,** which tend to be established pollsters. That may be generous to unknown firms. `"fixed"` is the pessimistic alternative; Model Testing E4 shows the gap.
 4. **National polls from ungraded firms keep the fixed lowest rank** (no per-simulation draw), as in Model 1.
 5. **The pollster scorecard is a static file** (`Data/votehub_pollster_scorecards.csv`). It isn't refreshed from VoteHub each run.

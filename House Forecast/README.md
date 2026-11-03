@@ -1,16 +1,16 @@
 # House Forecast: `House_Model` + `house_forecasts.py`
 
-The House version of Most_Magnificent_Model. It uses the Senate model's data sources and assumptions for all 435 districts, and runs on the same schedule with the same kind of dashboard.
+The House version of Most_Magnificent_Model. It borrows the Senate model's data sources and assumptions, stretches them across all 435 districts, and runs on the same schedule with the same kind of dashboard. Same recipe, much bigger batch.
 
 ```
-python house_forecasts.py            # start (or resume) the schedule: a run now, every 3 h, final run 9:00 AM Tue Nov 3
-python house_forecasts.py --once     # one full run now (100,000 simulations), saved to the history
-python house_forecasts.py --test     # quick 1,000-simulation run -> Forecasts/test_<datetime>.html (history untouched)
-python house_forecasts.py --status   # show the schedule
-python house_forecasts.py --report   # rebuild every saved dashboard with the current code (no model run)
-python house_forecasts.py --reset    # delete the schedule, history and run folders (tests kept)
-python house_model.py                # the model alone, CONFIG as written (10,000 simulations) -> Output/
-python house_calibration.py          # re-measure the uncertainty settings -> house_calibration.json
+python house_forecasts.py # start (or resume) the schedule: a run now, every 3 h, final run 9:00 AM Tue Nov 3
+python house_forecasts.py --once  # one full run now (100,000 simulations), saved to the history
+python house_forecasts.py --test  # quick 1,000-simulation run -> Forecasts/test_<datetime>.html (history untouched)
+python house_forecasts.py --status  # show the schedule
+python house_forecasts.py --report  # rebuild every saved dashboard with the current code (no model run)
+python house_forecasts.py --reset # delete the schedule, history and run folders (tests kept)
+python house_model.py # the model alone, CONFIG as written (10,000 simulations) -> Output/
+python house_calibration.py # re-measure the uncertainty settings -> house_calibration.json
 ```
 
 A 100,000-simulation run takes about 1-3 minutes, plus downloads. The model is a plain `.py` file, not a notebook, so the scheduler calls it directly; this is why it runs so much faster than the Senate's notebooks. Every assumption is in the `CONFIG` block at the top of `house_model.py`.
@@ -20,7 +20,7 @@ A 100,000-simulation run takes about 1-3 minutes, plus downloads. The model is a
 | File | What it is |
 |---|---|
 | `house_model.py` | The model. CONFIG at the top; `run()` downloads the data, runs the model and the checks, and writes `Output/` |
-| `house_forecasts.py` | The scheduler and dashboard (the House version of `Final Model/final_forecast.py`) |
+| `house_forecasts.py` | The scheduler and dashboard (the House version of `Senate Forecast/Final Model/final_forecast.py`) |
 | `house_calibration.py` / `.json` | Measures the uncertainty settings from past House elections (see below) |
 | `Data/house_districts_2026.csv` | One row per district: 2024 presidential result on the 2026 lines, partisan lean, region, incumbent running or open, nominees, race type |
 | `Data/build_house_districts.py` | Builds that file and lists every source. Edit its tables and re-run it to change a district |

@@ -546,3 +546,4 @@ Date,Pollster,Dem,Rep,SampleSize,Population,Partisan
 2026-09-28,HarrisX/Harris,51.0,49.0,,LV,False
 2026-10-02,YouGov - CBS News,54.0,45.0,1572.0,LV,False
 2026-10-04,Pew Research Center,44.0,36.0,3917.0,RV,False
+2026-11-02,Ipsos,52.0,44.0,1212.0,LV,False

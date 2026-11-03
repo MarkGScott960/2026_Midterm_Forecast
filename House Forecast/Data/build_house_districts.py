@@ -1,7 +1,7 @@
 """
 build_house_districts.py - builds Data/house_districts_2026.csv (one row per 2026 House district).
 
-Run once (already run; re-run only if you edit the tables below):   python build_house_districts.py
+Run once (already run; re-run only if you edit the tables below): python build_house_districts.py
 
 Sources (checked Nov 2, 2026):
   - 2024 presidential result for every district on the lines used in 2026: The Downballot, "2020 & 2024 presidential

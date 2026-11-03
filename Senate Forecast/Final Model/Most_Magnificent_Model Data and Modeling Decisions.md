@@ -7,7 +7,7 @@ Oct 29, 2026 - @Mark (updated Oct 31)
 Most\_Magnificent\_Model gives three outputs: the chance Democrats hold at least 51 Senate seats (Republicans hold the VP tiebreak), the expected number of Democratic seats, and each race's chance of a Democratic or independent win. It combines three sources for every race, polls, fundamentals and the Kalshi prediction market, then simulates the election 100,000 times.
 
 - **When it runs:** every 3 hours from Oct 29, 8:05 PM, with a final run at 9:00 AM on Nov 3. Each run refreshes all data.
-- **Where results go:** `Final Model/Forecasts/latest.html` (dashboard), with every chart also saved as an HTML and PNG file for Quarto. Warnings from the built-in checks are logged to `Forecasts/model_warnings.xlsx`.
+- **Where results go:** `Senate Forecast/Final Model/Forecasts/latest.html` (dashboard), with every chart also saved as an HTML and PNG file for Quarto. Warnings from the built-in checks are logged to `Forecasts/model_warnings.xlsx`.
 - **What each run saves (from the first run after Oct 31, 2:40 PM):** every input file the run used (the downloaded VoteHub and Kalshi data, the scorecard, lean and 2024 files, `calibration.json`, `candidate_history.csv` and the model notebook itself) goes to `Forecasts/<run>/inputs/` with a `manifest.json`. Any run from then on can be re-created exactly, for example to re-run the history with a changed method. Runs before that saved only their outputs.
 
 

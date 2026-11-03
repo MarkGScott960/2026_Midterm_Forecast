@@ -1,6 +1,6 @@
 # Model 1: Configurable Senate Forecast
 
-This is the companion doc for `senate_forecast_model.ipynb`. It covers what the model does, every assumption it makes, how to change those assumptions, how we tested it, and what the first results look like.
+This is the companion doc (the user manual nobody reads until something breaks) for `senate_forecast_model.ipynb`. It covers what the model does, every assumption it makes, how to change those assumptions, how we tested it, and what the first results look like.
 
 It's written for two kinds of readers on our team. If you're strong in code but new to political science, the "Why this matters" notes explain the polling and elections side. If you know political science but not Python, the "In the code" notes and the step-by-step guide to changing assumptions should be enough to work with the notebook without reading every line.
 
@@ -54,7 +54,7 @@ Two things are important to keep in mind:
 3. Run all cells. The main forecast takes a few seconds. The sensitivity sweep reruns the model about 70 times and takes a bit longer.
 4. Results are saved to the `Output/` folder inside `Models/Model_Full_Configs/` (it gets created if it doesn't exist).
 
-The notebook finds the data on its own by walking up from wherever Jupyter starts until it finds the repo's `Data/` folder, so it works from the model folder, from `Models/`, or from the repo root. The install cell covers every package needed. The VoteHub API call uses Python's built-in `urllib`, so there's nothing extra to install for that.
+The notebook finds the data on its own by walking up from wherever Jupyter starts until it finds the repo's `Data/` folder, so it works from the model folder, from `Models/`, or from the `Senate Forecast` folder. The install cell covers every package needed. The VoteHub API call uses Python's built-in `urllib`, so there's nothing extra to install for that.
 
 ### Changing an assumption
 
@@ -63,14 +63,14 @@ Every assumption lives in one dictionary called `CONFIG`, in the third cell. To 
 1. Find the setting in the `CONFIG` cell. They're grouped by topic (poll weights, national environment, prior, and so on), and each one has a comment explaining it.
 2. Change the value. For example, to make old polls fade faster:
    ```python
-   "RECENCY_HALF_LIFE_DAYS": 14,   # was 21
+   "RECENCY_HALF_LIFE_DAYS": 14,  # was 21
    ```
 3. Run all cells again.
 
 A few settings are dictionaries instead of single numbers. Change the values inside the braces and keep the format the same:
 ```python
 "PARTISAN_HOUSE_EFFECTS": {"Republican": 4.0, "Democrat": 4.0, "Independent/Dem": 2.0},
-"STATE_PRIOR_ADJUSTMENTS": {"Maine": -4},   # adds a manual adjustment to one state
+"STATE_PRIOR_ADJUSTMENTS": {"Maine": -4},  # adds a manual adjustment to one state
 ```
 
 If you set something impossible (for example, correlations that add up to more than 1), the notebook stops right away with a message explaining what's wrong, instead of running and giving bad numbers.
@@ -119,10 +119,10 @@ All cleaning happens in code. **We never edit the shared spreadsheets.**
 The model works in five stages. Each one is a section in the notebook.
 
 ```
-State polls ──► weighted state averages ──┐
-                                           ├──► combine (Bayesian update) ──► simulate 10,000 elections ──► seat counts
-Partisan lean + national environment ─────┘        (the "prior")
-       ▲
+State polls --> weighted state averages --+
+                                           |--> combine (Bayesian update) --> simulate 10,000 elections --> seat counts
+Partisan lean + national environment -----+        (the "prior")
+       ^
 Approval + generic ballot
 ```
 
@@ -140,7 +140,7 @@ Not every poll is equally useful, so each poll gets a weight, and the state aver
 | Full field | Polls listing every candidate count slightly less than head-to-heads (the sample code's hypothesis). | 0.9 |
 | Pollster quality | Based on VoteHub's pollster rank, from 5 (lowest or unrated) to 10 (A+). | rank 5 = 0.5, rank 10 = 1.0 |
 | Accuracy | Pollsters with smaller historical errors count more. **Right now everyone uses the same default error**, since that data isn't filled in yet. | 4.0 points |
-| Flooding | One pollster with many surveys in a state can't take over that state's average. | each of k surveys gets 1/√k |
+| Flooding | One pollster with many surveys in a state can't take over that state's average. | each of k surveys gets 1/$\sqrt{k}$ |
 | Survey version | Splits one survey's weight across its versions (see Section 3). | split |
 
 After weighting, some margins get **shifted** to correct for known biases:
@@ -174,7 +174,7 @@ Blended, that's **D+7.8**.
 
 Before looking at any state polls, the model makes a baseline guess for every race, called the **prior**:
 
-> prior margin = 2 × PVI + national environment + incumbency + any manual adjustment
+> prior margin = 2 $\times$ PVI + national environment + incumbency + any manual adjustment
 
 The PVI is doubled because it's measured in vote share, and one point of share is two points of margin. Elected incumbents running for reelection get 2 points. Appointed incumbents (Florida, Ohio, and South Carolina) get 1 point. Open seats get nothing.
 
@@ -197,7 +197,7 @@ The model simulates the election 10,000 times. In each simulation every race get
 
 Each simulation then counts the seats: 34 Democratic holdovers (including King and Sanders), plus whatever Democrats and caucusing independents win. **Democrats need 51** because the Vice President breaks 50-50 ties.
 
-**In the code.** `correlation_matrix()` builds the 35 × 35 correlation matrix. `unit_shocks()` makes the correlated, fat-tailed errors. `national_simulations()` counts the seats.
+**In the code.** `correlation_matrix()` builds the 35 $\times$ 35 correlation matrix. `unit_shocks()` makes the correlated, fat-tailed errors. `national_simulations()` counts the seats.
 
 ---
 
@@ -279,7 +279,7 @@ The sweep reran the model 70 times, once for each value of each of the 17 settin
 | Check | What we did | Result |
 |---|---|---|
 | Reproducibility | Ran the model twice with the same seed | Identical seat counts in every simulation |
-| Simulation noise | Changed the seed (1, 99, 2026) | P(Dem control) 64.3% to 65.5%, so about ±1 point is just noise at 10,000 sims |
+| Simulation noise | Changed the seed (1, 99, 2026) | P(Dem control) 64.3% to 65.5%, so about $\pm$1 point is just noise at 10,000 sims |
 | Rerun as of past dates | `AS_OF_DATE` = Sep 15, Sep 25, Oct 1, Oct 8 | 53%, 66%, 62%, 66% (today: 64%). Each run only used polls available that day. |
 | No approval polls yet | As of Sep 15, before the first approval poll in our file | Fell back to the generic ballot alone with no errors |
 | Neutral environment | `ENV_OVERRIDE = 0` | 33% Dem control, which shows how much of the result depends on the national environment |
@@ -365,7 +365,7 @@ Everything is saved to `Models/Model_Full_Configs/Output/` each time the noteboo
 | `prior_mean` | What we'd expect from lean + environment + incumbency alone |
 | `poll_share_of_estimate` | 0 means the estimate is all prior, 1 means it's all polls |
 | `post_mean` | The final estimated margin |
-| `post_sd` | Uncertainty around that margin, in points. About two-thirds of simulated outcomes land within ±1 of this. |
+| `post_sd` | Uncertainty around that margin, in points. About two-thirds of simulated outcomes land within $\pm$1 of this. |
 | `p_dem_state_sim` | P(Dem win) from independent simulations |
 | `p_dem_national_sim` | P(Dem win) from the correlated simulations. This is the one used everywhere else. The two should be nearly identical. |
 

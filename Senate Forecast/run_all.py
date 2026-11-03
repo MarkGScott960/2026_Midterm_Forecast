@@ -1,7 +1,9 @@
 """
-run_all.py — run every forecast model in the repo, then build an interactive HTML report comparing them.
+run_all.py - round up every Senate forecast model, run them all, then build an interactive HTML report comparing them.
+(Lives in the Senate Forecast folder; every path below is relative to it.)
 
-This script is for COMPARING models. (The final election-day forecast/report will be a separate script.)
+This script is for COMPARING models, a beauty pageant and not the coronation. (The final election-day forecast is
+Final Model/final_forecast.py.)
 
 What it does
 ------------
@@ -13,16 +15,16 @@ What it does
    when you run a notebook yourself they aren't set, so the notebook's own CONFIG is used.
 4. Reads each model's standard output (Output/standard/summary.json, races.csv, seats.csv).
 5. Writes an interactive HTML comparison:
-      Comparisons/latest.html                    <- always the newest report
-      Comparisons/runs/<YYYY-MM-DD_HHMM>/        <- archive: report.html + the data behind it
-      Comparisons/history.csv                    <- one row per model per run (feeds the "history" chart)
+      Comparisons/latest.html <- always the newest report
+      Comparisons/runs/<YYYY-MM-DD_HHMM>/ <- archive: report.html + the data behind it
+      Comparisons/history.csv <- one row per model per run (feeds the "history" chart)
 
-Usage (from the repo root, with the same Python your Jupyter uses)
+Usage (from the Senate Forecast folder, with the same Python your Jupyter uses)
 -----
-    python run_all.py                       # run everything, build the report
-    python run_all.py --only dadbod_swing   # run just some models (ids from model.json), report on all
-    python run_all.py --report-only         # don't run anything; rebuild the report from existing outputs
-    python run_all.py --as-of 2026-10-20    # backtest every model as of a date (default: today)
+    python run_all.py  # run everything, build the report
+    python run_all.py --only dadbod_swing  # run just some models (ids from model.json), report on all
+    python run_all.py --report-only  # don't run anything; rebuild the report from existing outputs
+    python run_all.py --as-of 2026-10-20 # backtest every model as of a date (default: today)
 
 When models are added, renamed or removed: give the new model folder a model.json and the standard-export
 cell (README, "Adding a model"). run_all.py itself does not need editing.
@@ -42,7 +44,7 @@ REPO = Path(__file__).resolve().parent
 MODELS_DIR = REPO / "Models"
 OUT_DIR = REPO / "Comparisons"
 DEFAULT_N_SIMS = 10_000
-CELL_TIMEOUT = 1800 # seconds any single notebook cell may take
+CELL_TIMEOUT = 1800 # seconds any single notebook cell may dawdle
 
 # ---------------------------------------------------------------------------------------------------
 # Setup
@@ -108,7 +110,7 @@ def run_notebook(path):
         client.execute()
     except CellExecutionError as e:
         err = f"{getattr(e, 'ename', 'Error')}: {getattr(e, 'evalue', str(e))}"[:500]
-    except Exception as e: # kernel died, timeout, ...
+    except Exception as e: # kernel died, timed out, or otherwise threw a tantrum
         err = f"{type(e).__name__}: {e}"[:500]
     finally:
         nbformat.write(nb, path) # notebooks are updated in place (outputs kept even if a cell failed)
@@ -189,7 +191,7 @@ def esc(x):
 
 
 def fmt_pct(x):
-    return "—" if x is None or x != x else f"{100 * x:.1f}%"
+    return "-" if x is None or x != x else f"{100 * x:.1f}%"
 
 
 def table(headers, rows, cls="sortable"):
@@ -247,12 +249,12 @@ def build_report(results, run_info, history):
     fig.add_bar(x=names, y=[100 * p for p in p51], marker_color=[colors[n] for n in names],
                 marker_pattern_shape=["" if dashes[n] == "solid" else "/" for n in names],
                 text=[f"{100 * p:.1f}%" for p in p51], textposition="outside",
-                hovertemplate="%{x}<br>P(D ≥ 51) = %{y:.1f}%<extra></extra>")
+                hovertemplate="%{x}<br>P(D >= 51) = %{y:.1f}%<extra></extra>")
     if k_ctrl is not None:
         fig.add_hline(y=100 * k_ctrl, line_dash="dash", line_color="#444",
                       annotation_text=f"Kalshi {100 * k_ctrl:.1f}%", annotation_position="top left")
     fig.add_hline(y=50, line_color="#bbb", line_width=1)
-    fig.update_yaxes(title="P(Democrats ≥ 51 seats), %", range=[0, 100])
+    fig.update_yaxes(title="P(Democrats >= 51 seats), %", range=[0, 100])
     i_head = add(fig, "Chance Democrats control the Senate (51+ seats)")
 
     # ---- 2. seat distributions ----
@@ -284,7 +286,7 @@ def build_report(results, run_info, history):
                                colorscale=[[0, "#C8312B"], [0.5, "#F7F7F7"], [1, "#1A6FB0"]],
                                text=[[f"{100 * v:.0f}" if v == v else "" for v in row] for row in P.values],
                                texttemplate="%{text}", colorbar=dict(title="P(D) %"),
-                               hovertemplate="%{y} — %{x}<br>P(Dem/Ind win) = %{z:.0f}%<extra></extra>"))
+                               hovertemplate="%{y} - %{x}<br>P(Dem/Ind win) = %{z:.0f}%<extra></extra>"))
     fig.update_layout(height=max(500, 24 * len(P) + 120))
     fig.update_yaxes(autorange="reversed")
     i_heat = add(fig, "P(Democrat or independent wins), by race and model")
@@ -314,7 +316,7 @@ def build_report(results, run_info, history):
                                colorscale=[[0, "#C8312B"], [0.5, "#F7F7F7"], [1, "#1A6FB0"]],
                                text=[[f"{100 * v:+.0f}" if v == v else "" for v in row] for row in D.values], texttemplate="%{text}",
                                colorbar=dict(title="pts vs avg"),
-                               hovertemplate="%{y} — %{x}<br>%{z:+.0f} pts vs the model average<extra></extra>"))
+                               hovertemplate="%{y} - %{x}<br>%{z:+.0f} pts vs the model average<extra></extra>"))
     fig.update_layout(height=max(500, 24 * len(D) + 120))
     fig.update_yaxes(autorange="reversed")
     i_diff = add(fig, "Each model vs the average of all models (P(D win), points)")
@@ -330,7 +332,7 @@ def build_report(results, run_info, history):
                                     line=dict(width=1, color="#333")),
                         hovertemplate=f"{n}<br>%{{y}}: %{{x:+.1f}} pts<extra></extra>")
     fig.add_vline(x=0, line_color="#444", line_width=1)
-    fig.update_xaxes(title="Projected margin, D − R (points)")
+    fig.update_xaxes(title="Projected margin, D - R (points)")
     fig.update_yaxes(autorange="reversed")
     fig.update_layout(height=max(400, 32 * len(comp) + 120))
     i_marg = add(fig, "Projected margins in competitive races")
@@ -351,7 +353,7 @@ def build_report(results, run_info, history):
             if len(k):
                 fig.add_scatter(x=k["run_at"], y=100 * k["kalshi_p_control"], mode="lines+markers", name="Kalshi",
                                 line=dict(color="#222", dash="dash"))
-        fig.update_yaxes(title="P(D ≥ 51), %", range=[0, 100])
+        fig.update_yaxes(title="P(D >= 51), %", range=[0, 100])
         if h["run_at"].nunique() == 1: # a single run: give the time axis some room
             t = h["run_at"].iloc[0]
             fig.update_xaxes(range=[t - pd.Timedelta(days=1), t + pd.Timedelta(days=1)])
@@ -367,14 +369,14 @@ def build_report(results, run_info, history):
             mstat = "OK" if st["model"]["ok"] else "FAILED"
             secs = st["model"]["seconds"] + sum(t["seconds"] for t in st["testing"])
             err = st["model"]["error"] or "; ".join(f"{t['notebook']}: {t['error']}" for t in st["testing"] if t["error"])
-        tests = ("—" if not m.get("testing_notebooks") else
+        tests = ("-" if not m.get("testing_notebooks") else
                  ("OK" if st and all(t["ok"] for t in st["testing"]) else ("FAILED" if st else "not run")))
         chk = r["checks"] or {}
-        chk_txt = " / ".join(f"{chk.get(k, 0)} {k}" for k in ("PASS", "WARN", "FAIL")) if chk else "—"
+        chk_txt = " / ".join(f"{chk.get(k, 0)} {k}" for k in ("PASS", "WARN", "FAIL")) if chk else "-"
         src = (s or {}).get("sources") or {}
         cached = [k for k, v in src.items() if isinstance(v, str) and v.startswith("cache")]
         src_txt = ("all live" if src and not cached and any(v == "live" for v in src.values())
-                   else (f"{len(cached)} of {len(src)} from saved copy" if cached else "—"))
+                   else (f"{len(cached)} of {len(src)} from saved copy" if cached else "-"))
         fresh = "" if r["fresh"] else (f" (results from {s['run_at']})" if s else " (no results)")
         sty = "color:#2E7D32;font-weight:600" if mstat == "OK" else ("color:#C62828;font-weight:600" if mstat == "FAILED" else "")
         status_rows.append([(esc(m["name"]), m["name"], ""), (esc(mstat) + esc(fresh), mstat, sty), (esc(secs), secs, ""),
@@ -387,21 +389,21 @@ def build_report(results, run_info, history):
         head_rows.append([(f'<span class="dot" style="background:{colors[n]}"></span>{esc(n)}', n, ""),
                           (fmt_pct(s["p_d_51"]), s["p_d_51"], prob_style(s["p_d_51"])),
                           (f"{s['exp_d_seats']:.1f}", s["exp_d_seats"], ""), (f"{s.get('median_d_seats', float('nan')):.0f}", s.get("median_d_seats"), ""),
-                          (f"{s.get('p10', float('nan')):.0f}–{s.get('p90', float('nan')):.0f}", s.get("p10"), ""),
+                          (f"{s.get('p10', float('nan')):.0f}-{s.get('p90', float('nan')):.0f}", s.get("p10"), ""),
                           (f"{seat_gap.get(n, float('nan')):+.2f}", seat_gap.get(n), ""),
                           (esc(s.get("as_of")), s.get("as_of"), ""), (f"{int(s.get('n_sims', 0)):,}", s.get("n_sims"), ""),
                           (esc(s.get("run_at")), s.get("run_at"), "")])
     if k_ctrl is not None:
         head_rows.append([("<i>Kalshi (reference)</i>", "zzz", ""), (fmt_pct(k_ctrl), k_ctrl, prob_style(k_ctrl)),
-                          (f"{k_seats:.1f}" if k_seats is not None else "—", k_seats, ""), ("—", "", ""), ("—", "", ""),
-                          ("—", "", ""), ("", "", ""), ("", "", ""), ("", "", "")])
+                          (f"{k_seats:.1f}" if k_seats is not None else "-", k_seats, ""), ("-", "", ""), ("-", "", ""),
+                          ("-", "", ""), ("", "", ""), ("", "", ""), ("", "", "")])
 
     race_rows = []
     for st in P.index:
         row = [(esc(st), st, "")]
         for c in P.columns:
             v = P.loc[st, c]
-            row.append((fmt_pct(v) if v == v else "—", v if v == v else -1, prob_style(v)))
+            row.append((fmt_pct(v) if v == v else "-", v if v == v else -1, prob_style(v)))
         row.append((f"{100 * spread.get(st, 0):.0f}", spread.get(st, 0), ""))
         race_rows.append(row)
 
@@ -410,11 +412,11 @@ def build_report(results, run_info, history):
         for k in (r["summary"].get("key_settings") or {}):
             if k not in keys:
                 keys.append(k)
-    set_rows = [[(f"<b>{esc(k)}</b>", k, "")] + [(esc((r["summary"].get("key_settings") or {}).get(k, "—")), "", "") for r in ok] for k in keys]
+    set_rows = [[(f"<b>{esc(k)}</b>", k, "")] + [(esc((r["summary"].get("key_settings") or {}).get(k, "-")), "", "") for r in ok] for k in keys]
 
     reg_rows = [[(esc(r["meta"]["name"]), r["meta"]["name"], ""), (f"<code>{esc(r['meta']['id'])}</code>", r["meta"]["id"], ""),
                  (f"<code>{esc(Path(r['meta']['folder']).relative_to(REPO).as_posix())}/{esc(r['meta']['notebook'])}</code>", "", ""),
-                 (esc(", ".join(r["meta"].get("testing_notebooks", [])) or "—"), "", ""), (esc(r["meta"].get("description", "")), "", "")]
+                 (esc(", ".join(r["meta"].get("testing_notebooks", [])) or "-"), "", ""), (esc(r["meta"].get("description", "")), "", "")]
                 for r in results]
 
     # ---- assemble ----
@@ -431,7 +433,7 @@ def build_report(results, run_info, history):
     if failed:
         warn += f'<div class="warn bad"><b>Failed this run:</b> {esc(", ".join(failed))}. Their rows show their last successful results (if any).</div>'
 
-    title = "Senate Forecast — Model Comparison"
+    title = "Senate Forecast - Model Comparison"
     css = """
     :root{--bg:#fff;--fg:#1d1d1f;--muted:#666;--line:#e3e3e3;--card:#fafafa}
     body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 Inter,'Segoe UI',Helvetica,Arial,sans-serif}
@@ -467,14 +469,14 @@ def build_report(results, run_info, history):
     kpis = ""
     if ok:
         kpis = (f'<div class="kpis"><div class="kpi">Models compared<b>{len(ok)}</b></div>'
-                f'<div class="kpi">P(D ≥ 51) range<b>{fmt_pct(worst["summary"]["p_d_51"])} – {fmt_pct(best["summary"]["p_d_51"])}</b></div>'
+                f'<div class="kpi">P(D >= 51) range<b>{fmt_pct(worst["summary"]["p_d_51"])} - {fmt_pct(best["summary"]["p_d_51"])}</b></div>'
                 f'<div class="kpi">Average of models<b>{fmt_pct(float(np.mean(p51)))}</b></div>'
                 f'<div class="kpi">Kalshi<b>{fmt_pct(k_ctrl)}</b></div></div>')
     body = f"""
 <main>
 <h1>{title}</h1>
-<p class="sub">Run {esc(run_info['run_at'])} · data as of {esc(run_info['as_of'])} · {run_info['n_sims']:,} simulations per model ·
-generated by <code>run_all.py</code>. Comparison only — not the final forecast. Click any table header to sort; hover charts for details.</p>
+<p class="sub">Run {esc(run_info['run_at'])} | data as of {esc(run_info['as_of'])} | {run_info['n_sims']:,} simulations per model |
+generated by <code>run_all.py</code>. Comparison only - not the final forecast. Click any table header to sort; hover charts for details.</p>
 <nav><a href="#status">Run status</a><a href="#headline">Headline</a><a href="#seats">Seats</a><a href="#races">Races</a>
 <a href="#disagree">Disagreements</a><a href="#margins">Margins</a><a href="#settings">Settings</a><a href="#history">History</a><a href="#models">Models</a></nav>
 {warn}
@@ -484,9 +486,9 @@ generated by <code>run_all.py</code>. Comparison only — not the final forecast
 <div class="scroll">{table(["Model", "Status", "Seconds", "Testing notebook", "Checks", "Data sources", "Error"], status_rows)}</div>
 
 <h2 id="headline">Headline numbers</h2>
-<p class="note"><b>P(D ≥ 51)</b>: share of simulated elections where Democrats (incl. caucusing independents) hold 51+ seats. <b>Mean seats</b>: predicted Democratic seats. <b>vs avg</b>: expected seats above/below the average of all models (sum over races of the model's P(win) minus the average P(win)).</p>
+<p class="note"><b>P(D >= 51)</b>: share of simulated elections where Democrats (incl. caucusing independents) hold 51+ seats. <b>Mean seats</b>: predicted Democratic seats. <b>vs avg</b>: expected seats above/below the average of all models (sum over races of the model's P(win) minus the average P(win)).</p>
 {fig_block(i_head)}
-<div class="scroll">{table(["Model", "P(D ≥ 51)", "Mean D seats", "Median", "80% range", "Seats vs avg", "As of", "Simulations", "Run at"], head_rows)}</div>
+<div class="scroll">{table(["Model", "P(D >= 51)", "Mean D seats", "Median", "80% range", "Seats vs avg", "As of", "Simulations", "Run at"], head_rows)}</div>
 
 <h2 id="seats">Seat distributions</h2>
 <p class="note">How often each seat total comes up. The vertical line is the 51-seat control threshold. Wider curves = more uncertainty.</p>
@@ -511,11 +513,11 @@ generated by <code>run_all.py</code>. Comparison only — not the final forecast
 <div class="scroll wrap">{table(["Setting", *names], set_rows, cls="")}</div>
 
 <h2 id="history">History</h2>
-<p class="note">P(D ≥ 51) from every <code>run_all.py</code> run (<code>Comparisons/history.csv</code>).</p>
+<p class="note">P(D >= 51) from every <code>run_all.py</code> run (<code>Comparisons/history.csv</code>).</p>
 {fig_block(i_hist) if i_hist is not None else '<p class="note">History starts with this run.</p>'}
 
 <h2 id="models">Registered models</h2>
-<p class="note">Every folder under <code>Models/</code> with a <code>model.json</code>. To add a model, see "Adding a model" in the repo README; <code>run_all.py</code> needs no changes.</p>
+<p class="note">Every folder under <code>Models/</code> with a <code>model.json</code>. To add a model, see "Adding a model" in the README at the top of the repo; <code>run_all.py</code> needs no changes.</p>
 <div class="scroll wrap">{table(["Model", "id", "Notebook", "Testing", "Description"], reg_rows)}</div>
 </main>"""
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
